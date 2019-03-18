@@ -1,0 +1,12 @@
+// Compiled by ClojureScript 1.10.312 {:static-fns true, :optimize-constants true}
+goog.provide('views.about');
+goog.require('cljs.core');
+goog.require('cljs.core.constants');
+goog.require('views.helpers');
+goog.require('frontend.state');
+views.about.log = deps.log;
+views.about.quote = "\u201CLograr una comprensio\u0301n ma\u0301s plena de la experiencia del pensamiento, que es tambie\u0301n la experiencia  cotidiana y la forma en que creamos el mundo o los objetos de este mundo y nos relacionamos con ellos... Se trata  de algo como una ecologi\u0301a del pensamiento (por oposicio\u0301n a una eco-nomi\u0301a), no de esforzarse por imponer sobre el mundo algo ma\u0301s alla\u0301 de sus posibilidades, desatentamente (e.g. el supuesto crecimiento ilimitado del  capitalismo), sino de crear con el mundo-pensamiento partiendo de sus posibilidades. No se trata tampoco de una  renuncia que pretenda decir que \u201Clas cosas son asi\u0301, y no pueden ser diferentes\u201D, sino por el contrario del  descubrimiento-reconocimiento de todo lo que pueden ser); y esto es (no)parado\u0301jicamente algo ma\u0301s eficiente y  \u201Cecono\u0301mico\u201D que la economi\u0301a misma, pues actu\u0301a en dia\u0301logo con el logos: con las formas de ha-ser del  pensamiento-mundo.\u201D";
+views.about.main = (function views$about$main(){
+var body = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(frontend.state.app_state),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$about,(0),cljs.core.cst$kw$body], null));
+return views.helpers.page_container("about",new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$img,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,"about__image",cljs.core.cst$kw$src,"/images/about.png"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$q,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,"about__quote"], null),views.about.quote], null),null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,"markdown-body",cljs.core.cst$kw$dangerouslySetInnerHTML,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$__html,body], null)], null)], null)], null));
+});
