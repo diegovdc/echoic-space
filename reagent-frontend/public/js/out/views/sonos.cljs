@@ -48,14 +48,17 @@
     (if (not (@state/player-state :is-playing))
       (do
         (swap! state/player-state assoc :is-playing true)
-        (swap! state/player-state assoc :now-playing trackToPlay)
+        (if-not (:is-paused @state/player-state)
+          (swap! state/player-state assoc :now-playing trackToPlay))
+        (swap! state/player-state assoc :is-paused false)
         (r/after-render
          #(do 
             (.play (js/document.getElementById "audio-player"))
             (scroll-trackname))))
       (do
         (.pause (js/document.getElementById "audio-player"))
-        (swap! state/player-state assoc :is-playing false)))))
+        (swap! state/player-state assoc :is-playing false)
+        (swap! state/player-state assoc :is-paused true)))))
 
 (defn play-random []
   (let [track (->>  (@state/app-state :music)
@@ -83,12 +86,12 @@
           :autoPlay false}]]))
 
 
-(defn track-name' [is-playing track-name track-slug playable-track-if-in-single]
+(defn track-name' [is-playing is-paused track-name track-slug playable-track-if-in-single]
   [:a (merge {:class (b "playing") :id (b "playing")}
              (if is-playing
                {:href (str "/music/" track-slug)}
                {:on-click (toggle-play (:attributes playable-track-if-in-single))}))
-   (if is-playing
+   (if (or is-playing is-paused)
      track-name
      "escucha")])
 
@@ -102,7 +105,9 @@
 (defn tracks-with-audio [tracks]
   (filter #(not= nil (get-in % [:attributes :file_name]))) tracks)
 
-(defn play-btn [icon is-playing]
+(defn play-btn 
+  "Play button for the lower bar of sonos"
+  [icon is-playing]
   (let [tracks (tracks-with-audio (:music @state/app-state))
         single (:single @state/app-state)
         is-single (= (@state/app-state :page) :music-single)
@@ -114,6 +119,7 @@
 
 (defn main []
   (let [is-playing (@state/player-state :is-playing)
+        is-paused (@state/player-state :is-paused)
         track-name (get-in @state/player-state [:now-playing :track_name])
         track-slug (get-in @state/player-state [:now-playing :slug])
         icon #(if is-playing % "fa-play")
@@ -127,7 +133,7 @@
     [:div {:class (b "playing-container") :id (b "playing-container")}
                   ; (if is-mobile-or-tablet " is-mobile"
      [:div {:class (str (b "playing-overflower"))}
-       (track-name' is-playing track-name track-slug playable-track-if-in-single)]
+       (track-name' is-playing is-paused track-name track-slug playable-track-if-in-single)]
      (frwd-btn icon is-playing)
      [:div {:class (sonos "duration")}
       [:div {:class (sonos "elapsed")

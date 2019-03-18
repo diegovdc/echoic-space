@@ -10,16 +10,16 @@ views.music.year = (function views$music$year(music){
 return cljs.core.first.call(null,clojure.string.split.call(null,new cljs.core.Keyword(null,"date","date",-1463434462).cljs$core$IFn$_invoke$arity$1(music),"-"));
 });
 views.music.sort_music_by_year = (function views$music$sort_music_by_year(music){
-return cljs.core.group_by.call(null,views.music.year,cljs.core.sort.call(null,(function (p1__30148_SHARP_,p2__30147_SHARP_){
-return cljs.core.compare.call(null,new cljs.core.Keyword(null,"date","date",-1463434462).cljs$core$IFn$_invoke$arity$1(p2__30147_SHARP_),new cljs.core.Keyword(null,"date","date",-1463434462).cljs$core$IFn$_invoke$arity$1(p1__30148_SHARP_));
+return cljs.core.group_by.call(null,views.music.year,cljs.core.sort.call(null,(function (p1__34280_SHARP_,p2__34279_SHARP_){
+return cljs.core.compare.call(null,new cljs.core.Keyword(null,"date","date",-1463434462).cljs$core$IFn$_invoke$arity$1(p2__34279_SHARP_),new cljs.core.Keyword(null,"date","date",-1463434462).cljs$core$IFn$_invoke$arity$1(p1__34280_SHARP_));
 }),music));
 });
 views.music.filter_ = (function views$music$filter_(selected_categories,music){
 if(cljs.core.empty_QMARK_.call(null,selected_categories)){
 return music;
 } else {
-return cljs.core.filter.call(null,(function (p1__30149_SHARP_){
-return cljs.core.not_EQ_.call(null,cljs.core.PersistentHashSet.EMPTY,clojure.set.intersection.call(null,selected_categories,cljs.core.set.call(null,new cljs.core.Keyword(null,"category","category",-593092832).cljs$core$IFn$_invoke$arity$1(p1__30149_SHARP_))));
+return cljs.core.filter.call(null,(function (p1__34281_SHARP_){
+return cljs.core.not_EQ_.call(null,cljs.core.PersistentHashSet.EMPTY,clojure.set.intersection.call(null,selected_categories,cljs.core.set.call(null,new cljs.core.Keyword(null,"category","category",-593092832).cljs$core$IFn$_invoke$arity$1(p1__34281_SHARP_))));
 }),music);
 }
 });
@@ -32,8 +32,8 @@ return clojure.set.union.call(null,set,cljs.core.PersistentHashSet.createAsIfByA
 });
 views.music.toggle_category = (function views$music$toggle_category(cat){
 return (function (){
-return cljs.core.swap_BANG_.call(null,views.music.selected_categories,(function (p1__30150_SHARP_){
-return views.music.toggle_in_set.call(null,p1__30150_SHARP_,cat);
+return cljs.core.swap_BANG_.call(null,views.music.selected_categories,(function (p1__34282_SHARP_){
+return views.music.toggle_in_set.call(null,p1__34282_SHARP_,cat);
 }));
 });
 });
@@ -46,12 +46,12 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 }),categories)], null);
 });
 views.music.main = (function views$music$main(){
-var music = cljs.core.map.call(null,(function (p1__30151_SHARP_){
-return new cljs.core.Keyword(null,"attributes","attributes",-74013604).cljs$core$IFn$_invoke$arity$1(p1__30151_SHARP_);
+var music = cljs.core.map.call(null,(function (p1__34283_SHARP_){
+return new cljs.core.Keyword(null,"attributes","attributes",-74013604).cljs$core$IFn$_invoke$arity$1(p1__34283_SHARP_);
 }),new cljs.core.Keyword(null,"music","music",-1063514396).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,frontend.state.app_state)));
 var categories = cljs.core.set.call(null,cljs.core.sort.call(null,cljs.core.flatten.call(null,cljs.core.map.call(null,((function (music){
-return (function (p1__30152_SHARP_){
-return new cljs.core.Keyword(null,"category","category",-593092832).cljs$core$IFn$_invoke$arity$1(p1__30152_SHARP_);
+return (function (p1__34284_SHARP_){
+return new cljs.core.Keyword(null,"category","category",-593092832).cljs$core$IFn$_invoke$arity$1(p1__34284_SHARP_);
 });})(music))
 ,music))));
 return views.helpers.make_archive_page.call(null,"M\u00FAsica",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),views.music.print_categories.call(null,categories),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),cljs.core.map.call(null,((function (music,categories){
@@ -61,4 +61,4 @@ return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMP
 ,views.music.sort_music_by_year.call(null,views.music.filter_.call(null,cljs.core.deref.call(null,views.music.selected_categories),music)))], null)], null));
 });
 
-//# sourceMappingURL=music.js.map?rel=1552590659785
+//# sourceMappingURL=music.js.map?rel=1552935015348

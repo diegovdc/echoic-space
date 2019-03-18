@@ -12,6 +12,7 @@
 (def player-state
   (r/atom {:track-data {:duration nil :elapsed nil :percentage nil}
            :is-playing false
+           :is-paused false
            :now-playing {}}))
                               
 
