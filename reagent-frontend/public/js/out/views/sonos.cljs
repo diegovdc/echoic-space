@@ -15,6 +15,10 @@
 
 (def is-mobile-or-tablet ((oget js/deps "isMobileOrTablet")))
 
+(def Howl (oget js/deps "Howl"))
+
+(def Howler (oget js/deps "Howler"))
+
 (def log (.-log js/deps))
 
 (def b (partial str "menu-main__"))
@@ -43,22 +47,25 @@
       (to-the-left)))))
 
 
-(defn toggle-play [trackToPlay]
+(defn toggle-play [track-to-play should-change-track?]
   (fn []
-    (if (not (@state/player-state :is-playing))
-      (do
-        (swap! state/player-state assoc :is-playing true)
-        (if-not (:is-paused @state/player-state)
-          (swap! state/player-state assoc :now-playing trackToPlay))
-        (swap! state/player-state assoc :is-paused false)
-        (r/after-render
-         #(do 
-            (.play (js/document.getElementById "audio-player"))
-            (scroll-trackname))))
-      (do
-        (.pause (js/document.getElementById "audio-player"))
-        (swap! state/player-state assoc :is-playing false)
-        (swap! state/player-state assoc :is-paused true)))))
+    (let [previously-playing (get-in @state/player-state [:now-playing :howl] (clj->js {:pause (fn [] nil)}))]
+      (if (or should-change-track? (not (@state/player-state :is-playing)))
+        (do
+          (swap! state/player-state assoc :is-playing true)
+          (if (or should-change-track? (not (:is-paused @state/player-state)))
+            (swap! state/player-state assoc :now-playing (log "now playing" (assoc track-to-play :howl (Howl. (clj->js {:src [(log (make-audio-url track-to-play))] :html5 true}))))))
+          (swap! state/player-state assoc :is-paused false)
+          (r/after-render
+            #(do 
+                (log "do" (get-in @state/player-state [:now-playing :howl]))
+                (.pause previously-playing)
+                (.play (get-in @state/player-state [:now-playing :howl]))
+                (scroll-trackname))))
+        (do
+          (log "pausing" (.pause (get-in @state/player-state [:now-playing :howl])))
+          (swap! state/player-state assoc :is-playing false)
+          (swap! state/player-state assoc :is-paused true))))))
 
 (defn play-random []
   (let [track (->>  (@state/app-state :music)
@@ -69,7 +76,7 @@
                     (rand-nth)
                     (:attributes))]
     (swap! state/player-state assoc :is-playing false)
-    ((toggle-play track))))
+    ((toggle-play track true))))
 
 (defn player [state]
   (let [now-playing (get-in @state [:now-playing])
@@ -90,7 +97,7 @@
   [:a (merge {:class (b "playing") :id (b "playing")}
              (if is-playing
                {:href (str "/music/" track-slug)}
-               {:on-click (toggle-play (:attributes playable-track-if-in-single))}))
+               {:on-click (toggle-play (:attributes playable-track-if-in-single) true)}))
    (if (or is-playing is-paused)
      track-name
      "escucha")])
@@ -115,7 +122,7 @@
                         (find-first #(= (get-in % [:slug] single)) tracks)
                         (safe-rand-nth {} tracks))]
     [:i {:class  (sonos (str "icon-play fa " (icon "fa-pause")))
-         :on-click (toggle-play (:attributes track-to-play))}]))
+         :on-click (toggle-play (:attributes track-to-play) false)}]))
 
 (defn main []
   (let [is-playing (@state/player-state :is-playing)

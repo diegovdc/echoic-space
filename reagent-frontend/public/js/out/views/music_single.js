@@ -10,17 +10,17 @@ goog.require('reagent.core');
 goog.require('jayq.core');
 goog.require('oops.core');
 views.music_single.log = deps.log;
-views.music_single.is_mobile_or_tablet = (function (){var target_obj_35186 = deps;
-var _STAR_runtime_state_STAR_35188 = oops.state._STAR_runtime_state_STAR_;
-oops.state._STAR_runtime_state_STAR_ = oops.state.prepare_state.call(null,target_obj_35186,(new Error()),function(){arguments[0].apply(console,Array.prototype.slice.call(arguments,1))});
+views.music_single.is_mobile_or_tablet = (function (){var target_obj_39132 = deps;
+var _STAR_runtime_state_STAR_39134 = oops.state._STAR_runtime_state_STAR_;
+oops.state._STAR_runtime_state_STAR_ = oops.state.prepare_state.call(null,target_obj_39132,(new Error()),function(){arguments[0].apply(console,Array.prototype.slice.call(arguments,1))});
 
-try{var next_obj_35187 = ((oops.core.validate_object_access_dynamically.call(null,target_obj_35186,(0),"isMobileOrTablet",true,true,false))?(target_obj_35186["isMobileOrTablet"]):null);
-return next_obj_35187;
-}finally {oops.state._STAR_runtime_state_STAR_ = _STAR_runtime_state_STAR_35188;
+try{var next_obj_39133 = ((oops.core.validate_object_access_dynamically.call(null,target_obj_39132,(0),"isMobileOrTablet",true,true,false))?(target_obj_39132["isMobileOrTablet"]):null);
+return next_obj_39133;
+}finally {oops.state._STAR_runtime_state_STAR_ = _STAR_runtime_state_STAR_39134;
 }})().call(null);
 views.music_single.get_offset_top = (function views$music_single$get_offset_top(id){
-return (function (p1__35189_SHARP_){
-return (p1__35189_SHARP_ - (26));
+return (function (p1__39135_SHARP_){
+return (p1__39135_SHARP_ - (26));
 }).call(null,new cljs.core.Keyword(null,"top","top",-1856271961).cljs$core$IFn$_invoke$arity$1(jayq.core.offset.call(null,jayq.core.$.call(null,["#",cljs.core.str.cljs$core$IFn$_invoke$arity$1(id)].join('')))));
 });
 views.music_single.go_to_hash = (function views$music_single$go_to_hash(hash){
@@ -49,8 +49,21 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 });
 views.music_single._play_button = (function views$music_single$_play_button(post_attrs,action){
 
-var icon = (cljs.core.truth_(cljs.core.deref.call(null,frontend.state.player_state).call(null,new cljs.core.Keyword(null,"is-playing","is-playing",-1699110457)))?"fa-pause":"fa-play");
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"class","class",-2030961996),["single__play fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(icon)].join(''),new cljs.core.Keyword(null,"style","style",-496642736),views.music_single.bg_img.call(null,views.music_single.get_bg_img.call(null,post_attrs)),new cljs.core.Keyword(null,"on-click","on-click",1632826543),action.call(null,post_attrs)], null)], null);
+var playing_this_track_QMARK_ = cljs.core._EQ_.call(null,cljs.core.get_in.call(null,cljs.core.deref.call(null,frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"now-playing","now-playing",1487806653),new cljs.core.Keyword(null,"track_name","track_name",1331132230)], null)),new cljs.core.Keyword(null,"track_name","track_name",1331132230).cljs$core$IFn$_invoke$arity$1(post_attrs));
+var should_change_track_QMARK_ = !(playing_this_track_QMARK_);
+var icon = (cljs.core.truth_((function (){var and__3925__auto__ = playing_this_track_QMARK_;
+if(and__3925__auto__){
+var and__3925__auto____$1 = cljs.core.deref.call(null,frontend.state.player_state);
+if(cljs.core.truth_(and__3925__auto____$1)){
+return new cljs.core.Keyword(null,"is-playing","is-playing",-1699110457);
+} else {
+return and__3925__auto____$1;
+}
+} else {
+return and__3925__auto__;
+}
+})())?"fa-pause":"fa-play");
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"class","class",-2030961996),["single__play fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(icon)].join(''),new cljs.core.Keyword(null,"style","style",-496642736),views.music_single.bg_img.call(null,views.music_single.get_bg_img.call(null,post_attrs)),new cljs.core.Keyword(null,"on-click","on-click",1632826543),action.call(null,post_attrs,views.music_single.log.call(null,"shoudl change track",should_change_track_QMARK_))], null)], null);
 });
 views.music_single.toggle_play_video = (function views$music_single$toggle_play_video(post_attrs){
 var onPlayerReady = (function (e){
@@ -66,10 +79,10 @@ return frontend.helpers.scroll_to.call(null,views.music_single.get_offset_top.ca
 });
 return ((function (onPlayerReady){
 return (function (){
-var player = (new YT.Player("player",(function (){var obj35191 = {"videoId":new cljs.core.Keyword(null,"youtube_id","youtube_id",1076585092).cljs$core$IFn$_invoke$arity$1(post_attrs),"events":(function (){var obj35193 = {"onReady":onPlayerReady};
-return obj35193;
+var player = (new YT.Player("player",(function (){var obj39137 = {"videoId":new cljs.core.Keyword(null,"youtube_id","youtube_id",1076585092).cljs$core$IFn$_invoke$arity$1(post_attrs),"events":(function (){var obj39139 = {"onReady":onPlayerReady};
+return obj39139;
 })()};
-return obj35191;
+return obj39137;
 })()));
 return null;
 });
@@ -88,8 +101,8 @@ return (function (){
 cljs.core.reset_BANG_.call(null,local_state,cljs.core.merge.call(null,cljs.core.deref.call(null,local_state),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"show-info","show-info",-822530028),cljs.core.not.call(null,cljs.core.deref.call(null,local_state).call(null,new cljs.core.Keyword(null,"show-info","show-info",-822530028)))], null)));
 
 return reagent.core.after_render.call(null,(function (){
-return frontend.helpers.scroll_to.call(null,((cljs.core.not.call(null,cljs.core.deref.call(null,local_state).call(null,new cljs.core.Keyword(null,"show-info","show-info",-822530028))))?(0):(function (p1__35194_SHARP_){
-return (p1__35194_SHARP_ - (26));
+return frontend.helpers.scroll_to.call(null,((cljs.core.not.call(null,cljs.core.deref.call(null,local_state).call(null,new cljs.core.Keyword(null,"show-info","show-info",-822530028))))?(0):(function (p1__39140_SHARP_){
+return (p1__39140_SHARP_ - (26));
 }).call(null,new cljs.core.Keyword(null,"top","top",-1856271961).cljs$core$IFn$_invoke$arity$1(jayq.core.offset.call(null,jayq.core.$.call(null,".markdown-body"))))));
 }));
 });
@@ -125,8 +138,8 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 }
 });
 views.music_single.find_post = (function views$music_single$find_post(tracks,slug){
-return cljs.core.first.call(null,cljs.core.filter.call(null,(function (p1__35195_SHARP_){
-return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"slug","slug",2029314850).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"attributes","attributes",-74013604).cljs$core$IFn$_invoke$arity$1(p1__35195_SHARP_)),slug);
+return cljs.core.first.call(null,cljs.core.filter.call(null,(function (p1__39141_SHARP_){
+return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"slug","slug",2029314850).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"attributes","attributes",-74013604).cljs$core$IFn$_invoke$arity$1(p1__39141_SHARP_)),slug);
 }),tracks));
 });
 views.music_single.main = (function views$music_single$main(singleSlug,hash){
@@ -145,4 +158,4 @@ return views.music_single.go_to_hash.call(null,hash);
 ], null));
 });
 
-//# sourceMappingURL=music_single.js.map?rel=1552936137144
+//# sourceMappingURL=music_single.js.map?rel=1552943961297

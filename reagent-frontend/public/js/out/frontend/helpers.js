@@ -47,8 +47,8 @@ var file_name = new cljs.core.Keyword(null,"file_name","file_name",2030201601).c
 if(clojure.string.includes_QMARK_.call(null,file_name,"http")){
 return file_name;
 } else {
-return ["/music/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"slug","slug",2029314850).cljs$core$IFn$_invoke$arity$1(music_post_attrs)),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(file_name)].join('');
+return ["http://www.echoic.space","/music/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"slug","slug",2029314850).cljs$core$IFn$_invoke$arity$1(music_post_attrs)),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(file_name)].join('');
 }
 });
 
-//# sourceMappingURL=helpers.js.map?rel=1552590664488
+//# sourceMappingURL=helpers.js.map?rel=1552941787475

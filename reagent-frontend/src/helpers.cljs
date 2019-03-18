@@ -36,5 +36,5 @@
   (let [file_name (:file_name music-post-attrs "")]
     (if (str/includes? file_name "http")
       file_name
-      (str "/music/" (:slug music-post-attrs) "/" file_name))))
+      (str "http://www.echoic.space" "/music/" (:slug music-post-attrs) "/" file_name))))
  
