@@ -13,11 +13,10 @@
 		margin-bottom: 30px;
 	}
 
-	$sbttl-width: 216px;
 	&__sbttl {
 		font-family: f(mono);
 		font-weight: bold;
-		width: $sbttl-width;
+		width: auto;
 		font-size: 18px;
 	}
 	
@@ -25,7 +24,7 @@
 		font-family: f(sans);
 		font-size: 16px;
 		padding-left: 30px;
-		width: calc(100% - #{$sbttl-width});
+		width: 100%;
 		padding-top: 1px;
 	}
 }
