@@ -30,50 +30,50 @@ cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs
 return cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"page","page",849072397),new cljs.core.Keyword(null,"music-single","music-single",-2070977446));
 });
 frontend.routes.app_routes = (function frontend$routes$app_routes(){
-var action__33807__auto___54855 = (function (params__33808__auto__){
+var action__33807__auto___54911 = (function (params__33808__auto__){
 if(cljs.core.map_QMARK_.call(null,params__33808__auto__)){
-var map__54830 = params__33808__auto__;
-var map__54830__$1 = ((((!((map__54830 == null)))?(((((map__54830.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54830.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54830):map__54830);
+var map__54886 = params__33808__auto__;
+var map__54886__$1 = ((((!((map__54886 == null)))?(((((map__54886.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54886.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54886):map__54886);
 return cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"page","page",849072397),new cljs.core.Keyword(null,"home","home",-74557309));
 } else {
 if(cljs.core.vector_QMARK_.call(null,params__33808__auto__)){
-var vec__54832 = params__33808__auto__;
+var vec__54888 = params__33808__auto__;
 return cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"page","page",849072397),new cljs.core.Keyword(null,"home","home",-74557309));
 } else {
 return null;
 }
 }
 });
-secretary.core.add_route_BANG_.call(null,"/",action__33807__auto___54855);
+secretary.core.add_route_BANG_.call(null,"/",action__33807__auto___54911);
 
 
-var action__33807__auto___54856 = (function (params__33808__auto__){
+var action__33807__auto___54912 = (function (params__33808__auto__){
 if(cljs.core.map_QMARK_.call(null,params__33808__auto__)){
-var map__54835 = params__33808__auto__;
-var map__54835__$1 = ((((!((map__54835 == null)))?(((((map__54835.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54835.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54835):map__54835);
+var map__54891 = params__33808__auto__;
+var map__54891__$1 = ((((!((map__54891 == null)))?(((((map__54891.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54891.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54891):map__54891);
 return cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"page","page",849072397),new cljs.core.Keyword(null,"about","about",1423892543));
 } else {
 if(cljs.core.vector_QMARK_.call(null,params__33808__auto__)){
-var vec__54837 = params__33808__auto__;
+var vec__54893 = params__33808__auto__;
 return cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"page","page",849072397),new cljs.core.Keyword(null,"about","about",1423892543));
 } else {
 return null;
 }
 }
 });
-secretary.core.add_route_BANG_.call(null,/\/about\/?/,action__33807__auto___54856);
+secretary.core.add_route_BANG_.call(null,/\/about\/?/,action__33807__auto___54912);
 
 
-var action__33807__auto___54857 = (function (params__33808__auto__){
+var action__33807__auto___54913 = (function (params__33808__auto__){
 if(cljs.core.map_QMARK_.call(null,params__33808__auto__)){
-var map__54840 = params__33808__auto__;
-var map__54840__$1 = ((((!((map__54840 == null)))?(((((map__54840.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54840.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54840):map__54840);
+var map__54896 = params__33808__auto__;
+var map__54896__$1 = ((((!((map__54896 == null)))?(((((map__54896.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54896.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54896):map__54896);
 cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"single","single",1551466437),"");
 
 return cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"page","page",849072397),new cljs.core.Keyword(null,"music","music",-1063514396));
 } else {
 if(cljs.core.vector_QMARK_.call(null,params__33808__auto__)){
-var vec__54842 = params__33808__auto__;
+var vec__54898 = params__33808__auto__;
 cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"single","single",1551466437),"");
 
 return cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"page","page",849072397),new cljs.core.Keyword(null,"music","music",-1063514396));
@@ -82,45 +82,45 @@ return null;
 }
 }
 });
-secretary.core.add_route_BANG_.call(null,/\/music\/?/,action__33807__auto___54857);
+secretary.core.add_route_BANG_.call(null,/\/music\/?/,action__33807__auto___54913);
 
 
-var action__33807__auto___54858 = (function (params__33808__auto__){
+var action__33807__auto___54914 = (function (params__33808__auto__){
 if(cljs.core.map_QMARK_.call(null,params__33808__auto__)){
-var map__54845 = params__33808__auto__;
-var map__54845__$1 = ((((!((map__54845 == null)))?(((((map__54845.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54845.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54845):map__54845);
-var single = cljs.core.get.call(null,map__54845__$1,new cljs.core.Keyword(null,"single","single",1551466437));
+var map__54901 = params__33808__auto__;
+var map__54901__$1 = ((((!((map__54901 == null)))?(((((map__54901.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54901.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54901):map__54901);
+var single = cljs.core.get.call(null,map__54901__$1,new cljs.core.Keyword(null,"single","single",1551466437));
 return frontend.routes.music_single.call(null,single);
 } else {
 if(cljs.core.vector_QMARK_.call(null,params__33808__auto__)){
-var vec__54847 = params__33808__auto__;
-var single = cljs.core.nth.call(null,vec__54847,(0),null);
+var vec__54903 = params__33808__auto__;
+var single = cljs.core.nth.call(null,vec__54903,(0),null);
 return frontend.routes.music_single.call(null,single);
 } else {
 return null;
 }
 }
 });
-secretary.core.add_route_BANG_.call(null,"/music/:single",action__33807__auto___54858);
+secretary.core.add_route_BANG_.call(null,"/music/:single",action__33807__auto___54914);
 
 
-var action__33807__auto___54859 = (function (params__33808__auto__){
+var action__33807__auto___54915 = (function (params__33808__auto__){
 if(cljs.core.map_QMARK_.call(null,params__33808__auto__)){
-var map__54850 = params__33808__auto__;
-var map__54850__$1 = ((((!((map__54850 == null)))?(((((map__54850.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54850.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54850):map__54850);
-var single = cljs.core.get.call(null,map__54850__$1,new cljs.core.Keyword(null,"single","single",1551466437));
+var map__54906 = params__33808__auto__;
+var map__54906__$1 = ((((!((map__54906 == null)))?(((((map__54906.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__54906.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__54906):map__54906);
+var single = cljs.core.get.call(null,map__54906__$1,new cljs.core.Keyword(null,"single","single",1551466437));
 return frontend.routes.music_single.call(null,single);
 } else {
 if(cljs.core.vector_QMARK_.call(null,params__33808__auto__)){
-var vec__54852 = params__33808__auto__;
-var single = cljs.core.nth.call(null,vec__54852,(0),null);
+var vec__54908 = params__33808__auto__;
+var single = cljs.core.nth.call(null,vec__54908,(0),null);
 return frontend.routes.music_single.call(null,single);
 } else {
 return null;
 }
 }
 });
-secretary.core.add_route_BANG_.call(null,"/music/:single/",action__33807__auto___54859);
+secretary.core.add_route_BANG_.call(null,"/music/:single/",action__33807__auto___54915);
 
 
 return frontend.routes.history.accountant_history_navigation.call(null);
@@ -155,4 +155,4 @@ cljs.core._add_method.call(null,frontend.routes.current_page,new cljs.core.Keywo
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [views.home.main], null);
 }));
 
-//# sourceMappingURL=routes.js.map?rel=1552956932974
+//# sourceMappingURL=routes.js.map?rel=1552957818236

@@ -10,8 +10,6 @@
 
 (def log (.-log js/deps))
 
-(def is-mobile-or-tablet ((oget js/deps "isMobileOrTablet")))
-
 (defn get-offset-top [id]
   (->> ($ (str "#" id))
        offset
@@ -106,18 +104,6 @@
   [:div
     {:id "player"}])
 
-(defn mobile-audio-player [post-attrs]
-  (let [url (make-audio-url post-attrs)]
-    (if (and is-mobile-or-tablet (some? url))
-      [:div {:class "markdown-body"}
-       [:h3 "Escuchar:"]
-       [:audio
-        {:controls "controls"
-         :src url
-         :preload "metadata"
-         :encType "audio/mpeg"
-         :autoPlay false}]])))
-
 (defn print-post [post local-state]
   (cond
     (= nil post) [:div "not found"]
@@ -132,8 +118,7 @@
                 img-url
                 [:div
                  (title post-attrs)
-                 (if-not is-mobile-or-tablet
-                   (play-button post-attrs)) 
+                 (play-button post-attrs) 
                  (show-info img-url local-state)])
               (if (:is_video post-attrs)
                 [:div {:class "single__video-player-container" 
@@ -143,8 +128,8 @@
             (if (@local-state :show-info)
               [:div
                 [:div {:class "markdown-body"
-                       :dangerouslySetInnerHTML {:__html (:body post)}}]
-                (mobile-audio-player post-attrs)]))])))
+                       :dangerouslySetInnerHTML {:__html (:body post)}}]]))])))
+                
                        
 (defn find-post [tracks slug]
   (first 

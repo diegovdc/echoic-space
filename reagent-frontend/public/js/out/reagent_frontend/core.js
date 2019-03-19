@@ -15,27 +15,27 @@ console.log(x);
 
 return x;
 });
-reagent_frontend.core.axios_get = (function (){var target_obj_54862 = deps;
-var _STAR_runtime_state_STAR_54865 = oops.state._STAR_runtime_state_STAR_;
-oops.state._STAR_runtime_state_STAR_ = oops.state.prepare_state.call(null,target_obj_54862,(new Error()),function(){arguments[0].apply(console,Array.prototype.slice.call(arguments,1))});
+reagent_frontend.core.axios_get = (function (){var target_obj_54918 = deps;
+var _STAR_runtime_state_STAR_54921 = oops.state._STAR_runtime_state_STAR_;
+oops.state._STAR_runtime_state_STAR_ = oops.state.prepare_state.call(null,target_obj_54918,(new Error()),function(){arguments[0].apply(console,Array.prototype.slice.call(arguments,1))});
 
-try{var next_obj_54863 = ((oops.core.validate_object_access_dynamically.call(null,target_obj_54862,(0),"axios",true,true,false))?(target_obj_54862["axios"]):null);
-var next_obj_54864 = ((oops.core.validate_object_access_dynamically.call(null,next_obj_54863,(0),"get",true,true,false))?(next_obj_54863["get"]):null);
-return next_obj_54864;
-}finally {oops.state._STAR_runtime_state_STAR_ = _STAR_runtime_state_STAR_54865;
+try{var next_obj_54919 = ((oops.core.validate_object_access_dynamically.call(null,target_obj_54918,(0),"axios",true,true,false))?(target_obj_54918["axios"]):null);
+var next_obj_54920 = ((oops.core.validate_object_access_dynamically.call(null,next_obj_54919,(0),"get",true,true,false))?(next_obj_54919["get"]):null);
+return next_obj_54920;
+}finally {oops.state._STAR_runtime_state_STAR_ = _STAR_runtime_state_STAR_54921;
 }})();
 reagent_frontend.core.get_data = (function reagent_frontend$core$get_data(func,state_key,url){
-return reagent_frontend.core.axios_get.call(null,url).then((function (p1__54866_SHARP_){
-return cljs.core.js__GT_clj.call(null,p1__54866_SHARP_,new cljs.core.Keyword(null,"keywordize-keys","keywordize-keys",1310784252),true);
-})).then((function (p1__54867_SHARP_){
-return new cljs.core.Keyword(null,"data","data",-232669377).cljs$core$IFn$_invoke$arity$1(p1__54867_SHARP_);
-})).then((function (p1__54868_SHARP_){
-return cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,state_key,func.call(null,p1__54868_SHARP_));
+return reagent_frontend.core.axios_get.call(null,url).then((function (p1__54922_SHARP_){
+return cljs.core.js__GT_clj.call(null,p1__54922_SHARP_,new cljs.core.Keyword(null,"keywordize-keys","keywordize-keys",1310784252),true);
+})).then((function (p1__54923_SHARP_){
+return new cljs.core.Keyword(null,"data","data",-232669377).cljs$core$IFn$_invoke$arity$1(p1__54923_SHARP_);
+})).then((function (p1__54924_SHARP_){
+return cljs.core.swap_BANG_.call(null,frontend.state.app_state,cljs.core.assoc,state_key,func.call(null,p1__54924_SHARP_));
 }));
 });
 reagent_frontend.core.parse_categories = (function reagent_frontend$core$parse_categories(music){
-return cljs.core.map.call(null,(function (p1__54869_SHARP_){
-return cljs.core.update_in.call(null,p1__54869_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"attributes","attributes",-74013604),new cljs.core.Keyword(null,"category","category",-593092832)], null),(function (c){
+return cljs.core.map.call(null,(function (p1__54925_SHARP_){
+return cljs.core.update_in.call(null,p1__54925_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"attributes","attributes",-74013604),new cljs.core.Keyword(null,"category","category",-593092832)], null),(function (c){
 var v = c;
 var v__$1 = clojure.string.split.call(null,v,"$");
 return cljs.core.map.call(null,clojure.string.trim,v__$1);
@@ -60,4 +60,4 @@ return reagent_frontend.core.mount_root.call(null);
 });
 (((1) + (1)) + (1));
 
-//# sourceMappingURL=core.js.map?rel=1552956932997
+//# sourceMappingURL=core.js.map?rel=1552957818287
