@@ -10,17 +10,17 @@ goog.require('reagent.core');
 goog.require('jayq.core');
 goog.require('oops.core');
 views.music_single.log = deps.log;
-views.music_single.is_mobile_or_tablet = (function (){var target_obj_44901 = deps;
-var _STAR_runtime_state_STAR_44903 = oops.state._STAR_runtime_state_STAR_;
-oops.state._STAR_runtime_state_STAR_ = oops.state.prepare_state.call(null,target_obj_44901,(new Error()),function(){arguments[0].apply(console,Array.prototype.slice.call(arguments,1))});
+views.music_single.is_mobile_or_tablet = (function (){var target_obj_49195 = deps;
+var _STAR_runtime_state_STAR_49197 = oops.state._STAR_runtime_state_STAR_;
+oops.state._STAR_runtime_state_STAR_ = oops.state.prepare_state.call(null,target_obj_49195,(new Error()),function(){arguments[0].apply(console,Array.prototype.slice.call(arguments,1))});
 
-try{var next_obj_44902 = ((oops.core.validate_object_access_dynamically.call(null,target_obj_44901,(0),"isMobileOrTablet",true,true,false))?(target_obj_44901["isMobileOrTablet"]):null);
-return next_obj_44902;
-}finally {oops.state._STAR_runtime_state_STAR_ = _STAR_runtime_state_STAR_44903;
+try{var next_obj_49196 = ((oops.core.validate_object_access_dynamically.call(null,target_obj_49195,(0),"isMobileOrTablet",true,true,false))?(target_obj_49195["isMobileOrTablet"]):null);
+return next_obj_49196;
+}finally {oops.state._STAR_runtime_state_STAR_ = _STAR_runtime_state_STAR_49197;
 }})().call(null);
 views.music_single.get_offset_top = (function views$music_single$get_offset_top(id){
-return (function (p1__44904_SHARP_){
-return (p1__44904_SHARP_ - (26));
+return (function (p1__49198_SHARP_){
+return (p1__49198_SHARP_ - (26));
 }).call(null,new cljs.core.Keyword(null,"top","top",-1856271961).cljs$core$IFn$_invoke$arity$1(jayq.core.offset.call(null,jayq.core.$.call(null,["#",cljs.core.str.cljs$core$IFn$_invoke$arity$1(id)].join('')))));
 });
 views.music_single.go_to_hash = (function views$music_single$go_to_hash(hash){
@@ -74,10 +74,10 @@ return frontend.helpers.scroll_to.call(null,views.music_single.get_offset_top.ca
 });
 return ((function (onPlayerReady){
 return (function (){
-var player = (new YT.Player("player",(function (){var obj44906 = {"videoId":new cljs.core.Keyword(null,"youtube_id","youtube_id",1076585092).cljs$core$IFn$_invoke$arity$1(post_attrs),"events":(function (){var obj44908 = {"onReady":onPlayerReady};
-return obj44908;
+var player = (new YT.Player("player",(function (){var obj49200 = {"videoId":new cljs.core.Keyword(null,"youtube_id","youtube_id",1076585092).cljs$core$IFn$_invoke$arity$1(post_attrs),"events":(function (){var obj49202 = {"onReady":onPlayerReady};
+return obj49202;
 })()};
-return obj44906;
+return obj49200;
 })()));
 return null;
 });
@@ -96,8 +96,8 @@ return (function (){
 cljs.core.reset_BANG_.call(null,local_state,cljs.core.merge.call(null,cljs.core.deref.call(null,local_state),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"show-info","show-info",-822530028),cljs.core.not.call(null,cljs.core.deref.call(null,local_state).call(null,new cljs.core.Keyword(null,"show-info","show-info",-822530028)))], null)));
 
 return reagent.core.after_render.call(null,(function (){
-return frontend.helpers.scroll_to.call(null,((cljs.core.not.call(null,cljs.core.deref.call(null,local_state).call(null,new cljs.core.Keyword(null,"show-info","show-info",-822530028))))?(0):(function (p1__44909_SHARP_){
-return (p1__44909_SHARP_ - (26));
+return frontend.helpers.scroll_to.call(null,((cljs.core.not.call(null,cljs.core.deref.call(null,local_state).call(null,new cljs.core.Keyword(null,"show-info","show-info",-822530028))))?(0):(function (p1__49203_SHARP_){
+return (p1__49203_SHARP_ - (26));
 }).call(null,new cljs.core.Keyword(null,"top","top",-1856271961).cljs$core$IFn$_invoke$arity$1(jayq.core.offset.call(null,jayq.core.$.call(null,".markdown-body"))))));
 }));
 });
@@ -133,8 +133,8 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 }
 });
 views.music_single.find_post = (function views$music_single$find_post(tracks,slug){
-return cljs.core.first.call(null,cljs.core.filter.call(null,(function (p1__44910_SHARP_){
-return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"slug","slug",2029314850).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"attributes","attributes",-74013604).cljs$core$IFn$_invoke$arity$1(p1__44910_SHARP_)),slug);
+return cljs.core.first.call(null,cljs.core.filter.call(null,(function (p1__49204_SHARP_){
+return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"slug","slug",2029314850).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"attributes","attributes",-74013604).cljs$core$IFn$_invoke$arity$1(p1__49204_SHARP_)),slug);
 }),tracks));
 });
 views.music_single.main = (function views$music_single$main(singleSlug,hash){
@@ -153,4 +153,4 @@ return views.music_single.go_to_hash.call(null,hash);
 ], null));
 });
 
-//# sourceMappingURL=music_single.js.map?rel=1552956048689
+//# sourceMappingURL=music_single.js.map?rel=1552956588739

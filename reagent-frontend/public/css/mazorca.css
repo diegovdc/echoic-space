@@ -1076,13 +1076,13 @@ input:focus, select:focus, textarea:focus, button:focus {
   .archive__sbttl {
     font-family: "Droid Sans Mono", sans-serif;
     font-weight: bold;
-    width: 216px;
+    width: auto;
     font-size: 18px; }
   .archive__p {
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
     padding-left: 30px;
-    width: calc(100% - 216px);
+    width: 100%;
     padding-top: 1px; }
 
 .player {
@@ -1284,13 +1284,13 @@ input:focus, select:focus, textarea:focus, button:focus {
   .single__sbttl {
     font-family: "Droid Sans Mono", sans-serif;
     font-weight: bold;
-    width: 216px;
+    width: auto;
     font-size: 18px; }
   .single__p {
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
     padding-left: 30px;
-    width: calc(100% - 216px);
+    width: 100%;
     padding-top: 1px; }
   .single__main-container {
     position: absolute;
@@ -1409,13 +1409,13 @@ input:focus, select:focus, textarea:focus, button:focus {
   .not-found__sbttl {
     font-family: "Droid Sans Mono", sans-serif;
     font-weight: bold;
-    width: 216px;
+    width: auto;
     font-size: 18px; }
   .not-found__p {
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
     padding-left: 30px;
-    width: calc(100% - 216px);
+    width: 100%;
     padding-top: 1px; }
 
 body {
@@ -1493,3 +1493,5 @@ body {
   display: block; }
   .markdown-body img .inline-images img {
     display: inline-block; }
+
+/*# sourceMappingURL=public/css/mazorca.css.map */

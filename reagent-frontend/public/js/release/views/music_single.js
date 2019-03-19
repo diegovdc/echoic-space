@@ -11,20 +11,20 @@ goog.require('reagent.core');
 goog.require('jayq.core');
 goog.require('oops.core');
 views.music_single.log = deps.log;
-views.music_single.is_mobile_or_tablet = (function (){var fexpr__31219 = (function (){var target_obj_31220 = deps;
-var next_obj_31221 = (target_obj_31220["isMobileOrTablet"]);
-return next_obj_31221;
+views.music_single.is_mobile_or_tablet = (function (){var fexpr__31221 = (function (){var target_obj_31222 = deps;
+var next_obj_31223 = (target_obj_31222["isMobileOrTablet"]);
+return next_obj_31223;
 })();
-return (fexpr__31219.cljs$core$IFn$_invoke$arity$0 ? fexpr__31219.cljs$core$IFn$_invoke$arity$0() : fexpr__31219.call(null));
+return (fexpr__31221.cljs$core$IFn$_invoke$arity$0 ? fexpr__31221.cljs$core$IFn$_invoke$arity$0() : fexpr__31221.call(null));
 })();
 views.music_single.get_offset_top = (function views$music_single$get_offset_top(id){
-var G__31224 = cljs.core.cst$kw$top.cljs$core$IFn$_invoke$arity$1(jayq.core.offset.cljs$core$IFn$_invoke$arity$1(jayq.core.$.cljs$core$IFn$_invoke$arity$1(["#",cljs.core.str.cljs$core$IFn$_invoke$arity$1(id)].join(''))));
-var fexpr__31223 = ((function (G__31224){
-return (function (p1__31222_SHARP_){
-return (p1__31222_SHARP_ - (26));
-});})(G__31224))
+var G__31226 = cljs.core.cst$kw$top.cljs$core$IFn$_invoke$arity$1(jayq.core.offset.cljs$core$IFn$_invoke$arity$1(jayq.core.$.cljs$core$IFn$_invoke$arity$1(["#",cljs.core.str.cljs$core$IFn$_invoke$arity$1(id)].join(''))));
+var fexpr__31225 = ((function (G__31226){
+return (function (p1__31224_SHARP_){
+return (p1__31224_SHARP_ - (26));
+});})(G__31226))
 ;
-return fexpr__31223(G__31224);
+return fexpr__31225(G__31226);
 });
 views.music_single.go_to_hash = (function views$music_single$go_to_hash(hash){
 if(cljs.core.truth_(hash)){
@@ -52,11 +52,18 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 });
 views.music_single._play_button = (function views$music_single$_play_button(post_attrs,action){
 
-var icon = (cljs.core.truth_((function (){var G__31226 = cljs.core.cst$kw$is_DASH_playing;
-var fexpr__31225 = cljs.core.deref(frontend.state.player_state);
-return (fexpr__31225.cljs$core$IFn$_invoke$arity$1 ? fexpr__31225.cljs$core$IFn$_invoke$arity$1(G__31226) : fexpr__31225.call(null,G__31226));
+var playing_this_track_QMARK_ = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$now_DASH_playing,cljs.core.cst$kw$track_name], null)),cljs.core.cst$kw$track_name.cljs$core$IFn$_invoke$arity$1(post_attrs));
+var should_change_track_QMARK_ = !(playing_this_track_QMARK_);
+var icon = (cljs.core.truth_((function (){var and__3925__auto__ = playing_this_track_QMARK_;
+if(and__3925__auto__){
+var G__31230 = cljs.core.cst$kw$is_DASH_playing;
+var fexpr__31229 = cljs.core.deref(frontend.state.player_state);
+return (fexpr__31229.cljs$core$IFn$_invoke$arity$1 ? fexpr__31229.cljs$core$IFn$_invoke$arity$1(G__31230) : fexpr__31229.call(null,G__31230));
+} else {
+return and__3925__auto__;
+}
 })())?"fa-pause":"fa-play");
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 3, [cljs.core.cst$kw$class,["single__play fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(icon)].join(''),cljs.core.cst$kw$style,views.music_single.bg_img(views.music_single.get_bg_img(post_attrs)),cljs.core.cst$kw$on_DASH_click,(action.cljs$core$IFn$_invoke$arity$1 ? action.cljs$core$IFn$_invoke$arity$1(post_attrs) : action.call(null,post_attrs))], null)], null);
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 3, [cljs.core.cst$kw$class,["single__play fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(icon)].join(''),cljs.core.cst$kw$style,views.music_single.bg_img(views.music_single.get_bg_img(post_attrs)),cljs.core.cst$kw$on_DASH_click,(action.cljs$core$IFn$_invoke$arity$2 ? action.cljs$core$IFn$_invoke$arity$2(post_attrs,should_change_track_QMARK_) : action.call(null,post_attrs,should_change_track_QMARK_))], null)], null);
 });
 views.music_single.toggle_play_video = (function views$music_single$toggle_play_video(post_attrs){
 var onPlayerReady = (function (e){
@@ -72,18 +79,18 @@ return frontend.helpers.scroll_to(views.music_single.get_offset_top("single__vid
 });
 return ((function (onPlayerReady){
 return (function (){
-var player = (new YT.Player("player",(function (){var obj31228 = {"videoId":cljs.core.cst$kw$youtube_id.cljs$core$IFn$_invoke$arity$1(post_attrs),"events":(function (){var obj31230 = {"onReady":onPlayerReady};
-return obj31230;
+var player = (new YT.Player("player",(function (){var obj31232 = {"videoId":cljs.core.cst$kw$youtube_id.cljs$core$IFn$_invoke$arity$1(post_attrs),"events":(function (){var obj31234 = {"onReady":onPlayerReady};
+return obj31234;
 })()};
-return obj31228;
+return obj31232;
 })()));
 return null;
 });
 ;})(onPlayerReady))
 });
 views.music_single.play_button = (function views$music_single$play_button(post_attrs){
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(true,(function (){var G__31231 = cljs.core.cst$kw$is_video;
-return (post_attrs.cljs$core$IFn$_invoke$arity$1 ? post_attrs.cljs$core$IFn$_invoke$arity$1(G__31231) : post_attrs.call(null,G__31231));
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(true,(function (){var G__31235 = cljs.core.cst$kw$is_video;
+return (post_attrs.cljs$core$IFn$_invoke$arity$1 ? post_attrs.cljs$core$IFn$_invoke$arity$1(G__31235) : post_attrs.call(null,G__31235));
 })())){
 return views.music_single._play_button(post_attrs,views.music_single.toggle_play_video);
 } else {
@@ -93,22 +100,22 @@ return views.music_single._play_button(post_attrs,views.sonos.toggle_play);
 });
 views.music_single.show_info_cb = (function views$music_single$show_info_cb(local_state){
 return (function (){
-cljs.core.reset_BANG_(local_state,cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.deref(local_state),new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$show_DASH_info,cljs.core.not((function (){var G__31234 = cljs.core.cst$kw$show_DASH_info;
-var fexpr__31233 = cljs.core.deref(local_state);
-return (fexpr__31233.cljs$core$IFn$_invoke$arity$1 ? fexpr__31233.cljs$core$IFn$_invoke$arity$1(G__31234) : fexpr__31233.call(null,G__31234));
+cljs.core.reset_BANG_(local_state,cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.deref(local_state),new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$show_DASH_info,cljs.core.not((function (){var G__31238 = cljs.core.cst$kw$show_DASH_info;
+var fexpr__31237 = cljs.core.deref(local_state);
+return (fexpr__31237.cljs$core$IFn$_invoke$arity$1 ? fexpr__31237.cljs$core$IFn$_invoke$arity$1(G__31238) : fexpr__31237.call(null,G__31238));
 })())], null)], 0)));
 
 return reagent.core.after_render((function (){
-return frontend.helpers.scroll_to(((cljs.core.not((function (){var G__31236 = cljs.core.cst$kw$show_DASH_info;
-var fexpr__31235 = cljs.core.deref(local_state);
-return (fexpr__31235.cljs$core$IFn$_invoke$arity$1 ? fexpr__31235.cljs$core$IFn$_invoke$arity$1(G__31236) : fexpr__31235.call(null,G__31236));
-})()))?(0):(function (){var G__31238 = cljs.core.cst$kw$top.cljs$core$IFn$_invoke$arity$1(jayq.core.offset.cljs$core$IFn$_invoke$arity$1(jayq.core.$.cljs$core$IFn$_invoke$arity$1(".markdown-body")));
-var fexpr__31237 = ((function (G__31238){
-return (function (p1__31232_SHARP_){
-return (p1__31232_SHARP_ - (26));
-});})(G__31238))
+return frontend.helpers.scroll_to(((cljs.core.not((function (){var G__31240 = cljs.core.cst$kw$show_DASH_info;
+var fexpr__31239 = cljs.core.deref(local_state);
+return (fexpr__31239.cljs$core$IFn$_invoke$arity$1 ? fexpr__31239.cljs$core$IFn$_invoke$arity$1(G__31240) : fexpr__31239.call(null,G__31240));
+})()))?(0):(function (){var G__31242 = cljs.core.cst$kw$top.cljs$core$IFn$_invoke$arity$1(jayq.core.offset.cljs$core$IFn$_invoke$arity$1(jayq.core.$.cljs$core$IFn$_invoke$arity$1(".markdown-body")));
+var fexpr__31241 = ((function (G__31242){
+return (function (p1__31236_SHARP_){
+return (p1__31236_SHARP_ - (26));
+});})(G__31242))
 ;
-return fexpr__31237(G__31238);
+return fexpr__31241(G__31242);
 })()));
 }));
 });
@@ -139,16 +146,16 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 } else {
 var post_attrs = cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(post);
 var img_url = views.music_single.get_bg_img(post_attrs);
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,views.helpers.page_container_bg_img(["single--",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.cst$kw$slug.cljs$core$IFn$_invoke$arity$1(post_attrs))].join(''),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,""], null),views.music_single.image(img_url,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,views.music_single.title(post_attrs),((cljs.core.not(views.music_single.is_mobile_or_tablet))?views.music_single.play_button(post_attrs):null),views.music_single.show_info(img_url,local_state)], null)),(cljs.core.truth_(cljs.core.cst$kw$is_video.cljs$core$IFn$_invoke$arity$1(post_attrs))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,"single__video-player-container",cljs.core.cst$kw$id,"single__video-player-container"], null),views.music_single.video(post_attrs)], null):null)], null),(cljs.core.truth_((function (){var G__31240 = cljs.core.cst$kw$show_DASH_info;
-var fexpr__31239 = cljs.core.deref(local_state);
-return (fexpr__31239.cljs$core$IFn$_invoke$arity$1 ? fexpr__31239.cljs$core$IFn$_invoke$arity$1(G__31240) : fexpr__31239.call(null,G__31240));
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,views.helpers.page_container_bg_img(["single--",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.cst$kw$slug.cljs$core$IFn$_invoke$arity$1(post_attrs))].join(''),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,""], null),views.music_single.image(img_url,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,views.music_single.title(post_attrs),((cljs.core.not(views.music_single.is_mobile_or_tablet))?views.music_single.play_button(post_attrs):null),views.music_single.show_info(img_url,local_state)], null)),(cljs.core.truth_(cljs.core.cst$kw$is_video.cljs$core$IFn$_invoke$arity$1(post_attrs))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,"single__video-player-container",cljs.core.cst$kw$id,"single__video-player-container"], null),views.music_single.video(post_attrs)], null):null)], null),(cljs.core.truth_((function (){var G__31244 = cljs.core.cst$kw$show_DASH_info;
+var fexpr__31243 = cljs.core.deref(local_state);
+return (fexpr__31243.cljs$core$IFn$_invoke$arity$1 ? fexpr__31243.cljs$core$IFn$_invoke$arity$1(G__31244) : fexpr__31243.call(null,G__31244));
 })())?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,"markdown-body",cljs.core.cst$kw$dangerouslySetInnerHTML,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$__html,cljs.core.cst$kw$body.cljs$core$IFn$_invoke$arity$1(post)], null)], null)], null),views.music_single.mobile_audio_player(post_attrs)], null):null))], null);
 
 }
 });
 views.music_single.find_post = (function views$music_single$find_post(tracks,slug){
-return cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__31241_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$slug.cljs$core$IFn$_invoke$arity$1(cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(p1__31241_SHARP_)),slug);
+return cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__31245_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$slug.cljs$core$IFn$_invoke$arity$1(cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(p1__31245_SHARP_)),slug);
 }),tracks));
 });
 views.music_single.main = (function views$music_single$main(singleSlug,hash){

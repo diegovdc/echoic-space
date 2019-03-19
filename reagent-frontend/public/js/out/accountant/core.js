@@ -74,8 +74,8 @@ return e;
 var temp__5457__auto__ = e.parentNode;
 if(cljs.core.truth_(temp__5457__auto__)){
 var parent = temp__5457__auto__;
-var G__29992 = parent;
-e = G__29992;
+var G__47452 = parent;
+e = G__47452;
 continue;
 } else {
 return null;
@@ -204,12 +204,12 @@ accountant.core.path_exists_QMARK_ = null;
  * 
  *   path-exists?: a fn of one argument, a path. Return truthy if this path is handled by the SPA
  */
-accountant.core.configure_navigation_BANG_ = (function accountant$core$configure_navigation_BANG_(p__29993){
-var map__29994 = p__29993;
-var map__29994__$1 = ((((!((map__29994 == null)))?(((((map__29994.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__29994.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__29994):map__29994);
-var nav_handler = cljs.core.get.call(null,map__29994__$1,new cljs.core.Keyword(null,"nav-handler","nav-handler",2039495484));
-var path_exists_QMARK_ = cljs.core.get.call(null,map__29994__$1,new cljs.core.Keyword(null,"path-exists?","path-exists?",1473384514));
-var reload_same_path_QMARK_ = cljs.core.get.call(null,map__29994__$1,new cljs.core.Keyword(null,"reload-same-path?","reload-same-path?",1981904231));
+accountant.core.configure_navigation_BANG_ = (function accountant$core$configure_navigation_BANG_(p__47453){
+var map__47454 = p__47453;
+var map__47454__$1 = ((((!((map__47454 == null)))?(((((map__47454.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47454.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47454):map__47454);
+var nav_handler = cljs.core.get.call(null,map__47454__$1,new cljs.core.Keyword(null,"nav-handler","nav-handler",2039495484));
+var path_exists_QMARK_ = cljs.core.get.call(null,map__47454__$1,new cljs.core.Keyword(null,"path-exists?","path-exists?",1473384514));
+var reload_same_path_QMARK_ = cljs.core.get.call(null,map__47454__$1,new cljs.core.Keyword(null,"reload-same-path?","reload-same-path?",1981904231));
 accountant.core.history.setUseFragment(false);
 
 accountant.core.history.setPathPrefix("");
@@ -225,14 +225,14 @@ accountant.core.dispatch_on_navigate.call(null,accountant.core.history,nav_handl
 return accountant.core.prevent_reload_on_known_path.call(null,accountant.core.history,path_exists_QMARK_,reload_same_path_QMARK_);
 });
 accountant.core.map__GT_params = (function accountant$core$map__GT_params(query){
-var params = cljs.core.map.call(null,(function (p1__29996_SHARP_){
-return cljs.core.name.call(null,p1__29996_SHARP_);
+var params = cljs.core.map.call(null,(function (p1__47456_SHARP_){
+return cljs.core.name.call(null,p1__47456_SHARP_);
 }),cljs.core.keys.call(null,query));
 var values = cljs.core.vals.call(null,query);
 var pairs = cljs.core.partition.call(null,(2),cljs.core.interleave.call(null,params,values));
 return clojure.string.join.call(null,"&",cljs.core.map.call(null,((function (params,values,pairs){
-return (function (p1__29997_SHARP_){
-return clojure.string.join.call(null,"=",p1__29997_SHARP_);
+return (function (p1__47457_SHARP_){
+return clojure.string.join.call(null,"=",p1__47457_SHARP_);
 });})(params,values,pairs))
 ,pairs));
 });
@@ -240,8 +240,8 @@ return clojure.string.join.call(null,"=",p1__29997_SHARP_);
  * add a browser history entry. updates window/location
  */
 accountant.core.navigate_BANG_ = (function accountant$core$navigate_BANG_(var_args){
-var G__29999 = arguments.length;
-switch (G__29999) {
+var G__47459 = arguments.length;
+switch (G__47459) {
 case 1:
 return accountant.core.navigate_BANG_.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -298,4 +298,4 @@ return console.error("can't dispatch-current until configure-navigation! called"
 }
 });
 
-//# sourceMappingURL=core.js.map?rel=1552590659429
+//# sourceMappingURL=core.js.map?rel=1552956581350

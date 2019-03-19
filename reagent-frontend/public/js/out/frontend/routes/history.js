@@ -15,4 +15,4 @@ return secretary.core.locate_route.call(null,path);
 })], null));
 });
 
-//# sourceMappingURL=history.js.map?rel=1552590659712
+//# sourceMappingURL=history.js.map?rel=1552956582199

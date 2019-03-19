@@ -48,6 +48,6 @@ var file_name = cljs.core.cst$kw$file_name.cljs$core$IFn$_invoke$arity$2(music_p
 if(clojure.string.includes_QMARK_(file_name,"http")){
 return file_name;
 } else {
-return ["/music/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.cst$kw$slug.cljs$core$IFn$_invoke$arity$1(music_post_attrs)),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(file_name)].join('');
+return ["http://www.echoic.space/music/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.cst$kw$slug.cljs$core$IFn$_invoke$arity$1(music_post_attrs)),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(file_name)].join('');
 }
 });

@@ -32,18 +32,14 @@
 
 (defn toggle-category [cat]
   (fn []
-    (swap! selected-categories #(toggle-in-set % cat))))
+    (swap! selected-categories #(toggle-in-set % cat))))  
 
-(defn is-selected-cat [cat]
-  (contains? @selected-categories cat))
-
-(defn print-categories [categories]
+(defn print-categories [selected-categories categories]
   [:div {:class "music__category-container"} 
    (map (fn [cat] 
           [:span {:key cat 
                   :class (str "music__category " 
-                              (if (is-selected-cat cat) 
-                                  "selected")) 
+                          (if (contains? selected-categories cat) "selected")) 
                   :on-click (toggle-category cat)} 
             cat]) 
         categories)])
@@ -52,18 +48,18 @@
   (let [music (map #(:attributes %) (:music @state/app-state))
         categories (set (sort (flatten (map #(:category %) music))))]
     (make-archive-page 
-      "Música" 
-      [:div
-        (print-categories categories)
-        [:div 
-          (map  (fn [m]
-                  [:div {:class "music__year-container" :key (first m)}
-                    [:h2 {:class "music__year"} (first m)] ; prints year
-                    [:div {:class "music-work"}; prints work
-                      (map
-                        (partial make-archive-item "/music")
-                        (second m))]])
-                (sort-music-by-year (filter- @selected-categories music)))]])))
+     "Música" 
+     [:div
+       (print-categories @selected-categories categories)
+      [:div 
+       (map  (fn [m]
+               [:div {:class "music__year-container" :key (first m)}
+                [:h2 {:class "music__year"} (first m)] ; prints year
+                [:div {:class "music-work"}; prints work
+                 (map
+                  (partial make-archive-item "/music")
+                  (second m))]])
+             (sort-music-by-year (filter- @selected-categories music)))]])))
 
         
 
