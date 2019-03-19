@@ -46,6 +46,18 @@
             (to-the-right [] (anim track-name {:left 0} 7000 to-the-left))]
       (to-the-left)))))
 
+(js/setInterval
+  ;update player info by reading it from howl (see let)
+  (fn []
+    (let [howl (get-in @state/player-state [:now-playing :howl])
+          is-playing (:is-playing @state/player-state)]
+      (if (and howl is-playing)
+        (let [duration (.duration howl)
+              seek (.seek howl)]
+          (swap! state/player-state assoc :track-data {:duration (secondsToMinutes duration)
+                                                       :elapsed (secondsToMinutes seek)
+                                                       :percentage (percentage seek duration)})))))
+  500)
 
 (defn toggle-play [track-to-play should-change-track?]
   (fn []
@@ -54,53 +66,40 @@
         (do
           (swap! state/player-state assoc :is-playing true)
           (if (or should-change-track? (not (:is-paused @state/player-state)))
-            (swap! state/player-state assoc :now-playing (log "now playing" (assoc track-to-play :howl (Howl. (clj->js {:src [(log (make-audio-url track-to-play))] :html5 true}))))))
+            (swap! state/player-state assoc :now-playing (assoc track-to-play :howl (Howl. (clj->js {:src [(make-audio-url track-to-play)] :html5 true})))))
           (swap! state/player-state assoc :is-paused false)
           (r/after-render
-            #(do 
-                (log "do" (get-in @state/player-state [:now-playing :howl]))
-                (.pause previously-playing)
-                (.play (get-in @state/player-state [:now-playing :howl]))
-                (scroll-trackname))))
+           #(do 
+              (.pause previously-playing)
+              (.play (get-in @state/player-state [:now-playing :howl]))
+              (scroll-trackname))))
         (do
-          (log "pausing" (.pause (get-in @state/player-state [:now-playing :howl])))
+          (.pause (get-in @state/player-state [:now-playing :howl]))
           (swap! state/player-state assoc :is-playing false)
           (swap! state/player-state assoc :is-paused true))))))
 
 (defn play-random []
   (let [track (->>  (@state/app-state :music)
                     (filter #(and
-                              (not= (:attributes %)
-                                    (@state/player-state :now-playing))
+                              (not= (get-in % [:attributes :title])
+                                    (get-in @state/player-state [:now-playing :title]))
                               (get-in % [:attributes :file_name])))
                     (rand-nth)
                     (:attributes))]
     (swap! state/player-state assoc :is-playing false)
     ((toggle-play track true))))
 
-(defn player [state]
-  (let [now-playing (get-in @state [:now-playing])
-         file_name (:file_name now-playing "")
-         src (make-audio-url now-playing)]
-    
-       [:div {:class "player"}
-        [:audio
-         {:id "audio-player"
-          :onTimeUpdate update-track-data
-          :onEnded play-random
-          :src src
-          :encType "audio/mpeg"
-          :autoPlay false}]]))
-
-
 (defn track-name' [is-playing is-paused track-name track-slug playable-track-if-in-single]
-  [:a (merge {:class (b "playing") :id (b "playing")}
+  (let [on-click (if playable-track-if-in-single 
+                  (toggle-play (:attributes playable-track-if-in-single) true)
+                  play-random)]
+   [:a (merge {:class (b "playing") :id (b "playing")}
              (if is-playing
                {:href (str "/music/" track-slug)}
-               {:on-click (toggle-play (:attributes playable-track-if-in-single) true)}))
-   (if (or is-playing is-paused)
-     track-name
-     "escucha")])
+               {:on-click on-click}))
+    (if (or is-playing is-paused)
+      track-name
+      "escucha")]))
 
 (defn frwd-btn [icon is-playing]
   [:i {:class (str (b "playing-next-track")
@@ -150,5 +149,8 @@
        [:p {:class (str (sonos "time ") (sonos "time-elapsed"))}
         (get-in @state/player-state [:track-data :elapsed] "00:00")]
        [:p {:class (str (sonos "time ") (sonos "time-total"))}
-        (get-in @state/player-state [:track-data :duration] "00:00")]
-       (player state/player-state)]]]))
+        (get-in @state/player-state [:track-data :duration] "00:00")]]]]))
+       
+
+
+

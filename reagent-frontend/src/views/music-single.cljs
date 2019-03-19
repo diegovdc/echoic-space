@@ -54,10 +54,10 @@
   (let [
         playing-this-track? (= (get-in @state/player-state [:now-playing :track_name]) (:track_name post-attrs))
         should-change-track? (not playing-this-track?)
-        icon (if (and playing-this-track? @state/player-state :is-playing) "fa-pause" "fa-play")]
+        icon (if (and playing-this-track? (@state/player-state :is-playing)) "fa-pause" "fa-play")]
     [:span {:class (str "single__play fa " icon)
             :style (bg-img (get-bg-img post-attrs))
-            :on-click (action post-attrs (log "shoudl change track" should-change-track?))}]))
+            :on-click (action post-attrs should-change-track?)}]))
 
 (defn toggle-play-video [post-attrs]
   (let [onPlayerReady (fn [e]

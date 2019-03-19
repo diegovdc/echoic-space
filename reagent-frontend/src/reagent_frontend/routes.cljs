@@ -23,7 +23,7 @@
   (let [single-hash (str/split single #"#")
           s (nth single-hash 0 "")      
           hash (nth single-hash 1 nil)] 
-      (js/console.log single-hash hash)     
+      ; (js/console.log single-hash hash)     
       (swap! state/app-state assoc :single s)
       (swap! state/app-state assoc :hash hash)
       (swap! state/app-state assoc :page :music-single)))
