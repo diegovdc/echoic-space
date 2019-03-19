@@ -38,12 +38,9 @@ return views.music.toggle_in_set(p1__29641_SHARP_,cat);
 }));
 });
 });
-views.music.is_selected_cat = (function views$music$is_selected_cat(cat){
-return cljs.core.contains_QMARK_(cljs.core.deref(views.music.selected_categories),cat);
-});
-views.music.print_categories = (function views$music$print_categories(categories){
+views.music.print_categories = (function views$music$print_categories(selected_categories,categories){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,"music__category-container"], null),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (cat){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 3, [cljs.core.cst$kw$key,cat,cljs.core.cst$kw$class,["music__category ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((cljs.core.truth_(views.music.is_selected_cat(cat))?"selected":null))].join(''),cljs.core.cst$kw$on_DASH_click,views.music.toggle_category(cat)], null),cat], null);
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 3, [cljs.core.cst$kw$key,cat,cljs.core.cst$kw$class,["music__category ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(((cljs.core.contains_QMARK_(selected_categories,cat))?"selected":null))].join(''),cljs.core.cst$kw$on_DASH_click,views.music.toggle_category(cat)], null),cat], null);
 }),categories)], null);
 });
 views.music.main = (function views$music$main(){
@@ -55,7 +52,7 @@ return (function (p1__29643_SHARP_){
 return cljs.core.cst$kw$category.cljs$core$IFn$_invoke$arity$1(p1__29643_SHARP_);
 });})(music))
 ,music))));
-return views.helpers.make_archive_page("M\u00FAsica",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,views.music.print_categories(categories),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,cljs.core.map.cljs$core$IFn$_invoke$arity$2(((function (music,categories){
+return views.helpers.make_archive_page("M\u00FAsica",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,views.music.print_categories(cljs.core.deref(views.music.selected_categories),categories),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,cljs.core.map.cljs$core$IFn$_invoke$arity$2(((function (music,categories){
 return (function (m){
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,"music__year-container",cljs.core.cst$kw$key,cljs.core.first(m)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$h2,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,"music__year"], null),cljs.core.first(m)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,"music-work"], null),cljs.core.map.cljs$core$IFn$_invoke$arity$2(cljs.core.partial.cljs$core$IFn$_invoke$arity$2(views.helpers.make_archive_item,"/music"),cljs.core.second(m))], null)], null);
 });})(music,categories))

@@ -31,62 +31,81 @@ cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$music_DASH_single);
 });
 frontend.routes.app_routes = (function frontend$routes$app_routes(){
-var action__29503__auto___31273 = (function (params__29504__auto__){
+var action__29503__auto___31268 = (function (params__29504__auto__){
+if(cljs.core.map_QMARK_(params__29504__auto__)){
+var map__31243 = params__29504__auto__;
+var map__31243__$1 = ((((!((map__31243 == null)))?(((((map__31243.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__31243.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__31243):map__31243);
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$home);
+} else {
+if(cljs.core.vector_QMARK_(params__29504__auto__)){
+var vec__31245 = params__29504__auto__;
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$home);
+} else {
+return null;
+}
+}
+});
+secretary.core.add_route_BANG_("/",action__29503__auto___31268);
+
+
+var action__29503__auto___31269 = (function (params__29504__auto__){
 if(cljs.core.map_QMARK_(params__29504__auto__)){
 var map__31248 = params__29504__auto__;
 var map__31248__$1 = ((((!((map__31248 == null)))?(((((map__31248.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__31248.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__31248):map__31248);
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$home);
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$about);
 } else {
 if(cljs.core.vector_QMARK_(params__29504__auto__)){
 var vec__31250 = params__29504__auto__;
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$home);
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$about);
 } else {
 return null;
 }
 }
 });
-secretary.core.add_route_BANG_("/",action__29503__auto___31273);
+secretary.core.add_route_BANG_(/\/about\/?/,action__29503__auto___31269);
 
 
-var action__29503__auto___31274 = (function (params__29504__auto__){
+var action__29503__auto___31270 = (function (params__29504__auto__){
 if(cljs.core.map_QMARK_(params__29504__auto__)){
 var map__31253 = params__29504__auto__;
 var map__31253__$1 = ((((!((map__31253 == null)))?(((((map__31253.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__31253.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__31253):map__31253);
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$about);
+cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$single,"");
+
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$music);
 } else {
 if(cljs.core.vector_QMARK_(params__29504__auto__)){
 var vec__31255 = params__29504__auto__;
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$about);
+cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$single,"");
+
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$music);
 } else {
 return null;
 }
 }
 });
-secretary.core.add_route_BANG_(/\/about\/?/,action__29503__auto___31274);
+secretary.core.add_route_BANG_(/\/music\/?/,action__29503__auto___31270);
 
 
-var action__29503__auto___31275 = (function (params__29504__auto__){
+var action__29503__auto___31271 = (function (params__29504__auto__){
 if(cljs.core.map_QMARK_(params__29504__auto__)){
 var map__31258 = params__29504__auto__;
 var map__31258__$1 = ((((!((map__31258 == null)))?(((((map__31258.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__31258.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__31258):map__31258);
-cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$single,"");
-
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$music);
+var single = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__31258__$1,cljs.core.cst$kw$single);
+return frontend.routes.music_single(single);
 } else {
 if(cljs.core.vector_QMARK_(params__29504__auto__)){
 var vec__31260 = params__29504__auto__;
-cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$single,"");
-
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,cljs.core.cst$kw$page,cljs.core.cst$kw$music);
+var single = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__31260,(0),null);
+return frontend.routes.music_single(single);
 } else {
 return null;
 }
 }
 });
-secretary.core.add_route_BANG_(/\/music\/?/,action__29503__auto___31275);
+secretary.core.add_route_BANG_("/music/:single",action__29503__auto___31271);
 
 
-var action__29503__auto___31276 = (function (params__29504__auto__){
+var action__29503__auto___31272 = (function (params__29504__auto__){
 if(cljs.core.map_QMARK_(params__29504__auto__)){
 var map__31263 = params__29504__auto__;
 var map__31263__$1 = ((((!((map__31263 == null)))?(((((map__31263.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__31263.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__31263):map__31263);
@@ -102,26 +121,7 @@ return null;
 }
 }
 });
-secretary.core.add_route_BANG_("/music/:single",action__29503__auto___31276);
-
-
-var action__29503__auto___31277 = (function (params__29504__auto__){
-if(cljs.core.map_QMARK_(params__29504__auto__)){
-var map__31268 = params__29504__auto__;
-var map__31268__$1 = ((((!((map__31268 == null)))?(((((map__31268.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__31268.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__31268):map__31268);
-var single = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__31268__$1,cljs.core.cst$kw$single);
-return frontend.routes.music_single(single);
-} else {
-if(cljs.core.vector_QMARK_(params__29504__auto__)){
-var vec__31270 = params__29504__auto__;
-var single = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__31270,(0),null);
-return frontend.routes.music_single(single);
-} else {
-return null;
-}
-}
-});
-secretary.core.add_route_BANG_("/music/:single/",action__29503__auto___31277);
+secretary.core.add_route_BANG_("/music/:single/",action__29503__auto___31272);
 
 
 return frontend.routes.history.accountant_history_navigation();
@@ -135,9 +135,9 @@ var cached_hierarchy__4403__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$
 var hierarchy__4404__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.PersistentArrayMap.EMPTY,cljs.core.cst$kw$hierarchy,cljs.core.get_global_hierarchy());
 return (new cljs.core.MultiFn(cljs.core.symbol.cljs$core$IFn$_invoke$arity$2("frontend.routes","current-page"),((function (method_table__4400__auto__,prefer_table__4401__auto__,method_cache__4402__auto__,cached_hierarchy__4403__auto__,hierarchy__4404__auto__){
 return (function (){
-var G__31279 = cljs.core.cst$kw$page;
-var fexpr__31278 = cljs.core.deref(frontend.state.app_state);
-return (fexpr__31278.cljs$core$IFn$_invoke$arity$1 ? fexpr__31278.cljs$core$IFn$_invoke$arity$1(G__31279) : fexpr__31278.call(null,G__31279));
+var G__31274 = cljs.core.cst$kw$page;
+var fexpr__31273 = cljs.core.deref(frontend.state.app_state);
+return (fexpr__31273.cljs$core$IFn$_invoke$arity$1 ? fexpr__31273.cljs$core$IFn$_invoke$arity$1(G__31274) : fexpr__31273.call(null,G__31274));
 });})(method_table__4400__auto__,prefer_table__4401__auto__,method_cache__4402__auto__,cached_hierarchy__4403__auto__,hierarchy__4404__auto__))
 ,cljs.core.cst$kw$default,hierarchy__4404__auto__,method_table__4400__auto__,prefer_table__4401__auto__,method_cache__4402__auto__,cached_hierarchy__4403__auto__));
 })();
@@ -152,12 +152,12 @@ frontend.routes.current_page.cljs$core$IMultiFn$_add_method$arity$3(null,cljs.co
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [views.music.main], null);
 }));
 frontend.routes.current_page.cljs$core$IMultiFn$_add_method$arity$3(null,cljs.core.cst$kw$music_DASH_single,(function (){
-return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [views.music_single.main((function (){var G__31281 = cljs.core.cst$kw$single;
-var fexpr__31280 = cljs.core.deref(frontend.state.app_state);
-return (fexpr__31280.cljs$core$IFn$_invoke$arity$1 ? fexpr__31280.cljs$core$IFn$_invoke$arity$1(G__31281) : fexpr__31280.call(null,G__31281));
-})(),(function (){var G__31283 = cljs.core.cst$kw$hash;
-var fexpr__31282 = cljs.core.deref(frontend.state.app_state);
-return (fexpr__31282.cljs$core$IFn$_invoke$arity$1 ? fexpr__31282.cljs$core$IFn$_invoke$arity$1(G__31283) : fexpr__31282.call(null,G__31283));
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [views.music_single.main((function (){var G__31276 = cljs.core.cst$kw$single;
+var fexpr__31275 = cljs.core.deref(frontend.state.app_state);
+return (fexpr__31275.cljs$core$IFn$_invoke$arity$1 ? fexpr__31275.cljs$core$IFn$_invoke$arity$1(G__31276) : fexpr__31275.call(null,G__31276));
+})(),(function (){var G__31278 = cljs.core.cst$kw$hash;
+var fexpr__31277 = cljs.core.deref(frontend.state.app_state);
+return (fexpr__31277.cljs$core$IFn$_invoke$arity$1 ? fexpr__31277.cljs$core$IFn$_invoke$arity$1(G__31278) : fexpr__31277.call(null,G__31278));
 })())], null);
 }));
 frontend.routes.current_page.cljs$core$IMultiFn$_add_method$arity$3(null,cljs.core.cst$kw$default,(function (){

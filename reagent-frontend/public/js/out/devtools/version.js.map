@@ -1,1 +1,0 @@
-{"version":3,"file":"\/Users\/user\/code\/echoic-space\/reagent-frontend\/public\/js\/out\/devtools\/version.js","sources":["version.cljs?rel=1552956575638"],"lineCount":9,"mappings":";AAAA;;AAGA,AAAKA,mCAAgB;AAErB,uCAAA,vCAAMC;AAAN,AACED","names":["devtools.version\/current-version","devtools.version\/get-current-version"]}
