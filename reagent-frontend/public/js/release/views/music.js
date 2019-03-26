@@ -11,16 +11,16 @@ views.music.year = (function views$music$year(music){
 return cljs.core.first(clojure.string.split.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$date.cljs$core$IFn$_invoke$arity$1(music),"-"));
 });
 views.music.sort_music_by_year = (function views$music$sort_music_by_year(music){
-return cljs.core.group_by(views.music.year,cljs.core.sort.cljs$core$IFn$_invoke$arity$2((function (p1__28937_SHARP_,p2__28936_SHARP_){
-return cljs.core.compare(cljs.core.cst$kw$date.cljs$core$IFn$_invoke$arity$1(p2__28936_SHARP_),cljs.core.cst$kw$date.cljs$core$IFn$_invoke$arity$1(p1__28937_SHARP_));
+return cljs.core.group_by(views.music.year,cljs.core.sort.cljs$core$IFn$_invoke$arity$2((function (p1__27989_SHARP_,p2__27988_SHARP_){
+return cljs.core.compare(cljs.core.cst$kw$date.cljs$core$IFn$_invoke$arity$1(p2__27988_SHARP_),cljs.core.cst$kw$date.cljs$core$IFn$_invoke$arity$1(p1__27989_SHARP_));
 }),music));
 });
 views.music.filter_ = (function views$music$filter_(selected_categories,music){
 if(cljs.core.empty_QMARK_(selected_categories)){
 return music;
 } else {
-return cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__28938_SHARP_){
-return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentHashSet.EMPTY,clojure.set.intersection.cljs$core$IFn$_invoke$arity$2(selected_categories,cljs.core.set(cljs.core.cst$kw$category.cljs$core$IFn$_invoke$arity$1(p1__28938_SHARP_))));
+return cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__27990_SHARP_){
+return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentHashSet.EMPTY,clojure.set.intersection.cljs$core$IFn$_invoke$arity$2(selected_categories,cljs.core.set(cljs.core.cst$kw$category.cljs$core$IFn$_invoke$arity$1(p1__27990_SHARP_))));
 }),music);
 }
 });
@@ -33,8 +33,8 @@ return clojure.set.union.cljs$core$IFn$_invoke$arity$2(set,cljs.core.PersistentH
 });
 views.music.toggle_category = (function views$music$toggle_category(cat){
 return (function (){
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(views.music.selected_categories,(function (p1__28939_SHARP_){
-return views.music.toggle_in_set(p1__28939_SHARP_,cat);
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(views.music.selected_categories,(function (p1__27991_SHARP_){
+return views.music.toggle_in_set(p1__27991_SHARP_,cat);
 }));
 });
 });
@@ -44,12 +44,12 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 }),categories)], null);
 });
 views.music.main = (function views$music$main(){
-var music = cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__28940_SHARP_){
-return cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(p1__28940_SHARP_);
+var music = cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__27992_SHARP_){
+return cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(p1__27992_SHARP_);
 }),cljs.core.cst$kw$music.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state)));
 var categories = cljs.core.set(cljs.core.sort.cljs$core$IFn$_invoke$arity$1(cljs.core.flatten(cljs.core.map.cljs$core$IFn$_invoke$arity$2(((function (music){
-return (function (p1__28941_SHARP_){
-return cljs.core.cst$kw$category.cljs$core$IFn$_invoke$arity$1(p1__28941_SHARP_);
+return (function (p1__27993_SHARP_){
+return cljs.core.cst$kw$category.cljs$core$IFn$_invoke$arity$1(p1__27993_SHARP_);
 });})(music))
 ,music))));
 return views.helpers.make_archive_page("M\u00FAsica",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,views.music.print_categories(cljs.core.deref(views.music.selected_categories),categories),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,cljs.core.map.cljs$core$IFn$_invoke$arity$2(((function (music,categories){
