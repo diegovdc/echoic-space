@@ -1,10 +1,13 @@
 ---
 title: Turbulencia v.1
-description: exploración patrones de interferencia y turbulencias en la resonancia de la gitarra eléctrica
+description: exploración patrones de interferencia y turbulencias en la resonancia de la guitarra eléctrica
 slug: 2019-03-24_turbulencia_v1
 file_name: https://ia601508.us.archive.org/17/items/turbulencia_v1/turbulencia_v1.mp3
 track_name: Turbulencia v.1
 backgroundImage: 2019-03-24_turbulencia_v1.jpg
+seo_img: 2019-03-24_turbulencia_v1-seo.jpg
+seo_img_width: 1331
+seo_img_height: 904
 date: 2019-03-24
 category: Bitácora $ Turbulencias $ Guitarra $ Exploraciones $ Improvisación $ En Progreso
 ---
@@ -49,10 +52,10 @@ Pienso que el "grado de turbulencia" si se pudiera hablar de ello depende de la 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d_FEaFgJyfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Nice2day
-Patrones en las nubes. Del video me gustan la estaticiad de la toma y el time lapse. Creo que ambas cosas permiten apreciar un movimiento/ser de las nubes que no es tan fácil apreciar desde la escala temporal humana y de su atención (que a mi parecer es mucho más acelerada -por lo que para nosotros, las nubes se mueven demasiado lento-)
+Patrones en las nubes. Del video me gustan la estaticiad de la toma y el time lapse. Creo que ambas cosas permiten apreciar un movimiento/ser de las nubes que no es tan fácil apreciar desde la escala temporal humana y de su atención (que a mi parecer es mucho más acelerada -por lo que para nosotros, las nubes se mueven demasiado lento-).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P_OtYC-bBvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Bull's Bridge Nov 4
 Patrones de espuma, que se parecen mucho a los patrones de las nubes del video de arriba.
-(Por cierto que ese canal me ha gustado mucho por su ingenuidad y falta de pretención. [La joya por la cuál encontré el canal es ésta](https://www.youtube.com/watch?v=xHB2By6PmYQ), que también tiene que ver con buhos)
+(Por cierto que ese canal me ha gustado mucho por su ingenuidad y falta de pretención. [La joya por la cuál encontré el canal es ésta](https://www.youtube.com/watch?v=xHB2By6PmYQ), que también tiene que ver con buhos).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1A9fcb1txt8?start=99" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
