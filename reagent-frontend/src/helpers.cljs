@@ -1,3 +1,4 @@
+
 (ns frontend.helpers
   (:require [jayq.core :refer [$ anim width]]
             [clojure.string :as str]))
@@ -37,4 +38,5 @@
     (if (str/includes? file_name "http")
       file_name
       (str "http://www.echoic.space/music/" (:slug music-post-attrs) "/" file_name))))
- 
+
+

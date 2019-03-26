@@ -63,8 +63,10 @@
   :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]}
 
   :profiles {:dev {:source-paths ["src" "env/dev/clj"]
+                   :plugins [[cider/cider-nrepl "0.21.0"]]
                    :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}
                    :dependencies [[binaryage/devtools "0.9.7"]
+                                  [cider/piggieback "0.3.10"]
                                   [figwheel-sidecar "0.5.16"]
                                   [org.clojure/tools.nrepl "0.2.13"]
                                   [cider/piggieback "0.3.10"]]}})
