@@ -19,8 +19,6 @@ Si bien llevo tiempo explorando los patrones de interferencia de la guitarra, co
 
 Esta grabación se encuentra inspirada por algunos videos relacionados (a veces indirectamente) con la dinámicas de fluidos y los fenómenos de turbulencia.
 
-(Aun que aun hay muchas cosas por explorar conceptual y experimentalmente con relación a este fenómeno y su aplicación musical, así que no será la última vez que vuelva sobre el tema.)
-
 
 ## Técnica
 Estuve explorando una técnica basada en el uso de poliritmos e de independencia de tempos en cada mano para generar patrones de interferencia en la resonancias de la guitarra (percusión sobre las cuerdas y el cuerpo de la guitarra).
