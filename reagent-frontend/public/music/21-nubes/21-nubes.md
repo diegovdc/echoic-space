@@ -6,7 +6,8 @@ file_name: 21-nubes-wq.mp3
 track_name: 21 Nubes
 backgroundImage: 21-nubes.png
 date: 2013-11-01
-category: Composición
+category:
+  - Composición
 ---
 
 # 21 Nubes
@@ -29,7 +30,7 @@ versión quinteto de alientos
 Quinteto de Alientos de la Ciudad de México
 
 
-### Descargar <a href='/music/28-palabras/21-nubes-y-28-palabras-version-1.mp3' target='_blank'>Audio</a> 
+### Descargar <a href='/music/28-palabras/21-nubes-y-28-palabras-version-1.mp3' target='_blank'>Audio</a>
 
 Superposición de 21 Nubes y 28 Palabras, versión 1
 
@@ -37,11 +38,11 @@ Diego Villaseñor, Voz
 Andrew Jamieson, Piano  
 
 ## Nota al programa
-En veintiún melodías, esbozo de una metáfora del momento, del crecimiento y de lo efímero. 
+En veintiún melodías, esbozo de una metáfora del momento, del crecimiento y de lo efímero.
 
-La primera melodía es un sonido, la segunda es de dos, la tercera lleva tres y así sucesivamente. 
+La primera melodía es un sonido, la segunda es de dos, la tercera lleva tres y así sucesivamente.
 
-El material melódico más característico es el intervalo de tercera menor, que aparece cuatro veces en la escala diatónica, y conecta con sus siete sonidos. 
+El material melódico más característico es el intervalo de tercera menor, que aparece cuatro veces en la escala diatónica, y conecta con sus siete sonidos.
 
 Los motivos emergen del material mismo, van y vienen, se transforman, y no dejar de estar ahí (aun cuando retornan irreconocibles).
 
@@ -50,7 +51,7 @@ Las nubes aparecen, crecen, se desintegran, saben ser y dejar de ser. Y cuando l
 ## Introducción
 > Charles Shere: ... Most of the people I’ve talked to seem to think that total serialisation was a historical necessity at one point, but is no longer viable.
 >
-> Morton Feldman: It’s a very interesting thing, you know, this whole business of historical necessity comes around only because there’s very little alternative... but once you go to indeterminate music, with all the new alternatives, what’s wrong with the total serialisation of these alternatives? 
+> Morton Feldman: It’s a very interesting thing, you know, this whole business of historical necessity comes around only because there’s very little alternative... but once you go to indeterminate music, with all the new alternatives, what’s wrong with the total serialisation of these alternatives?
 >
 > CS: Well, then what’s wrong with writing a piece in E Major?
 >
@@ -58,20 +59,20 @@ Las nubes aparecen, crecen, se desintegran, saben ser y dejar de ser. Y cuando l
 
 <a href="http://www.cnvill.net/mfshere.pdf">Fuente</a>
 
-_21 Nubes_ forma parte de una serie de piezas qué trabajan al rededor de un conjunto de conceptos comunes: las series armónicas (particularmente aplicadas a la forma), la exploración del concepto de red, aplicado a la melodía, la armonía y la forma, la limitación de recursos extrema y con ella, la propuesta de retomar elementos que parecerían superados por la música contemporánea y mostrarlos bajo la luz y el potencial de los procesos anteriormente mencionados. 
+_21 Nubes_ forma parte de una serie de piezas qué trabajan al rededor de un conjunto de conceptos comunes: las series armónicas (particularmente aplicadas a la forma), la exploración del concepto de red, aplicado a la melodía, la armonía y la forma, la limitación de recursos extrema y con ella, la propuesta de retomar elementos que parecerían superados por la música contemporánea y mostrarlos bajo la luz y el potencial de los procesos anteriormente mencionados.
 
-Con esto último nos referimos particularmente al interés de esta pieza por trabajar únicamente con los sonidos correspondientes a las notas blancas del piano. Como propuesta esto se propone contrario a cierta tendencia posmoderna de generar diferencia y novedad a partir de agregar nuevos materiales al discurso,  la complejidad del mismo. Lo que aquí se intenta demostrar es la posibilidad contraria, generar un discurso nuevo a partir de la reducción de posibilidades de un discurso previamente existente. 
+Con esto último nos referimos particularmente al interés de esta pieza por trabajar únicamente con los sonidos correspondientes a las notas blancas del piano. Como propuesta esto se propone contrario a cierta tendencia posmoderna de generar diferencia y novedad a partir de agregar nuevos materiales al discurso,  la complejidad del mismo. Lo que aquí se intenta demostrar es la posibilidad contraria, generar un discurso nuevo a partir de la reducción de posibilidades de un discurso previamente existente.
 
 El resultado es un discurso que usa el elemento más representativo de la tradición musical desde la Edad Media: la escala diatónica, y lo elabora en un lenguaje cuyas reglas son totalmente distintas, desproveyéndolo de todos sus recursos tradicionales (grados, modulación, triadas), para demostrar que no es (necesariamente) en la novedad de los materiales donde radica la novedad de un discurso.
 
 ### Notación
-La notación de esta pieza esta inspirada en dos fuentes principales. György Kurtàg y Christian Wolff. 
+La notación de esta pieza esta inspirada en dos fuentes principales. György Kurtàg y Christian Wolff.
 
-Del primero toma la notación de las duraciónes de calderón, las que se encuentran sobre ciertas notas y las que separan las frases (calderones sin círculo central), se trata simplemente de pausas libres. 
+Del primero toma la notación de las duraciónes de calderón, las que se encuentran sobre ciertas notas y las que separan las frases (calderones sin círculo central), se trata simplemente de pausas libres.
 
 ![Calderones](/music/21-nubes/calderones.png)
 
-Del segundo toma la ausencia de claves y la indeterminación instrumental. 
+Del segundo toma la ausencia de claves y la indeterminación instrumental.
 
 De ambos, la ausencia de duraciones rítmicas precisas.
 
@@ -79,9 +80,9 @@ De ambos, la ausencia de duraciones rítmicas precisas.
 
 
 #### Consideraciones sobre la ejecución prototípica
-A pesar de que la obra no obliga a que ser ejecutada necesariamente en piano, o con alguna clave en específico, posibilidades que son deseadas y bienvenidas, la obra sí fué escrita tomando en consideración las claves usuales (por cuestiones armónicas) y el timbre del piano con pedal (por cuestiones polifónicas). El análisis que sigue asume estos presupuestos, y describe la pieza dentro de ese contexto. 
+A pesar de que la obra no obliga a que ser ejecutada necesariamente en piano, o con alguna clave en específico, posibilidades que son deseadas y bienvenidas, la obra sí fué escrita tomando en consideración las claves usuales (por cuestiones armónicas) y el timbre del piano con pedal (por cuestiones polifónicas). El análisis que sigue asume estos presupuestos, y describe la pieza dentro de ese contexto.
 
-Tomando esto en cuenta las claves ordinarias, el piano, y el uso extensivo del pedal son ampliamente recomendadas para conocer la pieza y los conceptos detrás de ellas. 
+Tomando esto en cuenta las claves ordinarias, el piano, y el uso extensivo del pedal son ampliamente recomendadas para conocer la pieza y los conceptos detrás de ellas.
 
 Para _jugar_, como bien se comprendé la música en la lengua sajona (_to play_), la pieza desde su notación, se recomienda tan sólo seguir el oído y la imaginación creativa.
 
@@ -96,11 +97,11 @@ _21 Nubes_ puede y debe comprenderse (al menos) de tres maneras simultáneas:
 3. Serie melódica infinita
 
 ### Una serie ordinaria de 21 miniaturas.
-La primera serie involucra la secuencia armónica _1, 2, 3... 21_. Esta secuencia sirve para designar el número de notas que cada una de las 21 piezas deberá contener. Por consiguiente esta serie sirve para definir la forma. 
+La primera serie involucra la secuencia armónica _1, 2, 3... 21_. Esta secuencia sirve para designar el número de notas que cada una de las 21 piezas deberá contener. Por consiguiente esta serie sirve para definir la forma.
 
 ![Serie armónica de cantidad de notas](/music/21-nubes/1-6.png)
 
-La duración de cada miniatura es independiente. Sin embargo, el proceso implica un gradual complejización de la escucha: cada unidad contiene un elemento más que el anterior, y es algo a lo que el oído deber darle sentido. 
+La duración de cada miniatura es independiente. Sin embargo, el proceso implica un gradual complejización de la escucha: cada unidad contiene un elemento más que el anterior, y es algo a lo que el oído deber darle sentido.
 
 
 Nótese que usamos el concepto de _serie armónica_ en el sentido matemático que es más amplio que el musical, ya que musicalmente se le llama serie armónica a una _serie armónica **de** frecuencias_, lo que aquí es más bien una **serie armónica de unidades de construcción**
@@ -122,23 +123,23 @@ Esta serie tiene tres niveles:
 2. Referencia a materiales anteriores: Puesto que el principio es  el de iterar sobre la serie armónica, después de cada iteración se dispone de un patrón o conjunto más al que podemos referirnos y al que tenemos que responder con la miniatura siguiente, siempre con una unidad de construcción más.
 <!-- 2. Segundo, ciertas minituras hacen referencia a miniaturas anteriores, y en tanto el contexto cambia necesariamente (la cantidad de notas de una variación a otra aumenta siempre), la variación consiste en la adaptación de esta condición a la variación de refencia.  -->
 
-3. Tercero, ciertos conjuntos de miniaturas hacen referencia a otros conjuntos de miniaturas, lo cuál involucra los dos niveles previos: 
+3. Tercero, ciertos conjuntos de miniaturas hacen referencia a otros conjuntos de miniaturas, lo cuál involucra los dos niveles previos:
 
     3.1 Al primero, en tanto un conjunto de tipos de material sirve para identificar a una variación.
-    
+
     3.2 Al segundo en tanto que<!-- se elabora un discurso cuya forma es la de una sóla extensa melodía. Entonces  --> al referir a otras variaciones podemos hablar de variaciones que compuestas de otras variaciones o que son variaciones de variaciones.
-    
-      3 Por ejemplo, las variaciones correspondientes a las _miniaturas 7_ (melodía ascendente) y _8_ (melodía descendente), donde la segunda es variación de la primera. 
-    
+
+      3 Por ejemplo, las variaciones correspondientes a las _miniaturas 7_ (melodía ascendente) y _8_ (melodía descendente), donde la segunda es variación de la primera.
+
     ![minitaturas 7 y 8](/music/21-nubes/7-8.png)
 
-    Éstas además se componen naturalmente en una frase, la cuál se verá variada en las _minitaturas 18_ (melodía descendente) y _19_ (melodía ascendente). 
-    
+    Éstas además se componen naturalmente en una frase, la cuál se verá variada en las _minitaturas 18_ (melodía descendente) y _19_ (melodía ascendente).
+
     ![minitaturas 18 y 19](/music/21-nubes/18-19.png)
-        
-    Este proceso se puede analizar tanto como una retrogradación al nivel de las variaciones (_variación ascendente_ seguida por _variación descendente_ --> _variación descendente_ seguida por _variación ascendente_), o como una inversión (necesariamente variada) del contorno de la frase conformada por _7 y 8_. 
-    
-        
+
+    Este proceso se puede analizar tanto como una retrogradación al nivel de las variaciones (_variación ascendente_ seguida por _variación descendente_ --> _variación descendente_ seguida por _variación ascendente_), o como una inversión (necesariamente variada) del contorno de la frase conformada por _7 y 8_.
+
+
     3.2.2 Hablamos así de un juego de variaciones elaborado como variaciones de variaciones, una especie de juego de espejos donde cada relejo multiplica los elementos previamente reflejados.
 
 <div id="serie-melodica-infinita"></div>
@@ -153,7 +154,7 @@ La primera es una regla generativa, la segunda es un filtro aplicado sobre la pr
 
 Vista como una tabla, las notas de la escala pueden conectar unas con otras de la manera siguiente:
 
-| Nota Inicial       | Conexiones 
+| Nota Inicial       | Conexiones
 | ------------- |:-------------:|
 | **a**      |a, b, c, g |
 | **b**      |a, b, c, d |
@@ -188,16 +189,16 @@ A pesar de que la tabla y la matriz nos hacen pensar en el uso de pares de notas
 ### Armonía
 Para generar una armonía tomamos una secuencia melódica **x** y hacemos sonar simultáneamente todas sus notas, pudiendo además variar en la disposición vertical (graves -> agudos) el orden de las notas.
 
-Por ejemplo, si tomamos **a-b-d-f-e** y la convertimos en un conjunto de notas que suenan simultáneamente, entonces podríamos reordenarlas, de graves a agudas, de la siguiente manera **[a-e-f-b-d]** (los corchetes denotan un conjunto permutable o un acorde). 
+Por ejemplo, si tomamos **a-b-d-f-e** y la convertimos en un conjunto de notas que suenan simultáneamente, entonces podríamos reordenarlas, de graves a agudas, de la siguiente manera **[a-e-f-b-d]** (los corchetes denotan un conjunto permutable o un acorde).
 
 Esto es posible bajo la regla de que al menos una de las notas de acorde previo conecten legalmente con **a**, y que alguna de la notas del acorde subsiguiente conecten con la nota **e**. En el caso de que a la agrupación vertical le anteceda o le siga una nota sola, la regla aplica de la misma manera. Como se podrá observar todas las sonoridades verticales de la obra se comportan de esta manera.
 
 ### Simetrías
 Hay ciertos subconjuntos que nos parecen sumamente interesantes y que con frecuencia aparecen en las líneas melódicas.
 
-Por ejemplo, tomemos las triadas de tipo interválico **[2-3]** o **[3-2]**: Con **[a-c-d]** y **[d-e-g]** tenemos una inversión cuyo eje, o nota espejo es **d**. Su uso se puede apreciar particularmente en la última variación, la cuál se desarrolla como símbolo de esta propiedad. En el mismo sentido, aunque con mayor peculiaridad tenemos las triadas, del mismo tipo que las anteriores  **[e-g-a]** y **[g-a-c]**, donde el eje de inversión se encuentra sobre un fantasmal **g#**, por lo qe **a** y **g** se mantienen constantes. 
+Por ejemplo, tomemos las triadas de tipo interválico **[2-3]** o **[3-2]**: Con **[a-c-d]** y **[d-e-g]** tenemos una inversión cuyo eje, o nota espejo es **d**. Su uso se puede apreciar particularmente en la última variación, la cuál se desarrolla como símbolo de esta propiedad. En el mismo sentido, aunque con mayor peculiaridad tenemos las triadas, del mismo tipo que las anteriores  **[e-g-a]** y **[g-a-c]**, donde el eje de inversión se encuentra sobre un fantasmal **g#**, por lo qe **a** y **g** se mantienen constantes.
 
-El uso de este segundo par de triadas no es tan notorio a primera vista, sin embargo, con frecuencia se utilizan de manera colorística al oponerlos a un conjunto totalmente contrastante: **[b-d-f]** (interválicamente **[3-3]**) , el cual no es otra cosa que la diferencia entre **[e-g-a-c]** y **[a-b-c-d-e-f-g]**. La oposición genera desde luego una alternancia de tipo Tónica-Dominante, sin ser estrictamente tal cosa (auditivamente se reduce al contraste entre la cuarta o quinta justas y la cuarta aumentada, es decir entre los intervalos 3:2, y 4:3 contra algo cuando menos tan complicado como 25:18). 
+El uso de este segundo par de triadas no es tan notorio a primera vista, sin embargo, con frecuencia se utilizan de manera colorística al oponerlos a un conjunto totalmente contrastante: **[b-d-f]** (interválicamente **[3-3]**) , el cual no es otra cosa que la diferencia entre **[e-g-a-c]** y **[a-b-c-d-e-f-g]**. La oposición genera desde luego una alternancia de tipo Tónica-Dominante, sin ser estrictamente tal cosa (auditivamente se reduce al contraste entre la cuarta o quinta justas y la cuarta aumentada, es decir entre los intervalos 3:2, y 4:3 contra algo cuando menos tan complicado como 25:18).
 
 Ejemplos de uso pueden observarse generalmente con subconjuntos de estos grupos. Por ejemplo, en la miniatura 5, donde **b** se toma por el conjunto **[b-d-f]**  y **[a-c]** por el conjunto **[e-g-a-c]**. También en las miniaturas 7 y 8 se pueden apreciar muy claramente secciones con uno u otro tipo de conjuntos.
 
@@ -206,21 +207,21 @@ La obra hace uso de lo que se podría llamar polifonía fluctuante, es decir, qu
 
 La regla de los procesos polifónicos que aquí seguimos es la siguiente:  **Es posible separar un conjunto armónico en dos secuencias melódicas relativamente independientes, siempre y cuando el punto de convergencia o divergencia de ambas melodías sea un punto legal, y cada una de estas secuencias sea legal en si misma (a pesar de que a momentos podría parece que hay intervalos ilegales melódicos)**. Por ejemplo tomando el conjunto **[e-g-a]** podemos generar una melodía que vaya de **a-g** y otra que vaya de **e-g** (siendo ambas **g** la misma), y esto es legal a pesar de que en cierto momento se produzca simultanea o secuencialmente el intervalo de 4 justa **a-e**.
 
-Esta regla por ende nos permite tratar a dos segmentos melódicos como si se tratara de subconjuntos armónicos, tratando a las notas al interior de los conjuntos mediante permutaciones como cuando las reordenamos al generar un acorde, lo cual generaría secuencias melódicas que no aparecen cuando se derivan de la tabla de conexiones, pero si cuando se derivan de subconjuntos armónicos derivados de ésta. 
+Esta regla por ende nos permite tratar a dos segmentos melódicos como si se tratara de subconjuntos armónicos, tratando a las notas al interior de los conjuntos mediante permutaciones como cuando las reordenamos al generar un acorde, lo cual generaría secuencias melódicas que no aparecen cuando se derivan de la tabla de conexiones, pero si cuando se derivan de subconjuntos armónicos derivados de ésta.
 
 Puesto que estos procedimientos son claramente delicados en tanto pueden poner en riesgo la coherencia armónica y melódica de la pieza, su aparición debe estar justificada en un proceso polifónico, claramente auditivo, cuyos miembros refuerzen las principios melódicos con los que operamos.
 
-Por ejemplo, al final de la _miniatura 13_ tenemos los conjuntos: **[f-d-b]** y **[a-g-e]**. Ambos conectan mediante **b-a**, pero el segundo conjunto se presenta permutando la secuencia de sus notas, por lo tanto aparece como una secuencia "melódica" **a-e-g**, lo cuál a primera vista sería contrario a nuestras reglas. 
+Por ejemplo, al final de la _miniatura 13_ tenemos los conjuntos: **[f-d-b]** y **[a-g-e]**. Ambos conectan mediante **b-a**, pero el segundo conjunto se presenta permutando la secuencia de sus notas, por lo tanto aparece como una secuencia "melódica" **a-e-g**, lo cuál a primera vista sería contrario a nuestras reglas.
 
 Sin embargo, ciertos procedimientos polifónicos nos permiten darle sentido a esta secuencia melódica que parecería ilegal.  A nivel de la notación hay que observar la ligadura que va de **e-g**, pero no de **a-e**.  Más importante aun es que a nivel _auditivo_  se generan la posibilidad de escuchar dos voces: observamos que dentro del contexto de la obra el intervalo de tercera menor aparece como un intervalo melódico muy característico (al igual que los de segunda), por lo que el oído ya está acostumbrado a asociar en una sola voz las secuencias que usan estos intervalos dentro de la misma línea, mientras que el intervalo de cuarta justa al ser un intervalo extraño (dentro del contexto), hacer que el oido tienda a separar lo que proviene de este intervalo y lo asigne a una línea melódica distinta (cf. la discusión de  la polifonía y el concepto de _stream_ (flujo) en _Auditory Scene Analysis_).  Así, la interpretación polifónica de este pasaje sugiere que tenemos dos líneas convergentes: **f-d-b-a-g** y **e-g**. Es de notar, además, que esta segunda linea, tiene también su justificación en tanto es una variación-eco del intervalo ascendente  **g-e** que se escucha en el registro grave de la _miniatura 11_. No es coincidencia que ambas apariciones del conjunto **[e-g]** se den en registro más grave de cada miniatura y al final de las mismas, ambas disposiciones tienen como objetivo el dar unidad e identidad a este conjunto para que pueda aparece como un voz independiente.
 
 En la variación que va de las _miniaturas 18 a 20_ tenemos un caso relativamente similar, pero que ejemplifica otro uso de las voces. La composición de una _voz armónica_ contra una _voz melódica_, es decir, el de una voz hecha de intervalos de tercera menor y otra que no lleva intervalo alguno. En esta secuencia podemos tomar todas las apariciones del intervalo armónico como una voz que va en constante ascenso y cuya tensión se rompe en la miniatura _20_ al llegar a dos intervalos armónicos de quinta producidos por el movimiento melódico de dos intervalos de tercera menor, o más precisamente, el de una tercer menor y el de su inversión. La otra voz (más adelante argumentaremos que son múltiples voces), por contraste, siempre se mueve en notas solas como un tejido que envuelve a la otra voz.
 
-En la _miniatura 19_ podemos ver la secuencia siguiente **d-e-g-a-[d-f]**. La coherencia de **[d-f]** no se puede seguir de **a** de ninguna manera, pero encuentra su justificación en dos procesos. Primero porque la secuencia citada puede interpretarse como implicando una divergencia de una a dos voces, vista de la siguiente manera, **e-[g-a]** y **e-[d-f]**, donde **e** supone un punto de convergencia para ambos conjuntos. Segundo, porque la _voz armónica_ como entidad auditivamente distinta, en realidad esta precedida por **[a-c]**, de la cual, ambos sonidos del intervalo se siguen. 
+En la _miniatura 19_ podemos ver la secuencia siguiente **d-e-g-a-[d-f]**. La coherencia de **[d-f]** no se puede seguir de **a** de ninguna manera, pero encuentra su justificación en dos procesos. Primero porque la secuencia citada puede interpretarse como implicando una divergencia de una a dos voces, vista de la siguiente manera, **e-[g-a]** y **e-[d-f]**, donde **e** supone un punto de convergencia para ambos conjuntos. Segundo, porque la _voz armónica_ como entidad auditivamente distinta, en realidad esta precedida por **[a-c]**, de la cual, ambos sonidos del intervalo se siguen.
 
-Este segundo aspecto denota otra regla para el trabajo polifónico de la obra: voces distintas pueden emerger e identificarse, en tanto haya secuencias de entidades motívicas que operen con independencia y establezcan diálogos con otras. 
+Este segundo aspecto denota otra regla para el trabajo polifónico de la obra: voces distintas pueden emerger e identificarse, en tanto haya secuencias de entidades motívicas que operen con independencia y establezcan diálogos con otras.
 
-¿Qué elementos pueden distinguir a una voz de otra? 
+¿Qué elementos pueden distinguir a una voz de otra?
 
 1. Densidad de voces (como ya mostramos)
 2. Registro (quizá la principal en la obra)
@@ -229,7 +230,7 @@ Este segundo aspecto denota otra regla para el trabajo polifónico de la obra: v
 
 ### Polifonía fluctuante
 Puesto que no trabajamos una polifonía estricta (donde el número de voces permanece estable durante un periodo de tiempo razonable), la escucha polifónica de la obra está llena de ambigüedades (lo que nos interesa aprovechar al máximo).
-Esta ambigüedad significa que determinar el momento preciso en el que ya escuchamos más de una voz es o bien imposible de precisar, o bien debe basarse en un momento furtivo que depende del estado de la atención del intérprete y del escucha (esta es cuando menos mi experiencia después de haber tocado y escuchado muchas veces la obra y sus partes). Además hay que agregar, que esta ambigüedad se exacerba aun más, cuando la escucha de las distintas voces no resulta de su convivencia simultanea, sino de intervenciones que se escuchan en alternancia. 
+Esta ambigüedad significa que determinar el momento preciso en el que ya escuchamos más de una voz es o bien imposible de precisar, o bien debe basarse en un momento furtivo que depende del estado de la atención del intérprete y del escucha (esta es cuando menos mi experiencia después de haber tocado y escuchado muchas veces la obra y sus partes). Además hay que agregar, que esta ambigüedad se exacerba aun más, cuando la escucha de las distintas voces no resulta de su convivencia simultanea, sino de intervenciones que se escuchan en alternancia.
 
 Un ejemplo claro de esto es la _miniatura 11_ donde contamos fácilmente 3 voces.
 1. Una linea en la voz media **e-d-b** cuyas primeras dos notas aparecen al principio, y la última casi al final. La independencia de esta línea melódica se ve reforzada por momento previos donde el mismo motivo aparece, e.g. al principio de _5_ **d-c-a** o las repeticiones en _8_ **d-c-a**, **a-g-e** y **e-(g)-d-b**.  
@@ -240,19 +241,19 @@ Un ejemplo claro de esto es la _miniatura 11_ donde contamos fácilmente 3 voces
 
 Si analizamos esta melodía en un contexto más extenso, entonces  podemos apreciar una complejidad contrapuntística mayor:
 
-1. Esta melodía ascendente podría interpretarse como continuando su ascenso en la _miniatura 13_. 
+1. Esta melodía ascendente podría interpretarse como continuando su ascenso en la _miniatura 13_.
 
-2. En ese sentido la _minitatura 12_ constituye algo completamente independiente de las otras dos secuencias (morfológicamente lo parece). Pero vista polifónicamente, esta miniatura repite tres veces, la secuencia **b-c-d** (podría interpretarse como minicanon a 3 voces), la cual es idéntica al comienzo de la _minitaura 13_, por lo que el oído podría dudar al respecto del número de voces que está escuchando: ¿se trata de una imitación en _13_ o de un salto de octava de la misma voz? 
+2. En ese sentido la _minitatura 12_ constituye algo completamente independiente de las otras dos secuencias (morfológicamente lo parece). Pero vista polifónicamente, esta miniatura repite tres veces, la secuencia **b-c-d** (podría interpretarse como minicanon a 3 voces), la cual es idéntica al comienzo de la _minitaura 13_, por lo que el oído podría dudar al respecto del número de voces que está escuchando: ¿se trata de una imitación en _13_ o de un salto de octava de la misma voz?
 
     2.1. Por otro lado, la miniatura _12_ justifica su continuación refiriendo al **d** más agudo de la melodía superior de _11_. Por lo cuál esa melodía superior parecería bifurcarse para luego, quizá, reunirse consigo misma en _13_
 
-(Evidéntemente, para lograr este efecto polifónico en el piano, la manera más efectiva es dejando el pedal sostenido todo el tiempo). 
+(Evidéntemente, para lograr este efecto polifónico en el piano, la manera más efectiva es dejando el pedal sostenido todo el tiempo).
 
 ¿Cuántas voces podríamos contar cuando vamos de _11_ al comienzo de _13_?
 
 Aparentemente, en la partitura, hay una sola voz, la cual en cierto momento tiene una duplicación trivial de tercera. Pero con lo descrito anteriormente, y refiriendo a una escucha concentrada en las distintas morfologías de las cada una de voces descritas, podríamos contar de 3 hasta 6 voces: las 3 de la polifonía libre de _11_ y las 3 del microcanon de _12_, o incluso 7, si pensamos, escuchamos, o interpretamos, que ni _11_  ni _12_ tienen su continuación en _13_.
 
-El efecto general es de voces que se ramifican, que divergen y convergen de un modo vago. No se trata de una diferencia de grados discretos y bien definidos: "ahora 2, ahora 3". Sino más bien de una diferencia de tipo difuso, casi continuo, aparente y perceptual: "no sé donde hay 2 o 3 o _n_ voces, pero sé que hay más de una y sé que no siempre son las mismas". 
+El efecto general es de voces que se ramifican, que divergen y convergen de un modo vago. No se trata de una diferencia de grados discretos y bien definidos: "ahora 2, ahora 3". Sino más bien de una diferencia de tipo difuso, casi continuo, aparente y perceptual: "no sé donde hay 2 o 3 o _n_ voces, pero sé que hay más de una y sé que no siempre son las mismas".
 
 En efecto, estas son las mismas preguntas que podemos hacernos cuando miramos las nubes en el cielo: ¿en qué momento se separan... y _qué tan separadas están realmente_, son una o múltiples... o más bien multiplicidades (cf. _Rizoma_, Gilles Deleuze y Félix Guattari)?
 
@@ -286,7 +287,7 @@ El caracter perceptual del los morfismos, sumado a la apertura de la partitura, 
 ### Composición de morfismos como generadora de variaciones
 En el desarrollo de las miniaturas, como un procesos de variaciones, los morfismos se puede componer, o entremezclan, para generar nuevas estructuras a partir de cualidades reconocibles.
 
-#### Ejemplo 1: 
+#### Ejemplo 1:
 
 El morfismo _Nota Larga_ aparece claramente en _1_, ya que es prácticamente lo único que se puede hacer ahí.  
 
@@ -298,25 +299,25 @@ Sin embargo, dada la extrema simplicidad del morfismo de _Nota Larga_.  Éste es
 
 _2_ puede interpretarse como un morfismo de _Intervalo 3_ que deriva en uno de _Nota Larga_.
 
-#### Ejemplo 3: 
+#### Ejemplo 3:
 
-_7 y 8_ son el morfismo de _Repetición_ tomando dos morfismos de  _Linea Melódica_ uno de los cuales esta compuesto además por un morfismo de _Inversión_. 
+_7 y 8_ son el morfismo de _Repetición_ tomando dos morfismos de  _Linea Melódica_ uno de los cuales esta compuesto además por un morfismo de _Inversión_.
 
-1. Exactamente lo mismo se puede decir de _3_ (como el modelo más esquemático de este proceso.) 
+1. Exactamente lo mismo se puede decir de _3_ (como el modelo más esquemático de este proceso.)
 
-2. Por su parte, _18 y 19_ son la  _Inversión_ de todo el compuesto de morfismos de _7 y 8_. 
+2. Por su parte, _18 y 19_ son la  _Inversión_ de todo el compuesto de morfismos de _7 y 8_.
 
 3. Esto mismo sucede en _20_.
 
-#### Ejemplo 4: 
+#### Ejemplo 4:
 
-_4, 6, 7, 11, 12, 13, 17, 18 y 21_ contienen morfismos de _Expansión_. 
+_4, 6, 7, 11, 12, 13, 17, 18 y 21_ contienen morfismos de _Expansión_.
 
 De estos:
 
 1. Sólo _4, 7, 11, 12, 13, 17 y 18_ están compuestos por el morfismo de _Linea melódica_.
 
-2. Sólo _4, 11, y 13_ están compuestos por la _Puntuación En Sentido Contrario_. 
+2. Sólo _4, 11, y 13_ están compuestos por la _Puntuación En Sentido Contrario_.
     2.1 Mientras que _11_ realiza una _Inversión_ morfológica de _4_
 
 3. Sólo _4, 6, 12 y 17_ tienen _Agregados Verticales_
@@ -330,13 +331,13 @@ Como se puede notar, particularmente en el último ejemplo, a través de la comp
 ### Consideraciones sobre la forma, límites y potenciales
 La única razón por la que esta obra consta de 21 miniaturas y no más, ni menos, es porque fue creada como un regalo de cumpleaños, para alguien que alcanzó esa edad. La forma de la obra es en este sentido sumamente arbitraria. Tanto que, incluso resulta difícil lograr un final plenamente convincente, y con frecuencia puede parecer incluso apresurado. Esto aun cuando la _miniatura 21_, efectivamente tiene cualidades conclusivas -cosa que Andrew Jamieson interpreta de manera espléndida-.
 
-En cierto sentido, sin embargo, esta imperfección formal se justifica en tanto que la vida, la vida de quien actualmente vive, no está nunca terminada, y por consiguiente un final que realmente no funciona como final, es quizá una representación adecuada. Aunque en este sentido, se vuelve aun más criticable la doble barra final. 
+En cierto sentido, sin embargo, esta imperfección formal se justifica en tanto que la vida, la vida de quien actualmente vive, no está nunca terminada, y por consiguiente un final que realmente no funciona como final, es quizá una representación adecuada. Aunque en este sentido, se vuelve aun más criticable la doble barra final.
 
 Por otro lado, puesto que los materiales de la pieza puede ser generados algoritmicamente, ya sea por un humano o una máquina, la pieza como concepto, puede ser extendida infinitamente, basta con seguir las reglas genéticas de los materiales, y-o de variarlos por medio de los morfismos que hemos mostrado (aunque nada impediría agregar nuevos morfismos, ya que tampoco los hemos explicado todos).
 
 Ésta es precisamente una de las opciones que el músico tiene disponibles al momento de interpretar la pieza, particularmente cuando se interpreta simultáneamente con otras piezas, como lo hace el ya citado Andrew Jamieson al tocar 21 Nubes junto con [28 Palabras]() o dentro de [Videcoic One]().
 
-El sentido profundo de la apertura de esta pieza, no radica en la ausencia de duraciones, claves, dinámicas, etc., sino justamente en que el potencial inscrito en la pieza por su red de materiales y procesos, desborda a la escritura. En este sentido se parece mucho más a un tema de jazz, a la posición que tiene el tema en el tejido de la música, que a una obra de Kurtág o Wolff. 
+El sentido profundo de la apertura de esta pieza, no radica en la ausencia de duraciones, claves, dinámicas, etc., sino justamente en que el potencial inscrito en la pieza por su red de materiales y procesos, desborda a la escritura. En este sentido se parece mucho más a un tema de jazz, a la posición que tiene el tema en el tejido de la música, que a una obra de Kurtág o Wolff.
 
 Esta apertura es justamente la piedra angular de todas las búsquedas que agrupan a la obras aquí expuestas y muchas otras de los últimos años. La posibilidad de una escritura que se desborde, que abunde a la menor provocación, que esté viva y reaccione, que sea como una persona con-versando: ahora con aquella ahora con aquél, un ser en un ecosistema, capaz de coevolucionar con otras especies, y de trascender los límites de su inscripción, la vida y no la biografía.
 

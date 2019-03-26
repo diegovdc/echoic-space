@@ -6,7 +6,8 @@ file_name: 21-nubes-y-28-palabras-version-2.mp3
 track_name: 28 Palabas
 backgroundImage: 28-palabras.png
 date: 2014-01-07
-category: Composición
+category:
+  - Composición
 ---
 
 # 28 Palabras
@@ -24,7 +25,7 @@ Andrew Jamieson, Piano
 ### Descargar <a href='/music/28-palabras/21-nubes-y-28-palabras-version-2.mp3' target='_blank'>Audio</a> de 21 Nubes y 28 Palabras, versión 2
 
 Diego Villaseñor, Voz  
-Andrew Jamieson, Piano 
+Andrew Jamieson, Piano
 
 
 ## Nota al programa
@@ -33,12 +34,12 @@ Andrew Jamieson, Piano
 > eres una
 > estrella que baila
 > entre las flores perdida
-> una estrella enloquecida, soñadora, seducida, 
+> una estrella enloquecida, soñadora, seducida,
 > ay, abrazas aquello que te consume
 > anda despierta, corre, danza con tus hermanos
 
 ## Introducción
-_28 Palabras_, para voz, forma parte de los ciclos de _obras numéricas_ y _obras modulares_.  Es una obra específicamente diseñada para poder cantarse sobre cualquier otra música de estos ciclos, pero que también puede interpretarse como un solo. 
+_28 Palabras_, para voz, forma parte de los ciclos de _obras numéricas_ y _obras modulares_.  Es una obra específicamente diseñada para poder cantarse sobre cualquier otra música de estos ciclos, pero que también puede interpretarse como un solo.
 
 La pieza se ha tocado en las siguientes configuraciónes:
 
@@ -48,7 +49,7 @@ La pieza se ha tocado en las siguientes configuraciónes:
 
 
 ### Objetivos de la pieza
-_28 Palabras_ tiene como objetivos: 
+_28 Palabras_ tiene como objetivos:
 
 1. Exploración de los elementos discontinuos dentro del continuo, y usarlos para elaborar un discurso melódico al nivel de estos elementos (melodía de discontinuidades macrotímbricas) (ver más adelante, [El discontinuo del continuo](#el-discontinuo-del-continuo))
 
@@ -95,7 +96,7 @@ Nótese que usamos el concepto de _serie armónica_ en el sentido matemático qu
 
 La serie armónica en este caso sirve para definir una secuencia de 28 palabras y dividirla en 7 versos, cada uno constituido por una palabra más que el anterior. Entonces obtenemos la secuencia siguiente de cantidades de palabras: 1, 2, 3, 4, 5, 6, 7. La suma de esta secuencia, es 28.
 
-[La forma derivada, no se usa meramente como una estructura abstracta. Las _obras numéricas_ representan seres vivientes, los números son sus ciclos: lo que para las personas son los años de vida.]( link a lo que sigue). En el poema, el secuenciamiento de las palabras y de las imágenes toma inspiración en esta figura de ciclos y procesos de transformación del crecimiento: cada línea transforma la interpretación de la anterior. 
+[La forma derivada, no se usa meramente como una estructura abstracta. Las _obras numéricas_ representan seres vivientes, los números son sus ciclos: lo que para las personas son los años de vida.]( link a lo que sigue). En el poema, el secuenciamiento de las palabras y de las imágenes toma inspiración en esta figura de ciclos y procesos de transformación del crecimiento: cada línea transforma la interpretación de la anterior.
 
 Puesto que estamos usando la serie armónica para construir el poema, y en relación con lo que decimos en [link a lo que sigue](link a lo que sigue), podemos comprender que la elaboración del poema obedece a procesos de construcción musical, donde el sentido particular del poema es equivalente al timbre de un sonido: **ambos son para la percepción, en un sentido literal, la suma de sus armónicos**. En el caso del sonido el armónico representa `numero_de_armónico * frecuencia * amplitud * fase`, mientras que en el caso del poema, el armónico es el contenido de una linea particular un producto de las palabras contenidas en ella, `numero_de_armónico * palabra * sintaxis`, y si pensamos a la palabra es `sonido + significado` entonces tenemos que cada linea del poema es `numero_de_armónico * (sonido + significado) * sintaxis`.
 
@@ -108,11 +109,11 @@ Sabemos que es una invocación, ¿pero a quién se le habla y qué le podría se
 
 De todas esas posibilidades, sólo una permaneció y las demás se perdieron. ¿Pero qué es? ¿Se trata de una afirmación ontológica, moral, metafórica, etc.?
 
-> estrella que baila 
+> estrella que baila
 
-Una nueva determinación, parece una que tenemos metáfora. 
+Una nueva determinación, parece una que tenemos metáfora.
 
-Observamos que el sentido, la expectativa, cambia constantemente, linea por linea. El "timbre" de aquella persona, es decir, su ser general, en consecuencia, también va cambiando en nuestra imaginación, y como un humano un sus primero años, cada día cambia de maneras sorpresivas e inesperadas, pero cada decisión, cada cambio, también define el marco de posibilidades que se desplegara en lo que siga. 
+Observamos que el sentido, la expectativa, cambia constantemente, linea por linea. El "timbre" de aquella persona, es decir, su ser general, en consecuencia, también va cambiando en nuestra imaginación, y como un humano un sus primero años, cada día cambia de maneras sorpresivas e inesperadas, pero cada decisión, cada cambio, también define el marco de posibilidades que se desplegara en lo que siga.
 
 Tenemos una cadena de Markov de significados y de historia.
 
@@ -162,7 +163,7 @@ Para una teoría filosófica y transdisciplinar que sirva como sustento de los p
 >
 >La Pantera Rosa no imita nada, no reproduce nada, pinta el mundo de su color, rosa sobre rosa, ese es su devenir-mundo para devenir imperceptible, a-significante, trazar su ruptura, su propia línea de fuga, llevar hasta el final su “evolución a-paralela”. Sabiduría de las plantas: incluso cuando tienen raíces, siempre hay un afuera en el que hacen rizoma con algo: con el viento, con un animal, con el hombre (y también un aspecto por el cual los animales hacen rizoma, y los hombres, etc.). “La embriaguez como irrupción triunfal de la planta en nosotros”.
 >
->Continuar siempre el rizoma por ruptura, alargar, prolongar, alternar la línea de fuga, variarla hasta producir la línea más abstracta y más tortuosa de n dimensiones, de direcciones quebradas. Conjugar los flujos desterritorializados. Seguir las plantas: comenzar fijando los límites de una primera línea según círculos de convergencia alrededor de singularidades sucesivas; luego ver si en el interior de esa línea se establecen nuevos círculos de convergencia con nuevos puntos situados fuera de los límites y en otras direcciones. 
+>Continuar siempre el rizoma por ruptura, alargar, prolongar, alternar la línea de fuga, variarla hasta producir la línea más abstracta y más tortuosa de n dimensiones, de direcciones quebradas. Conjugar los flujos desterritorializados. Seguir las plantas: comenzar fijando los límites de una primera línea según círculos de convergencia alrededor de singularidades sucesivas; luego ver si en el interior de esa línea se establecen nuevos círculos de convergencia con nuevos puntos situados fuera de los límites y en otras direcciones.
 >
 >Escribir, hacer rizoma, ampliar nuestro territorio por desterritorialización, extender la línea de fuga hasta lograr que englobe todo el plan de consistencia en una máquina abstracta.”
 
@@ -174,26 +175,25 @@ Esta obra hace referencia a las técnicas desarrolladas por _Julio Estrada_ en l
 
 Si bien Estrada ha elaborado teoría sumamente comprensivas sobre el discontinuo y el continuo. Hasta donde sé, él no considerado exhaustivamente las interrelación e interdependencias de ambos campos del sonido. En _28 Palabras_ se realizan construcciones macrotímbricas (que Estrada consideraría propias del continuo) con un enfoque que busca destacar y aprovechar los elementos discontinuos propios de la voz. No se trata de introducir eclécticamente las técnica tradicionales del discountino en el contexto de las técnica del continuo, sino de explorar las discontinuidades posibles con la segunda técnica y usarlas en el flujo poético de la obra.
 
-Es importante señala aquí que el continuo sonoro tanto de la voz como de otros instrumentos incluye componentes del sonido que se pueden dividir en dos tipos: 
+Es importante señala aquí que el continuo sonoro tanto de la voz como de otros instrumentos incluye componentes del sonido que se pueden dividir en dos tipos:
 
 1. Aquellos que están necesariamente presentes (intensidad, contenido armónico, contorno de las frecuencias (o "melódico", pulsación (o duración))
 
-2. Aquello que pueden o no estar presentes. Estos por lo general son peculiares al instrumento, aunque no necesariamente (la modulación o vibrato). Ejemplos en la voz: Uso de resonadores (labios, pecho,), presencia-ausencia de consonantes o vocales, inhalación-exhalación, silbido. 
+2. Aquello que pueden o no estar presentes. Estos por lo general son peculiares al instrumento, aunque no necesariamente (la modulación o vibrato). Ejemplos en la voz: Uso de resonadores (labios, pecho,), presencia-ausencia de consonantes o vocales, inhalación-exhalación, silbido.
 
-    2.1 El siguente ejemplo muestra diversos tipos de contraste discontinuo inscritos sobre un flujo de contorno continuo. Se observa la secuencia de discontinuidades: Consonante  -> Resonador (labios) + Vocal -> Consontante+Modulación -> Nueva Consontante. 
-    
+    2.1 El siguente ejemplo muestra diversos tipos de contraste discontinuo inscritos sobre un flujo de contorno continuo. Se observa la secuencia de discontinuidades: Consonante  -> Resonador (labios) + Vocal -> Consontante+Modulación -> Nueva Consontante.
+
     ![Secuencias de discontinuidades dentro de continuo](/music/28-palabras/secuencias-de/discontinuidades-dentro-del-continuo.png)
 
     2.2 Nótese incluso que la discontinuidad a la que recurrimos implica elementos heterogéneos. No sólo lidiamos con discontinuidad en el sentido _presencia-ausecia_ de un componente, es decir alternancia binaria, sino en el encadenamiento de alternancias binarias de distintos tipos: _presencia de Consonante_ -> _ausencia de Consonante_ + _presencia de Resonador y Vocal_, etc.
 
-    2.3 Se trata entonces de una _discontinuidad de segundo órden_. 
+    2.3 Se trata entonces de una _discontinuidad de segundo órden_.
 
     2.4 Teóricamente podemos afirmar lo siguiente: La colección de consontantes de la voz, es en sí misma, ya una discontinuidad de este tipo, pues una "S" involucra resonadores y procedimientos sonoros de muy distinto tipo  los de a una "L".
 
     2.5 En consecuencia podemos afirmar que la discontinuidad de segundo orden opera tanto con discontinuidades de primer orden como de segundo.
-            
+
 3. La exploración consciente de la continuidad y la discontinuidad en las sonoridades de las palabras. Por ejemplo, considerese la diferencia entre las palabras "agua", de sonoridad continua, y "palpitar" de sonoridad discontinua.
 
 
 Finalmente podemos decir que la intención de explorar las interacciones entre continuo y discontinuo se muestran aun con mayor contundencia al [superponer 21 Nubes con 28 Palabras](#superposicion-con-21-nubes)
-

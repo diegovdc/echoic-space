@@ -6,7 +6,8 @@ file_name: https://ia801507.us.archive.org/19/items/AFoundHarmonyRedwoodRegional
 track_name: A Found Harmony
 backgroundImage: a-found-harmony.png
 date: 2015-03-18
-category: Composición
+category:
+  - Composición
 ---
 
 # Una Armonía Encontrada
@@ -19,8 +20,6 @@ Se trata de un remix que toma como única fuente sonora el paisaje sonoro utiliz
 
 La obra aprovecha la información armónica sobre el paisaje sonoro provista por la transcipcióny la utiliza para transformar el paisaje en algo totalmente distinto.
 
-En la mayoría de los tracks, una parte o la totalidad del paisaje sonoro está siendo reproducido en loop a distintas velocidades. 
+En la mayoría de los tracks, una parte o la totalidad del paisaje sonoro está siendo reproducido en loop a distintas velocidades.
 
 Con la ayuda de efectos, ciertos elementos del paisaje sonoro (e.g. los aviones) son reimaginados a partir de otros elementos del paisaje (e.g. la simulación de la cabina de un avión) y del mismo modo nuevos elementos son inventados (el sonido de un río).
-
-

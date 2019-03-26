@@ -6,7 +6,9 @@ backgroundImage: 1.png
 is_video: true
 youtube_id: s15OA9nZ7AY
 date: 2015-07-28
-category: Composición $ Improvisación
+category:
+  - Composición
+  - Improvisación
 ---
 
 # {Videcoic One}
@@ -27,16 +29,16 @@ Danishta Rivero
 
 ### Resumen de la “Narrativa”
 
-#### Prólogo 
-Durante la Creación, Espíritu inmediatamente se fracturó en una multiplicidad. A través de tal fractura y como su causa, Amor llegó a la existencia como la fuerza a través de la cual todo nace y arde: Unidad, quién es el segundo nombre de Burlador: el siempre recombinante y (auto)-diferenciante proceso creativo. 
+#### Prólogo
+Durante la Creación, Espíritu inmediatamente se fracturó en una multiplicidad. A través de tal fractura y como su causa, Amor llegó a la existencia como la fuerza a través de la cual todo nace y arde: Unidad, quién es el segundo nombre de Burlador: el siempre recombinante y (auto)-diferenciante proceso creativo.
 #### Escena 1
-Una infinidad de años más tarde, dos instancias de Espíritu despiertan en un Bosque, lugar de las almas. 
+Una infinidad de años más tarde, dos instancias de Espíritu despiertan en un Bosque, lugar de las almas.
 
-#### Escena 2 
-Este despertar ocasiona un ascender amoroso desde el cuál se descubre un río de entusiasmo y energía fluyendo a través del Bosque entero. Ello da lugar a una celebración del amor de las instancias de Espíritu, lo que gradualmente lleva a la colectividad de las almas a conjurar a Matrimonio de Espíritu. 
+#### Escena 2
+Este despertar ocasiona un ascender amoroso desde el cuál se descubre un río de entusiasmo y energía fluyendo a través del Bosque entero. Ello da lugar a una celebración del amor de las instancias de Espíritu, lo que gradualmente lleva a la colectividad de las almas a conjurar a Matrimonio de Espíritu.
 
-#### Escena 3 
-A través de Matrimonio, Espíritu descubre y penetra en la profunda realidad de Bosque, encontrándose con su multiplicidad no-fragmentada de flujo: la interrelaciónalidad Árbol-Mundo del todo. Estar en el Árbol-Mundo es convertirse en él. 
+#### Escena 3
+A través de Matrimonio, Espíritu descubre y penetra en la profunda realidad de Bosque, encontrándose con su multiplicidad no-fragmentada de flujo: la interrelaciónalidad Árbol-Mundo del todo. Estar en el Árbol-Mundo es convertirse en él.
 
 #### Epílogo
 Espíritu, ya no más dos instancias de sí mismo, fluye a través de Árbol-Mundo en una marejada incontenible de energía que finalmente, la llegar hasta su capas más profundas, más allá de sí mismo, encuentra su conexión con todo lo que lo rodea.
@@ -75,7 +77,7 @@ el sentido de este acorde dependerá del contexto donde se inscriba
 De manera interesante, en una esfera por completo distinta, en la naturaleza, se pueden hacer observaciones análogas. Cuando se observan los ecosistemas, incluso alguno tan sencillo como un jardín, uno es capaz de percibir cómo cada elemento del sistema ejerce una influencia que tiene el potencial de transformar el orden total de sistema (su sentido, si lo habláramos en términos de pensamiento), así por ejemplo, la desaparición de un depredador de su hábitat puede conducir a explosión en la población de alguna de sus presas, lo que podría causar serios daños al balance del ecosistema, como en el caso de las plagas.
 
 ### Y su aplicación
-Lo que nos ha interesado en toda la búsqueda de las _obras modulares_ y en particular de _Videcoic One_ es hacer uso de esta manera de funcionar del pensamiento (y de la naturaleza) para experimentar con procesos de recontextualización radicales. 
+Lo que nos ha interesado en toda la búsqueda de las _obras modulares_ y en particular de _Videcoic One_ es hacer uso de esta manera de funcionar del pensamiento (y de la naturaleza) para experimentar con procesos de recontextualización radicales.
 
 La pregunta es, por consiguiente, ¿de qué manera pueden coexistir una multiplicidad de obras?, y también: como entidades de la imaginación, con fuertes sentidos propios, ¿de qué manera podrían transformar unas a las otras sus sentidos y significaciones?
 
@@ -87,39 +89,39 @@ La metodología se puede describir en los siguientes pasos:
 1. Preparación de las obras:
 
     1.1 Se fueron concibiendo distintas obras que pudieran cumplir con las cualidades que se pudieron identificar como importantes para una obra modular. Éstas se resumen en lo siguiente "poseer la suficiente flexibilidad como para poder tocarse unas sobre otra y permitir a los músicos interactuar en vivo con ellas". En este sentido las partituras requirieron:
-    
+
     1.2 Una menor determinación paramétrica: si todos los parámetros están determinados, la obra es imóvil, y no puede adaptarse a otras.
-    
+
     1.3 Elementos que enfatizaran y reforzaran la identidad de la obra a pesar de la carencia de ciertos parámetros, por ejemplo:
-        
+
     * Títulos o conceptos generativos con imágenes muy claras.
-    
+
     * Redes armónico-melódicas limitadas como [el algoritmo de 21 nubes](/obras/21-nubes.html#serie-melodica-infinita).
-        
-    * Formas muy determinadas y fragmentables, como en todas las _obras numéricas_ (e.g. _25 Campanas_). 
-    
+
+    * Formas muy determinadas y fragmentables, como en todas las _obras numéricas_ (e.g. _25 Campanas_).
+
     * Textos, como en _Memories of a Wedding_ y _28 Palabras_.
-    
+
     * Tipos de movimiento muy particulares como en _Espíritu Penetrando en Árbol_.
 
 
 2. Conjunción de las obras:
 
     Se las ingresó en un mismo contexto, se las observo y se elaboró un plan, en forma de narrativa que pudiera articular la forma a gran escala.
-    
+
     2.1 Se eligieron las siguientes obras [Espíritu Penetrando en Árbol](/obras/espíritu-penetrando-en-arbol.html), [21 Nubes](/obras/21-nubes.html), [25 Campanas](/obras/25-campanas.html), [28 Palabras](/obras/28-palabras.html) y [Memories of a Wedding](/obras/memories-of-a-wedding.html)
 
     2.2 Uno de los primeros rasgos que llamaron la atención fueron las imágenes de cada una de las obras: Espíritu, Árbol, Boda, Nubes, Campanas, y varias Palabras.
 
-    2.3 A partir de esto se fue desarrolló una [narrativa](#narrativa) que pudiera englobar y darle sentido a las obras a partir de los elementos simbólicos que las representaban. Ello permitió articular la forma de la obra sin tener que lidiar con demasiados detalles al nivel interno de cada obra. 
-    
+    2.3 A partir de esto se fue desarrolló una [narrativa](#narrativa) que pudiera englobar y darle sentido a las obras a partir de los elementos simbólicos que las representaban. Ello permitió articular la forma de la obra sin tener que lidiar con demasiados detalles al nivel interno de cada obra.
+
     2.4 La narrativa es bastante irreal pero sirve para dotar de sentido las interpretaciones de los músicos y ayudarlos a reinterpretar esto materiales en distintos contextos al plantear transformaciones interesantes de los materials: Las nubes se vuelven en cierto momento Nebulosas (posteriores al Big Bang), un simple Árbol se vuelve el Árbol-Mundo de varias mitologías, etc.
 
 3. Se desarrolló un mapa o plan para estructurar la forma y organizar las interacciones de las obras. Este plan, finalmente tomo la forma de un mapa temporal, que organiza y secuencia las diversas piezas de la misma manera que una "Digital Audio Workstation" organiza y secuencia pistas de audio.
 
-    3.1 El mapa define lo siguiente: Forma de la obra. 
-    * Momentos en los que cada una de las piezas que la componen debe ser tocada y las secciones de las piezas que deben tocarse (cuando aplica tal selección). 
-    * Músicos que podrían tocar esas piezas en los momentos indicados. 
+    3.1 El mapa define lo siguiente: Forma de la obra.
+    * Momentos en los que cada una de las piezas que la componen debe ser tocada y las secciones de las piezas que deben tocarse (cuando aplica tal selección).
+    * Músicos que podrían tocar esas piezas en los momentos indicados.
     * Algunas transformaciones importantes entre las diversas piezas.
 
 ![Mapa de Videcoic One](/music/videcoic-one/mapa.png)   
@@ -212,7 +214,7 @@ A los músicos se les pide que atiendan a algún otro y que apliquen alguno de l
 ![Along Calling Calls In-out side 3](/music/videcoic-one/moaw-II-3.png)
 
 
-Esto permite que piezas como _21 Nubes_, originaria para piano, puedan ser aproximadas por un instrumento como la guitarra o una percusión no afinada. No a través de la transcripción de la partitura y la conversión del intervalos y alturas a sonidos sin altura, sino a través del la imitación intuitiva (por parte del músico) de los [morfismos](/obras/21-nubes.html#consideraciones-sobre-la-morfologia-de-los-materiales) característicos del sonido que percibe. Esta es una de las prácticas y capacidades habituales de los improvisadores, y de ello nos servimos para realizar transformaciones eficientes de los materiales. Si por el contrario nos hubiéramos puesto a generar estos materiales en la escritura tradicional, nos habríamos topado con varios problemas que harían muy difícil su realización eficaz. 
+Esto permite que piezas como _21 Nubes_, originaria para piano, puedan ser aproximadas por un instrumento como la guitarra o una percusión no afinada. No a través de la transcripción de la partitura y la conversión del intervalos y alturas a sonidos sin altura, sino a través del la imitación intuitiva (por parte del músico) de los [morfismos](/obras/21-nubes.html#consideraciones-sobre-la-morfologia-de-los-materiales) característicos del sonido que percibe. Esta es una de las prácticas y capacidades habituales de los improvisadores, y de ello nos servimos para realizar transformaciones eficientes de los materiales. Si por el contrario nos hubiéramos puesto a generar estos materiales en la escritura tradicional, nos habríamos topado con varios problemas que harían muy difícil su realización eficaz.
 
 Primero porque un morfismo resulta difícil de capturar _analítica y conceptualmente_ con la escucha (aunque no sea difícil de escuchar o de imitar), segundo, porque es aun más difícil de especular en la imaginación compositivamente para elaborar una variación (sobre todo cuando no se tiene el instrumento a la mano) y tercero, porque es todavía más difícil de convertir a la partitura y de interpretar (el proceso queda puesto de cabeza y lo que sería fácil para improvisador de realizar se puede terminar convirtiendo en un proceso incómodo de desciframiento e interpretación de un código abstracto y ajeno).
 
@@ -221,7 +223,7 @@ En términos ciencias de la computación (y lo que hacemos al analizar y escribi
 Lo que se pierde quizás con el algoritmo eficiente, es cierto grado de control sobre el resultado, pero control entendido meramente como capacidad de firma y apropiación de una idea, ya que la calidad del resultado nada tiene que ver con quién es aquel que puede llamarlo suyo. Sin embargo, aun cuando como compositor no puedo apropiarme de todos los sonidos de mi obra (y me pregunto por qué necesitaría que todos tuvieran mi firma), ello no significa que no haya parte de mi en el resultado-imaginación de cada uno de ellos, después de todo, una gran parte del material genético resultante de esos sonidos tiene su origen en materiales que efectivamente fueron escritos por mí. Más aun, el resultado comunitario de esos esfuerzos, podría argumentarse biológicamente, es tanto más capaz y potente, cuanto mayor intercambio hay, o dicho de otra manera, la música ambicionada en Videcoic One sería prácticamente imposible de no ser por el trabajo comunitario que permite aproximaciones más eficientes.
 
 
-<!-- 
+<!--
 # Micropiezas
 
 Dentro de los conceptos de los ciclos en los que se inscribe _28 Palabras_ (obras numéricas y modulares). La fragmentación de la obra para     -->
@@ -232,11 +234,11 @@ Las unidades de las que dispone _Videcoic_ para trabajar musicalmente son los di
 
 Continuando con el [ejemplo citado anteriormente](#funciones-de-28-palabras), cuando en el **Prologo, sección C** se superpone varias capas de Abrazas, de _28 Palabras_ con _21 Nubes_ ([ellas saliendo de un proceso ecóico bastante complejo con 25 Campanas](#funciones-de-25-campanas)). Lo que se tiene es una textura contrapuntística sumamente saturada y que opera en múltiples dimensiones simultaneamente. Veamos:
 
-1. Abrazas es una pieza construida mediante la técnica de contrapunto macrotímbrico de Estrada. 
+1. Abrazas es una pieza construida mediante la técnica de contrapunto macrotímbrico de Estrada.
     - Tenemos una línea de pulso en la respiración
-    
+
     - En ciertos puntos dos líneas de consonantes superpuestas, una linea de vocales que alterna con consonantes (implicando un cierto pulso también)
-    
+
     - Una línea de altura para la emisión de baja presión de la voz, que podríamos decir que es estática pero que se encuentra en proceso de modulación (así que también se trata de una linea con tintes rítmicos)
 
     - Se presenta además simultáneamente en 4 líneas sonoras que la manejan independientemente: voces y electrónicas. Estas últimas están construidas con varias grabaciones de "Abrazas" superpuestas.
@@ -245,7 +247,7 @@ Continuando con el [ejemplo citado anteriormente](#funciones-de-28-palabras), cu
 
 3. _25 Campanas_ desaparece bastante en la grabación, pero de pronto genera acentuaciones en el registro grave que dialogan con las pulsaciones hibridadas que vienen de los _toms_ en la percusión.
 
-Ya con eso tendríamos 3 materiales distintos, cada uno con su propio contrapunto. 
+Ya con eso tendríamos 3 materiales distintos, cada uno con su propio contrapunto.
 
 El proceso se da de la manera siguiente:  al comienzo de la sección hay dos lineas que corresponden a dos pares (electrónica-electrónico y voz-voz) y la linea del piano que se distingue muy claramente. Conforme la sección avanzan hay cada vez mayor hibridación y el numero de voces abrazantes aumenta, pero también hay presencia en la textura del pulsar de las campanas, y la línea de nubes que emerge y se sumerge en la nebulosa. La percepción de contrapuntos posibles oscila, la construcción macrotímbrica es bastante compleja aunque claramente no está hecha de materiales contrastantes, por lo que los sonidos se fusionan gradualmente en una especie de unísono de ruido hacia el término de la sección.
 
@@ -261,9 +263,9 @@ Por otro lado tenemos un recurso interesante que se desprende, casi gratuitament
 Contrapuntísticamente se observa lo siguiente:
 1. Las voces electrónicas se mueven al unísono.
 2. El resto de las voces comparte algunos elementos, mientras que otros son distintos. Algunos instrumentos hibridan con las voces, otros con  el primer movimiento de _Espíritu Penetrando en Árbol_, es decir el _Bosque_.
-3. _Along calling calls in/out-side_. Es una pieza que podríamos calificar como un canon no estricto (como _In C_ o _25 Campanas_ cf. [análisis del contrapunto de  25 Campanas](/obras/25-campanas.html#contrapunto)). 
+3. _Along calling calls in/out-side_. Es una pieza que podríamos calificar como un canon no estricto (como _In C_ o _25 Campanas_ cf. [análisis del contrapunto de  25 Campanas](/obras/25-campanas.html#contrapunto)).
 
-Obviando la multiplicidad de voces al interior de _Along calling calls in/out-side_, lo que llama la atención es que cada una de las voces exhibe 2 o 3 dimensiones distintas. Cada una un plano independiente. 
+Obviando la multiplicidad de voces al interior de _Along calling calls in/out-side_, lo que llama la atención es que cada una de las voces exhibe 2 o 3 dimensiones distintas. Cada una un plano independiente.
 A nivel de la forma de _Videcoic_ hay un movimiento que podríamos llamar "directo", que es el movimiento que mueve a las voces de una sección a otra, pero dentro de este movimiento hay movimientos independientes, y sobre estos o debajo, están los movimientos contrapuntísticos de _21 Nubes_,  _Along calling calls in/out-side_, _28 Palabras_ ("una estrella enloquecida") y el Bosque de _Espíritu Penetrando en Árbol_.
 
 Contamos entonces 3 niveles cada uno de los cuales puede tener contrapuntos dentro de sí:
@@ -278,7 +280,7 @@ Ahora bien, el primer nivel en este ejemplo puede causar sospecha, pues no parec
 ![Escena 2, secciones D a G](/music/videcoic-one/s2-d-g.png)
 El proceso es análogo al realizado en el tercer movimiento de _Espíritu Penetrando en Árbol_ donde las [casillas de repetición se van acumulando](/obras/espíritu-penetrando-en-arbol.html#redes), y también al simple efecto "polifónificante" del pedal del piano, que en _21 Nubes_ sirve para realizar la ya citada polifonía fluctuante. Sólo que en lo casos anteriores se trata de algo muy distinto, en _Espíritu Penetrando en Árbol_, incluso sería dudoso llamarlo polifonía cuando lo que se genera es más bien una red de tímbres (sin embargo el proceso acumulativo viene de ahí), en _21 Nubes_ el contrapunto es a nivel de notas. En el caso presente se generan contrapuntos de secciones, que dan como resultado contrapuntos de procesos y de músicas, todo ello dentro de una misma "voz".
 
-Esto no implica que una voz se tenga que sobresaturar, y que deba expresarlo todo a la vez.  Con el proceso de abstracción contrapuntístico del que hablamos, se posibilita manejar distintas dimensiones alternadamente, o quizá en un eventual virtuosismo, también dimensiones simultáneas. Lo cambia con la abstracción es la idea misma del contrapunto, pero no eliminando el contenido de la idea anterior sino enriqueciéndola con nuevas posibilidades. 
+Esto no implica que una voz se tenga que sobresaturar, y que deba expresarlo todo a la vez.  Con el proceso de abstracción contrapuntístico del que hablamos, se posibilita manejar distintas dimensiones alternadamente, o quizá en un eventual virtuosismo, también dimensiones simultáneas. Lo cambia con la abstracción es la idea misma del contrapunto, pero no eliminando el contenido de la idea anterior sino enriqueciéndola con nuevas posibilidades.
 
 
 
@@ -324,20 +326,20 @@ Como prueba de las potencia técnica de transformar el sentido en la recontextua
 
 ### Espíritu Penetrando en Árbol
 (Original para flauta, también se ha grabado parcialmente en versión para voz y cinta)
-Es por, así decirlo, el eje coprincipal. Narrativamente provee al personaje principal y buena parte de la ambientación. Musicalmente es la que menos influencia literal tiene en la obra ya que originalmente no fue diseñada como una obra modular. Lo que se hizo fue hacer una especie de abstracción de la obra.  En general sus materiales originales para flauta se convirtieron en descripciones textuales, la partitura funcionando meramente como un punto de referencia, por ejemplo, para ayudar caracterizar y ensamblar el movimiento del Espíritu (que en Videcoic son dos). 
+Es por, así decirlo, el eje coprincipal. Narrativamente provee al personaje principal y buena parte de la ambientación. Musicalmente es la que menos influencia literal tiene en la obra ya que originalmente no fue diseñada como una obra modular. Lo que se hizo fue hacer una especie de abstracción de la obra.  En general sus materiales originales para flauta se convirtieron en descripciones textuales, la partitura funcionando meramente como un punto de referencia, por ejemplo, para ayudar caracterizar y ensamblar el movimiento del Espíritu (que en Videcoic son dos).
 
 También provee, como imagen, esencia e idea, uno de los momento más bellos de toda la pieza, _el corazón del Árbol-Mundo_, que en la partitura de _Espíritu Penetrando en Árbol_ aparece en el **movimiento 3 parte D**. En la original éste momento incluye todos los material de la obra, y el música puede navegar la red moviéndose de uno a otro, es el Espíritu dentro del Árbol, explorándolo.  
 
 ![Al interior del árbol](/music/epa/epa-red.png)
 
-En _Videcoic One_ este momento lleva la indicación: 
+En _Videcoic One_ este momento lleva la indicación:
 
 ![25 Campanas](/music/videcoic-one/28w-p-JAT.png)
 
-En las partichelas se piden Nubes y Campanas y un sonido muy grande. La partitura por el contrario pide lo siguiente: 
+En las partichelas se piden Nubes y Campanas y un sonido muy grande. La partitura por el contrario pide lo siguiente:
 > A partir de todo lo anterior, llegar a lo que sea para el ensamble "El corazón del Árbol-Mundo"
 
-Es el momento central de la obra, y lo que se le da al músico es la completa libertad de exteriorizar todo lo que los pasados 20 minutos han generado en su interior, en su imaginación, y especialmente en su sentir colectivo. Es un momento de completa intimidad musical. En ambas ocasiones en las que se tocó (una vez en el ensayo y la otra en el concierto), la experiencia para mi estuvo coloreada de algo especial, una musical sublimada, con el espíritu de todo lo anterior, pero con raíces profundas que venían de algún otro lugar, del inconsciente quizá, el sueño de esa música que era de todos. 
+Es el momento central de la obra, y lo que se le da al músico es la completa libertad de exteriorizar todo lo que los pasados 20 minutos han generado en su interior, en su imaginación, y especialmente en su sentir colectivo. Es un momento de completa intimidad musical. En ambas ocasiones en las que se tocó (una vez en el ensayo y la otra en el concierto), la experiencia para mi estuvo coloreada de algo especial, una musical sublimada, con el espíritu de todo lo anterior, pero con raíces profundas que venían de algún otro lugar, del inconsciente quizá, el sueño de esa música que era de todos.
 
 Esa referencia a todos los materiales precedentes en la original era la totalidad del Árbol y la totalidad de la pieza. Aquello, la referencia, era lo más esencial de esa sección (por encima de todo lo técnico y composicional).  La referencia como tal ve transpuesta con precisión en _Videcoic One_: la música pasada _tenía_ que influir en ese momento porque había ya largo impulso detrás (el _contexto del sentido_ del que hemos hablado antes), y no había mejor manera de comprobar que así sería que dejando ese momento libre y observando lo que estaba por suceder.
 
@@ -373,7 +375,7 @@ Estas grabaciones, por cierto, posteriormente se reprodujeron en vivo, en versio
 (Original para 1 o 2 guitarras eléctricas)
 Esta obra juega un papel un tanto secundario, pero se utiliza para marcar eventos importantes (en un sentido semejante al del tam-tam en la orquesta). Aparece justo al comienzo de _Videcoic_, durante el _Big Bang_, en la guitarra y el piano. Es una especie de quebrar de la campana que rompe el tejido del silencio. Acompaña a un "You" salido de _28 Palabras_: cargando el momento con el signo de la otredad. Justo al final de la obra, vuelva a aparecer, igualmente resonando con las frases "I in You" y "I in Two", que ahora aparecen como ecos lejanos y suaves de aquel quiebre, pero también su reunión.
 
-#### Prologo 
+#### Prologo
 #### Jakob Pek, Guitarra y Andrew Jamieson, Piano:
 ![25 Campanas](/music/videcoic-one/25b-p-JP.png)
 
@@ -386,11 +388,11 @@ Esta obra juega un papel un tanto secundario, pero se utiliza para marcar evento
 
 ### 21 Nubes
 (Original para piano solo, también existe versión para Quinteto de Alientos)
-Las nubes son una entidad muy flexible, aparecen como nubes cósmicas (Nebulosas), nubes oscuras, claras y vaporosas. La armonía y la melodía de esta pieza se puede describir sucintamente como un simple algoritmo: "intervalos 1, 2 y 3, dentro de una escala diatónica". Ello permite que además de las nubes inventadas en la partitura, otras nubes se puedan crear, las cuales compartirán el mismo código genético que las de la partitura. 
+Las nubes son una entidad muy flexible, aparecen como nubes cósmicas (Nebulosas), nubes oscuras, claras y vaporosas. La armonía y la melodía de esta pieza se puede describir sucintamente como un simple algoritmo: "intervalos 1, 2 y 3, dentro de una escala diatónica". Ello permite que además de las nubes inventadas en la partitura, otras nubes se puedan crear, las cuales compartirán el mismo código genético que las de la partitura.
 
 Después de la campana inicial del, tenemos una nebulosa que emana del piano, hace ecos de las voces e hibrida con el ensamble y que luego hibrida con las resonancias de las campana en la guitarra (llevando consigo, posiblemente los ánimos de las voces y el ensamble).
 
-#### Prologo 
+#### Prologo
 #### Andrew Jamieson, Piano
 ![21 Nubes](/music/videcoic-one/21c-p-AJ.png)
 

@@ -4,7 +4,8 @@ description: para dos voces y uno o más instrumentos
 slug: memories-of-a-wedding
 backgroundImage: memories-of-a-wedding.png
 date: 2015-06-28
-category: Composición
+category:
+  - Composición
 ---
 
 # Memories of a Wedding
@@ -12,7 +13,7 @@ category: Composición
 ## Partitura y Grabación
 ### Descargar <a href='/music/memories-of-a-wedding/memories-of-a-wedding.pdf' target='_blank'>Partitura</a>
 
-### Escuchar dentro de [Videcoic One](/music/videcoic-one) 
+### Escuchar dentro de [Videcoic One](/music/videcoic-one)
 
 Nota: aún no hay grabación individual de esta obra
 
@@ -36,11 +37,11 @@ IV.  Together songs erupting interplay
 
 
 ## Introducción
-_Memories of a Wedding_, para dos voces e instrumentos, es un ciclo que explora el género de la canción de amor (poco trabajado en la música contemporánea y sobre-explotado en la música popular). 
+_Memories of a Wedding_, para dos voces e instrumentos, es un ciclo que explora el género de la canción de amor (poco trabajado en la música contemporánea y sobre-explotado en la música popular).
 
 _Memories of a Wedding_ es la primera de las _obras modulares_ que está pensada para más de un instrumento y por lo tanto posee materiales que corren sobre líneas diferentes. En la sección [Ensamble, complejidad y modularidad](#ensamble-complejidad-y-modularidad) se describirán los problemas que surgen de este hecho y las soluciones que la obra propone. (Hay que mencionar que _25 Campanas_ está pensada para dos guitarras, pero ambas comparten y deben tocar exactamente el mismo material).
 
-Como en _28 Palabras_ una de las intenciones al abordar un texto en música es usar las técnicas de la música para expresar literalmente y llevar a una realidad tangible en el acto sonoro, lo que la palabra sola únicamente puede expresar simbólicamente. Las propuestas y variaciones respecto de _28 Palabras_ al rededor de estos temas se analizarán en la sección [Texto]. 
+Como en _28 Palabras_ una de las intenciones al abordar un texto en música es usar las técnicas de la música para expresar literalmente y llevar a una realidad tangible en el acto sonoro, lo que la palabra sola únicamente puede expresar simbólicamente. Las propuestas y variaciones respecto de _28 Palabras_ al rededor de estos temas se analizarán en la sección [Texto].
 
 ### Versiones de la obra
 
@@ -75,7 +76,7 @@ Si bien la pieza no hace uso de alturas definidas, las partes vocales de la piez
 
 
 
-<div id="ensamble-complejidad-y-modularidad"></div> 
+<div id="ensamble-complejidad-y-modularidad"></div>
 
 ### Ensamble, complejidad y modularidad
 Cuando se tiene un sólo material, resulta más sencilla la concepción modular, pues cada pieza es una unidad, o está hecha de unidades simples (sin pliegues). Así, por ejemplo, _21 Nubes_ puede concebirse como una unidad, unas sola linea, o 21 piezas cada una de ella constituyendo una sola línea. Plantear el problema de su funcionamiento en relación con otras piezas involucra tan sólo el problema de la extensión horizontal de las partes, la cuales además pueden dividirse sin problema alguno, en unidades aún más sencillas y manejables.
@@ -131,7 +132,7 @@ El proceso de transformación se logra a través una [red] que permite la altern
 "Love looks" refiere la decir popular: "de la vista nace el amor", que con frecuencia su usa para decir que "el amor" o la "atracción" hacia algo nace del su aspecto físico. Aquí lo contrastamos con "soul's eyes", refiriendo que al amor nace de una manera de ver, que la mirada revela al alma amorosa y que el amor emana de ella. Es esto lo que le proceso de transformación de `Love y Looks a Soul`, hace patente plásticamente dentro del lenguaje y el sonido.
 ![Repetición, variación y desintegración](/music/memories-of-a-wedding/1-variation-repetition-disintegration.png)
 
-Por su parte "Eyes", revela una serie de transformaciones plásticas igualmente interesantes.  El ojo, la ventana al alma es el "Eye" que revela al "I", al yo que se entrega en la mirada amorosa. Es en el placer del reconocimiento mutuo que le yo se disuelve en el erótico "aee", que lo libera y expresa como sonido puro. Pero en esta multiplicidad de miradas, aquella de los ojos mirándose y reflejándose unos en los otros, en esta unión de la simetría "eyeSeye", se transforma al corporeo "Eye" y el espiritual "I" en el recíproco reconocerse del enamorado en el otro, produciendo en su oscilar el canto complementario "I is I", donde cada amante se encuentra a sí mismo en el ser del otro. 
+Por su parte "Eyes", revela una serie de transformaciones plásticas igualmente interesantes.  El ojo, la ventana al alma es el "Eye" que revela al "I", al yo que se entrega en la mirada amorosa. Es en el placer del reconocimiento mutuo que le yo se disuelve en el erótico "aee", que lo libera y expresa como sonido puro. Pero en esta multiplicidad de miradas, aquella de los ojos mirándose y reflejándose unos en los otros, en esta unión de la simetría "eyeSeye", se transforma al corporeo "Eye" y el espiritual "I" en el recíproco reconocerse del enamorado en el otro, produciendo en su oscilar el canto complementario "I is I", donde cada amante se encuentra a sí mismo en el ser del otro.
 
 ![I is I](/music/memories-of-a-wedding/I-is-I.png)
 
@@ -168,7 +169,7 @@ La estructura musical de la obra es un oscilante caminar através (along) una re
 
 En esta pieza se exploran la convivencia de ritmos independientes que oscilan cíclicamente (_accelerando-ritardando_) al rededor de melodías igualmente cíclicas e independientes. Se trata del momento de mayor libertad de _Memories of a Wedding_. Es evidéntemente el momento de la ebriedad y el desafán. Aun es esta la única pieza del ciclo de _obras modulares_ que tiene algun enfoque en el rítmo. En posición simétrica respecto de la independencia que tienen las alturas del rítmo a lo largo del cíclo. Aquí el rítmo también aparece autonomamente respecto de las alturas, lo que como se explica en [Ensamble, complejidad y modularidad](#ensamble-complejidad-y-modularidad), permite fusionar otras piezas del ciclo de maneras interesantes (usando los ritmos de esta pieza con las alturas de alguna otra pieza).
 
-En la música "Side-by-Side" está literalmente al lado de "Round Dance Cycle", mientras que ambas, en ciclos mueven a sus fonemas de modos que los entrelazan (ahora una da un paso, ahora la otra ahora las dos), y al lado de ellas, ciclos también, muchos otros ritmos independientes interactúan entre sí. 
+En la música "Side-by-Side" está literalmente al lado de "Round Dance Cycle", mientras que ambas, en ciclos mueven a sus fonemas de modos que los entrelazan (ahora una da un paso, ahora la otra ahora las dos), y al lado de ellas, ciclos también, muchos otros ritmos independientes interactúan entre sí.
 
 Como en toda danza, es reponsabilidad única de quienes bailan lo que logran hacer con sus interacciónes.     
 
@@ -176,7 +177,7 @@ Como en toda danza, es reponsabilidad única de quienes bailan lo que logran hac
 
 #### IV. Together songs erupting interplay
 
-Esta pieza explora las resonancias entre las palabras a manera de una filo-logía (logía de sus afinidas, recordemos que filos, en sí mismo, evoca uno de los concepto griegos amor). Se trata de una filología un tanto real y otro tanto fantástica. "To gather", "Together" y "There" todas evocan y apuntan a una union espacial. La fantasía es el hacia dónde, la esperanza, expectativa, futuro, el "To get". Es la búsqueda de una armonía que sigue una linea filial. 
+Esta pieza explora las resonancias entre las palabras a manera de una filo-logía (logía de sus afinidas, recordemos que filos, en sí mismo, evoca uno de los concepto griegos amor). Se trata de una filología un tanto real y otro tanto fantástica. "To gather", "Together" y "There" todas evocan y apuntan a una union espacial. La fantasía es el hacia dónde, la esperanza, expectativa, futuro, el "To get". Es la búsqueda de una armonía que sigue una linea filial.
 
 La filogenética estudia las transformaciones históricas y evolutivas de los organismos, las lineas filogenéticas son entonces árboles genealógicos de las especies.
 
@@ -190,9 +191,9 @@ El desarrollo es completamente musical, casi una sonata: dos temas, haciendo una
 
 Hay en esta transcripción del texto, sin embargo un par de omisiones: "I is I" y de "Eyes". Estas son como memorias que flotan con cierta independencia del resto de la música, resonancias, pero su linea filial con el presente verso justifica su aparición. Eyes se deriva, como ya vimos de una variacion (específicamente una rotación) de las vocales del "Ay" de "Play", mientras que "Is" se deriva de la retrogradación de la "S" final de "Songs" y la "E" (que suena "I") de "Erupting".
 
-En toda esta pieza hay una especie de retorno transformado de la primera pieza, pero lo que vuelve no son los materials (a excepción del Eyes), sino más bien los procesos. Eyes es necesario en tanto que porta el proceso mutativo (que lo transformó en su momento en "I is I"). Pero aqui ese proceso se desarrolla mucho más, generando el canto que ya citamos. 
+En toda esta pieza hay una especie de retorno transformado de la primera pieza, pero lo que vuelve no son los materials (a excepción del Eyes), sino más bien los procesos. Eyes es necesario en tanto que porta el proceso mutativo (que lo transformó en su momento en "I is I"). Pero aqui ese proceso se desarrolla mucho más, generando el canto que ya citamos.
 
-Esta musicalidad del texto lo presta bien al trabajo motívico. En particular podemos distinguir un motivo, la "figura triangular" que al inicio aparece como una quinta ascendete seguida de una quinta descendente. Lo llamamos figura triangular, porque el desarrollo la emparenta con todo tipo de figuras similares. 
+Esta musicalidad del texto lo presta bien al trabajo motívico. En particular podemos distinguir un motivo, la "figura triangular" que al inicio aparece como una quinta ascendete seguida de una quinta descendente. Lo llamamos figura triangular, porque el desarrollo la emparenta con todo tipo de figuras similares.
 
 <div class="inline-images">
 
@@ -210,7 +211,7 @@ Esta musicalidad del texto lo presta bien al trabajo motívico. En particular po
     Vale la pena señalar aquí que a este procedimiento de desarrollo que emparenta materiales por su contorno más que por su composición armónica, lo que hemos estudiado en otros lugares (con materiales más complejos) a través del concepto de [Escala de Percepción](). Utilizar una escala se percepción se puede explicar brevemente como un precedimiento de observación de un material a diferentes escalas de acercamiento o alejamiento, o de detalle. Así el triangulo puede verse grande o chico, o pueden verse más detalles (notas que conectan a sus vértices) o menos, etc. Es un procedimiento de clasificación y análisis morfológico y en consecuencia filogenético.
 </div>
 
-Otra carcterística interesante es que a pesar de la simplicidad de las figuras y del texto, jamás se repite la misma combinación de texto y figura melódica, lo que está en plena consonancia con el desarrollo musical del texto donde jamás se repite la misma configuración de palabras (3 unidades textuales seguidas -concebimos a "to get there" como una unidad-). 
+Otra carcterística interesante es que a pesar de la simplicidad de las figuras y del texto, jamás se repite la misma combinación de texto y figura melódica, lo que está en plena consonancia con el desarrollo musical del texto donde jamás se repite la misma configuración de palabras (3 unidades textuales seguidas -concebimos a "to get there" como una unidad-).
 
 
 

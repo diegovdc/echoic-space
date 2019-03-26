@@ -5,11 +5,18 @@ slug: 2019-03-24_turbulencia_v1
 file_name: https://ia601508.us.archive.org/17/items/turbulencia_v1/turbulencia_v1.mp3
 track_name: Turbulencia v.1
 backgroundImage: 2019-03-24_turbulencia_v1.jpg
-seo_img: 2019-03-24_turbulencia_v1-seo.jpg
-seo_img_width: 1331
-seo_img_height: 904
+seo:
+  img: 2019-03-24_turbulencia_v1-seo.jpg
+  width: 1331
+  height: 904
 date: 2019-03-24
-category: Bitácora $ Turbulencias $ Guitarra $ Exploraciones $ Improvisación $ En Progreso
+category:
+  - Bitácora
+  - Turbulencias
+  - Guitarra
+  - Exploraciones
+  - Improvisación
+  - En Progreso
 ---
 
 # Turbulencia v.1

@@ -6,7 +6,11 @@ file_name: https://ia601500.us.archive.org/19/items/Fuegoatardecer/fuego%3Aatard
 track_name: "Fuego/Atardecer"
 backgroundImage: fuego_atardecer_.jpg
 date: 2018-11-13
-category: Composición $ Canon $ En Progreso $ Redes
+category:
+  - Composición
+  - Canon
+  - En Progreso
+  - Redes
 ---
 
 # Fuego/Atardecer
@@ -14,6 +18,6 @@ category: Composición $ Canon $ En Progreso $ Redes
 
 ### Descargar <a href='https://archive.org/details/Fuegoatardecer' target='_blank'>Audio</a>
 
-Se trata de dos obras que he estado trabajando junto con [Milo Tamez](https://www.milotamez.com.mx/). 
+Se trata de dos obras que he estado trabajando junto con [Milo Tamez](https://www.milotamez.com.mx/).
 
 El principio notacional de estas obras tiene que ver con el uso de grafos (e ideas derivadas de la teoría de categorías -morfismos y componibilidad-).

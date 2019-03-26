@@ -4,15 +4,16 @@ description: para flauta sola o para conjunto vocal
 slug: espiritu-penetrando-en-arbol
 audios:
   - comment: aun no funciona esto
-  - file: espiritu-penetrando-en-arbol-flauta.mp3 
+  - file: espiritu-penetrando-en-arbol-flauta.mp3
     name: Espíritu Penetrando en Árbol (Flauta)
-  - file: espiritu-penetrando-en-arbol-mvt-3-voz.mp3 
+  - file: espiritu-penetrando-en-arbol-mvt-3-voz.mp3
     name: Espíritu Penetrando en Árbol (Voz, mvt. 3)
 file_name: espiritu-penetrando-en-arbol-flauta.mp3
 track_name: Espíritu Penetrando en Árbol
 backgroundImage: espiritu-penetrando-en-arbol.png
 date: 2013-03-28
-category: Composición
+category:
+  - Composición
 ---
 
 # Espíritu Penetrando en Árbol
@@ -46,7 +47,7 @@ Esquemáticamente, el método fenomenológico postula, por una parte, que la ver
 
 Es decir, para poder experimentar lo que se siente ser un árbol, es necesario figurarnos una entidad con capacidades perceptuales que pueda, por un lado, entrar en el árbol para ser el árbol, y por otro lado, que pueda dar expresión de su experiencia.
 
-En este sentido la pieza explora dos materiales fundamentales, los derivados de la naturaleza "objetiva", lo que llamaríamos el mundo externo, representado por los sonidos de un bosque, y los derivados del mundo psicológico, el del "Espíritu".  Este "Espíritu" en la pieza se comporta como una especie de "bestia casi por completo inmaterial" y funge como el vehículo necesario para generar la experiencia de vida de un árbol. 
+En este sentido la pieza explora dos materiales fundamentales, los derivados de la naturaleza "objetiva", lo que llamaríamos el mundo externo, representado por los sonidos de un bosque, y los derivados del mundo psicológico, el del "Espíritu".  Este "Espíritu" en la pieza se comporta como una especie de "bestia casi por completo inmaterial" y funge como el vehículo necesario para generar la experiencia de vida de un árbol.
 
 Dividida en tres movimientos, la forma se deriva del esquema que con frecuencia se ofrece cuando se habla del método fenomenológico hegeliano: tesis-antítesis-síntesis, o A-B-A*B, dónde el primer término es el Bosque (sinécdoque del Árbol), el segundo el Espíritu, y el tercero, el Espíritu dentro del Árbol.
 
@@ -54,8 +55,8 @@ Dividida en tres movimientos, la forma se deriva del esquema que con frecuencia 
 En este movimiento se trabaja principalmente con transcripciones,  simulaciones, simbolizaciones y pantomimas de los sonidos del bosque, y en mucho menor sentido con los sonidos del Espíritu quien aquí sólamente aparece como sonando desde de lejanía, pequeño y metido en un mundo mucho más amplio.
 
 #### Materiales sonoros
-Del Bosque se pueden enumerar los siguientes sonidos: 
-1. Viento, sobre hojas y ramas 
+Del Bosque se pueden enumerar los siguientes sonidos:
+1. Viento, sobre hojas y ramas
 ![Viento sobre ramas](/music/epa/viento-ramas.png)
 2. Sonidos de insectos, (muy débiles)
 ![Insectos](/music/epa/insectos.png)
@@ -92,7 +93,7 @@ Como en el resto de la obra hay una recurrencia al tratamiento del sonido bajo u
 Por otro lado, hay un énfasis en la representación de elementos sumamente diversos, discontinuos, breves y envueltos en silencio, esto en concordancia con la intención de hacer una representación relativamente objetiva del ambiente de un bosque real.
 
 ##### (Micro)motivos y variaciones
-El que muchos de los sonidos sean transcripciones de los sonidos del bosque hace que estos, por más breves que sean, estén dotados de cierta identidad auditiva. 
+El que muchos de los sonidos sean transcripciones de los sonidos del bosque hace que estos, por más breves que sean, estén dotados de cierta identidad auditiva.
 
 Esta identidad permite considerar a estos sonidos como motivos y ello hace posible que en el desarrollo de los materiales se recurra una extrema variación en los conjuntos motívicos. De este modo ninguno de los eventos sonoros del movimiento es semejante a otro, sin por ello mermar la capacidad de l oído de reconocer la repetición y variación de estos motivos.
 
@@ -115,7 +116,7 @@ El segundo movimiento se enfoca por completo en caracterizar al Espíritu en su 
 <h4 id="escalas-de-percepcion-del-espiritu">Escalas de percepción: Observación a detalle del Espíritu</h4>
 
 Si bien en el primer movimiento tuvimos la oportunidad de experimentar el movimiento del Espíritu, como se mencionó antes, se trata tan sólo de una visión alejada y por ello carente de los detalles que se pueden apreciar cuando enfocamos por completo nuestra atención en este material.
- 
+
  En el primer movimiento se ve así:
 
 ![Espíritu en el movimiento 1](/music/epa/espiritu-mvt-1.png)
@@ -140,7 +141,7 @@ Por otro lado nótese que el contorno melódico de la primera aparición se repi
 
 #### Aspectos técnicos
 ##### Macrotimbre de primer y segundo grados
-Decimos que el _macrotimbre de primer grado_ refiere al sonido producido por la modulación en los componentes propios de un sonido (principalmente: altura, color, intensidad, articulación, pulso).  Llamamos _macrotimbre de segundo grado_ a aquel que modula a las modulaciones del macrotimbre de primer grado. En nuestro caso: 
+Decimos que el _macrotimbre de primer grado_ refiere al sonido producido por la modulación en los componentes propios de un sonido (principalmente: altura, color, intensidad, articulación, pulso).  Llamamos _macrotimbre de segundo grado_ a aquel que modula a las modulaciones del macrotimbre de primer grado. En nuestro caso:
 - Amplitud de las alturas - modula una linea de alturas para generar un área de alturas
 - Amplitud de las voces (número de voces) - modula un área de alturas para generar una multiplicidad de áreas de alturas
 
@@ -157,7 +158,7 @@ En este movimiento los siguientes son los componentes del sonido que se trabajan
 ##### Contrapunto
 1. Puesto que el macrotimbre permite conceptualizar la síntesis sonora en instrumentos acústicos, el contrapunto de los componentes de un sonido resulta súmamente atractivo. Esto, en tanto que hace posible el uso de un continuo flujo de un timbre como material sonoro.
 
-2. El caracter del movimiento del Espíritu se genera por consiguiente con un movimiento pulsante de un sonido que se expande y contrae a distintas velocidades. Es como si el Espíritu se impulsase enérgicamente de un lugar a otro para acercarse al Árbol. 
+2. El caracter del movimiento del Espíritu se genera por consiguiente con un movimiento pulsante de un sonido que se expande y contrae a distintas velocidades. Es como si el Espíritu se impulsase enérgicamente de un lugar a otro para acercarse al Árbol.
 
 3. La corporalidad del Espiritu se genera como una difusa materialidad, refelejada en su oscilar ruido-tono (difusión y concentración de la energía sonora).
 
@@ -176,7 +177,7 @@ En este movimiento los siguientes son los componentes del sonido que se trabajan
 
 3. A pesar de que se trabajan 6 componentes del macrotimbre, el intérprete sólo necesita concentrarse en los 3 que muestra la partitura, y los otros se derivan fácilmente de estos.
 
-4. Si bien es imposible para una sola flauta ejecutar este movimiento a la perfección, ello no limita al interprete para encontrar maneras mediante las cuales aproximarse al sonido deseado. 
+4. Si bien es imposible para una sola flauta ejecutar este movimiento a la perfección, ello no limita al interprete para encontrar maneras mediante las cuales aproximarse al sonido deseado.
 
 5. Tampoco se excluye la posibilidad de la realización de una cinta que permita al intérprete ejecutar la obra utilizando varias capas de su instrumento para lograr una delimitación de los contornos de alturas y una saturación sonora satisfactorias.
 
@@ -190,8 +191,8 @@ En este movimiento los siguientes son los componentes del sonido que se trabajan
 En este movimiento se propone un tercer tipo de notación, el más complejo de las tres presentadas hasta el momento. La notación busca facilitar la superposición de los materiales del primer movimiento y de los materiales del segundo. Por un lado hace posible la alternancia de materiales contrastantes como en el primer movimiento, y por otro mantiene una textura muy activa, como en el segundo movimiento.
 
 #### Notación
- Aquí los recuadros representan conjuntos de sonidos (separados por comillas: **'** ) entre los que el músico puede alternar durante la duración determinada. El signo "(+)" significa que los elementos de la casilla anterior se suman a los de la siguiente, y posteriormente deben irse abandonando uno a uno. 
- 
+ Aquí los recuadros representan conjuntos de sonidos (separados por comillas: **'** ) entre los que el músico puede alternar durante la duración determinada. El signo "(+)" significa que los elementos de la casilla anterior se suman a los de la siguiente, y posteriormente deben irse abandonando uno a uno.
+
 También podemos encontrar algunas secuencias lineales de eventos, la cuales no aparecen escritas dentro de casilla alguna, lo que significa que deben de leerse de izquierda a derecha sin volver a ningún sonido. En el siguiente ejemplo podemos apreciar ambos tipos de notación:
 
 ![Notación movimiento 3](/music/epa/mvt-3-7.png)
@@ -246,6 +247,3 @@ En esta obra podemos observar un trabajo profundo en 4 niveles:
 4. Uso de formas tomadas de contextos extraños a la tradición músical (tesis-antítesis-síntesis hegeliana y estructura del árbol).
 
 Finalmente, en concordancia con el punto de vista fenomenológico según el cuál, la percepción de la cosa, e incluso la definción de su ser, no es separable del agente de la percepción, lo que se ha realizado **literalmente** en la obra es el devenir árbol de un flautista montado sobre en el vehículo imaginario que hemos denominado Espíritu. En este sentido podemos argumentar que la interpretación de la obra puede admitir expresiones muy diversas siempre y cuando el intérprete se involucre enteramente con el proceso fenomenológico propuesto.
-
-
-

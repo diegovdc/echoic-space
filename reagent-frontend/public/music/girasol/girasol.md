@@ -6,7 +6,8 @@ file_name: girasol.mp3
 track_name: Girasol
 backgroundImage: girasol.png
 date: 2011-01-07
-category: Composición
+category:
+  - Composición
 ---
 
 # Girasol

@@ -6,7 +6,8 @@ slug: 2019-03-23_experimentando-con-fluent-can
 track_name: Experimentando con fluent can
 backgroundImage: 2019-03-23_experimentando-con-fluent-can.png
 date: 2019-03-23
-category: Bitácora
+category:
+  - Bitácora
 ---
 
 
@@ -27,7 +28,7 @@ s.boot
 ~durs = (1..2**3.6)
 .pipe(
     _.log2,
-    {|n| n - (n.asInteger)}, 
+    {|n| n - (n.asInteger)},
     _*2,
     _+1,
     _.normalize,

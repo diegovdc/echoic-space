@@ -6,10 +6,12 @@ file_name: pajaros-en-la-marea-v1.mp3
 track_name: Pájaros en la marea (v1)
 backgroundImage: pajarosv1.png
 date: 2017-12-10
-category: Live Coding
-seo_img: seo.png
-seo_img_width: 1671
-seo_img_height:  943
+category:
+  - Live Coding
+seo:
+  img: seo.png
+  width: 1671
+  height:  943
 ---
 Fragmento de una improvisación
 

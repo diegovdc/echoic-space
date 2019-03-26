@@ -6,7 +6,12 @@ file_name: 2-canones-de-aceleracion.mp3
 track_name: 2 canones de aceleración
 backgroundImage: 2-canones-de-aceleracion.png
 date: 2019-02-14
-category: Composición $ SuperCollider $ Exploraciones $ Nanc-in-a-Can $ Canon
+category:
+  - Composición
+  - SuperCollider
+  - Exploraciones
+  - Nanc-in-a-Can
+  - Canon
 ---
 
 Primera aproximación a canons de aceleración usando la función de coseno para generar aceleraciones y desaceleraciones graduales.

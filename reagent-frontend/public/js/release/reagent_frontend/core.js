@@ -40,7 +40,7 @@ return cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.string.trim,v__$1);
 }),music);
 });
 reagent_frontend.core.mount_root = (function reagent_frontend$core$mount_root(){
-reagent_frontend.core.get_data(reagent_frontend.core.parse_categories,cljs.core.cst$kw$music,"/data/music.json");
+reagent_frontend.core.get_data(cljs.core.identity,cljs.core.cst$kw$music,"/data/music.json");
 
 reagent_frontend.core.get_data(cljs.core.identity,cljs.core.cst$kw$blog,"/data/blog.json");
 

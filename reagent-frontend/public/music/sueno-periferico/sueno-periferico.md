@@ -6,7 +6,10 @@ file_name: sueno-periferico.mp3
 track_name: Sueño Periférico
 backgroundImage: sueno-periferico.png
 date: 2018-09-17
-category: Composición $ Guitarra $ Microtonalidad
+category:
+  - Composición
+  - Guitarra
+  - Microtonalidad
 ---
 
 # Sueño Periférico
@@ -31,7 +34,7 @@ category: Composición $ Guitarra $ Microtonalidad
 
                       hoy soñé música que cantaba la ciudad
 
-                    
+
 ```
 
 ### Descargar <a href='/music/sueno-periferico/sueno-periferico.mp3' target='_blank'>Audio</a>

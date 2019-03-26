@@ -6,7 +6,11 @@ file_name: grilluidos.mp3
 track_name: Grilluidos
 backgroundImage: grilluidos.png
 date: 2018-08-31
-category: Composición $ SuperCollider $ Nanc-in-a-Can $ Canon
+category:
+  - Composición
+  - SuperCollider
+  - Nanc-in-a-Can
+  - Canon
 ---
 
 # Grilluidos

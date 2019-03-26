@@ -6,7 +6,8 @@ file_name: 25-campanas.mp3
 track_name: 25 Campanas
 backgroundImage: 25-campanas.png
 date: 2015-03-28
-category: Composición
+category:
+  - Composición
 ---
 
 # 25 Campanas
@@ -39,7 +40,7 @@ Particularmente se omiten:
 2. Detalles sobre las armonías y las conducción de las voces (específicamente en lo relativo a los armónicos y multifónicos producidos)
 
 #### Armónicos
-En esta obra se utilizan tres notaciones para los armónicos: 
+En esta obra se utilizan tres notaciones para los armónicos:
 Dos de ellas son ya conocidas, la del neuma con un circulo en la parte superior, y la del diamante.  Una tercera notación se usa para los armónicos superiores: Se indica el número de la cuerda con números romanos y el número de traste y la posición del armónico con números decimales. Así por ejemplo:  **V 3.3** indicaría tocar un armónico sobre la cuerda 5 aproximadamente 1/3 de traste adelante del tercero.
 
 La ambigüedad de las interpretación de cada una de las notación es deseada (véase [Homenaje al absurdo](#homenaje-al-absurdo))
@@ -54,7 +55,7 @@ La posibilidad de lecturas que se bifurcan hace que la pieza albergue aspectos n
 #### Sugerencias para la de interpretación
 Como lo especifica la [nota al programa](#nota-al-programa), no hay reglas definidas sobre cómo ha de abordarse la interpretación de _25 Campanas_.
 
-Sin embargo, se pueden apuntar ciertas sugerencias de interpretación que fungieron como supuestos durante la escritura: 
+Sin embargo, se pueden apuntar ciertas sugerencias de interpretación que fungieron como supuestos durante la escritura:
 
 (No pretendo que sean tomadas como aspectos necesarios de la interpretación, sino como recursos de la cuales el intérprete puede servirse, pero también puede decidir descartar cuando su intuición se lo indique).
 
@@ -92,7 +93,7 @@ Más allá de esta imagen que tiene su resonancia cuando hablamos de la [serie a
 
 En esta pieza, se busca dejar abiertas ciertas cuestiones interpretativas a la ambigüedad, incluso la contradicción, y mejor aun al sinsentido y al absurdo. Al diferencia de _21 Nubes_, donde el proceso creativo busca (al menos en uno de sus ejes) ser completamente lógico, algorítmico y por ende explicable.
 
-Esto, primero que nada porque Ramis, el dedicatario, es alguien con un gusto especial por esta cualidad de la existencia, y esta es mi manera de de homenajear aquello. 
+Esto, primero que nada porque Ramis, el dedicatario, es alguien con un gusto especial por esta cualidad de la existencia, y esta es mi manera de de homenajear aquello.
 
 Segundo porque el caracter de juego de la obra supone que las reglas de su interpretación se puedan definir sobre la base de cada ejecución, incluso de cada momento. Se trata de liberar la ejecución de una especie de policía lógica, de evitar que la ejecución se pueda evaluar únicamente respecto de la partitura elevada a modelo absoluto de la música. Por el contrario, la importancia de la partitura está en ser la referencia, el punto de partida y la base de la construcción creativa y lúdica. Ser tierra fértil para la música y el diálogo: aquí no se pide más del intérprete que el virtuosismo de su ingenio y de su humor.
 
@@ -101,7 +102,7 @@ Segundo porque el caracter de juego de la obra supone que las reglas de su inter
 
 2. La repetición (podría tocarse la obra sin repetir nada)
 
-3. La notación de los armónicos. Hay tres notaciones. En el caso de la segunda imagen, por ejemplo, qué debe significar el armónico de diamante (se toca sobre la cuerda indicada, o más bien debemos tocar ambos sonidos). 
+3. La notación de los armónicos. Hay tres notaciones. En el caso de la segunda imagen, por ejemplo, qué debe significar el armónico de diamante (se toca sobre la cuerda indicada, o más bien debemos tocar ambos sonidos).
 
 ![Notación de armónicos](/music/25-campanas/notacion-armonicos-1-y-3.png)
 ![Notación de armónicos](/music/25-campanas/notacion-armonicos-2.png)
@@ -129,7 +130,7 @@ Un segundo objetivo de la pieza fue explorar diversas maneras de repetición. El
 
 Para esta pieza, sin embargo, no tenía el deseo de esos recursos -->
 
-Mi interés es esta pieza era desarrollar técnicamente un modo de ejecución de la guitarra que fuera a la vez idiomático e inusual. Para enfocarme en este objetivo me plantee la regla de generar un discurso que tuviera como limitante el que siempre se sostuvieran la mayor cantidad de tonos (sonidos afinados) posibles dentro de un lenguaje predominantemente melódico. Para ello decidí trabajar con dos recursos relativamente comunes en la guitarra eléctrica: 
+Mi interés es esta pieza era desarrollar técnicamente un modo de ejecución de la guitarra que fuera a la vez idiomático e inusual. Para enfocarme en este objetivo me plantee la regla de generar un discurso que tuviera como limitante el que siempre se sostuvieran la mayor cantidad de tonos (sonidos afinados) posibles dentro de un lenguaje predominantemente melódico. Para ello decidí trabajar con dos recursos relativamente comunes en la guitarra eléctrica:
 
 1. El tapping, que permite "pisar" la cuerda con las dos manos independientemente
 
@@ -141,7 +142,7 @@ La incorporación de estás técnicas con el principio de sostenimiento de los s
 
 2. La incorporación, gracias al uso de armónicos, de muchísimos sonidos no temperados al vocabulario de la pieza (incluidos además algunos multifónicos que "salen" con frecuencia y facilidad al invocar armónicos relativamente altos i.e. el 11)
 
-    2.1 Nótese que para cada cuerda, únicamente los armónicos correspondientes a la duplicación de la fundamental (1, 2, 4, 8...) son temperados, todos los demás no lo son. 
+    2.1 Nótese que para cada cuerda, únicamente los armónicos correspondientes a la duplicación de la fundamental (1, 2, 4, 8...) son temperados, todos los demás no lo son.
 
     2.2 Lo que significa que en realidad el material armónico consiste en 5 espectros distintos y una escala temperada (o 6 espectro si concebimos a las **e**s como entidades distintas -que físicamente son-).
 
@@ -161,10 +162,10 @@ Lo que tenemos como resultado es una construcción armónica de la forma, litera
 <div id="serie-armonica-y-repeticion"></div>
 
 #### Segundo principio formal: La repetición
-##### Construcción segmentaria vs repetición 
-La repetición libre oculta las proporciones armónicas entre las secciones, pero la repetición enfatiza los sonidos particulares de cada sección. 
+##### Construcción segmentaria vs repetición
+La repetición libre oculta las proporciones armónicas entre las secciones, pero la repetición enfatiza los sonidos particulares de cada sección.
 
-Ya que cada sección tiene una número de sonidos particulares, la identidad sonora de cada una de las sección radicará en su cantidad de sonidos y particularmente en el conjunto que conforman. 
+Ya que cada sección tiene una número de sonidos particulares, la identidad sonora de cada una de las sección radicará en su cantidad de sonidos y particularmente en el conjunto que conforman.
 
 Para comprender la noción de identidad que queremos manejar debemos tomar prestadas las técnicas de representación del sonido de la síntesis granular (cf. _Microsound_, Curtis Roads). En esta, un sonido se divide en miles de eventos singulares (granos). Esta división de un sonido, posteriormente puede usarse para reconstruirlo (como en uso de ventanas de la Transformada Rápida de Fourier), e incluso transformarlo transformar su duración sin afectar sus alturas. En los usos más creativos de esta técnica, los granos se puede redistribuir y reproducir de diversas maneras, lo cuál genera un multiplicidad de sonoridades nuevas (aunque limitadas por las características del sonido de origen). Lo que aquí queremos entender como identidad es justamente la limitación impuesta por el sonido de origen.
 
@@ -192,9 +193,9 @@ El concepto de Stockhausen de ["Moment form"](https://en.wikipedia.org/wiki/Mome
 ### Repetición
 Se utilizan tres notaciones para la repetición
 
-1. Barras de repetición ordinarias 
+1. Barras de repetición ordinarias
 
-2. Barras de repetición punteadas (se utilizan cuando hay repeticiones dentro de las repeticiones) 
+2. Barras de repetición punteadas (se utilizan cuando hay repeticiones dentro de las repeticiones)
 
 3. Barras con rizos, para indicar la [Repetición Rizada](#repeticion-rizada)
 
@@ -214,7 +215,7 @@ La repetición se trabaja en dos niveles:
     ![repetición fragmentaria 2](/music/25-campanas/repeticion-fragmentaria-2.png)
 
     2.3 Rizada: aquella donde las partes de una sección pueden repetirse en el orden de la escritura o bajo alguna forma de desorden (retrogradación, saltos de un punto temporal a otro, combinación de retorgadación y salto, o de orden y salto, combinación de éstas).
-    
+
     ![repetición rizada 1](/music/25-campanas/repeticion-rizada-1.png)
     ![repetición rizada 2](/music/25-campanas/repeticion-rizada-1.png)
 
@@ -245,7 +246,7 @@ Ambos aspectos, encajan muy bien con la afinación ordinaria de la guitarra (cuy
 
 Cabe destacar ciertos aspectos relativos a la derivación de los materiales armónicos a partir de la guitarra como instrumento.
 
-1. La afinación de la guitarra contiene 5 de las 7 notas de la escala en cuestión. 
+1. La afinación de la guitarra contiene 5 de las 7 notas de la escala en cuestión.
 
 2. Las cuerdas al aire no implican, tan sólo una nota, sino un espectro completo y por lo tanto, colecciones de armonicos, lo que abre el desarrollo y la escucha armónica de la obra en un sentido espectral y no temperado.
 
@@ -260,7 +261,7 @@ Puesto que sostener el mayor número posible de notas es un principio interpreta
 
 
 ### Contrapunto
-La interpretación de la pieza, si esta se hace por más de un guitarrista y se realiza una lectura que sigue la secuencia _1, 2, 3 ..._  de las secciones, genera un canon no estricto semejante al de _In C_ de _Terry Riley_.<div class="note"><i class="footnote-i"></i> La fantástica y perspicaz observación de que In C es un canon se la debo a Salvador Rodriguez</div> 
+La interpretación de la pieza, si esta se hace por más de un guitarrista y se realiza una lectura que sigue la secuencia _1, 2, 3 ..._  de las secciones, genera un canon no estricto semejante al de _In C_ de _Terry Riley_.<div class="note"><i class="footnote-i"></i> La fantástica y perspicaz observación de que In C es un canon se la debo a Salvador Rodriguez</div>
 
 Este modelo de canon se puede caracterizar en lo siguiente:
 
@@ -268,7 +269,7 @@ Este modelo de canon se puede caracterizar en lo siguiente:
 
 2. Las secciones forman un canon al unísono en tanto la secuencia está definida.
 
-3. Las voces de los canones pueden entrar y salir de fase, dependiendo del momento en el que una voz u otra avance a la siguiente casilla. 
+3. Las voces de los canones pueden entrar y salir de fase, dependiendo del momento en el que una voz u otra avance a la siguiente casilla.
 
 Sin embargo se pueden notar varias refencias con respecto a este modelo:
 
@@ -279,8 +280,8 @@ Sin embargo se pueden notar varias refencias con respecto a este modelo:
 3. Los músicos no tiene que tocar todo el material de cada una de las secciones, particularmente en el caso de las secciones con más de un pentagrama.
 
 ### Timbre
-En términos interpretativos, se sugiere que la pieza se toque de tal manera que se puedan sostener siempre el mayor número de sonidos. Lo cuál interesantemente complica tocar incluso una simple secuecia escalar, pero por otro lado, la hace mucho más interesante en términos de color armónico: se enfatizan el sonido individual de cada cuerda, la alternacia abierta-cerrada de la misma, la región del diapason, y la toda la gama de articulaciónes posibles (pulsado con mano izquierda o derecha, tapping, armónicos, razgueos, etc.). 
-Si bien, la mayor parte de estas articulaciónes no están determinadas de manera alguna en la partitura (a excepción de ciertos armónicos absolutamente necesarios), ello no significa que la pieza no esté pensada desde la increible colorística del instumento. Todo lo contrario, la pieza esta escrita desde el instrumento y si el músico sigue la sugerencia de sostener el mayor número de notas posibles descubrirá que cada pieza traza uno o varios caminos para las manos, una o varias secuencias posibles de articulación. 
+En términos interpretativos, se sugiere que la pieza se toque de tal manera que se puedan sostener siempre el mayor número de sonidos. Lo cuál interesantemente complica tocar incluso una simple secuecia escalar, pero por otro lado, la hace mucho más interesante en términos de color armónico: se enfatizan el sonido individual de cada cuerda, la alternacia abierta-cerrada de la misma, la región del diapason, y la toda la gama de articulaciónes posibles (pulsado con mano izquierda o derecha, tapping, armónicos, razgueos, etc.).
+Si bien, la mayor parte de estas articulaciónes no están determinadas de manera alguna en la partitura (a excepción de ciertos armónicos absolutamente necesarios), ello no significa que la pieza no esté pensada desde la increible colorística del instumento. Todo lo contrario, la pieza esta escrita desde el instrumento y si el músico sigue la sugerencia de sostener el mayor número de notas posibles descubrirá que cada pieza traza uno o varios caminos para las manos, una o varias secuencias posibles de articulación.
 
 Esto reconecta con la apertura formal de la pieza, que permite a los músicos interactuar entre ellos, especialmente bajo la forma de una reacción a las propuestas interpretativas del otro.
 

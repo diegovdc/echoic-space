@@ -6,10 +6,15 @@ file_name: https://ia801400.us.archive.org/34/items/space-is-the-place/VIU-barce
 track_name: Space is the place
 backgroundImage: space-is-the-place.jpg
 date: 2019-01-24
-category: Live Coding $ SuperCollider $ Nanc-in-a-Can $ Canon
-seo_img: space-is-the-place--seo.png
-seo_img_height: 907
-seo_img_width: 1274
+category:
+  - Live Coding
+  - SuperCollider
+  - Nanc-in-a-Can
+  - Canon
+seo:
+  img: space-is-the-place--seo.png
+  height: 907
+  width: 1274
 ---
 
 ### Descargar <a href='https://archive.org/details/space-is-the-place' target='_blank'>Audio</a>

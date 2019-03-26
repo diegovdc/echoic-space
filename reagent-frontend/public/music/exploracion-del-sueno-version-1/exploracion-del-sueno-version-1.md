@@ -6,7 +6,12 @@ file_name: exploracion-del-sueno-version-1.m4a
 track_name: "Canon: Exploración del Sueño"
 backgroundImage: exploracion-del-sueno-version-1.png
 date: 2017-06-22
-category: Composición $ Canon $ En Progreso $ SuperCollider $ Redes
+category:
+  - Composición
+  - Canon
+  - En Progreso
+  - SuperCollider
+  - Redes
 ---
 
 # Exploración del Sueño (melodía 1)
