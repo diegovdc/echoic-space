@@ -16,23 +16,23 @@ console.log(x);
 
 return x;
 });
-reagent_frontend.core.axios_get = (function (){var target_obj_31283 = deps;
-var next_obj_31284 = (target_obj_31283["axios"]);
-var next_obj_31285 = (next_obj_31284["get"]);
-return next_obj_31285;
+reagent_frontend.core.axios_get = (function (){var target_obj_30973 = deps;
+var next_obj_30974 = (target_obj_30973["axios"]);
+var next_obj_30975 = (next_obj_30974["get"]);
+return next_obj_30975;
 })();
 reagent_frontend.core.get_data = (function reagent_frontend$core$get_data(func,state_key,url){
-return (reagent_frontend.core.axios_get.cljs$core$IFn$_invoke$arity$1 ? reagent_frontend.core.axios_get.cljs$core$IFn$_invoke$arity$1(url) : reagent_frontend.core.axios_get.call(null,url)).then((function (p1__31286_SHARP_){
-return cljs.core.js__GT_clj.cljs$core$IFn$_invoke$arity$variadic(p1__31286_SHARP_,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.cst$kw$keywordize_DASH_keys,true], 0));
-})).then((function (p1__31287_SHARP_){
-return cljs.core.cst$kw$data.cljs$core$IFn$_invoke$arity$1(p1__31287_SHARP_);
-})).then((function (p1__31288_SHARP_){
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,state_key,(func.cljs$core$IFn$_invoke$arity$1 ? func.cljs$core$IFn$_invoke$arity$1(p1__31288_SHARP_) : func.call(null,p1__31288_SHARP_)));
+return (reagent_frontend.core.axios_get.cljs$core$IFn$_invoke$arity$1 ? reagent_frontend.core.axios_get.cljs$core$IFn$_invoke$arity$1(url) : reagent_frontend.core.axios_get.call(null,url)).then((function (p1__30976_SHARP_){
+return cljs.core.js__GT_clj.cljs$core$IFn$_invoke$arity$variadic(p1__30976_SHARP_,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.cst$kw$keywordize_DASH_keys,true], 0));
+})).then((function (p1__30977_SHARP_){
+return cljs.core.cst$kw$data.cljs$core$IFn$_invoke$arity$1(p1__30977_SHARP_);
+})).then((function (p1__30978_SHARP_){
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,state_key,(func.cljs$core$IFn$_invoke$arity$1 ? func.cljs$core$IFn$_invoke$arity$1(p1__30978_SHARP_) : func.call(null,p1__30978_SHARP_)));
 }));
 });
 reagent_frontend.core.parse_categories = (function reagent_frontend$core$parse_categories(music){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__31289_SHARP_){
-return cljs.core.update_in.cljs$core$IFn$_invoke$arity$3(p1__31289_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$category], null),(function (c){
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__30979_SHARP_){
+return cljs.core.update_in.cljs$core$IFn$_invoke$arity$3(p1__30979_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$category], null),(function (c){
 var v = c;
 var v__$1 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(v,"$");
 return cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.string.trim,v__$1);

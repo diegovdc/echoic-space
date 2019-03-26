@@ -54,5 +54,5 @@ Patrones en las nubes. Del video me gustan la estaticiad de la toma y el time la
 
 ### Bull's Bridge Nov 4
 Patrones de espuma, que se parecen mucho a los patrones de las nubes del video de arriba.
-(Por cierto que ese canal me ha gustado mucho por su ingenuidad y falta de pretención. [La joya por la cuál encontré el canal es esta](https://www.youtube.com/watch?v=xHB2By6PmYQ), que también tiene que ver con buhos)
+(Por cierto que ese canal me ha gustado mucho por su ingenuidad y falta de pretención. [La joya por la cuál encontré el canal es ésta](https://www.youtube.com/watch?v=xHB2By6PmYQ), que también tiene que ver con buhos)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1A9fcb1txt8?start=99" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -4,24 +4,24 @@ goog.require('cljs.core');
 goog.require('cljs.core.constants');
 goog.require('reagent_frontend.core');
 cljs.core._STAR_print_fn_STAR_ = (function() { 
-var G__31292__delegate = function (_){
+var G__30982__delegate = function (_){
 return null;
 };
-var G__31292 = function (var_args){
+var G__30982 = function (var_args){
 var _ = null;
 if (arguments.length > 0) {
-var G__31293__i = 0, G__31293__a = new Array(arguments.length -  0);
-while (G__31293__i < G__31293__a.length) {G__31293__a[G__31293__i] = arguments[G__31293__i + 0]; ++G__31293__i;}
-  _ = new cljs.core.IndexedSeq(G__31293__a,0,null);
+var G__30983__i = 0, G__30983__a = new Array(arguments.length -  0);
+while (G__30983__i < G__30983__a.length) {G__30983__a[G__30983__i] = arguments[G__30983__i + 0]; ++G__30983__i;}
+  _ = new cljs.core.IndexedSeq(G__30983__a,0,null);
 } 
-return G__31292__delegate.call(this,_);};
-G__31292.cljs$lang$maxFixedArity = 0;
-G__31292.cljs$lang$applyTo = (function (arglist__31294){
-var _ = cljs.core.seq(arglist__31294);
-return G__31292__delegate(_);
+return G__30982__delegate.call(this,_);};
+G__30982.cljs$lang$maxFixedArity = 0;
+G__30982.cljs$lang$applyTo = (function (arglist__30984){
+var _ = cljs.core.seq(arglist__30984);
+return G__30982__delegate(_);
 });
-G__31292.cljs$core$IFn$_invoke$arity$variadic = G__31292__delegate;
-return G__31292;
+G__30982.cljs$core$IFn$_invoke$arity$variadic = G__30982__delegate;
+return G__30982;
 })()
 ;
 reagent_frontend.core.init_BANG_();
