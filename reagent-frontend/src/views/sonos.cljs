@@ -118,7 +118,7 @@
         single (:single @state/app-state)
         is-single (= (@state/app-state :page) :music-single)
         track-to-play (if is-single
-                        (find-first #(= (get-in % [:slug] single)) tracks)
+                        (find-first #(= (get-in % [:attributes :slug]) single) tracks)
                         (safe-rand-nth {} tracks))]
     [:i {:class  (sonos (str "icon-play fa " (icon "fa-pause")))
          :on-click (toggle-play (:attributes track-to-play) false)}]))
@@ -151,6 +151,3 @@
        [:p {:class (str (sonos "time ") (sonos "time-total"))}
         (get-in @state/player-state [:track-data :duration] "00:00")]]]]))
        
-
-
-
