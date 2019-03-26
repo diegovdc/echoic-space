@@ -36,13 +36,14 @@
 
 
 (defn mount-root []
-  (get-data parse-categories :music "/data/music.json")
+  (get-data identity :music "/data/music.json")
   (get-data identity :blog "/data/blog.json")
   (get-data identity :about "/data/about.json")
   (r/render [:div
               [views.header/main]
               [routes/current-page]]
             (.getElementById js/document "app")))
+
 
 
 (defn init! []          

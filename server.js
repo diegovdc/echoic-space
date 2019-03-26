@@ -70,17 +70,17 @@ app.get('/music/:work_slug', (req, res) => {
       R.pathOr({}, ['attributes']),
       log,
     )(music)
-
+    let seoImage = R.pathOr({url: seoBase.image.url(res)}, ['seo'], work)
     let openGraph = {
       url: res.locals.baseUrl + req.url,
       title: `| ${work.title}`,
-      description: work.seo_description || work.description,
+      description: work.seo.description || work.description,
       image: {
-        url: work.seo_img 
-          ? res.locals.baseUrl + '/music/' + work.slug + '/' + work.seo_img
+        url: work.seo.img 
+          ? res.locals.baseUrl + '/music/' + work.slug + '/' + work.seo.img
           : seoBase.image.url(res),
-        width: work.seo_img_width,
-        height: work.seo_img_height,
+        width: work.seo.width,
+        height: work.seo.height,
       }
     }
 

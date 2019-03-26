@@ -24,7 +24,6 @@
                         (set (:category %)))) 
                 music)))
 
-
 (defn toggle-in-set [set val]
   (if (contains? set val)
       (clojure.set/difference set #{val})
@@ -43,6 +42,8 @@
                   :on-click (toggle-category cat)} 
             cat]) 
         categories)])
+
+
 
 (defn main []
   (let [music (map #(:attributes %) (:music @state/app-state))

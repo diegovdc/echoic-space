@@ -1,3 +1,4 @@
 node_modules/
 .vscode
+.sass-cache/
 reagent-frontend/public/music/a-found-harmony/a-found-harmony-ver-0.7.1.mp3

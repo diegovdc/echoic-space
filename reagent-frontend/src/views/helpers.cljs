@@ -7,13 +7,14 @@
         node]]])
 
 (defn make-archive-item [base-url post]
-  [:div {:key (:slug post)}
-    [:a {:class "grid__container archive__container" 
-         :href (str base-url "/" (:slug post))}
-      [:span {:class "archive__sbttl archive__sbttl--sm"} 
-          (:title post)]
-      [:span  {:class "archive__p"} 
-          (:description post)]]])
+  [:div {:class "grid__container archive__container" :key (:slug post)}
+   [:a {:style {:display "flex" :flex-direction "column"} :href (str base-url "/" (:slug post))}
+    [:span {:class "archive__sbttl archive__sbttl--sm"} 
+      (:title post)]
+    [:span  {:class "archive__p"} 
+     (:description post)]]
+   [:p  {:class "archive__category"} (clojure.string/join ", " (:category post))]])
+
 
 (defn make-archive-page [title node]
   (page-container "archive"
