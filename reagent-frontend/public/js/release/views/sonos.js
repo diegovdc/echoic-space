@@ -171,7 +171,7 @@ return (fexpr__30898.cljs$core$IFn$_invoke$arity$1 ? fexpr__30898.cljs$core$IFn$
 })(),cljs.core.cst$kw$music_DASH_single);
 var track_to_play = ((is_single)?frontend.helpers.find_first(((function (tracks,single,is_single){
 return (function (p1__30897_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$1(cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(p1__30897_SHARP_,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$slug], null),single));
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__30897_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$slug], null)),single);
 });})(tracks,single,is_single))
 ,tracks):frontend.helpers.safe_rand_nth(cljs.core.PersistentArrayMap.EMPTY,tracks));
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$i,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,(function (){var G__30900 = ["icon-play fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((icon.cljs$core$IFn$_invoke$arity$1 ? icon.cljs$core$IFn$_invoke$arity$1("fa-pause") : icon.call(null,"fa-pause")))].join('');

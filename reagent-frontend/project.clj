@@ -18,7 +18,7 @@
                  [compojure "1.5.0"]]
   
   :plugins [[lein-cljsbuild "1.1.5"]
-            [lein-figwheel "0.5.16"]]
+            [lein-figwheel "0.5.18"]]
 
   :min-lein-version "2.5.0"
   :jvm-opts []
@@ -32,7 +32,6 @@
   :figwheel {:http-server-root "."
              :nrepl-port 7002
              :ring-handler dev-server.server-handler/dev-app
-             :nrepl-middleware ["cemerick.piggieback/wrap-cljs-repl"]
              :css-dirs ["public/css"]}
 
   :cljsbuild {:builds {:app
@@ -63,10 +62,9 @@
   :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]}
 
   :profiles {:dev {:source-paths ["src" "env/dev/clj"]
-                   :plugins [[cider/cider-nrepl "0.21.0"]]
+                   :plugins [[cider/cider-nrepl "0.21.1"]]
                    :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}
                    :dependencies [[binaryage/devtools "0.9.7"]
-                                  [cider/piggieback "0.3.10"]
-                                  [figwheel-sidecar "0.5.16"]
-                                  [org.clojure/tools.nrepl "0.2.13"]
-                                  [cider/piggieback "0.3.10"]]}})
+                                  [cider/piggieback "0.4.0"]
+                                  [figwheel-sidecar "0.5.18"]
+                                  [nrepl/nrepl "0.6.0"]]}})
