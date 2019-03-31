@@ -111,17 +111,30 @@
 (defn tracks-with-audio [tracks]
   (filter #(not= nil (get-in % [:attributes :file_name]))) tracks)
 
+(def find-track-to-play 
+  (memoize 
+   (fn [is-single single tracks]
+     (js/console.log "runs")
+     (if is-single
+       (find-first #(= single (get-in % [:attributes :slug])) tracks)
+       (safe-rand-nth {} tracks)))))
+
 (defn play-btn 
   "Play button for the lower bar of sonos"
-  [icon is-playing]
+  [icon is-playing currently-playing-track]
   (let [tracks (tracks-with-audio (:music @state/app-state))
         single (:single @state/app-state)
-        is-single (= (@state/app-state :page) :music-single)
-        track-to-play (if is-single
-                        (find-first #(= (get-in % [:attributes :slug]) single) tracks)
-                        (safe-rand-nth {} tracks))]
+        is-single (or 
+                   (= (:page @state/app-state :music-single))
+                   (= (:page @state/app-state) :blog-single))]
     [:i {:class  (sonos (str "icon-play fa " (icon "fa-pause")))
-         :on-click (toggle-play (:attributes track-to-play) false)}]))
+         :on-click (toggle-play 
+                    (:attributes (find-track-to-play is-single single tracks)) 
+                    (if (and is-single ;; should change track 
+                             (not is-playing) 
+                             (not= currently-playing-track single)) 
+                      true 
+                      false))}]))
 
 (defn main []
   (let [is-playing (@state/player-state :is-playing)
@@ -144,7 +157,7 @@
      [:div {:class (sonos "duration")}
       [:div {:class (sonos "elapsed")
              :style {:width (str (get-in @state/player-state [:track-data :percentage] "0") "%")}}]
-      (play-btn icon is-playing)
+      (play-btn icon is-playing track-slug)
       [:div {:class (sonos "time-container")}
        [:p {:class (str (sonos "time ") (sonos "time-elapsed"))}
         (get-in @state/player-state [:track-data :elapsed] "00:00")]

@@ -145,8 +145,7 @@
             (if (@local-state :show-info)
               [:div
                 [:div {:class "markdown-body"
-                       :dangerouslySetInnerHTML {:__html (:body post)}}]]))])))
-                
+                       :dangerouslySetInnerHTML {:__html (:body post)}}]]))])))         
                        
 (defn find-post [tracks slug]
   (first 
