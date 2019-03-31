@@ -159,52 +159,55 @@ return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(null,cljs.core.get_in.clj
 
 return tracks;
 });
+views.sonos.find_track_to_play = cljs.core.memoize((function (is_single,single,tracks){
+console.log("runs");
+
+if(cljs.core.truth_(is_single)){
+return frontend.helpers.find_first((function (p1__29970_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(single,cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29970_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$slug], null)));
+}),tracks);
+} else {
+return frontend.helpers.safe_rand_nth(cljs.core.PersistentArrayMap.EMPTY,tracks);
+}
+}));
 /**
  * Play button for the lower bar of sonos
  */
-views.sonos.play_btn = (function views$sonos$play_btn(icon,is_playing){
+views.sonos.play_btn = (function views$sonos$play_btn(icon,is_playing,currently_playing_track){
 var tracks = views.sonos.tracks_with_audio(cljs.core.cst$kw$music.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state)));
 var single = cljs.core.cst$kw$single.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state));
-var is_single = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((function (){var G__29972 = cljs.core.cst$kw$page;
-var fexpr__29971 = cljs.core.deref(frontend.state.app_state);
-return (fexpr__29971.cljs$core$IFn$_invoke$arity$1 ? fexpr__29971.cljs$core$IFn$_invoke$arity$1(G__29972) : fexpr__29971.call(null,G__29972));
-})(),cljs.core.cst$kw$music_DASH_single);
-var track_to_play = ((is_single)?frontend.helpers.find_first(((function (tracks,single,is_single){
-return (function (p1__29970_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29970_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$slug], null)),single);
-});})(tracks,single,is_single))
-,tracks):frontend.helpers.safe_rand_nth(cljs.core.PersistentArrayMap.EMPTY,tracks));
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$i,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,(function (){var G__29973 = ["icon-play fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((icon.cljs$core$IFn$_invoke$arity$1 ? icon.cljs$core$IFn$_invoke$arity$1("fa-pause") : icon.call(null,"fa-pause")))].join('');
-return (views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1(G__29973) : views.sonos.sonos.call(null,G__29973));
-})(),cljs.core.cst$kw$on_DASH_click,views.sonos.toggle_play(cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(track_to_play),false)], null)], null);
+var is_single = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$1(cljs.core.cst$kw$page.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(frontend.state.app_state),cljs.core.cst$kw$music_DASH_single))) || (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$page.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state)),cljs.core.cst$kw$blog_DASH_single)));
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$i,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,(function (){var G__29971 = ["icon-play fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((icon.cljs$core$IFn$_invoke$arity$1 ? icon.cljs$core$IFn$_invoke$arity$1("fa-pause") : icon.call(null,"fa-pause")))].join('');
+return (views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1(G__29971) : views.sonos.sonos.call(null,G__29971));
+})(),cljs.core.cst$kw$on_DASH_click,views.sonos.toggle_play(cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1((views.sonos.find_track_to_play.cljs$core$IFn$_invoke$arity$3 ? views.sonos.find_track_to_play.cljs$core$IFn$_invoke$arity$3(is_single,single,tracks) : views.sonos.find_track_to_play.call(null,is_single,single,tracks))),((((is_single) && (cljs.core.not(is_playing)) && (cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(currently_playing_track,single))))?true:false))], null)], null);
 });
 views.sonos.main = (function views$sonos$main(){
-var is_playing = (function (){var G__29977 = cljs.core.cst$kw$is_DASH_playing;
+var is_playing = (function (){var G__29975 = cljs.core.cst$kw$is_DASH_playing;
+var fexpr__29974 = cljs.core.deref(frontend.state.player_state);
+return (fexpr__29974.cljs$core$IFn$_invoke$arity$1 ? fexpr__29974.cljs$core$IFn$_invoke$arity$1(G__29975) : fexpr__29974.call(null,G__29975));
+})();
+var is_paused = (function (){var G__29977 = cljs.core.cst$kw$is_DASH_paused;
 var fexpr__29976 = cljs.core.deref(frontend.state.player_state);
 return (fexpr__29976.cljs$core$IFn$_invoke$arity$1 ? fexpr__29976.cljs$core$IFn$_invoke$arity$1(G__29977) : fexpr__29976.call(null,G__29977));
-})();
-var is_paused = (function (){var G__29979 = cljs.core.cst$kw$is_DASH_paused;
-var fexpr__29978 = cljs.core.deref(frontend.state.player_state);
-return (fexpr__29978.cljs$core$IFn$_invoke$arity$1 ? fexpr__29978.cljs$core$IFn$_invoke$arity$1(G__29979) : fexpr__29978.call(null,G__29979));
 })();
 var track_name = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$now_DASH_playing,cljs.core.cst$kw$track_name], null));
 var track_slug = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$now_DASH_playing,cljs.core.cst$kw$slug], null));
 var icon = ((function (is_playing,is_paused,track_name,track_slug){
-return (function (p1__29974_SHARP_){
+return (function (p1__29972_SHARP_){
 if(cljs.core.truth_(is_playing)){
-return p1__29974_SHARP_;
+return p1__29972_SHARP_;
 } else {
 return "fa-play";
 }
 });})(is_playing,is_paused,track_name,track_slug))
 ;
 var playable_track_if_in_single = cljs.core.some(((function (is_playing,is_paused,track_name,track_slug,icon){
-return (function (p1__29975_SHARP_){
-var and__3925__auto__ = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$single.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state)),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29975_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$slug], null)));
+return (function (p1__29973_SHARP_){
+var and__3925__auto__ = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$single.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state)),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29973_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$slug], null)));
 if(and__3925__auto__){
-var and__3925__auto____$1 = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29975_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$file_name], null));
+var and__3925__auto____$1 = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29973_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$file_name], null));
 if(cljs.core.truth_(and__3925__auto____$1)){
-return p1__29975_SHARP_;
+return p1__29973_SHARP_;
 } else {
 return and__3925__auto____$1;
 }
@@ -213,5 +216,5 @@ return and__3925__auto__;
 }
 });})(is_playing,is_paused,track_name,track_slug,icon))
 ,cljs.core.cst$kw$music.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state)));
-return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,(views.sonos.b.cljs$core$IFn$_invoke$arity$1 ? views.sonos.b.cljs$core$IFn$_invoke$arity$1("playing-container") : views.sonos.b.call(null,"playing-container")),cljs.core.cst$kw$id,(views.sonos.b.cljs$core$IFn$_invoke$arity$1 ? views.sonos.b.cljs$core$IFn$_invoke$arity$1("playing-container") : views.sonos.b.call(null,"playing-container"))], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,[cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.b.cljs$core$IFn$_invoke$arity$1 ? views.sonos.b.cljs$core$IFn$_invoke$arity$1("playing-overflower") : views.sonos.b.call(null,"playing-overflower")))].join('')], null),views.sonos.track_name_SINGLEQUOTE_(is_playing,is_paused,track_name,track_slug,playable_track_if_in_single)], null),views.sonos.frwd_btn(icon,is_playing),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,(views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("duration") : views.sonos.sonos.call(null,"duration"))], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,(views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("elapsed") : views.sonos.sonos.call(null,"elapsed")),cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$width,[cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$track_DASH_data,cljs.core.cst$kw$percentage], null),"0")),"%"].join('')], null)], null)], null),views.sonos.play_btn(icon,is_playing),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,(views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time-container") : views.sonos.sonos.call(null,"time-container"))], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$p,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,[cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time ") : views.sonos.sonos.call(null,"time "))),cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time-elapsed") : views.sonos.sonos.call(null,"time-elapsed")))].join('')], null),cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$track_DASH_data,cljs.core.cst$kw$elapsed], null),"00:00")], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$p,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,[cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time ") : views.sonos.sonos.call(null,"time "))),cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time-total") : views.sonos.sonos.call(null,"time-total")))].join('')], null),cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$track_DASH_data,cljs.core.cst$kw$duration], null),"00:00")], null)], null)], null)], null);
+return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,(views.sonos.b.cljs$core$IFn$_invoke$arity$1 ? views.sonos.b.cljs$core$IFn$_invoke$arity$1("playing-container") : views.sonos.b.call(null,"playing-container")),cljs.core.cst$kw$id,(views.sonos.b.cljs$core$IFn$_invoke$arity$1 ? views.sonos.b.cljs$core$IFn$_invoke$arity$1("playing-container") : views.sonos.b.call(null,"playing-container"))], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,[cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.b.cljs$core$IFn$_invoke$arity$1 ? views.sonos.b.cljs$core$IFn$_invoke$arity$1("playing-overflower") : views.sonos.b.call(null,"playing-overflower")))].join('')], null),views.sonos.track_name_SINGLEQUOTE_(is_playing,is_paused,track_name,track_slug,playable_track_if_in_single)], null),views.sonos.frwd_btn(icon,is_playing),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,(views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("duration") : views.sonos.sonos.call(null,"duration"))], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,(views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("elapsed") : views.sonos.sonos.call(null,"elapsed")),cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$width,[cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$track_DASH_data,cljs.core.cst$kw$percentage], null),"0")),"%"].join('')], null)], null)], null),views.sonos.play_btn(icon,is_playing,track_slug),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,(views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time-container") : views.sonos.sonos.call(null,"time-container"))], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$p,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,[cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time ") : views.sonos.sonos.call(null,"time "))),cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time-elapsed") : views.sonos.sonos.call(null,"time-elapsed")))].join('')], null),cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$track_DASH_data,cljs.core.cst$kw$elapsed], null),"00:00")], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$p,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,[cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time ") : views.sonos.sonos.call(null,"time "))),cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1("time-total") : views.sonos.sonos.call(null,"time-total")))].join('')], null),cljs.core.get_in.cljs$core$IFn$_invoke$arity$3(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$track_DASH_data,cljs.core.cst$kw$duration], null),"00:00")], null)], null)], null)], null);
 });
