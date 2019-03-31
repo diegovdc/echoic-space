@@ -114,7 +114,6 @@
 (def find-track-to-play 
   (memoize 
    (fn [is-single single tracks]
-     (js/console.log "runs")
      (if is-single
        (find-first #(= single (get-in % [:attributes :slug])) tracks)
        (safe-rand-nth {} tracks)))))
@@ -142,13 +141,12 @@
         track-name (get-in @state/player-state [:now-playing :track_name])
         track-slug (get-in @state/player-state [:now-playing :slug])
         icon #(if is-playing % "fa-play")
-        playable-track-if-in-single
-        (some #(and
-                (= (:single @state/app-state)
-                   (get-in % [:attributes :slug]))
-                (get-in % [:attributes :file_name])
-                %)
-              (:music @state/app-state))]
+        playable-track-if-in-single (some #(and
+                                            (= (:single @state/app-state)
+                                               (get-in % [:attributes :slug]))
+                                            (get-in % [:attributes :file_name])
+                                            %)
+                                          (:music @state/app-state))]
     [:div {:class (b "playing-container") :id (b "playing-container")}
                   ; (if is-mobile-or-tablet " is-mobile"
      [:div {:class (str (b "playing-overflower"))}
