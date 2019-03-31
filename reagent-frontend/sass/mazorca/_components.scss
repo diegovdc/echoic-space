@@ -4,6 +4,11 @@
 	&__container {
 		margin-bottom: 20px;
 		flex-direction: column;
+		&:hover {
+			* {
+				color: #444;
+			}
+		}
 	}
 
 	&__ttl {
@@ -28,9 +33,15 @@
 		padding-top: 1px;
 	}
 
-  &__category {
+	&__category,
+	&__date {
     padding: 10px 0 10px 30px;
 		font-family: f(mono);
     font-size: 12px;
-  }
+	}
+	
+	&__date {
+		padding-left: 10px;
+		font-weight: normal;
+	}
 }

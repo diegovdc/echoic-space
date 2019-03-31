@@ -43,11 +43,53 @@ return jayq.core.anim(jayq.core.$.cljs$core$IFn$_invoke$arity$1("html, body"),ne
 frontend.helpers.set_scroll = (function frontend$helpers$set_scroll(top){
 return jayq.core.$.cljs$core$IFn$_invoke$arity$1(window).scrollTop(top);
 });
-frontend.helpers.make_audio_url = (function frontend$helpers$make_audio_url(music_post_attrs){
-var file_name = cljs.core.cst$kw$file_name.cljs$core$IFn$_invoke$arity$2(music_post_attrs,"");
+frontend.helpers.maybe_make_audio_url = (function frontend$helpers$maybe_make_audio_url(base,slug,file_name){
 if(clojure.string.includes_QMARK_(file_name,"http")){
 return file_name;
 } else {
-return ["http://www.echoic.space/music/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.cst$kw$slug.cljs$core$IFn$_invoke$arity$1(music_post_attrs)),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(file_name)].join('');
+return ["http://www.echoic.space/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(base),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(slug),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(frontend.helpers.file_name)].join('');
 }
+});
+frontend.helpers.make_audio_url = (function frontend$helpers$make_audio_url(music_post_attrs){
+var file_name = cljs.core.cst$kw$file_name.cljs$core$IFn$_invoke$arity$2(music_post_attrs,"");
+var slug = cljs.core.cst$kw$slug.cljs$core$IFn$_invoke$arity$1(music_post_attrs);
+return frontend.helpers.maybe_make_audio_url("music",slug,file_name);
+});
+frontend.helpers.year = (function frontend$helpers$year(music){
+return cljs.core.first(clojure.string.split.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$date.cljs$core$IFn$_invoke$arity$1(music),"-"));
+});
+frontend.helpers.sort_entry_by_year = (function frontend$helpers$sort_entry_by_year(entry){
+return cljs.core.group_by(frontend.helpers.year,cljs.core.sort.cljs$core$IFn$_invoke$arity$2((function (p1__27915_SHARP_,p2__27914_SHARP_){
+return cljs.core.compare(cljs.core.cst$kw$date.cljs$core$IFn$_invoke$arity$1(p2__27914_SHARP_),cljs.core.cst$kw$date.cljs$core$IFn$_invoke$arity$1(p1__27915_SHARP_));
+}),entry));
+});
+frontend.helpers.filter_by_selected_categories = (function frontend$helpers$filter_by_selected_categories(selected_categories,entry){
+if(cljs.core.empty_QMARK_(selected_categories)){
+return entry;
+} else {
+return cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__27916_SHARP_){
+return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentHashSet.EMPTY,(function (){var G__27917 = selected_categories;
+var G__27918 = cljs.core.set(cljs.core.cst$kw$category.cljs$core$IFn$_invoke$arity$1(p1__27916_SHARP_));
+return clojure.set.intersection(G__27917,G__27918);
+})());
+}),frontend.helpers.music);
+}
+});
+frontend.helpers.toggle_in_set = (function frontend$helpers$toggle_in_set(set,val){
+if(cljs.core.contains_QMARK_(set,val)){
+var G__27919 = set;
+var G__27920 = cljs.core.PersistentHashSet.createAsIfByAssoc([val]);
+return clojure.set.difference(G__27919,G__27920);
+} else {
+var G__27921 = set;
+var G__27922 = cljs.core.PersistentHashSet.createAsIfByAssoc([val]);
+return clojure.set.union(G__27921,G__27922);
+}
+});
+frontend.helpers.toggle_category = (function frontend$helpers$toggle_category(cat){
+return (function (){
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(frontend.helpers.selected_categories,(function (p1__27923_SHARP_){
+return frontend.helpers.toggle_in_set(p1__27923_SHARP_,cat);
+}));
+});
 });

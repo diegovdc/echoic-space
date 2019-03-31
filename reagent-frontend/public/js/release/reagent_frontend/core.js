@@ -16,23 +16,23 @@ console.log(x);
 
 return x;
 });
-reagent_frontend.core.axios_get = (function (){var target_obj_30025 = deps;
-var next_obj_30026 = (target_obj_30025["axios"]);
-var next_obj_30027 = (next_obj_30026["get"]);
-return next_obj_30027;
+reagent_frontend.core.axios_get = (function (){var target_obj_30070 = deps;
+var next_obj_30071 = (target_obj_30070["axios"]);
+var next_obj_30072 = (next_obj_30071["get"]);
+return next_obj_30072;
 })();
 reagent_frontend.core.get_data = (function reagent_frontend$core$get_data(func,state_key,url){
-return (reagent_frontend.core.axios_get.cljs$core$IFn$_invoke$arity$1 ? reagent_frontend.core.axios_get.cljs$core$IFn$_invoke$arity$1(url) : reagent_frontend.core.axios_get.call(null,url)).then((function (p1__30028_SHARP_){
-return cljs.core.js__GT_clj.cljs$core$IFn$_invoke$arity$variadic(p1__30028_SHARP_,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.cst$kw$keywordize_DASH_keys,true], 0));
-})).then((function (p1__30029_SHARP_){
-return cljs.core.cst$kw$data.cljs$core$IFn$_invoke$arity$1(p1__30029_SHARP_);
-})).then((function (p1__30030_SHARP_){
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,state_key,(func.cljs$core$IFn$_invoke$arity$1 ? func.cljs$core$IFn$_invoke$arity$1(p1__30030_SHARP_) : func.call(null,p1__30030_SHARP_)));
+return (reagent_frontend.core.axios_get.cljs$core$IFn$_invoke$arity$1 ? reagent_frontend.core.axios_get.cljs$core$IFn$_invoke$arity$1(url) : reagent_frontend.core.axios_get.call(null,url)).then((function (p1__30073_SHARP_){
+return cljs.core.js__GT_clj.cljs$core$IFn$_invoke$arity$variadic(p1__30073_SHARP_,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.cst$kw$keywordize_DASH_keys,true], 0));
+})).then((function (p1__30074_SHARP_){
+return cljs.core.cst$kw$data.cljs$core$IFn$_invoke$arity$1(p1__30074_SHARP_);
+})).then((function (p1__30075_SHARP_){
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.app_state,cljs.core.assoc,state_key,(func.cljs$core$IFn$_invoke$arity$1 ? func.cljs$core$IFn$_invoke$arity$1(p1__30075_SHARP_) : func.call(null,p1__30075_SHARP_)));
 }));
 });
 reagent_frontend.core.parse_categories = (function reagent_frontend$core$parse_categories(music){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__30031_SHARP_){
-return cljs.core.update_in.cljs$core$IFn$_invoke$arity$3(p1__30031_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$category], null),(function (c){
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__30076_SHARP_){
+return cljs.core.update_in.cljs$core$IFn$_invoke$arity$3(p1__30076_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$category], null),(function (c){
 var v = c;
 var v__$1 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(v,"$");
 return cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.string.trim,v__$1);
@@ -40,11 +40,11 @@ return cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.string.trim,v__$1);
 }),music);
 });
 reagent_frontend.core.mount_root = (function reagent_frontend$core$mount_root(){
-reagent_frontend.core.get_data(cljs.core.identity,cljs.core.cst$kw$music,"/data/music.json");
+reagent_frontend.core.get_data(cljs.core.identity,cljs.core.cst$kw$about,"/data/about.json");
 
 reagent_frontend.core.get_data(cljs.core.identity,cljs.core.cst$kw$blog,"/data/blog.json");
 
-reagent_frontend.core.get_data(cljs.core.identity,cljs.core.cst$kw$about,"/data/about.json");
+reagent_frontend.core.get_data(cljs.core.identity,cljs.core.cst$kw$music,"/data/music.json");
 
 return reagent.core.render.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [views.header.main], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [frontend.routes.current_page], null)], null),document.getElementById("app"));
 });
@@ -55,4 +55,3 @@ secretary.core.dispatch_BANG_(window.location.pathname);
 
 return reagent_frontend.core.mount_root();
 });
-(((1) + (1)) + (1));
