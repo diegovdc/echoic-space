@@ -9,12 +9,12 @@
 (def selected-categories (r/atom []))
 
 (defn main []
-  (let [music (log (map #(:attributes %) (:blog @state/app-state)))
+  (let [music (map #(:attributes %) (:blog @state/app-state))
         categories (set (sort (flatten (map #(:category %) music))))]
     (make-archive-page 
      "Bitácora" 
      [:div
-       (print-categories @selected-categories categories)
+       (print-categories selected-categories categories)
       [:div 
        (map  (fn [m]
                [:div {:class "music__year-container" :key (first m)}

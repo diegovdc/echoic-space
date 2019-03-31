@@ -22,7 +22,7 @@
 
 (defn main []
   (let [music (map #(:attributes %) (merge-blog-music))
-        categories (set (sort (flatten (map #(:category %) (log music)))))]
+        categories (set (sort (flatten (map #(:category %) music))))]
     (make-archive-page 
      "Música" 
      [:div

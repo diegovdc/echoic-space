@@ -54,11 +54,12 @@
       (page-container (str "single__bg-img "page-class) child-node)])
 
 (defn print-categories [selected-categories-atom categories]
-  [:div {:class "music__category-container"} 
-   (map (fn [cat] 
-          [:span {:key cat 
-                  :class (str "music__category " 
-                              (if (log (some #(= % cat) @selected-categories-atom)) "selected")) 
-                  :on-click (toggle-category selected-categories-atom cat)} 
-            cat]) 
-        categories)])
+  (let [selected-cats @selected-categories-atom]
+    [:div {:class "music__category-container"} 
+     (map (fn [cat] 
+            [:span {:key cat 
+                    :class (str "music__category " 
+                                (if (some #(= % cat) selected-cats) "selected")) 
+                    :on-click (toggle-category selected-categories-atom cat)} 
+             cat]) 
+          categories)]))
