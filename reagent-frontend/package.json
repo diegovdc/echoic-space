@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:cljs": "lein package",
-    "build": "webpack",
+    "webpack": "webpack",
+    "build": "webpack && npm run gulp sassTask && npm run build:content && npm run build:cljs",
     "build:content": "node node_modules/frontmatter-markdown-to-json --in=public/ --out=public/data",
     "gulp": "gulp"
   },
