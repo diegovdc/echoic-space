@@ -8,19 +8,19 @@ goog.require('reagent.core');
 goog.require('jayq.core');
 goog.require('oops.core');
 goog.require('frontend.helpers');
-views.sonos.is_mobile_or_tablet = (function (){var fexpr__29958 = (function (){var target_obj_29959 = deps;
-var next_obj_29960 = (target_obj_29959["isMobileOrTablet"]);
+views.sonos.is_mobile_or_tablet = (function (){var fexpr__29956 = (function (){var target_obj_29957 = deps;
+var next_obj_29958 = (target_obj_29957["isMobileOrTablet"]);
+return next_obj_29958;
+})();
+return (fexpr__29956.cljs$core$IFn$_invoke$arity$0 ? fexpr__29956.cljs$core$IFn$_invoke$arity$0() : fexpr__29956.call(null));
+})();
+views.sonos.Howl = (function (){var target_obj_29959 = deps;
+var next_obj_29960 = (target_obj_29959["Howl"]);
 return next_obj_29960;
 })();
-return (fexpr__29958.cljs$core$IFn$_invoke$arity$0 ? fexpr__29958.cljs$core$IFn$_invoke$arity$0() : fexpr__29958.call(null));
-})();
-views.sonos.Howl = (function (){var target_obj_29961 = deps;
-var next_obj_29962 = (target_obj_29961["Howl"]);
+views.sonos.Howler = (function (){var target_obj_29961 = deps;
+var next_obj_29962 = (target_obj_29961["Howler"]);
 return next_obj_29962;
-})();
-views.sonos.Howler = (function (){var target_obj_29963 = deps;
-var next_obj_29964 = (target_obj_29963["Howler"]);
-return next_obj_29964;
 })();
 views.sonos.log = deps.log;
 views.sonos.b = cljs.core.partial.cljs$core$IFn$_invoke$arity$2(cljs.core.str,"menu-main__");
@@ -83,9 +83,9 @@ if(cljs.core.truth_((function (){var or__3936__auto__ = should_change_track_QMAR
 if(cljs.core.truth_(or__3936__auto__)){
 return or__3936__auto__;
 } else {
-return cljs.core.not((function (){var G__29966 = cljs.core.cst$kw$is_DASH_playing;
-var fexpr__29965 = cljs.core.deref(frontend.state.player_state);
-return (fexpr__29965.cljs$core$IFn$_invoke$arity$1 ? fexpr__29965.cljs$core$IFn$_invoke$arity$1(G__29966) : fexpr__29965.call(null,G__29966));
+return cljs.core.not((function (){var G__29964 = cljs.core.cst$kw$is_DASH_playing;
+var fexpr__29963 = cljs.core.deref(frontend.state.player_state);
+return (fexpr__29963.cljs$core$IFn$_invoke$arity$1 ? fexpr__29963.cljs$core$IFn$_invoke$arity$1(G__29964) : fexpr__29963.call(null,G__29964));
 })());
 }
 })())){
@@ -123,21 +123,21 @@ return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.player_
 });
 });
 views.sonos.play_random = (function views$sonos$play_random(){
-var track = cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(cljs.core.rand_nth(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__29967_SHARP_){
-var and__3925__auto__ = cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29967_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$title], null)),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$now_DASH_playing,cljs.core.cst$kw$title], null)));
+var track = cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(cljs.core.rand_nth(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__29965_SHARP_){
+var and__3925__auto__ = cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29965_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$title], null)),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$now_DASH_playing,cljs.core.cst$kw$title], null)));
 if(and__3925__auto__){
-return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29967_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$file_name], null));
+return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29965_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$file_name], null));
 } else {
 return and__3925__auto__;
 }
-}),(function (){var G__29969 = cljs.core.cst$kw$music;
-var fexpr__29968 = cljs.core.deref(frontend.state.app_state);
-return (fexpr__29968.cljs$core$IFn$_invoke$arity$1 ? fexpr__29968.cljs$core$IFn$_invoke$arity$1(G__29969) : fexpr__29968.call(null,G__29969));
+}),(function (){var G__29967 = cljs.core.cst$kw$music;
+var fexpr__29966 = cljs.core.deref(frontend.state.app_state);
+return (fexpr__29966.cljs$core$IFn$_invoke$arity$1 ? fexpr__29966.cljs$core$IFn$_invoke$arity$1(G__29967) : fexpr__29966.call(null,G__29967));
 })())));
 cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(frontend.state.player_state,cljs.core.assoc,cljs.core.cst$kw$is_DASH_playing,false);
 
-var fexpr__29970 = views.sonos.toggle_play(track,true);
-return (fexpr__29970.cljs$core$IFn$_invoke$arity$0 ? fexpr__29970.cljs$core$IFn$_invoke$arity$0() : fexpr__29970.call(null));
+var fexpr__29968 = views.sonos.toggle_play(track,true);
+return (fexpr__29968.cljs$core$IFn$_invoke$arity$0 ? fexpr__29968.cljs$core$IFn$_invoke$arity$0() : fexpr__29968.call(null));
 });
 views.sonos.track_name_SINGLEQUOTE_ = (function views$sonos$track_name_SINGLEQUOTE_(is_playing,is_paused,track_name,track_slug,playable_track_if_in_single){
 var on_click = (cljs.core.truth_(playable_track_if_in_single)?views.sonos.toggle_play(cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(playable_track_if_in_single),true):views.sonos.play_random);
@@ -153,8 +153,8 @@ views.sonos.frwd_btn = (function views$sonos$frwd_btn(icon,is_playing){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$i,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,[cljs.core.str.cljs$core$IFn$_invoke$arity$1((views.sonos.b.cljs$core$IFn$_invoke$arity$1 ? views.sonos.b.cljs$core$IFn$_invoke$arity$1("playing-next-track") : views.sonos.b.call(null,"playing-next-track")))," fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((cljs.core.truth_(is_playing)?(icon.cljs$core$IFn$_invoke$arity$1 ? icon.cljs$core$IFn$_invoke$arity$1("fa-forward") : icon.call(null,"fa-forward")):null))].join(''),cljs.core.cst$kw$on_DASH_click,views.sonos.play_random], null)], null);
 });
 views.sonos.tracks_with_audio = (function views$sonos$tracks_with_audio(tracks){
-cljs.core.filter.cljs$core$IFn$_invoke$arity$1((function (p1__29971_SHARP_){
-return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(null,cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29971_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$file_name], null)));
+cljs.core.filter.cljs$core$IFn$_invoke$arity$1((function (p1__29969_SHARP_){
+return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(null,cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29969_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$file_name], null)));
 }));
 
 return tracks;
@@ -165,46 +165,46 @@ return tracks;
 views.sonos.play_btn = (function views$sonos$play_btn(icon,is_playing){
 var tracks = views.sonos.tracks_with_audio(cljs.core.cst$kw$music.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state)));
 var single = cljs.core.cst$kw$single.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state));
-var is_single = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((function (){var G__29974 = cljs.core.cst$kw$page;
-var fexpr__29973 = cljs.core.deref(frontend.state.app_state);
-return (fexpr__29973.cljs$core$IFn$_invoke$arity$1 ? fexpr__29973.cljs$core$IFn$_invoke$arity$1(G__29974) : fexpr__29973.call(null,G__29974));
+var is_single = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((function (){var G__29972 = cljs.core.cst$kw$page;
+var fexpr__29971 = cljs.core.deref(frontend.state.app_state);
+return (fexpr__29971.cljs$core$IFn$_invoke$arity$1 ? fexpr__29971.cljs$core$IFn$_invoke$arity$1(G__29972) : fexpr__29971.call(null,G__29972));
 })(),cljs.core.cst$kw$music_DASH_single);
 var track_to_play = ((is_single)?frontend.helpers.find_first(((function (tracks,single,is_single){
-return (function (p1__29972_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29972_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$slug], null)),single);
+return (function (p1__29970_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29970_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$slug], null)),single);
 });})(tracks,single,is_single))
 ,tracks):frontend.helpers.safe_rand_nth(cljs.core.PersistentArrayMap.EMPTY,tracks));
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$i,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,(function (){var G__29975 = ["icon-play fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((icon.cljs$core$IFn$_invoke$arity$1 ? icon.cljs$core$IFn$_invoke$arity$1("fa-pause") : icon.call(null,"fa-pause")))].join('');
-return (views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1(G__29975) : views.sonos.sonos.call(null,G__29975));
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$i,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$class,(function (){var G__29973 = ["icon-play fa ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((icon.cljs$core$IFn$_invoke$arity$1 ? icon.cljs$core$IFn$_invoke$arity$1("fa-pause") : icon.call(null,"fa-pause")))].join('');
+return (views.sonos.sonos.cljs$core$IFn$_invoke$arity$1 ? views.sonos.sonos.cljs$core$IFn$_invoke$arity$1(G__29973) : views.sonos.sonos.call(null,G__29973));
 })(),cljs.core.cst$kw$on_DASH_click,views.sonos.toggle_play(cljs.core.cst$kw$attributes.cljs$core$IFn$_invoke$arity$1(track_to_play),false)], null)], null);
 });
 views.sonos.main = (function views$sonos$main(){
-var is_playing = (function (){var G__29979 = cljs.core.cst$kw$is_DASH_playing;
+var is_playing = (function (){var G__29977 = cljs.core.cst$kw$is_DASH_playing;
+var fexpr__29976 = cljs.core.deref(frontend.state.player_state);
+return (fexpr__29976.cljs$core$IFn$_invoke$arity$1 ? fexpr__29976.cljs$core$IFn$_invoke$arity$1(G__29977) : fexpr__29976.call(null,G__29977));
+})();
+var is_paused = (function (){var G__29979 = cljs.core.cst$kw$is_DASH_paused;
 var fexpr__29978 = cljs.core.deref(frontend.state.player_state);
 return (fexpr__29978.cljs$core$IFn$_invoke$arity$1 ? fexpr__29978.cljs$core$IFn$_invoke$arity$1(G__29979) : fexpr__29978.call(null,G__29979));
-})();
-var is_paused = (function (){var G__29981 = cljs.core.cst$kw$is_DASH_paused;
-var fexpr__29980 = cljs.core.deref(frontend.state.player_state);
-return (fexpr__29980.cljs$core$IFn$_invoke$arity$1 ? fexpr__29980.cljs$core$IFn$_invoke$arity$1(G__29981) : fexpr__29980.call(null,G__29981));
 })();
 var track_name = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$now_DASH_playing,cljs.core.cst$kw$track_name], null));
 var track_slug = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(frontend.state.player_state),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$now_DASH_playing,cljs.core.cst$kw$slug], null));
 var icon = ((function (is_playing,is_paused,track_name,track_slug){
-return (function (p1__29976_SHARP_){
+return (function (p1__29974_SHARP_){
 if(cljs.core.truth_(is_playing)){
-return p1__29976_SHARP_;
+return p1__29974_SHARP_;
 } else {
 return "fa-play";
 }
 });})(is_playing,is_paused,track_name,track_slug))
 ;
 var playable_track_if_in_single = cljs.core.some(((function (is_playing,is_paused,track_name,track_slug,icon){
-return (function (p1__29977_SHARP_){
-var and__3925__auto__ = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$single.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state)),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29977_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$slug], null)));
+return (function (p1__29975_SHARP_){
+var and__3925__auto__ = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$single.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(frontend.state.app_state)),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29975_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$slug], null)));
 if(and__3925__auto__){
-var and__3925__auto____$1 = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29977_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$file_name], null));
+var and__3925__auto____$1 = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(p1__29975_SHARP_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$attributes,cljs.core.cst$kw$file_name], null));
 if(cljs.core.truth_(and__3925__auto____$1)){
-return p1__29977_SHARP_;
+return p1__29975_SHARP_;
 } else {
 return and__3925__auto____$1;
 }

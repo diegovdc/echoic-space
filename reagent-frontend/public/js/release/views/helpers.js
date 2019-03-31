@@ -31,11 +31,14 @@ views.helpers.page_container_bg_img = (function views$helpers$page_container_bg_
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,img_node,views.helpers.page_container(["single__bg-img ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(page_class)].join(''),child_node)], null);
 });
 views.helpers.print_categories = (function views$helpers$print_categories(selected_categories_atom,categories){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,"music__category-container"], null),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (cat){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 3, [cljs.core.cst$kw$key,cat,cljs.core.cst$kw$class,["music__category ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((cljs.core.truth_((function (){var G__27934 = cljs.core.some((function (p1__27933_SHARP_){
+var selected_cats = cljs.core.deref(selected_categories_atom);
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$class,"music__category-container"], null),cljs.core.map.cljs$core$IFn$_invoke$arity$2(((function (selected_cats){
+return (function (cat){
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 3, [cljs.core.cst$kw$key,cat,cljs.core.cst$kw$class,["music__category ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((cljs.core.truth_(cljs.core.some(((function (selected_cats){
+return (function (p1__27933_SHARP_){
 return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(p1__27933_SHARP_,cat);
-}),cljs.core.deref(selected_categories_atom));
-return (views.helpers.log.cljs$core$IFn$_invoke$arity$1 ? views.helpers.log.cljs$core$IFn$_invoke$arity$1(G__27934) : views.helpers.log.call(null,G__27934));
-})())?"selected":null))].join(''),cljs.core.cst$kw$on_DASH_click,frontend.helpers.toggle_category(selected_categories_atom,cat)], null),cat], null);
-}),categories)], null);
+});})(selected_cats))
+,selected_cats))?"selected":null))].join(''),cljs.core.cst$kw$on_DASH_click,frontend.helpers.toggle_category(selected_categories_atom,cat)], null),cat], null);
+});})(selected_cats))
+,categories)], null);
 });
