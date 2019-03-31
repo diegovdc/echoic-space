@@ -3,8 +3,8 @@
             [frontend.state :as state]
             [frontend.helpers :refer [maybe-make-audio-url]]
             [reagent.core :as r]
-            [frontend.helpers :refer [year sort-entry-by-year filter-by-selected-categories toggle-category]]))
-(def log (.-log js/deps))
+            [frontend.helpers :refer [year sort-entry-by-year filter-by-selected-categories toggle-category]]
+            [logger.core :refer [log]]))
         
 (def selected-categories (r/atom []))
 
@@ -26,7 +26,7 @@
     (make-archive-page 
      "Música" 
      [:div
-       (print-categories selected-categories categories)
+      (print-categories selected-categories categories)
       [:div 
        (map  (fn [m]
                [:div {:class "music__year-container" :key (first m)}
