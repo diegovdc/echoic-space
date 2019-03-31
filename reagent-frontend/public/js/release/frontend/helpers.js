@@ -47,7 +47,7 @@ frontend.helpers.maybe_make_audio_url = (function frontend$helpers$maybe_make_au
 if(clojure.string.includes_QMARK_(file_name,"http")){
 return file_name;
 } else {
-return ["http://www.echoic.space/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(base),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(slug),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(frontend.helpers.file_name)].join('');
+return ["http://www.echoic.space/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(base),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(slug),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(file_name)].join('');
 }
 });
 frontend.helpers.make_audio_url = (function frontend$helpers$make_audio_url(music_post_attrs){
@@ -72,7 +72,7 @@ return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentHashS
 var G__27918 = cljs.core.set(cljs.core.cst$kw$category.cljs$core$IFn$_invoke$arity$1(p1__27916_SHARP_));
 return clojure.set.intersection(G__27917,G__27918);
 })());
-}),frontend.helpers.music);
+}),entry);
 }
 });
 frontend.helpers.toggle_in_set = (function frontend$helpers$toggle_in_set(set,val){
@@ -86,10 +86,13 @@ var G__27922 = cljs.core.PersistentHashSet.createAsIfByAssoc([val]);
 return clojure.set.union(G__27921,G__27922);
 }
 });
-frontend.helpers.toggle_category = (function frontend$helpers$toggle_category(cat){
+frontend.helpers.toggle_category = (function frontend$helpers$toggle_category(selected_categories_atom,cat){
 return (function (){
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(frontend.helpers.selected_categories,(function (p1__27923_SHARP_){
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(selected_categories_atom,(function (p1__27923_SHARP_){
 return frontend.helpers.toggle_in_set(p1__27923_SHARP_,cat);
 }));
 });
 });
+frontend.helpers.cats = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [(1),null], null), null));
+var fexpr__27924_27925 = frontend.helpers.toggle_category(frontend.helpers.cats,(2));
+(fexpr__27924_27925.cljs$core$IFn$_invoke$arity$0 ? fexpr__27924_27925.cljs$core$IFn$_invoke$arity$0() : fexpr__27924_27925.call(null));
