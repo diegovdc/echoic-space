@@ -63,3 +63,17 @@
                     :on-click (toggle-category selected-categories-atom cat)} 
              cat]) 
           categories)]))
+
+(defn base-url [app-state] 
+  (let [page (:page @app-state)] 
+    (cond
+      (= page :music-single) "music" 
+      (= page :blog-single)  "blog")))
+
+
+(defn get-entries [app-state] 
+  (let [app-state' @app-state
+        page (:page app-state')] 
+    (cond
+      (= page :music-single) (:music app-state') 
+      (= page :blog-single) (:blog app-state'))))

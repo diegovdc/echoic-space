@@ -1,5 +1,5 @@
 (ns views.music-single
-  (:require [views.helpers :refer [page-container-bg-img]]
+  (:require [views.helpers :refer [page-container-bg-img base-url get-entries]]
             [frontend.helpers :refer [scroll-to set-scroll make-audio-url]]
             [views.sonos :as sonos]
             [frontend.state :as state]
@@ -13,20 +13,6 @@
 
 (def log (.-log js/deps))
 
-(defn base-url [] 
-  (let [page (:page @state/app-state)] 
-    (cond
-      (= page :music-single) "music" 
-      (= page :blog-single)  "blog")))
-
-
-(defn get-entries [] 
-  (let [app-state @state/app-state
-        page (:page app-state)] 
-    (cond
-      (= page :music-single) (:music app-state) 
-      (= page :blog-single) (:blog app-state))))
-
 (defn get-offset-top [id]
   (->> ($ (str "#" id))
        offset
@@ -39,7 +25,7 @@
     (set-scroll 0)))
 
 (defn get-bg-img [post-attrs]
-  (str "/" (base-url) "/" (:slug post-attrs) "/" (:backgroundImage post-attrs)))
+  (str "/" (base-url state/app-state) "/" (:slug post-attrs) "/" (:backgroundImage post-attrs)))
 
 (defn bg-img [url] 
   {:background-image 
@@ -155,7 +141,7 @@
 
 (defn main [singleSlug hash]
   (let [local-state (r/atom {:show-info true})
-        entries (get-entries) ;; may be either music entries o blog entries
+        entries (get-entries state/app-state) ;; may be either music entries o blog entries
         post (find-post entries singleSlug)
         printed-post (fn [] (print-post post local-state))]
     (with-meta printed-post

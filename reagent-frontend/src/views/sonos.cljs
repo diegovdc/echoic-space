@@ -4,6 +4,7 @@
             [reagent.core :as r]
             [jayq.core :refer [$ anim width css]]
             [oops.core :refer [oget]]
+            [views.helpers :refer [base-url get-entries]]
             [frontend.helpers :refer [find-first
                                       fromNaN
                                       padTime
@@ -121,7 +122,7 @@
 (defn play-btn 
   "Play button for the lower bar of sonos"
   [icon is-playing currently-playing-track]
-  (let [tracks (tracks-with-audio (:music @state/app-state))
+  (let [tracks (tracks-with-audio (get-entries state/app-state))
         single (:single @state/app-state)
         is-single (or 
                    (= (:page @state/app-state :music-single))
@@ -146,7 +147,7 @@
                                                (get-in % [:attributes :slug]))
                                             (get-in % [:attributes :file_name])
                                             %)
-                                          (:music @state/app-state))]
+                                          (get-entries state/app-state))]
     [:div {:class (b "playing-container") :id (b "playing-container")}
                   ; (if is-mobile-or-tablet " is-mobile"
      [:div {:class (str (b "playing-overflower"))}
