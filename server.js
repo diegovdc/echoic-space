@@ -135,7 +135,8 @@ app.get('/blog/:entry_slug', (req, res) => {
     })
 })
 
-app.get('*', (req, res) => {    
+app.get('*', (req, res) => {
+    console.log('1') 
     let openGraph = {
       url: res.locals.baseUrl + req.url,
       title: seoBase.title,
@@ -146,6 +147,7 @@ app.get('*', (req, res) => {
         height: seoBase.image.height,
       }
     }
+    console.log('2') 
 
     res.render('index', {
       openGraph,
