@@ -7,8 +7,8 @@ track_name: Atractores v.2
 backgroundImage: 2019-04-12_atractores_v2.jpg
 seo:
   img: seo.jpg
-  width: 1331
-  height: 904
+  width: 1286
+  height: 817
 date: 2019-04-12
 category:
   - Atractores
