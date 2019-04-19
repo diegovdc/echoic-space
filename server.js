@@ -107,7 +107,7 @@ app.get('/blog', (req, res) => {
 app.get('/music/:work_slug', (req, res) => {    
     res.render('index', {
       openGraph: makeSinglePageOpenGraph(
-        '/music/',
+        'music',
         req.params.work_slug,
         music,
         req,
@@ -119,7 +119,7 @@ app.get('/music/:work_slug', (req, res) => {
 app.get('/blog/:entry_slug', (req, res) => {    
     res.render('index', {
       openGraph: makeSinglePageOpenGraph(
-        '/blog/',
+        'blog',
         req.params.entry_slug,
         blog,
         req,
