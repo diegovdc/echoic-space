@@ -44,6 +44,31 @@ const seoBase = {
   }
 }
 
+const makeSinglePageOpenGraph = (parentSlug, singlePageSlug, db, req, res) => {
+  const page = R.pipe(
+    R.find(m => 
+      R.path(['attributes', 'slug'], m) 
+      === singlePageSlug, 
+    ),
+    R.pathOr({}, ['attributes']),
+    log,
+  )(db)
+
+  const seo = page.seo || {}
+
+  return log('openGraph', {
+    url: res.locals.baseUrl + req.url,
+    title: `| ${page.title}`,
+    description: seo.description || page.description || seoBase.description,
+    image: {
+      url: seo.img 
+        ? res.locals.baseUrl + `/${parentSlug}/` + page.slug + '/' + seo.img
+        : seoBase.image.url(res),
+      width: seo.width,
+      height: seo.height,
+    }
+  })
+}
 
 
 app.get('/music', (req, res) => {    
@@ -80,58 +105,26 @@ app.get('/blog', (req, res) => {
 })
 
 app.get('/music/:work_slug', (req, res) => {    
-    let work = R.pipe(
-      R.find(m => 
-        R.path(['attributes', 'slug'], m) 
-        === req.params.work_slug, 
-      ),
-      R.pathOr({}, ['attributes']),
-      log,
-    )(music)
-    let seoImage = R.pathOr({url: seoBase.image.url(res)}, ['seo'], work)
-    let openGraph = {
-      url: res.locals.baseUrl + req.url,
-      title: `| ${work.title}`,
-      description: work.seo.description || work.description,
-      image: {
-        url: work.seo.img 
-          ? res.locals.baseUrl + '/music/' + work.slug + '/' + work.seo.img
-          : seoBase.image.url(res),
-        width: work.seo.width,
-        height: work.seo.height,
-      }
-    }
-
     res.render('index', {
-      openGraph,
+      openGraph: makeSinglePageOpenGraph(
+        '/music/',
+        req.params.work_slug,
+        music,
+        req,
+        res,
+      ),
     })
 })
 
 app.get('/blog/:entry_slug', (req, res) => {    
-    let work = R.pipe(
-      R.find(m => 
-        R.path(['attributes', 'slug'], m) 
-        === req.params.entry_slug, 
-      ),
-      R.pathOr({}, ['attributes']),
-      log,
-    )(blog)
-    let seoImage = R.pathOr({url: seoBase.image.url(res)}, ['seo'], work)
-    let openGraph = {
-      url: res.locals.baseUrl + req.url,
-      title: `| ${work.title}`,
-      description: work.seo.description || work.description,
-      image: {
-        url: work.seo.img 
-          ? res.locals.baseUrl + '/blog/' + work.slug + '/' + work.seo.img
-          : seoBase.image.url(res),
-        width: work.seo.width,
-        height: work.seo.height,
-      }
-    }
-
     res.render('index', {
-      openGraph,
+      openGraph: makeSinglePageOpenGraph(
+        '/blog/',
+        req.params.entry_slug,
+        blog,
+        req,
+        res,
+      ),
     })
 })
 
