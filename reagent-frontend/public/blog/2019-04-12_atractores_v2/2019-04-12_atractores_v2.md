@@ -6,7 +6,7 @@ file_name: https://ia801501.us.archive.org/17/items/atractores__diego-villasenor
 track_name: Atractores v.2
 backgroundImage: 2019-04-12_atractores_v2.jpg
 seo:
-  img: seo.jpg
+  img: seo.png
   width: 1286
   height: 817
 date: 2019-04-12
