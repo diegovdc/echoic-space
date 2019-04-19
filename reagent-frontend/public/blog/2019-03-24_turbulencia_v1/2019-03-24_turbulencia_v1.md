@@ -11,7 +11,7 @@ seo:
   height: 904
 date: 2019-03-24
 category:
-  - Turbulencias
+  - Atractores
   - Guitarra
   - Exploraciones
   - Improvisación
