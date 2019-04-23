@@ -33,11 +33,6 @@ app.use((req, res, next) => {
   next();
 })
 
-app.use(function (err, req, res, next) {
-  console.error(err.stack);
-  res.status(500).send('Something went wrong!!');
-});
-
 //SEO
 const seoBase = {
   title: '| Echoic Space',
@@ -151,10 +146,5 @@ app.get('*', (req, res) => {
       openGraph,
     })
 })
-
-app.use(function (err, req, res, next) {
-  console.error(err.stack);
-  res.status(500).send('Something went wrong2!!');
-});
 
 app.listen(process.env.PORT || 3000, () => console.log('echoic-space running on port '+process.env.PORT+'!'))
