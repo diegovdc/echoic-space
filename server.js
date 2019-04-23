@@ -19,7 +19,8 @@ app.use('/images', express.static(path.join(process.cwd(), './reagent-frontend/p
 app.use('/data', express.static(path.join(process.cwd(), './reagent-frontend/public/data')))
 
 app.use((req, res, next) => {
-  if(req.originalUrl.includes('herokuapp')) {
+  console.log("req.host ", req.host);
+  if(req.host.includes('herokuapp')) {
     log('redirecting')
     res.redirect(301, 'http://www.echoic.space' + req.path)
   }
