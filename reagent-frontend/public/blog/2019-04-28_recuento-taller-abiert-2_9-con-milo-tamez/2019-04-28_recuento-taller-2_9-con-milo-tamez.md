@@ -118,7 +118,7 @@ Apertura, componibilidad
 ## El proceso composiciónal hasta el momento
 ### Grafos puros y estados
 ### Entornos
-### 
+### Tiempo de las especies, árboles
 
-
+## Algunas sesiones (audios)
 
