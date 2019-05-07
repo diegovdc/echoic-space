@@ -60,14 +60,14 @@ Este proceso es (en buena parte) resultado y experimento sobre conceptos desarro
 
 Cf. [El análisis de esta obra (en la sección "Ideas Principales").](http://www.echoic.space/music/videcoic-one#ideas-principales)
 
-### Grafos (Notación)
-En esta proceso se parte de un punto distinto de las exploraciones al respecto del funcionamiento del pensamiento, aunque se apoya también en los hallazgos de _{Videcoic One}_.  En _Una Exploracion del Pensamiento_ se plantea la posibilidad del comprender los estados del sentido (por ejemplo, de un idea) y sus transformaciones, por medio del uso de grafos. Dicho de manera muy breve, se plantea que una idea, expresada lingüísticamente, se puede representar mediante la segmentación de sus constituyentes principales denominados _elementos_ y la vinculación de estos de diversas maneras y en distintas intensidades. Este tipo de representación es extremadamente similar a los llamados _mapas mentales_, y difiere de ellos principalmente en su objetivo y finalidad: generar un diagrama de un estado del pensamiento (una sección de su estado total, para ser precisos), por oposición de simplemente resumir o ayudar a la comprensión de un tema. 
+### Grafos
+En esta proceso se parte de un punto distinto de las exploraciones al respecto del funcionamiento del pensamiento, aunque se apoya también en los hallazgos de _{Videcoic One}_.  En _Una Exploracion del Pensamiento_ se plantea la posibilidad del comprender los estados del sentido (por ejemplo, de un idea) y sus transformaciones, por medio del uso de grafos. Dicho de manera muy breve, se plantea que una idea, expresada lingüísticamente, se puede representar mediante la segmentación de sus constituyentes principales denominados _elementos_ y la vinculación de estos de diversas maneras y en distintas intensidades. Este tipo de representación es extremadamente similar a los llamados _mapas mentales_, y difiere de ellos principalmente en su objetivo y finalidad: generar un diagrama de un estado del pensamiento (una sección de su estado total, para ser precisos), por oposición al simplemente resumir o ayudar a la comprensión de un tema. 
  
 En este sentido, la teoría detrás de estos diagramas explica y justifica el potencial descriptivo, clarificativo-conceptualizante y mnemónico de los mapas mentales. Si esta teoría de los diagramas es cierta, los mapas mentales son potentes <sup>[1]</sup> en tanto que la manera que tienen de representar ideas es muy semejante a la manera en que el pensamiento mismo, en algún nivel más profundo, los representa (e.g. después de _parsear_ la cadena lingüística en la que frecuente comunicamos y consumimos ideas).
 
 <sup>[1]</sup> Por potentes se quiere decir que los grafos son cognitivamente eficientes (tanto en la lectura-comprensión como en la escritura).
 
-Siguiendo estas propuestas, para este proceso se eligió como metodología de representación los grafos. Esto por dos/tres? razones-hipótesis:
+Siguiendo estas propuestas, para este proceso se eligió como metodología de representación los grafos. Esto por tres razones-hipótesis:
 
   1. Se postula que los grafos son medios eficientes de registro, comunicación, y de conceptualización de ideas (e.g. ideas musicales). Permiten "comunicar mucho" con poco y elaborar una idea mediante la representación asociada correspondiente a cada nodo (tal como funciona un mapa mental). 
 
@@ -76,7 +76,7 @@ Siguiendo estas propuestas, para este proceso se eligió como metodología de re
   3. Se postula que son facilitadores de la estructuración de las ideas. Estos grafos descomponen un tema-idea en diversas partes (nodos-ideas) a la vez que definen las relaciones (y las distancias) entre cada una. Una idea vista de esa manera es percibida más sintéticamente, como un todo de relaciones estructuradas precisamente.
 
 
-### Lo que esto ha significado para el proceso
+#### Lo que esto ha significado para el proceso
 En un principio se descubre que las propiedades mnemónica y estructural de los grafos permite estructurar una improvisación y de-limitar sus materiales (e.g. el número de materiales musicales depende del número de nodos y la conexiones entre los nodos definen las posibles secuencias de los eventos). 
 
 Más tarde se descubre que usando estas propiedades, se vuelve posible generar entornos de creación sonora más definidos, es decir, representar estados más complejos de cosas, e incluso eventos y procesos, de manera a la vez dinámica y consistente a gran escala. 
@@ -94,15 +94,84 @@ Con esto se abren nuevas posibilidades para la creación y la interpretación. S
 Finalmente, es importante notar que el uso de estas cualidades de los grafos, se ha ido modificando con el tiempo, generando en realidad un repertorio de usos o variaciones sobre el concepto y el funcionamiento de la representación mediante estas estructuras. Esto es, la prioridad no está puesta en determinar o medir cuál es el método ideal de representación mediante grafos, sino en hacer uso de la libertad creativa para proponer diferentes maneras de hacer jugar-funcionar esta manera de representar, una mezcla de adaptación a las condiciones de lo que se representa, de proceso evolutivo y de manifestación de impulsos creativo-cognitivos espontáneos.
 
 #### Diversas lecturas de los grafos
+Para comenzar podemos definir dos tipos de grafos:
+  1. Puros u abstractos: aquellos que no son temáticos o cuyos nodos no son más que un punto dentro de una estructura.
+
+  2. Temáticos: aquellos cuya estructura es un diagrama de una idea, por lo tanto sus nodos están etiquetados con conceptos y sus conexiónes reflejan las relaciones entre los conceptos.
+
+
+En la práctica de este proceso se han desarrollado dos maneras de leer los grafos.
+
+  1. La primera manera, y la más "estricta" por decirlo de algún modo, define que hay que comenzar en un nodo y continuar a hacia cualquiera de los siguientes puntos que estén inmediatamente conectados a él. Si los nodos están conectados por una flecha, entonces es necesario respetar la dirección de la conexión, de lo contrario es posible moverse en ambas direcciones. De esta manera se han desprendido algunas variaciones.
+
+      * En las primeras piezas, se usan grafos con pocos nodos. Cada nodo, cuya identidad se define por su posición vertical (siguiendo una misma línea horizontal de la cuadrícula), representaba siempre un mismo material -predefinido o inventado al momento- distinto del resto. Estos grafos se conectan-secuencian mediante el uso de flechas con variaciones de sí mismos,de modo que el grafo va variando gradualmente. Esto permitió que nos familiarizáramos con algunas propiedades musicales de los grafos:
+          
+          * Los grafos mantienen dos tipos de identidades:
+            * **Identidad de materiales**: se mantiene a lo largo del la pieza, generando una coherencia de gran escala.
+
+            * **Identidad estructural o de conexiones**: puede variar con cada instancia del grafo, generando coherencia-identidad a pequeña escala y momentos distintos a lo largo de la pieza. Estas variaciones se pueden concebir como subgrafos, o grafos derivados de un grafo mayor, no presente, que contiene la suma de todas las conexiones de los grafos presentados secuencialmente.
+          
+          * La _identidad de los grafos_ se expresa en la manera en que organizan sus elementos. Descubrimos que cada grafo y cada secuencia de grafos (_macrografos_), es decir,cada pieza, posee una identidad que lo distingue de los demás, con independencia de los materiales que se definan en cada nodo. Esta es una experiencia que resulta difícil de expresar y definir de un modo racional, pero es algo que se volvió aparente a lo largo de nuestras experiencias: cada _macrografo_ producía músicas de cierto tipo, y algunos parecían funcionar mejor, o más satisfactoriamente que otros. Ésta es una observación que definitivamente pide una investigación más sistemática, por lo que de momento es meramente anecdótica. Sin embargo, dentro del proceso no se le ha dado la atención necesaria pues éste se ha avocado a investigar cuestiones de otro orden, que a nuestro juicio son mucho más interesantes.
+
+          * La _identidad de una ejecución_ se expresa en el [**_estado_**](#grafos-puros-y-estados) que genera, mantiene y modula, es decir, depende de los materiales que se usan para cada nodo. Sin embargo, una vez definidos los materiales, el estado se sostiene a lo largo de la ejecución. Esta identidad es el producto de los materiales elegidos  y la estructura del grafo, es decir, producto de las dos identidades de los grafos.
+
+          * Contrapuesta a las propiedades identitarias de los grafos, éstos también exhiben una _variabilidad interna_. Esto puesto que las conexiones de los grafos, y por lo tanto su ejecución, producen secuencias que no son lineales en el sentido en que una secuencia en notación tradicional es lineal. Pues en la notación tradicional un evento musical conduce a un y sólo un evento musical distinto, mientras que en un grafo, tal conducción puede implicar más de una conducción posible.
+            * Interpretado de otro modo, la _variabilidad interna_ es el grafo concebido en el tiempo, mientras que las _identidades del grafo_ son el mismo pero concebido fuera del tiempo (cf. sobre la música de Xenakis en relación a este concepto [Listening Outside of Time](http://www.cdmc.asso.fr/sites/default/files/texte/pdf/rencontres/intervention17_xenakis_electroacoustique.pdf))
+
+      ![ejemplo de grafos iniciales](/alguna-imagen.jpg)
+      
+  2. La segunda manera consiste en leer el grafo, o partes de éste, en "simultaneidad" u holísticamente. Ésta se relaciona con el potencial diagramático de los grafos (que en la descripción anterior mencionamos como su capacidad de _expresar un estado_).  
+      *Los grafos como diagramas de ideas (y una música puede ser entendida como una idea) separan a estas en sus _elementos_ constitutivos, de modo que se vuelve posible precisar el sentido de la idea o sus matices necesarios, sin embargo, lo más relevante de tal diagrama es que representa _un_ sentido, _una_ idea. Navegar un grafo, ir de un nodo a otro supone una modificación del enfoque respecto de la idea, (se atiende un aspecto u otro a cada momento), sin embargo, es también posible, incluso necesario, observar la totalidad del diagrama para entender la idea.  De este modo es posible y necesario pasar de una expresión nodal a una expresión total del grafo. En el caso de los grafos "puros" esta segunda visión no tiene demasiado sentido, ya que se trata meramente de estructuras abstractas, pero en los grafos temáticos, donde los nodos tienen "etiquetas" correspondientes a un tema, ésta lectura es desde luego posible. La implicaciones de esta lectura son por supuesto distintas.
+        *  En sus efectos, la _identidad del grafo_ deja de residir plenamente en la estructura visual del grafo. Para ello es necesario entender algunas cuestiones peculiares a los grafos temáticos:
+            * Los grafos temáticos son, cuando menos para la práctica de este proceso, representaciones parciales del fenómeno. 
+              * Pero su intención primaria no es la de ser precisos en un sentido científico.
+            * Esbozan una representación que destaca ciertos elementos particulares del fenómeno y especulan sobre las relaciones que mantienen. Definen-sugieren vías de interpretación para la imaginación-pensamiento.
+              * Esto tiene efectos definitivos sobre la manera de  habitar-estar musicalmente en esas ideas.
+          * Lo que se elabora en estos grafos son precisamente ideas, y es en ellas donde reside su identidad.
+            * La idea no es el grafo, éste es sólo el catalizador del proceso de ideación.
+              * El grafo marca los puntos de referencia de la idea, sus ejes de desarrollo. Las asociaciones, personales y grupales, así como el diálogo en torno al grafo elaboran en torno a este generando nuevos elementos, que si bien no se incluyen en el grafo, sí se vuelven accesibles mediante él. 
+            * En este sentido, el grafo se torna una abstracción de un grafo más preciso y a la vez dinámico. Dinámico significa que la idea representada está en constante cambio: generando distintas concreciones, asociaciones, cambiando enfoques, etc.
+              * Sin embargo, no cambia nunca absolutamente: no se vuelve idea de otra cosa. Varía en un espacio de posibilidades determinado por el grafo. Esto es un reflejo de lo que mencionábamos arriba acerca de la _varibilidad y las identidades del grafo_. 
+            * Siguiendo esta línea de pensamiento tiene sentido preguntar-especular, si _¿acaso estos efectos hablan de que los grafos describen atractores en torno de los cuales el pensamiento-imaginación se efectúan?_ o preguntado de otro modo, _¿son las ideas, atractores?_.
+
+    
+
 
 ### Investigación de la naturaleza
+Un aspecto que ha marcado considerablemente el desarrollo de este proceso ha sido la referencia constante a lo natural y a los fenómenos naturales. 
+
+Sí bien la naturaleza como fuente de inspiración ha estado largo tiempo presente en mi obra (cf. [Espíritu penetrando en árbol](http://www.echoic.space/music/espiritu-penetrando-en-arbol), [Redwood Region](http://www.echoic.space/music/redwood-region), [Grilluidos](http://www.echoic.space/music/grilluidos)), en este proceso, la fase que comienza con _En un lugar sagrado sagrado_, inició más como una exploración en la vena de _{Videcoic One}_, donde lo que predomina es una imaginación de lo fantástico. Sin embargo, a partir de una observación de Milo que intento parafrasear como "lo más sagrado y fantástico es la naturaleza misma, lo que ya está ahí en ella, y no hay necesidad de postular entidades o eventos sobrenaturales", la creación dentro del proceso dió un giro en busca de un apego total hacia la experiencia de la naturaleza en dos dimensiones, la poética y la material (con los fenómenos, físicos, químicos y biológicos la integran).
+
+Al comienzo los grafos describen aspectos muy generales de una experiencia en la naturaleza y lo hacen de una manera poética: un ambiente y la sonoridad de las entidades que lo habitan, una hora del día, etc.  Pero conforme se ha ido desenvolviendo el proceso, la dimensión material de los fenómenos a los que se ha hecho referencia se ha vuelto cada vez más presente. Pienso que esto se debe a que la dimensión material dispone de inmediato una multiplicidad de perspectivas y escalas a través de las cuáles es posible relacionarse con un mismo fenómeno o conectar con fenómenos relacionados. Una misma cosa se puede ver desde la física o la biología, y dentro de cada disciplina se puede ver en distintas facetas. Por ejemplo, el nodo-concepto "aves" puede abordarse de distintas maneras y conectar con otros temas:
+  1. aves -> cantos -> patrones -> patrones de comportamiento...
+  2. aves -> vuelo -> turbulencias producidas por su el vuelo -> turbulencias en general -> atractores.... 
+  3. aves -> vuelo -> colibrí -> polinización -> flores -> colores -> evolución de las flores...
+
+Cada una de estas conexiones puede expandirse en uno o varios grafos produciendo cada vez más materiales y estados o comportamientos sonoros posibles. Además es importante observar que elementos como turbulencia, atractores o polinización desde luego conectan con muchas otras cosas. Estas posibilidades conectivas prefiguran grafos mayores que involucran a todos estos puntos. Con ello se vuelve concebible navegar a través de todas estas diversas perspectivas:  ir de las aves a las nubes por vía de la turbulencia.
+
+#### El modelo eco-sistémico de la naturaleza (redes-grafos)
+Esta manera de proceder guarda similitudes con los conceptos [biológico](https://en.wikipedia.org/wiki/Biological_network) y [ecológico](https://en.wikipedia.org/wiki/Ecological_network) de red, lo cuáles permiten modelar diversos fenómenos naturales por medio del uso de grafos.
+
+La permacultura, que deriva sus conocimientos y técnicas del estudio de los sistemas ecológicos, ha servido para mi como fuente de inspiración para llevar este tipo de modelado a la música. Ésta puede ser definida como un conjunto de principios y prácticas cuyo objetivo es diseñar asentamientos humanos sustentables (Hemenway, Toby. _Gaia's Garden_, pg. 10, versión PDF). La permacultura intenta diseñar sistemas artificiales que se comporten y funcionen de la misma manera que los ecosistemas naturales, esto con el fin de disminuir la cantidad de energía y nutrientes (externos) que requiere el sistema para funcionar, optimizando la cantidad de los mismos que permanecen dentro del sistema. En una resonancia interesante, [John Cage coincide con esta manera de pensar al decir que "la responsabilidad del artista es imitar a la naturaleza en su manera de operar"](https://johncage.org/autobiographical_statement.html).
+
+Vale la pena mencionar algunos de los principios básicos de la permacultura tal como los describe Hemenway (op. cit, pg.10):
+
+> 2-. Connect. Use relative location, that is, place the elements of your design in ways that create useful relationships and time-saving connections among all parts. The number of connections among elements creates a healthy, diverse ecosystem, not the number of elements.<br>
+> 4-. Each element performs multiple functions. Choose and place each element in a design to perform as many functions as possible. Beneficial connections between diverse components create a stable whole. Stack elements in both space and time.<br>
+> 5-. Each function is supported by multiple elements. Use multiple methods to achieve important functions and to create synergies. Redundancy protects when one or more elements fail.<br>
+> 6-. Make the least change for the greatest effect. Understand the system you are working with well enough to find its “leverage points” and intervene there, where the least work accomplishes the most change.<br>
+> 7-. Use small-scale, intensive systems. Start with the smallest systems that will do the job and build on your successes. Grow by “chunking”—that is, developing a small system or arrangement that works well—and repeat it, with variations.<br>
+> 8-. Optimize edge. The edge—the intersection of two environments—is the most diverse place in a system and is where energy and materials accumulate or are translated. Increase or decrease edge as appropriate.<br>
+> 9-. Collaborate with succession. Living systems usually advance from immaturity to maturity, and if we accept this trend and align our designs with it instead of fighting it, we save work and energy. Mature ecosystems are more diverse and productive than young ones.<br>
+
+Es posible ver cómo estos principios se reflejan en diversos aspectos del proceso. El punto 2, 6, 7, 8 están en el uso de grafos, conectividad, eficiencia, componibilidad y navegabilidad respectivamente (ver [Grafos](#grafos)). El 4 y 5 en la multiplicidad de perspectivas para cada nodo, decritas en [Investigación de la naturaleza](#investigación-de-la-naturaleza). 9 en la forma de ser del proceso en general (ver [El proceso no es la obra](#el-proceso-no-es-la-obra)).
+
 #### Antecedentes (personales)
 Christopher, transcripciones
 etc
 
 Mache
 
-#### El modelo eco-sistémico de la naturaleza (redes-grafos)
 
 ### El proceso no es la obra
 Apertura, componibilidad
@@ -115,10 +184,11 @@ Apertura, componibilidad
 
 #### Dimensión material
 
-## El proceso composiciónal hasta el momento
+## El proceso composicional hasta el momento
 ### Grafos puros y estados
 ### Entornos
 ### Tiempo de las especies, árboles
+### atractore, retroalimentación
 
 ## Algunas sesiones (audios)
 
