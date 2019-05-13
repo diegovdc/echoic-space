@@ -138,6 +138,17 @@ En la práctica de este proceso se han desarrollado dos maneras de leer los graf
 
 
 ### Investigación de la naturaleza
+
+#### Antecedentes (personales)
+Una de las principales influencias y confluencias en relación con mi interés por trabajar con los sonidos de la naturaleza ha sido el trabajo de [Christopher Luna](http://www.christopherlunamega.com/) con quién he colaborado desde hace años. Su trabajo se concentra en la realización de transcripciones precisas de una multiplicidad de fenómenos sonoros (entre ellos los de origen natural) y un trabajo sobre el concepto de modelo sonoro, inaugurado por Fraçoise Bernard Mâche.
+
+Mâche dice al respecto:
+> It is important for a composer to listen to the world of sounds and to perceive in it form-models - encounters between the schemes of the deep psyche and acoustical laws - not because it is a repertory of discoveries to make, but because is a biological function, the excercising of which cannot be hindered with impunity. A culture which lays claim to doing without this sound phenomenology completely risks depriving itself of something essential to its progress. If it reduces the practice of the model to earlier musical examples, asphyxia threatens very quickly: extinguish the final echo of real sound and formalism re-establishes its dessicating monopoly; it is the lot of all neo-classicisms, collages and "readings" of the second degree.  Thre music of the repertoire are certainly also sounds from the environment, and in this regard potential models. But from copy to copy their purely cultural exploitation is exhausted and, like Antée who only regained strength on contact with the earth-mother, summons a return to the earth, i.e. to biological laws.
+
+<small>Mâche, F.B.: Music, Myth and Nature. Hardwood Academic Publishers, Contemporary
+Music Studies, Vol. 6 (1992)</small>
+
+#### La naturaleza en este proceso
 Un aspecto que ha marcado considerablemente el desarrollo de este proceso ha sido la referencia constante a lo natural y a los fenómenos naturales. 
 
 Sí bien la naturaleza como fuente de inspiración ha estado largo tiempo presente en mi obra (cf. [Espíritu penetrando en árbol](http://www.echoic.space/music/espiritu-penetrando-en-arbol), [Redwood Region](http://www.echoic.space/music/redwood-region), [Grilluidos](http://www.echoic.space/music/grilluidos)), en este proceso, la fase que comienza con _En un lugar sagrado sagrado_, inició más como una exploración en la vena de _{Videcoic One}_, donde lo que predomina es una imaginación de lo fantástico. Sin embargo, a partir de una observación de Milo que intento parafrasear como "lo más sagrado y fantástico es la naturaleza misma, lo que ya está ahí en ella, y no hay necesidad de postular entidades o eventos sobrenaturales", la creación dentro del proceso dió un giro en busca de un apego total hacia la experiencia de la naturaleza en dos dimensiones, la poética y la material (con los fenómenos, físicos, químicos y biológicos la integran).
@@ -156,26 +167,48 @@ La permacultura, que deriva sus conocimientos y técnicas del estudio de los sis
 
 Vale la pena mencionar algunos de los principios básicos de la permacultura tal como los describe Hemenway (op. cit, pg.10):
 
-> 2-. Connect. Use relative location, that is, place the elements of your design in ways that create useful relationships and time-saving connections among all parts. The number of connections among elements creates a healthy, diverse ecosystem, not the number of elements.<br>
-> 4-. Each element performs multiple functions. Choose and place each element in a design to perform as many functions as possible. Beneficial connections between diverse components create a stable whole. Stack elements in both space and time.<br>
-> 5-. Each function is supported by multiple elements. Use multiple methods to achieve important functions and to create synergies. Redundancy protects when one or more elements fail.<br>
-> 6-. Make the least change for the greatest effect. Understand the system you are working with well enough to find its “leverage points” and intervene there, where the least work accomplishes the most change.<br>
-> 7-. Use small-scale, intensive systems. Start with the smallest systems that will do the job and build on your successes. Grow by “chunking”—that is, developing a small system or arrangement that works well—and repeat it, with variations.<br>
-> 8-. Optimize edge. The edge—the intersection of two environments—is the most diverse place in a system and is where energy and materials accumulate or are translated. Increase or decrease edge as appropriate.<br>
-> 9-. Collaborate with succession. Living systems usually advance from immaturity to maturity, and if we accept this trend and align our designs with it instead of fighting it, we save work and energy. Mature ecosystems are more diverse and productive than young ones.<br>
+> 1. ...
+> 2. Connect. Use relative location, that is, place the elements of your design in ways that create useful relationships and time-saving connections among all parts. The number of connections among elements creates a healthy, diverse ecosystem, not the number of elements.<br>
+> 3. ...
+> 4. Each element performs multiple functions. Choose and place each element in a design to perform as many functions as possible. Beneficial connections between diverse components create a stable whole. Stack elements in both space and time.<br>
+> 5. Each function is supported by multiple elements. Use multiple methods to achieve important functions and to create synergies. Redundancy protects when one or more elements fail.<br>
+> 6. Make the least change for the greatest effect. Understand the system you are working with well enough to find its “leverage points” and intervene there, where the least work accomplishes the most change.<br>
+> 7. Use small-scale, intensive systems. Start with the smallest systems that will do the job and build on your successes. Grow by “chunking”—that is, developing a small system or arrangement that works well—and repeat it, with variations.<br>
+> 8. Optimize edge. The edge—the intersection of two environments—is the most diverse place in a system and is where energy and materials accumulate or are translated. Increase or decrease edge as appropriate.<br>
+> 9. Collaborate with succession. Living systems usually advance from immaturity to maturity, and if we accept this trend and align our designs with it instead of fighting it, we save work and energy. Mature ecosystems are more diverse and productive than young ones.<br>
+> ...
 
-Es posible ver cómo estos principios se reflejan en diversos aspectos del proceso. El punto 2, 6, 7, 8 están en el uso de grafos, conectividad, eficiencia, componibilidad y navegabilidad respectivamente (ver [Grafos](#grafos)). El 4 y 5 en la multiplicidad de perspectivas para cada nodo, decritas en [Investigación de la naturaleza](#investigación-de-la-naturaleza). 9 en la forma de ser del proceso en general (ver [El proceso no es la obra](#el-proceso-no-es-la-obra)).
+Es posible ver cómo estos principios se reflejan en diversos aspectos del proceso. El punto 2, 6, 7, 8 están en el uso de grafos, conectividad, eficiencia, componibilidad y navegabilidad respectivamente (ver [Grafos](#grafos)). El 4 y 5 en la multiplicidad de perspectivas para cada nodo, decritas en [Investigación de la naturaleza](#investigación-de-la-naturaleza). El 9 en la forma de ser del proceso en general (ver [El proceso no es la obra](#el-proceso-no-es-la-obra)).
 
-#### Antecedentes (personales)
-Christopher, transcripciones
-etc
 
-Mache
+Podemos observar la presencia de los grafos en dos aspectos que en apariencia son totalmente diferentes:
+  1. Como representación de ideas y/o procesos mentales. En consecuencia, lo notación musical como representación de ideas musicales.
+  2. Como representación de elementos y procesos naturales.
 
+Esto sin duda da cuenta de la flexibilidad de esta clase de estructuras. Sin embargo, sobre la eficacia o la productividad de la notación sobre el proceso, resulta interesante plantear la pregunta de si existe alguna relación entre la manera del funcionar del pensamiento y la manera de funcionar de la naturaleza. Es decir, ¿en razón de qué es que estos dos ámbitos pueden ser comprendidos de la misma manera? y ¿por qué un proceso creativo-imaginativo (de pensamiento) puede ser "diseñado" y puesto en función (y _efectiva y eficiente-mente_<sup id="efectividad-conaturalidad" data-footnote="original">Nota</sup>, cf. también: [Grafos](#grafos)), bajo los mismos principios de diseño que los de un ecosistema? En el fondo, estas preguntas apuntan a cuestionar la supuesta división entre el pensamiento (o lo humano) y lo natural; o dicho de otro modo, intentan aportar experiencias que soporten la hipótesis de que el pensamiento puede ser explicado (y opera y puede ser puesto en función) por los mismos conceptos que describen el funcionamiento de la naturaleza.
+
+
+<sup id="efectividad-conaturalidad" data-footnote="note">efectividad-conaturalidad</sup>La eficiencia como supuesta evidencia de esta co-naturalidad entre pensamiento y naturaleza se basa en la idea de que el uso de estructuras y modos de operación más próximos a los de naturaleza son más eficientes en tanto que son constructos que requieren de menor procesamiento (ya que están más cerca de los modos de ser del pensamiento). Menor procesamiento resulta en una mayor capacidad para realizar tareas más complejas (e.g. la elaboración y ejecución de estructuras musicales sumamente complejas, como las resultante de la composición de distintos grafos o la expansión/abstracción que implica convertir nodos en grafos o viceversa). Esto es lo que permite concebir que los que puede elaborar con estos métodos es un mundo vivo, que crece, evoluciona, puede ser visto a muy diversas escalas, ser explorado y compartido, etc. <sup id="musicas-orales" data-footnote="original">musicas-orales</sup> Por contraste, imaginar realizar e incluso expresar tales ideas mediante una notación tradicional (lejanas a la forma de ser del la naturaleza) resultaría en una labor extremadamente ardua y posiblemente futil.
+
+<sup id="musicas-orales" data-footnote="note">musicas-orales</sup> Estas características pueden ser apreciadas más generalmente en otra dimensión de la música, la de los estilos. Estos tienen por supuesto características mucho más tendientes a las de los procesos naturales. Se heredan y mutuan gradualmente, son genéticas, también existen y se desarrollan en relación con nichos (e.g estructuras socio-politicas determinadas)
 
 ### El proceso no es la obra
-Apertura, componibilidad
+El trabajo en este taller se concibe siempre como proceso y no como obra y eso permea totalmente la estructura de lo que en él se produce.
 
+Como ya se mencionó, desde el primer momento se han trabajado al menos un grafo nuevo por sesión.  El proceso no ha consistido en tomar una idea y retrabajarla con el fin de perfeccionarla, sino de interar constantemente al rededor de las ideas previamente trabajadas e incluir las nuevas ideas que van apareciendo.
+
+Se ha mencionado también que uso del grafo como estructura y estrategia notacional permite la composición de un grafo con otro para formar uno nuevo, e incluso de componer un grafo en otro bajo la forma de un nodo. Cada que se hace esto se produce, por decirlo así, una nueva obra. La combinatoria es en este caso simple, y abierta a cualquier interés de experimentar con los materiales desarrollados anteriormente.
+
+Pero más allá del nivel notacional, la estrategia de composición gráfica también parecería manifestarse al nivel proceso mismo.  Las ideas que se dan durante el proceso forman ellas una especie de grafo (si bien no se le representa jamás): el proceso mismo es un ecosistema de abierto ideas, y como ecosistema no tiene otro objetivo que el desarrollo de si mismo, es decir, el objetivo no es la producción de obras, aunque podría decirse que las produce a cada momento.
+
+Este grafo con el que imáginamos el proceso podría parecerse a un árbol filogenético (un grafo acíclico dirigido), donde una idea anteriormente existente puede bifurcarse en una o varias ramas-ideas que de algún modo son derivaciones o transformaciones evolutivas de las ideas anteriores (ciertamente en este árbol hay entrecruzamientos e hibridaciones también).
+
+El proceso en este sentido totalmente abierto y permite la profundización explorativa de ideas, así como la añadidura de nuevos elementos. Esto se puede concebir como el resultado de dos maneras de proceder:
+  1. Descubrimiento de nuevas conexiones: la profundización sobre un elemento o grupo de elementos puede revelar conexiones posibles con otros elementos.
+  
+  2. Descubrimento de nuevos elementos: profundización y añadidura suceden por lo general como descubrimientos de algún elemento próximo a los otros ya presentes, lo que ofrece conectividad inmediata (y por desarrollar) entre el nuevo elemento y los anteriores.
+
+Cada elemento producido (grafo) es un recurso disponible para el juego creativo. Su ética es la de nutrir el mundo que es, expandirlo y hacerlo evolucionar, se trata de una actividad que (se) enriquece con el tiempo y que a la vez no consiste en un acto de repetición que intenta pulir y remover "imperfecciones" para llegar a un resultado ideal, una especie de producto último refinado (i.e. un partitura tradicional, un disco, etc.). Al contrario, su repetición implica la posibilidad tanto de recurrir a momentos anteriores (bajo nuevas miradas), como de arribar a situaciones del todo imprevistas y nuevas, que sin embargo se desarrollan sobre la base (genética) de las experiencias y los materiales anteriores.
 
 
 ### Duplicación de perspectivas, poesía y materialidad
