@@ -24,26 +24,26 @@ category:
 # Recuento del trabajo realizado hasta el momento en el _Taller Abierto 2.9_ (con Milo Tamez)  <!-- omit in toc -->
 - [Panorama general del proceso](#panorama-general-del-proceso)
 - [Antecedentes y concepciones fundamentales](#antecedentes-y-concepciones-fundamentales)
-  - [Los grafos como representación de ideas](#los-grafos-como-representación-de-ideas)
-    - [Lo que esto ha significado para el proceso](#lo-que-esto-ha-significado-para-el-proceso)
-    - [Diversas lecturas de los grafos](#diversas-lecturas-de-los-grafos)
-  - [Investigación de la naturaleza](#investigación-de-la-naturaleza)
-    - [Antecedentes](#antecedentes)
-    - [La naturaleza en este proceso](#la-naturaleza-en-este-proceso)
-    - [El modelo eco-sistémico de la naturaleza: descripciones basadas en redes o grafos](#el-modelo-eco-sistémico-de-la-naturaleza-descripciones-basadas-en-redes-o-grafos)
-  - [El proceso no es la obra](#el-proceso-no-es-la-obra)
-  - [Duplicación de perspectivas, poesía y materialidad](#duplicación-de-perspectivas-poesía-y-materialidad)
-    - [Dimensión Poética](#dimensión-poética)
-      - [Hábitat](#hábitat)
-      - [Hay un fuego (brazas) de la noche](#hay-un-fuego-brazas-de-la-noche)
-      - [Amanecer](#amanecer)
-      - [Reconocimiento del tiempo](#reconocimiento-del-tiempo)
-    - [Dimensión material](#dimensión-material)
-      - [Aproximación biológica: _el tiempo de las especies_](#aproximación-biológica-_el-tiempo-de-las-especies_)
+- [Los grafos como representación de ideas](#los-grafos-como-representación-de-ideas)
+  - [Lo que esto ha significado para el proceso](#lo-que-esto-ha-significado-para-el-proceso)
+  - [Diversas lecturas de los grafos](#diversas-lecturas-de-los-grafos)
+- [Investigación de la naturaleza](#investigación-de-la-naturaleza)
+  - [Antecedentes](#antecedentes)
+  - [La naturaleza en este proceso](#la-naturaleza-en-este-proceso)
+  - [El modelo eco-sistémico de la naturaleza: descripciones basadas en redes o grafos](#el-modelo-eco-sistémico-de-la-naturaleza-descripciones-basadas-en-redes-o-grafos)
+- [El proceso no es la obra](#el-proceso-no-es-la-obra)
+- [Duplicación de perspectivas, poesía y materialidad](#duplicación-de-perspectivas-poesía-y-materialidad)
+  - [Dimensión Poética](#dimensión-poética)
+    - [Hábitat](#hábitat)
+    - [Hay un fuego (brazas) de la noche](#hay-un-fuego-brazas-de-la-noche)
+    - [Amanecer](#amanecer)
+    - [Reconocimiento del tiempo](#reconocimiento-del-tiempo)
+  - [Dimensión material](#dimensión-material)
+    - [Aproximación biológica: _el tiempo de las especies_](#aproximación-biológica-_el-tiempo-de-las-especies_)
       - [Árbol](#Árbol)
       - [Ortópteros](#ortópteros)
       - [Polinización](#polinización)
-      - [Aproximación física: _atractores_](#aproximación-física-_atractores_)
+    - [Aproximación física: _atractores_](#aproximación-física-_atractores_)
 
 Desde septiembre de 2018 entré en un proceso creativo-composicional con Milo Tamez en lo que él llama [Taller Abierto 2.9](https://www.milotamez.com.mx/taller-abierto-2-9/). 
 
@@ -82,7 +82,7 @@ Este proceso es (en buena medida) resultado y experimento sobre conceptos desarr
 
 Cf. [El análisis de esta obra (en la sección "Ideas Principales").](http://www.echoic.space/music/videcoic-one#ideas-principales)
 
-### Los grafos como representación de ideas
+## Los grafos como representación de ideas
 En esta proceso se parte de un punto distinto de las exploraciones al respecto del funcionamiento del pensamiento, aunque se apoya también en los hallazgos de _{Videcoic One}_.  En _Una Exploracion del Pensamiento_ se plantea la posibilidad del comprender los estados del sentido (por ejemplo, de un idea) y sus transformaciones, por medio del uso de grafos. Dicho de manera muy breve, se plantea que una idea, expresada lingüísticamente, se puede representar mediante la segmentación de sus constituyentes principales denominados _elementos_ y la vinculación de estos de diversas maneras y en distintas intensidades. Este tipo de representación es extremadamente similar a los llamados _mapas mentales_, y difiere de ellos principalmente en su objetivo y finalidad: generar un diagrama de un estado del pensamiento (una sección de su estado total, para ser precisos), por oposición al simplemente resumir o ayudar a la comprensión de un tema. 
  
 En este sentido, la teoría detrás de estos diagramas explica y justifica el potencial descriptivo, clarificativo-conceptualizante y mnemónico de los mapas mentales. Si esta teoría de los diagramas es cierta, los mapas mentales son potentes <sup>[1]</sup> en tanto que la manera que tienen de representar ideas es muy semejante a la manera en que el pensamiento mismo, en algún nivel más profundo, los representa (e.g. después de _descifrar_ la cadena lingüística en la que frecuente comunicamos y consumimos ideas).
@@ -98,7 +98,7 @@ Siguiendo estas propuestas, para este proceso se eligió como metodología de re
   3. Se postula que son facilitadores de la estructuración de las ideas. Estos grafos descomponen un tema-idea en diversas partes (nodos-ideas) a la vez que definen las relaciones (y las distancias) entre cada una. Una idea vista de esa manera es percibida más sintéticamente: como un todo de relaciones estructuradas precisamente.
 
 
-#### Lo que esto ha significado para el proceso
+### Lo que esto ha significado para el proceso
 En un principio se descubre que las propiedades mnemónica y estructural de los grafos permite estructurar una improvisación y de-limitar sus materiales (e.g. el número de materiales musicales depende del número de nodos, y las conexiones entre los nodos definen las posibles secuencias de los eventos). 
 
 ![uno de los primero grafos](/primeros-grafos.jpg)
@@ -129,7 +129,7 @@ Con esto se abren nuevas posibilidades para la creación y la interpretación.
 
 Finalmente, es importante notar que el uso de estas cualidades de los grafos, se ha ido modificando con el tiempo, generando en realidad un repertorio de usos o variaciones sobre el concepto y el funcionamiento de la representación mediante estas estructuras. Esto es, la prioridad no está puesta en determinar o medir cuál es el método ideal de representación mediante grafos, sino en hacer uso de la libertad creativa para proponer diferentes maneras de hacer jugar-funcionar esta manera de representar, una mezcla de adaptación a las condiciones de lo que se representa, de proceso evolutivo y de manifestación de impulsos creativo-cognitivos espontáneos.
 
-#### Diversas lecturas de los grafos
+### Diversas lecturas de los grafos
 Para comenzar podemos definir dos tipos de grafos:
   1. Puros u abstractos: aquellos que no son temáticos o cuyos nodos no son más que un punto dentro de una estructura.
 
@@ -183,9 +183,9 @@ En la práctica de este proceso se han desarrollado dos maneras de leer los graf
     
 
 
-### Investigación de la naturaleza
+## Investigación de la naturaleza
 
-#### Antecedentes
+### Antecedentes
 Una de las principales influencias y confluencias en relación con mi interés por trabajar con los sonidos de la naturaleza ha sido el trabajo de y con [Christopher Luna](http://www.christopherlunamega.com/), compositor e improvisador con el que he colaborado desde hace años. Su trabajo se concentra en la realización de transcripciones precisas de una multiplicidad de fenómenos sonoros (entre ellos los de origen natural) y un trabajo sobre el concepto de modelo sonoro, inaugurado por Fraçoise Bernard Mâche.
 
 Sobre los modelos sonoros, dice Mâche:
@@ -196,7 +196,7 @@ Music Studies, Vol. 6 (1992)</small>
 
 Sin embargo, dentro de este proceso la aproximación al modelo sonoro no implica ningún método transcriptivo estricto, es decir, no pretende representar un modelo sonoro natural partiendo de la referencia a una grabación de campo.  Por el contrario se trata de una aproximación de corte intuitivo, que busca reflejar al modelo en términos de una fenomenología ligada a la experiencia personal, la memoria y las asociaciones sensibles por un lado, y por otro la investigación sobre la materialidad de los fenómenos: la recurrencia a las visiones que las ciencias pueden tener o generar sobre estos -tales visiones pueden ser en muchos casos ajenas a cualquier tipo de representación sonora, pero al mismo tiempo pueden contener elementos que inspiren-afecten a la imaginación para entender-sentir el fenómeno de maneras totalmente distintas.
 
-#### La naturaleza en este proceso
+### La naturaleza en este proceso
 Un aspecto que ha marcado considerablemente el desarrollo de este proceso ha sido la referencia constante a lo natural y a los fenómenos naturales. 
 
 Si bien la naturaleza como fuente de inspiración ha estado largo tiempo presente en mi obra (cf. [Espíritu penetrando en árbol](http://www.echoic.space/music/espiritu-penetrando-en-arbol), [Redwood Region](http://www.echoic.space/music/redwood-region), [Grilluidos](http://www.echoic.space/music/grilluidos)), en este proceso, la fase que comienza con _Despertar en un sitio sagrado_, inició más como una exploración en la vena de _{Videcoic One}_, donde lo que predomina es una imaginación de lo fantástico. Sin embargo, a partir de una observación de Milo que intento parafrasear como "lo más sagrado y fantástico es la naturaleza misma, lo que ya está ahí en ella, y no hay necesidad de postular entidades o eventos sobrenaturales", la creación dentro del proceso dió un giro en busca de un apego total hacia la experiencia de la naturaleza en dos dimensiones, la poética y la material (con los fenómenos, físicos, químicos y biológicos la integran).
@@ -208,7 +208,7 @@ Al comienzo los grafos describen aspectos muy generales de una experiencia en la
 
 Cada una de estas conexiones puede expandirse en uno o varios grafos produciendo cada vez más materiales y estados o comportamientos sonoros posibles. Además es importante observar que elementos como turbulencia, atractores o polinización desde luego conectan con muchas otras cosas. Estas posibilidades conectivas prefiguran grafos mayores que involucran a todos estos puntos. Con ello se vuelve concebible navegar a través de todas estas diversas perspectivas:  ir de las aves a las nubes por vía de la turbulencia.
 
-#### El modelo eco-sistémico de la naturaleza: descripciones basadas en redes o grafos
+### El modelo eco-sistémico de la naturaleza: descripciones basadas en redes o grafos
 Esta manera de proceder guarda similitudes con los conceptos [biológico](https://en.wikipedia.org/wiki/Biological_network) y [ecológico](https://en.wikipedia.org/wiki/Ecological_network) de red, lo cuáles permiten modelar diversos fenómenos naturales por medio del uso de grafos. En estas disciplinas las redes permiten describir y entender, entre muchas otras cosas, que las interacciones entre los distintos elementos (orgánicos e inorgánicos) de un sistema son fundamentales para mantener la existencia no sólo del sistema mismo, sino de los elementos que lo integran. Esto significa que el estado particular de un sistema está correlacionado con el estado del los elementos que lo integran, o dicho en relación con el tema antes mencionado de la identidad de los grafos, que la "identidad" del sistema está definida por los elementos que lo integran y por sus estados.
 
 La permacultura, que deriva sus conocimientos y técnicas del estudio de los sistemas ecológicos, ha servido para mi como fuente de inspiración para llevar este tipo de modelado a la música. Ésta puede ser definida como un conjunto de principios y prácticas cuyo objetivo es diseñar asentamientos humanos sustentables (Hemenway, Toby. _Gaia's Garden_, pg. 10, versión PDF). La permacultura busca diseñar sistemas naturales "artificiales" que se comporten y funcionen de la misma manera que los ecosistemas naturales, esto con el fin de disminuir la cantidad de energía y nutrientes (externos) que requiere el sistema para funcionar, optimizando la cantidad de los mismos que permanecen dentro del sistema. Por su parte, esto evoca un tema recurrente en la práctica de [John Cage, quien ha dicho que "la responsabilidad del artista es imitar a la naturaleza en su manera de operar"](https://johncage.org/autobiographical_statement.html).
@@ -244,7 +244,7 @@ Esto sin duda da cuenta de la flexibilidad de esta clase de estructuras. Sin emb
 
 <sup class="musicas-orales" data-footnote="note">músicas-orales</sup> Estas características pueden ser apreciadas más generalmente en otra dimensión de la música, la de los estilos. Estos tienen por supuesto características mucho más tendientes a las de los procesos naturales. Se heredan y mutan gradualmente, son genéticas, también existen y se desarrollan en relación con nichos (e.g estructuras socio-políticas determinadas)
 
-### El proceso no es la obra
+## El proceso no es la obra
 El trabajo en este taller se concibe siempre como proceso y no como obra y eso permea totalmente la estructura de lo que en él se produce.
 
 Como ya se mencionó, desde el primer momento se ha trabajado al menos un grafo nuevo por sesión.  El proceso no ha consistido en tomar una idea y re-trabajarla con el fin de perfeccionarla, sino de iterar constantemente al rededor de las ideas previamente trabajadas e incluir las nuevas ideas que van apareciendo.
@@ -264,7 +264,7 @@ Cada elemento producido (grafo) es un recurso disponible para el juego creativo.
 
 Añadido a esto, la dimensión oral que también caracteriza a este proceso, donde los grafos, los materiales y las estructuras se completan en un nivel dialógico y colaborativo, hace posible (a mi juicio) una de las potencias más interesantes de este proceso: la posibilidad para grupos distintos de desarrollar a partir del mismo tipo de elementos iniciales (estos grafos), procesos creativos paralelos, relacionados en su origen, pero que se desarrollan generando mundos sonoros que evolucionan y funcionan de maneras (quizá) radicalmente distintas, una suerte de música con capacidad de especiarce.
 
-### Duplicación de perspectivas, poesía y materialidad
+## Duplicación de perspectivas, poesía y materialidad
 La (s)elección de temas en este proceso está regida por un definido interés en el mundo natural. Aquí los temas-fenómenos se abordan desde dos perspectivas:
   1. Poética, que ocurre desde la percepción y la inter-subjetividad (memoria, experiencia, imaginación, etc.).
   
@@ -276,7 +276,7 @@ Ahora bien, dado que el proceso ha ido evolucionando, no se pretende decir que e
 
 Es la dimensión poética la que inaugura la fase temática de este proceso (después de los grafos puros). Y es la temática natural la que abre las puertas para que la dimensión material pueda aportar sus características (poco a poco y cada vez con mayor fuerza).
 
-#### Dimensión Poética
+### Dimensión Poética
 Hasta el momento hay por así decirlo dos grandes ejes sobre los cuáles se han ido desarrollando numerosos grafos.  El primero de ellos es _Despertar en un sitio sagrado_ y el segundo _Reconocimiento del tiempo_.
 
 Como ya se mencionó antes, la dimensión poética de este proceso inaugura con _Despertar en un sitio sagrado_. Esta primera pieza, de donde se desprende el título del eje contiene los que podrían contarse como 8 grafos diferentes, y describe, en cierto sentido, el primer momento de un mundo por desarrollarse. Éste está originalmente inspirado en el escenario del cuento de Borges "Las ruinas circulares". Realmente se trata de una especie de semilla-boceto  partir de la cuál se han desprendido grafos sustancialmente más productivos<sup class="productividad-de-los-grafos" data-footnote="original">Nota</sup>, y no de un grafo que en estos momentos tengamos el interés de tocar desde sí mismo. 
@@ -287,28 +287,28 @@ Como ya se mencionó antes, la dimensión poética de este proceso inaugura con 
 
 Los grafos que se desprendieron originalmente de aquí son:
 
-##### Hábitat
+#### Hábitat
 ![Hábitat](/habitat.jpg)
 
 _Hábitat_: describe un hábitat en elementos muy sencillos (que posteriormente serán expandidos). En esta fase del proceso nos concentramos mucho en la imitación del sonido y el comportamiento de los elementos contenidos en el grafo, en la vena de los explicado en [Antecedentes](#antecedentes).
 
 _Viento_: un primer intento de describir los movimiento del viento. El grafo de atractores (abajo) en mucho más eficaz en este sentido. Sin embargo, el principal objetivo de este grafo era explorar el componibilidad de los grafos (en tanto este grafo es un nodo de Hábitat).
 
-##### Hay un fuego (brazas) de la noche
+#### Hay un fuego (brazas) de la noche
 ![Hay un fuegro (brazas) de la noche](/fuego.jpg)
 
 _Hay un fuego (brazas) de la noche_: describe básicamente una fogata.
 
 _Eco_: semejante a _Viento_.
 
-##### Amanecer
+#### Amanecer
 ![Amanecer](/fuego.jpg)
 
 _Amanecer_: describe el proceso y los cambios de color en cielo
 
 Estos grafos se encuentran principalmente del lado poético en tanto que las preocupaciones tras la generación de la estructura, los nodos, y la intención interpretativa original se encontraban directamente en relación con los aspectos perceptuales de una comprensión-construcción occidental-cotidiana (por así decirlo) y simbólica de los fenómenos descritos. Reflexionando sobre este aspecto, sería verdaderamente interesante _intentar_ una re-elaboración de estos grafos desde un marco de comprensión no (o menos) occidental (dentro de la medida de lo posible, dada mi enraizada occidentalidad).
 
-##### Reconocimiento del tiempo
+#### Reconocimiento del tiempo
 El último grafo de esta fase marcadamente poética es el que trazaría los distintos campos del eje llamado _Reconocimiento del tiempo_.  Este grafo intenta aproximarse a la reflexión sobre tres tipos de tiempos distintos: 
   * De las especies
   * Atmosférico
@@ -320,8 +320,8 @@ Este grafo realmente es demasiado abstracto<sup class="tres-tiempos-1" data-foot
 
 <sup class="tres-tiempos-1" data-footnote="note">Nota</sup> Si al lector le interesa, los número sobre las flechas del grafo denotan el número de repeticiones necesarias de un material _x_ antes de pasar el siguiente material. Esto desde luego no tiene absolutamente nada que ver con los tiempos mencionados anteriormente y por ello calificamos a este grafo de demasiado abstracto.
 
-#### Dimensión material
-##### Aproximación biológica: _el tiempo de las especies_
+### Dimensión material
+#### Aproximación biológica: _el tiempo de las especies_
 El primer acercamiento intencional sobre la dimensión material surge de la pregunta por, ¿cómo un grafo puede representar un tiempo tal como el _tiempo de las especies_? La respuesta es en cierto sentido evidente: un grafo acíclico dirigido (GAD), como un árbol (o red) filogenético. Éste resulta ser una manera mucho más apegada de entender y representar dicho fenómeno. El trabajo previo con grafos había recurrido a grafos cíclicos (por su potencial repetitivo), lo cuál conducía a pensar en materiales distintos que alternaban o comunicaban unos con otros. Pero los GADs permiten otro tipo de pensamiento, especialmente cuando los asociamos con la genética: nos permite pensar en materiales que se suceden unos a otros bajo la forma de variaciones o mutaciones graduales.
 
 El primer prototipo en emerger de esta concepción fue la siguiente.
@@ -361,7 +361,7 @@ Cabe señalar que ambos grafos abstraen al polinizador y no implican realmente n
 
 <sup class="grafos-funciones" data-footnote="note">Nota</sup> Se procede con esto como si los grafos fueran funciones que generan distintos materiales a partir de los argumentos que reciben.
 
-##### Aproximación física: _atractores_
+#### Aproximación física: _atractores_
 Una segunda manera de aproximarnos a la dimensión material de los fenómenos naturales que nos interesan es la física.  Hasta el momento, aquí sólo se ha trabajado con el concepto de turbulencias y más generalmente con el de atractores. Esta exploración conecta en un principio con el nodo _viento_ en el grafo _Hábitat_.  
 
 A partir de las descripciones en torno a los atractores y la turbulencia se ha generado un grafo que permite explorar este fenómeno.  De momento sólo se trata el tema abstractamente, es decir, aplicado directamente al nivel del sonido puro y del la interacción musical. La necesidad de esto radica en esforzarnos por entender este fenómeno tal como sucede en el nivel que nos es más cercano (el de la acción sonora), pero el fin es el de adquirir la capacidad de extrapolar estas experiencias para aplicar la idea general de los atractores (cómo definiendo e influyendo el transcurrir de distintos procesos naturales) a distintos nodos o grafos.
