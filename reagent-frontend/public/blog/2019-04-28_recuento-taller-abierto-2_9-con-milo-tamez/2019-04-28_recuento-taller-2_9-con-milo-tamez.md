@@ -6,9 +6,9 @@ slug: 2019-04-28_recuento-taller-abierto-2_9-con-milo-tamez
 # track_name: Turbulencia v.1
 backgroundImage: arbol.jpeg
 seo:
-  img: arbol.jpeg
-  # width: 1331
-  # height: 904
+  img: seo.jpeg
+  width: 1399
+  height: 906
 date: 2019-04-28
 category:
   - Guitarra
