@@ -31,7 +31,6 @@ category:
   - [Antecedentes](#antecedentes)
   - [La naturaleza en este proceso](#la-naturaleza-en-este-proceso)
   - [El modelo eco-sistémico de la naturaleza: descripciones basadas en redes o grafos](#el-modelo-eco-sistémico-de-la-naturaleza-descripciones-basadas-en-redes-o-grafos)
-- [El proceso no es la obra](#el-proceso-no-es-la-obra)
 - [Duplicación de perspectivas, poesía y materialidad](#duplicación-de-perspectivas-poesía-y-materialidad)
   - [Dimensión Poética](#dimensión-poética)
     - [Hábitat](#hábitat)
@@ -44,6 +43,8 @@ category:
       - [Ortópteros](#ortópteros)
       - [Polinización](#polinización)
     - [Aproximación física: _atractores_](#aproximación-física-_atractores_)
+- [El proceso no es la obra](#el-proceso-no-es-la-obra)
+
 
 Desde septiembre de 2018 entré en un proceso creativo-composicional con Milo Tamez en lo que él llama [Taller Abierto 2.9](https://www.milotamez.com.mx/taller-abierto-2-9/). 
 
@@ -74,7 +75,7 @@ Cabe recalcar que la improvisación se ha utilizado como una herramienta al serv
 
 
 ## Antecedentes y concepciones fundamentales
-Lo que sigue es definitivamente mi apreciación particular de lo que trata este proceso, estoy bastante seguro de que Milo tiene otras perspectivas que podrían diferir bastante de lo que voy a hablar aquí, pero que incuestionablemente enriquecerían esta explicación, después de todo este proceso es sólo posible como una interacción co-creativa (lo cuál, por cierto, creo firmemente que es algo en lo que ambos coincidimos como un punto fundamental de todo el proceso y es algo que además se expresa en varios y muy diversos niveles).
+Lo que sigue es definitivamente mi apreciación particular de lo que trata este proceso, estoy bastante seguro de que Milo tiene otras perspectivas que podrían diferir bastante de lo que voy a hablar aquí, pero que incuestionablemente enriquecerían esta explicación, después de todo este proceso es sólo posible como una interacción co-creativa (lo cual, por cierto, creo firmemente que es algo en lo que ambos coincidimos como un punto fundamental de todo el proceso y es algo que además se expresa en varios y muy diversos niveles).
 
 Este proceso es (en buena medida) resultado y experimento sobre conceptos desarrollados en mi tesis de filosofía _Una Exploración de Pensamiento_ en torno al **funcionamiento del pensamiento y del sentido**. Estos conceptos ya fueron explorados en un sentido distinto en la obra _{Videcoic One}_. En aquella obra, la idea principal consistía en la superposición de diversas obras independientes que pudiera interactuar y transformarse entre ellas como si de organismos vivos se tratara. Se trataba pues de experimentar en torno a ciertas observaciones respecto de la _sistematicidad del pensamiento_:
 
@@ -133,7 +134,7 @@ Finalmente, es importante notar que el uso de estas cualidades de los grafos, se
 Para comenzar podemos definir dos tipos de grafos:
   1. Puros u abstractos: aquellos que no son temáticos o cuyos nodos no son más que un punto dentro de una estructura.
 
-  2. Temáticos: aquellos cuya estructura es un diagrama de una idea, por lo tanto sus nodos están etiquetados con conceptos y sus conexiónes reflejan algún(os) tipo(s) de relación(es) entre los conceptos.
+  2. Temáticos: aquellos cuya estructura es un diagrama de una idea, por lo tanto sus nodos están etiquetados con conceptos y sus conexiones reflejan algún(os) tipo(s) de relación(es) entre los conceptos.
 
 En la práctica de este proceso se han desarrollado dos maneras de leer los grafos.
 
@@ -143,7 +144,7 @@ En la práctica de este proceso se han desarrollado dos maneras de leer los graf
       * En las primeras piezas, se usan grafos con pocos nodos. Cada nodo, cuya identidad se define por su posición vertical (siguiendo una misma línea horizontal de la cuadrícula), representaba siempre un mismo material -predefinido o inventado al momento- distinto del resto. Estos grafos se conectan-secuencian mediante el uso de flechas con variaciones de sí mismos,de modo que el grafo va variando gradualmente. Esto permitió que nos familiarizáramos con algunas propiedades musicales de los grafos:
           
           * Los grafos mantienen dos tipos de identidades:
-            * **Identidad de materiales**: se mantiene a lo largo del la pieza, generando una coherencia de gran escala.
+            * **Identidad de materiales**: se mantiene a lo largo de la pieza, generando una coherencia de gran escala.
 
             * **Identidad estructural o de conexiones**: puede variar con cada instancia del grafo, generando coherencia-identidad a pequeña escala y momentos distintos a lo largo de la pieza. Estas variaciones se pueden concebir como subgrafos, o grafos derivados de un grafo mayor, no presente, que contiene la suma de todas las conexiones de los grafos presentados secuencialmente.
           
@@ -189,7 +190,7 @@ En la práctica de este proceso se han desarrollado dos maneras de leer los graf
 Una de las principales influencias y confluencias en relación con mi interés por trabajar con los sonidos de la naturaleza ha sido el trabajo de y con [Christopher Luna](http://www.christopherlunamega.com/), compositor e improvisador con el que he colaborado desde hace años. Su trabajo se concentra en la realización de transcripciones precisas de una multiplicidad de fenómenos sonoros (entre ellos los de origen natural) y un trabajo sobre el concepto de modelo sonoro, inaugurado por Fraçoise Bernard Mâche.
 
 Sobre los modelos sonoros, dice Mâche:
-> It is important for a composer to listen to the world of sounds and to perceive in it form-models - encounters between the schemes of the deep psyche and acoustical laws - not because it is a repertory of discoveries to make, but because is a biological function, the excercising of which cannot be hindered with impunity. A culture which lays claim to doing without this sound phenomenology completely risks depriving itself of something essential to its progress. If it reduces the practice of the model to earlier musical examples, asphyxia threatens very quickly: extinguish the final echo of real sound and formalism re-establishes its dessicating monopoly; it is the lot of all neo-classicisms, collages and "readings" of the second degree.  The music of the repertoire are certainly also sounds from the environment, and in this regard potential models. But from copy to copy their purely cultural exploitation is exhausted and, like Antée who only regained strength on contact with the earth-mother, summons a return to the earth, i.e. to biological laws.
+> It is important for a composer to listen to the world of sounds and to perceive in it form-models - encounters between the schemes of the deep psyche and acoustical laws - not because it is a repertory of discoveries to make, but because is a biological function, the exercising of which cannot be hindered with impunity. A culture which lays claim to doing without this sound phenomenology completely risks depriving itself of something essential to its progress. If it reduces the practice of the model to earlier musical examples, asphyxia threatens very quickly: extinguish the final echo of real sound and formalism re-establishes its desiccating monopoly; it is the lot of all neo-classicisms, collages and "readings" of the second degree.  The music of the repertoire are certainly also sounds from the environment, and in this regard potential models. But from copy to copy their purely cultural exploitation is exhausted and, like Antée who only regained strength on contact with the earth-mother, summons a return to the earth, i.e. to biological laws.
 
 <small>Mâche, F.B.: Music, Myth and Nature. Hardwood Academic Publishers, Contemporary
 Music Studies, Vol. 6 (1992)</small>
@@ -234,7 +235,7 @@ Podemos observar la presencia de los grafos en dos aspectos que en apariencia so
       * En consecuencia, lo notación musical como representación de ideas musicales.
   2. Como representación de elementos y procesos naturales.
 
-Esto sin duda da cuenta de la flexibilidad de esta clase de estructuras. Sin embargo, sobre la eficacia o la productividad de la notación sobre el proceso, resulta interesante plantear la pregunta de si existe alguna relación entre la manera del funcionar del pensamiento y la manera de funcionar de la naturaleza. Es decir, ¿en razón de qué es que estos dos ámbitos pueden ser comprendidos de la misma manera? y ¿por qué un proceso creativo-imaginativo (de pensamiento) puede ser "diseñado" y puesto en función (y _efectiva y eficiente-mente_<sup class="efectividad-conaturalidad" data-footnote="original">Nota</sup>, cf. también: [Grafos](#grafos)), bajo los mismos principios de diseño que los de un ecosistema? En el fondo, estas preguntas apuntan a cuestionar la supuesta división entre el pensamiento (o lo humano) y lo natural; o dicho de otro modo, intentan aportar experiencias que soporten la hipótesis de que el pensamiento puede ser explicado (y opera y puede ser puesto en función) por los mismos conceptos que describen el funcionamiento y los procesos de la naturaleza.
+Esto sin duda da cuenta de la flexibilidad de esta clase de estructuras. Sin embargo, sobre la eficacia o la productividad de la notación sobre el proceso, resulta interesante plantear la pregunta de si existe alguna relación entre la manera de funcionar del pensamiento y la manera de funcionar de la naturaleza. Es decir, ¿en razón de qué es que estos dos ámbitos pueden ser comprendidos de la misma manera? y ¿por qué un proceso creativo-imaginativo (de pensamiento) puede ser "diseñado" y puesto en función (y _efectiva y eficiente-mente_<sup class="efectividad-conaturalidad" data-footnote="original">Nota</sup>, cf. también: [Grafos](#grafos)), bajo los mismos principios de diseño que los de un ecosistema? En el fondo, estas preguntas apuntan a cuestionar la supuesta división entre el pensamiento (o lo humano) y lo natural; o dicho de otro modo, intentan aportar experiencias que soporten la hipótesis de que el pensamiento puede ser explicado (y opera y puede ser puesto en función) por los mismos conceptos que describen el funcionamiento y los procesos de la naturaleza.
 
 <sup class="efectividad-conaturalidad" data-footnote="note">efectividad-conaturalidad</sup>La eficiencia como supuesta evidencia de esta co-naturalidad entre pensamiento y naturaleza se basa en la idea de que el uso de estructuras y modos de operación más próximos a los de naturaleza son más eficientes en tanto que son constructos que requieren de menor procesamiento (ya que están más cerca de los modos de ser del pensamiento). Menor procesamiento resulta en una mayor capacidad para realizar tareas más complejas (e.g. la elaboración y ejecución de estructuras musicales sumamente complejas, como las resultante de la composición de distintos grafos o la expansión/abstracción que implica convertir nodos en grafos o viceversa). Esto es lo que permite concebir que lo que se puede elaborar con estos métodos es un mundo vivo, que crece, evoluciona, puede ser visto a muy diversas escalas, ser explorado y compartido, etc. <sup class="musicas-orales" data-footnote="original">musicas-orales</sup> Por contraste, imaginar realizar e incluso expresar tales ideas mediante una notación tradicional (lejana a la forma de ser del la naturaleza) resultaría en una labor extremadamente ardua y posiblemente fútil.
 
@@ -244,33 +245,13 @@ Esto sin duda da cuenta de la flexibilidad de esta clase de estructuras. Sin emb
 
 <sup class="musicas-orales" data-footnote="note">músicas-orales</sup> Estas características pueden ser apreciadas más generalmente en otra dimensión de la música, la de los estilos. Estos tienen por supuesto características mucho más tendientes a las de los procesos naturales. Se heredan y mutan gradualmente, son genéticas, también existen y se desarrollan en relación con nichos (e.g estructuras socio-políticas determinadas)
 
-## El proceso no es la obra
-El trabajo en este taller se concibe siempre como proceso y no como obra y eso permea totalmente la estructura de lo que en él se produce.
-
-Como ya se mencionó, desde el primer momento se ha trabajado al menos un grafo nuevo por sesión.  El proceso no ha consistido en tomar una idea y re-trabajarla con el fin de perfeccionarla, sino de iterar constantemente al rededor de las ideas previamente trabajadas e incluir las nuevas ideas que van apareciendo.
-
-Se ha mencionado también que uso del grafo como estructura y estrategia notacional permite la composición de un grafo con otro para formar uno nuevo, e incluso de componer un grafo en otro bajo la forma de un nodo. Cada que se hace esto se produce, por decirlo así, una nueva obra. La combinatoria es en este caso simple, y abierta a cualquier interés de experimentar con los materiales desarrollados anteriormente.
-
-Pero más allá del nivel notacional, la estrategia de composición gráfica también parecería manifestarse al nivel del proceso mismo.  Las ideas que se dan durante el proceso forman ellas una especie de grafo (si bien no se le representa jamás): el proceso mismo es un ecosistema abierto de ideas, y como ecosistema no tiene otro objetivo que el desarrollo de si mismo, es decir, el objetivo no es la producción de obras, aunque podría decirse que las produce a cada momento.
-
-Este grafo con el que imaginamos el proceso podría parecerse a un árbol filogenético (un grafo acíclico dirigido), donde una idea anteriormente existente puede bifurcarse en una o varias ramas-ideas que de algún modo son derivaciones o transformaciones evolutivas de las ideas anteriores (ciertamente en este árbol hay entrecruzamientos e hibridaciones también).
-
-El proceso es, en este sentido, totalmente abierto y permite la profundización explorativa de ideas así como la añadidura de nuevos elementos. Esto se puede concebir como el resultado de dos maneras de proceder:
-  1. Descubrimiento de nuevas conexiones: la profundización sobre un elemento o grupo de elementos puede revelar conexiones posibles con otros elementos.
-  
-  2. Descubrimiento de nuevos elementos: profundización y añadidura suceden por lo general como descubrimientos de algún elemento próximo a los otros ya presentes, lo que ofrece conectividad inmediata (y por desarrollar) entre el nuevo elemento y los anteriores.
-
-Cada elemento producido (grafo) es un recurso disponible para el juego creativo. Su ética es la de nutrir el mundo que es, expandirlo y hacerlo evolucionar, se trata de una actividad que (se) enriquece con el tiempo y que a la vez no consiste en un acto de repetición que intenta pulir y remover "imperfecciones" para llegar a un resultado ideal, una especie de producto último refinado (i.e. un partitura tradicional, un disco, etc.). Al contrario, su repetición implica la posibilidad tanto de recurrir a momentos anteriores (bajo nuevas miradas), como de arribar a situaciones del todo imprevistas y nuevas, que sin embargo se desarrollan sobre la base (genética) de las experiencias y los materiales anteriores.
-
-Añadido a esto, la dimensión oral que también caracteriza a este proceso, donde los grafos, los materiales y las estructuras se completan en un nivel dialógico y colaborativo, hace posible (a mi juicio) una de las potencias más interesantes de este proceso: la posibilidad para grupos distintos de desarrollar a partir del mismo tipo de elementos iniciales (estos grafos), procesos creativos paralelos, relacionados en su origen, pero que se desarrollan generando mundos sonoros que evolucionan y funcionan de maneras (quizá) radicalmente distintas, una suerte de música con capacidad de especiarce.
-
 ## Duplicación de perspectivas, poesía y materialidad
 La (s)elección de temas en este proceso está regida por un definido interés en el mundo natural. Aquí los temas-fenómenos se abordan desde dos perspectivas:
   1. Poética, que ocurre desde la percepción y la inter-subjetividad (memoria, experiencia, imaginación, etc.).
   
-  2. Material, que se nutre las investigaciones científicas al rededor de estos temas (física, química, biología, etc.).
+  2. Material, que se nutre las investigaciones científicas alrededor de estos temas (física, química, biología, etc.).
 
-Ambas perspectivas interactúan entre sí, por lo que por ejemplo, partiendo de una descripción científica de un fenómeno se procede en lo siguiente a re-imaginarlo desde una perspectiva creativa y relativamente más libre que lo que la descripción científica consideraría permisible. Esto significa que ninguna de estas dos aproximaciones es realmente pura. No se trata de la pura fantasía poética cerrada y ocupada en sí misma, ni tampoco se trata de la sonificación estricta (si tal cosa es posible) y mecánica de un fenómeno. Se trata de tomar modelos de la naturaleza y poetizar sobre ellos, procurando optimizar la capacidad de elaborar creatívamente dentro de ellos sin perder los rasgos más salientes y poéticamente más inusuales e inimaginables que sólo la perspectiva científica aporta. 
+Ambas perspectivas interactúan entre sí, por lo que por ejemplo, partiendo de una descripción científica de un fenómeno se procede en lo siguiente a re-imaginarlo desde una perspectiva creativa y relativamente más libre que lo que la descripción científica consideraría permisible. Esto significa que ninguna de estas dos aproximaciones es realmente pura. No se trata de la pura fantasía poética cerrada y ocupada en sí misma, ni tampoco se trata de la sonificación estricta (si tal cosa es posible) y mecánica de un fenómeno. Se trata de tomar modelos de la naturaleza y poetizar sobre ellos, procurando optimizar la capacidad de elaborar creativamente dentro de ellos sin perder los rasgos más salientes y poéticamente más inusuales e inimaginables que sólo la perspectiva científica aporta. 
 
 Ahora bien, dado que el proceso ha ido evolucionando, no se pretende decir que estas perspectivas convivan siempre en todos los casos y en la misma medida. 
 
@@ -279,9 +260,9 @@ Es la dimensión poética la que inaugura la fase temática de este proceso (des
 ### Dimensión Poética
 Hasta el momento hay por así decirlo dos grandes ejes sobre los cuáles se han ido desarrollando numerosos grafos.  El primero de ellos es _Despertar en un sitio sagrado_ y el segundo _Reconocimiento del tiempo_.
 
-Como ya se mencionó antes, la dimensión poética de este proceso inaugura con _Despertar en un sitio sagrado_. Esta primera pieza, de donde se desprende el título del eje contiene los que podrían contarse como 8 grafos diferentes, y describe, en cierto sentido, el primer momento de un mundo por desarrollarse. Éste está originalmente inspirado en el escenario del cuento de Borges "Las ruinas circulares". Realmente se trata de una especie de semilla-boceto  partir de la cuál se han desprendido grafos sustancialmente más productivos<sup class="productividad-de-los-grafos" data-footnote="original">Nota</sup>, y no de un grafo que en estos momentos tengamos el interés de tocar desde sí mismo. 
+Como ya se mencionó antes, la dimensión poética de este proceso inaugura con _Despertar en un sitio sagrado_. Esta primera pieza, de donde se desprende el título del eje contiene los que podrían contarse como 8 grafos diferentes, y describe, en cierto sentido, el primer momento de un mundo por desarrollarse. Éste está originalmente inspirado en el escenario del cuento de Borges "Las ruinas circulares". Realmente se trata de una especie de semilla-boceto  partir de la cual se han desprendido grafos sustancialmente más productivos<sup class="productividad-de-los-grafos" data-footnote="original">Nota</sup>, y no de un grafo que en estos momentos tengamos el interés de tocar desde sí mismo. 
 
-<sup class="productividad-de-los-grafos" data-footnote="note">Nota</sup>Es decir, grafos que, por alguna razón aun desconocida, funcionan o activan más efectivamente la imaginación y las interacciones con la grafía.
+<sup class="productividad-de-los-grafos" data-footnote="note">Nota</sup>Es decir, grafos que, por alguna razón aún desconocida, funcionan o activan más efectivamente la imaginación y las interacciones con la grafía.
 
 ![Despertar en un sitio sagrado](/despertar-en-un-sitio-sagrado.jpg)
 
@@ -309,7 +290,7 @@ _Amanecer_: describe el proceso y los cambios de color en cielo
 Estos grafos se encuentran principalmente del lado poético en tanto que las preocupaciones tras la generación de la estructura, los nodos, y la intención interpretativa original se encontraban directamente en relación con los aspectos perceptuales de una comprensión-construcción occidental-cotidiana (por así decirlo) y simbólica de los fenómenos descritos. Reflexionando sobre este aspecto, sería verdaderamente interesante _intentar_ una re-elaboración de estos grafos desde un marco de comprensión no (o menos) occidental (dentro de la medida de lo posible, dada mi enraizada occidentalidad).
 
 #### Reconocimiento del tiempo
-El último grafo de esta fase marcadamente poética es el que trazaría los distintos campos del eje llamado _Reconocimiento del tiempo_.  Este grafo intenta aproximarse a la reflexión sobre tres tipos de tiempos distintos: 
+El último grafo de esta fase marcadamente poética es el que trazará los distintos campos del eje llamado _Reconocimiento del tiempo_.  Este grafo intenta aproximarse a la reflexión sobre tres tipos de tiempos distintos: 
   * De las especies
   * Atmosférico
   * Geológico
@@ -332,7 +313,7 @@ El primer prototipo en emerger de esta concepción fue la siguiente.
 
  Se trata literalmente de una árbol filogenético de materiales musicales (semi-inventados). El desarrollo de la pieza consistió en tomar una figura musical e irla mutando a lo largo del árbol. Cada nueva mutación debía de referir a sus antecesoras de alguna manera. La ventaja de usar figuras en esta primera exploración, a diferencia de palabras (como habíamos hecho antes) es que resulta extremadamente sencillo modificarlas a cada paso, y al mismo tiempo, la manera en que otorgamos sentido e interpretamos una figura y sus mutaciones, depende únicamente del sentido dado a la figura original y el contexto de sentidos inmediato que generen sus mutaciones, es decir, hay un cierta autosuficiencia de sentido para el grafo.<sup class="diferencia-con-el-lenguaje" data-footnote="original">Nota</sup>
 
-<sup class="diferencia-con-el-lenguaje" data-footnote="note">Nota</sup> Por el contrario, en el caso de las palabras, pensar en mutaciones genéticas (inventadas) es un tanto más complicado. Primero porque interviene su contexto más general de uso y sus significados preestablecidos, por lo que implica o bien se pierde la riqueza de sus sentidos, o se cae en otorgarles cualquier sentido posible -lo que en ambos casos se contrapone con la razón de ser de un árbol filógenético, es decir, la posibilidad de evolucionar de un sentido a otro(s) manteniendo la traza de los sentidos que anteceden. Dicho de otra manera, resulta mucho más difícil mutar una palabra y producir variaciones inmediatamente efectivas.
+<sup class="diferencia-con-el-lenguaje" data-footnote="note">Nota</sup> Por el contrario, en el caso de las palabras, pensar en mutaciones genéticas (inventadas) es un tanto más complicado. Primero porque interviene su contexto más general de uso y sus significados preestablecidos, por lo que implica o bien se pierde la riqueza de sus sentidos, o se cae en otorgarles cualquier sentido posible -lo que en ambos casos se contrapone con la razón de ser de un árbol filogenético, es decir, la posibilidad de evolucionar de un sentido a otro(s) manteniendo la traza de los sentidos que anteceden. Dicho de otra manera, resulta mucho más difícil mutar una palabra y producir variaciones inmediatamente efectivas.
 
 ##### Ortópteros
 El segundo grafo en recurrir a esta técnica la usa para generar una serie de variaciones sobre el sonido de lo que presumiblemente son grillos.  La fuente de audio original viene de una [grabación de campo de Christopher Luna](http://www.christopherlunamega.com/works/field-recordings/night-music). Se trata de una noche de verano en un bosque de Virginia, y del análisis de frecuencias que hizo para representar algunos de los sonidos contenidos en él. 
@@ -346,7 +327,7 @@ En el espectrograma generado se pueden apreciar los sonidos referenciados de los
 Éste segundo árbol se desarrolló también con el fin de poder ser utilizado como elemento del nodo de _insectos_ en _Habitat_. 
 
 ##### Polinización
-A la par de esta exploración se intentó otra variación de la técnica del grafo arbóreo, intentando utilizarlo para generar representaciones de otro fenómenos del mundo de los insectos. Esto ha resultado en tres grafos, el primero podría decirse que sólo funciona para expandir las posibles exploraciones del nodo de insectos, y es por lo tanto un grafo de planeación (no se ha tocado nunca). Pero a partir de este grafo se desarrollaron dos grafos sobre el tema de la polinización, lo cuáles tiene características de cíclicas y arbóreas. Los grafos cíclicos permiten conectar elementos que pertenecen a diversas categorías mientras que los arborescentes permiten descomponer un elemento en sus variaciones.
+A la par de esta exploración se intentó otra variación de la técnica del grafo arbóreo, intentando utilizarlo para generar representaciones de otro fenómenos del mundo de los insectos. Esto ha resultado en tres grafos, el primero podría decirse que sólo funciona para expandir las posibles exploraciones del nodo de insectos, y es por lo tanto un grafo de planeación (no se ha tocado nunca). Pero a partir de este grafo se desarrollaron dos grafos sobre el tema de la polinización, los cuales tienen características de cíclicas y arbóreas. Los grafos cíclicos permiten conectar elementos que pertenecen a diversas categorías mientras que los arborescentes permiten descomponer un elemento en sus variaciones.
 
 ![Polinización 1](/polinizacion-1.jpg)
 
@@ -373,3 +354,24 @@ El propósito de trabajar este grafo es lograr una experiencia de las diversas f
   2. En relación con lo sonoro como fenómeno creativo-cognitivo: hay un interés por observar si en el desarrollo formal de un evento creativo sonoro se manifiestan los distintos tipos de atractores (punto fijo, ciclo límite, toro, extraño), y en el caso de que tal observación sea positiva, de aprender su funcionamiento para dotar al proceso creativo la interacción de la capacidad de actuar-influir sobre esos parámetros de una manera más activa.
 
 Para más detalles sobre ésta exploración y algunas de sus fuentes consultar la siguientes entradas en este blog: [Turbulencia v.1](http://www.echoic.space/blog/2019-03-24_turbulencia_v1) y [Atractores v.2](http://www.echoic.space/blog/2019-04-12_atractores_v2).
+
+## El proceso no es la obra
+El trabajo en este taller se concibe siempre como proceso y no como obra y eso permea totalmente la estructura de lo que en él se produce.
+
+Como ya se mencionó, desde el primer momento se ha trabajado al menos un grafo nuevo por sesión.  El proceso no ha consistido en tomar una idea y re-trabajarla con el fin de perfeccionarla, sino de iterar constantemente alrededor de las ideas previamente trabajadas e incluir las nuevas ideas que van apareciendo.
+
+Se ha mencionado también que uso del grafo como estructura y estrategia notacional permite la composición de un grafo con otro para formar uno nuevo, e incluso de componer un grafo en otro bajo la forma de un nodo. Cada que se hace esto se produce, por decirlo así, una nueva obra. La combinatoria es en este caso simple, y abierta a cualquier interés de experimentar con los materiales desarrollados anteriormente.
+
+Pero más allá del nivel notacional, la estrategia de composición gráfica también parecería manifestarse al nivel del proceso mismo.  Las ideas que se dan durante el proceso forman ellas una especie de grafo (si bien no se le representa jamás): el proceso mismo es un ecosistema abierto de ideas, y como ecosistema no tiene otro objetivo que el desarrollo de si mismo, es decir, el objetivo no es la producción de obras, aunque podría decirse que las produce a cada momento.
+
+Este grafo con el que imaginamos el proceso podría parecerse a un árbol filogenético (un grafo acíclico dirigido), donde una idea anteriormente existente puede bifurcarse en una o varias ramas-ideas que de algún modo son derivaciones o transformaciones evolutivas de las ideas anteriores (ciertamente en este árbol hay entrecruzamientos e hibridaciones también).
+
+El proceso es, en este sentido, totalmente abierto y permite la profundización explorativa de ideas así como la añadidura de nuevos elementos. Esto se puede concebir como el resultado de dos maneras de proceder:
+  1. Descubrimiento de nuevas conexiones: la profundización sobre un elemento o grupo de elementos puede revelar conexiones posibles con otros elementos.
+  
+  2. Descubrimiento de nuevos elementos: profundización y añadidura suceden por lo general como descubrimientos de algún elemento próximo a los otros ya presentes, lo que ofrece conectividad inmediata (y por desarrollar) entre el nuevo elemento y los anteriores.
+
+Cada elemento producido (grafo) es un recurso disponible para el juego creativo. Su ética es la de nutrir el mundo que es, expandirlo y hacerlo evolucionar, se trata de una actividad que (se) enriquece con el tiempo y que a la vez no consiste en un acto de repetición que intenta pulir y remover "imperfecciones" para llegar a un resultado ideal, una especie de producto último refinado (i.e. un partitura tradicional, un disco, etc.). Al contrario, su repetición implica la posibilidad tanto de recurrir a momentos anteriores (bajo nuevas miradas), como de arribar a situaciones del todo imprevistas y nuevas, que sin embargo se desarrollan sobre la base (genética) de las experiencias y los materiales anteriores.
+
+Añadido a esto, la dimensión oral que también caracteriza a este proceso, donde los grafos, los materiales y las estructuras se completan en un nivel dialógico y colaborativo, hace posible (a mi juicio) una de las potencias más interesantes de este proceso: la posibilidad para grupos distintos de desarrollar a partir del mismo tipo de elementos iniciales (estos grafos), procesos creativos paralelos, relacionados en su origen, pero que se desarrollan generando mundos sonoros que evolucionan y funcionan de maneras (quizá) radicalmente distintas, una suerte de música con capacidad de especiarce.
+  
