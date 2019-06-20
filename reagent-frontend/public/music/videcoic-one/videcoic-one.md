@@ -14,7 +14,7 @@ category:
 # {Videcoic One}
 
 ## Partitura y Grabación
-### Descargar [Partitura](/scores/videcoic-one/videcoic-one.pdf)
+### Descargar [Partitura](/music/videcoic-one/videcoic-one.pdf)
 
 ## Nota al programa
 ### A
