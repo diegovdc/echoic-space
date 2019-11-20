@@ -25,15 +25,15 @@ return (new goog.history.Html5History(window,transformer));
 })();
 }
 accountant.core.dispatch_on_navigate = (function accountant$core$dispatch_on_navigate(history,nav_handler){
-var G__29914 = history;
-var G__29915 = goog.history.EventType.NAVIGATE;
-var G__29916 = ((function (G__29914,G__29915){
+var G__35002 = history;
+var G__35003 = goog.history.EventType.NAVIGATE;
+var G__35004 = ((function (G__35002,G__35003){
 return (function (e){
 var token = e.token;
 return (nav_handler.cljs$core$IFn$_invoke$arity$1 ? nav_handler.cljs$core$IFn$_invoke$arity$1(token) : nav_handler.call(null,token));
-});})(G__29914,G__29915))
+});})(G__35002,G__35003))
 ;
-return goog.events.listen(G__29914,G__29915,G__29916);
+return goog.events.listen(G__35002,G__35003,G__35004);
 });
 /**
  * Given a DOM node, if it is an element node, return its href attribute.
@@ -80,8 +80,8 @@ return e;
 var temp__5457__auto__ = e.parentNode;
 if(cljs.core.truth_(temp__5457__auto__)){
 var parent = temp__5457__auto__;
-var G__29917 = parent;
-e = G__29917;
+var G__35005 = parent;
+e = G__35005;
 continue;
 } else {
 return null;
@@ -110,9 +110,9 @@ return ["#",cljs.core.str.cljs$core$IFn$_invoke$arity$1(fragment)].join('');
  * Create a click handler that blocks page reloads for known routes
  */
 accountant.core.prevent_reload_on_known_path = (function accountant$core$prevent_reload_on_known_path(history,path_exists_QMARK_,reload_same_path_QMARK_){
-var G__29918 = document;
-var G__29919 = "click";
-var G__29920 = ((function (G__29918,G__29919){
+var G__35006 = document;
+var G__35007 = "click";
+var G__35008 = ((function (G__35006,G__35007){
 return (function (e){
 var target = e.target;
 var button = e.button;
@@ -154,8 +154,8 @@ var loc = window.location;
 var current_relative_href = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(loc.pathname),cljs.core.str.cljs$core$IFn$_invoke$arity$1(loc.query),cljs.core.str.cljs$core$IFn$_invoke$arity$1(loc.hash)].join('');
 if(cljs.core.truth_((function (){var and__3925__auto__ = cljs.core.not(any_key);
 if(and__3925__auto__){
-var and__3925__auto____$1 = (function (){var fexpr__29923 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["",null,"_self",null], null), null);
-return (fexpr__29923.cljs$core$IFn$_invoke$arity$1 ? fexpr__29923.cljs$core$IFn$_invoke$arity$1(link_target) : fexpr__29923.call(null,link_target));
+var and__3925__auto____$1 = (function (){var fexpr__35011 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["",null,"_self",null], null), null);
+return (fexpr__35011.cljs$core$IFn$_invoke$arity$1 ? fexpr__35011.cljs$core$IFn$_invoke$arity$1(link_target) : fexpr__35011.call(null,link_target));
 })();
 if(cljs.core.truth_(and__3925__auto____$1)){
 var and__3925__auto____$2 = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(button,(0));
@@ -189,18 +189,18 @@ history.setToken(relative_href,title);
 e.preventDefault();
 
 if(cljs.core.truth_(reload_same_path_QMARK_)){
-var G__29924 = history;
-var G__29925 = (new goog.history.Event(path,true));
-return goog.events.dispatchEvent(G__29924,G__29925);
+var G__35012 = history;
+var G__35013 = (new goog.history.Event(path,true));
+return goog.events.dispatchEvent(G__35012,G__35013);
 } else {
 return null;
 }
 } else {
 return null;
 }
-});})(G__29918,G__29919))
+});})(G__35006,G__35007))
 ;
-return goog.events.listen(G__29918,G__29919,G__29920);
+return goog.events.listen(G__35006,G__35007,G__35008);
 });
 if((typeof accountant !== 'undefined') && (typeof accountant.core !== 'undefined') && (typeof accountant.core.nav_handler !== 'undefined')){
 } else {
@@ -219,12 +219,12 @@ accountant.core.path_exists_QMARK_ = null;
  * 
  *   path-exists?: a fn of one argument, a path. Return truthy if this path is handled by the SPA
  */
-accountant.core.configure_navigation_BANG_ = (function accountant$core$configure_navigation_BANG_(p__29926){
-var map__29927 = p__29926;
-var map__29927__$1 = ((((!((map__29927 == null)))?(((((map__29927.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__29927.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__29927):map__29927);
-var nav_handler = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__29927__$1,cljs.core.cst$kw$nav_DASH_handler);
-var path_exists_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__29927__$1,cljs.core.cst$kw$path_DASH_exists_QMARK_);
-var reload_same_path_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__29927__$1,cljs.core.cst$kw$reload_DASH_same_DASH_path_QMARK_);
+accountant.core.configure_navigation_BANG_ = (function accountant$core$configure_navigation_BANG_(p__35014){
+var map__35015 = p__35014;
+var map__35015__$1 = ((((!((map__35015 == null)))?(((((map__35015.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__35015.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__35015):map__35015);
+var nav_handler = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__35015__$1,cljs.core.cst$kw$nav_DASH_handler);
+var path_exists_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__35015__$1,cljs.core.cst$kw$path_DASH_exists_QMARK_);
+var reload_same_path_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__35015__$1,cljs.core.cst$kw$reload_DASH_same_DASH_path_QMARK_);
 accountant.core.history.setUseFragment(false);
 
 accountant.core.history.setPathPrefix("");
@@ -240,14 +240,14 @@ accountant.core.dispatch_on_navigate(accountant.core.history,nav_handler);
 return accountant.core.prevent_reload_on_known_path(accountant.core.history,path_exists_QMARK_,reload_same_path_QMARK_);
 });
 accountant.core.map__GT_params = (function accountant$core$map__GT_params(query){
-var params = cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__29929_SHARP_){
-return cljs.core.name(p1__29929_SHARP_);
+var params = cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__35017_SHARP_){
+return cljs.core.name(p1__35017_SHARP_);
 }),cljs.core.keys(query));
 var values = cljs.core.vals(query);
 var pairs = cljs.core.partition.cljs$core$IFn$_invoke$arity$2((2),cljs.core.interleave.cljs$core$IFn$_invoke$arity$2(params,values));
 return clojure.string.join.cljs$core$IFn$_invoke$arity$2("&",cljs.core.map.cljs$core$IFn$_invoke$arity$2(((function (params,values,pairs){
-return (function (p1__29930_SHARP_){
-return clojure.string.join.cljs$core$IFn$_invoke$arity$2("=",p1__29930_SHARP_);
+return (function (p1__35018_SHARP_){
+return clojure.string.join.cljs$core$IFn$_invoke$arity$2("=",p1__35018_SHARP_);
 });})(params,values,pairs))
 ,pairs));
 });
@@ -255,8 +255,8 @@ return clojure.string.join.cljs$core$IFn$_invoke$arity$2("=",p1__29930_SHARP_);
  * add a browser history entry. updates window/location
  */
 accountant.core.navigate_BANG_ = (function accountant$core$navigate_BANG_(var_args){
-var G__29932 = arguments.length;
-switch (G__29932) {
+var G__35020 = arguments.length;
+switch (G__35020) {
 case 1:
 return accountant.core.navigate_BANG_.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -307,8 +307,8 @@ var path = window.location.pathname;
 var query = window.location.search;
 var hash = window.location.hash;
 if(cljs.core.truth_(accountant.core.nav_handler)){
-var G__29934 = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(path),cljs.core.str.cljs$core$IFn$_invoke$arity$1(query),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hash)].join('');
-return (accountant.core.nav_handler.cljs$core$IFn$_invoke$arity$1 ? accountant.core.nav_handler.cljs$core$IFn$_invoke$arity$1(G__29934) : accountant.core.nav_handler.call(null,G__29934));
+var G__35022 = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(path),cljs.core.str.cljs$core$IFn$_invoke$arity$1(query),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hash)].join('');
+return (accountant.core.nav_handler.cljs$core$IFn$_invoke$arity$1 ? accountant.core.nav_handler.cljs$core$IFn$_invoke$arity$1(G__35022) : accountant.core.nav_handler.call(null,G__35022));
 } else {
 return console.error("can't dispatch-current until configure-navigation! called");
 }
