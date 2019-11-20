@@ -16,3 +16,6 @@ pom.xml.asc
 node_modules/
 .rebel_readline_history
 .cache
+public/js/
+!public/js/app.js
+!public/js/deps.js

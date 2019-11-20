@@ -15,7 +15,8 @@
                  [venantius/accountant "0.2.4"]
                  [ring "1.5.1"]
                  [ring/ring-defaults "0.2.1"]
-                 [compojure "1.5.0"]]
+                 [compojure "1.5.0"]
+                 [cljs-http "0.1.46"]]
   
   :plugins [[lein-cljsbuild "1.1.5"]
             [lein-figwheel "0.5.18"]]
@@ -37,7 +38,7 @@
   :cljsbuild {:builds {:app
                        {:source-paths ["src" "env/dev/cljs"]
                         :compiler
-                        {:main "reagent-frontend.dev"
+                        {:main "frontend.dev"
                          :output-to "public/js/app.js"
                          :output-dir "public/js/out"
                          :asset-path   "/js/out"
@@ -47,7 +48,7 @@
                          :external-config {:reagent-dev-tools {:state-atom frontend.state/app-state}}
                          :preloads [reagent-dev-tools.preload]}
                         :figwheel
-                        {:on-jsload "reagent-frontend.core/mount-root"
+                        {:on-jsload "frontend.core/mount-root"
                          :open-urls ["http://localhost:3449/"]}}
                        :release
                        {:source-paths ["src" "env/prod/cljs"]
@@ -62,7 +63,7 @@
   :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]}
 
   :profiles {:dev {:source-paths ["src" "env/dev/clj"]
-                   :plugins [[cider/cider-nrepl "0.21.1"]]
+                   :plugins []
                    :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}
                    :dependencies [[binaryage/devtools "0.9.7"]
                                   [cider/piggieback "0.4.0"]
