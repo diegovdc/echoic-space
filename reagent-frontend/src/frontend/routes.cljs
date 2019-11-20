@@ -3,9 +3,10 @@
   (:import goog.history.Html5History
             goog.Uri)
   (:require
-    [frontend.routes.history]
+    [frontend.history]
     [views.home]
     [views.about]
+    [views.radio]
     [views.music]
     [views.music-single]
     [views.blog]
@@ -33,19 +34,22 @@
   (defroute "/" []
     (swap! state/app-state assoc :page :home))
 
+  (defroute "/radio" []
+    (swap! state/app-state assoc :page :radio))
+      
   (defroute #"/about/?" []
     (swap! state/app-state assoc :page :about))
-      
+  
   (defroute #"/music/?" []
     (swap! state/app-state assoc :single "")
     (swap! state/app-state assoc :page :music))
   
   (defroute "/music/:single" [single]
     (music-single :music-single single))
-  
+
   (defroute "/music/:single/" [single]
     (music-single :music-single single))
-
+  
   (defroute #"/blog/?" []
     (js/console.log "blog")
     (swap! state/app-state assoc :single "")
@@ -53,12 +57,12 @@
   
   (defroute "/blog/:single" [single]
     (music-single :blog-single single))
-  
+
   (defroute "/blog/:single/" [single]
     (music-single :blog-single single))
 
 
-  (frontend.routes.history/accountant-history-navigation))
+  (frontend.history/accountant-history-navigation))
 
 
 (defmulti current-page #(@state/app-state :page))
@@ -68,6 +72,9 @@
 
 (defmethod current-page :about []
   [views.about/main])
+
+(defmethod current-page :radio []
+  [views.radio/main])
 
 (defmethod current-page :music []
   [views.music/main])

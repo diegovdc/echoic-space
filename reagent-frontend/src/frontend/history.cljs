@@ -1,4 +1,4 @@
-(ns frontend.routes.history
+(ns frontend.history
   (:import goog.history.Html5History
            goog.Uri)
   (:require [goog.events :as events]

@@ -1,4 +1,3 @@
-
 (ns views.helpers
   (:require [frontend.helpers :refer [year sort-entry-by-year filter-by-selected-categories toggle-category]]))
 
