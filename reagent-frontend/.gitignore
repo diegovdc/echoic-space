@@ -17,3 +17,4 @@ node_modules/
 .rebel_readline_history
 .cache
 public/js/release/
+public/js/out/
