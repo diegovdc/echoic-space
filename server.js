@@ -6,6 +6,14 @@ const R = require('ramda')
 const music = require('./reagent-frontend/public/data/music.json')
 const blog = require('./reagent-frontend/public/data/blog.json')
 const log = require('tap-logger')
+const axios = require('axios')
+const token = 'iSarPKrsNOWSnHWZj0yedLQjasTAshgX68ONuQ55'
+
+if(process.env.NODE_ENV === 'development') {
+    var cors = require('cors')
+    app.use(cors())
+}
+
 
 // console.log("(path.join(process.cwd(), './reagent-frontend/public/js')) ", (path.join(process.cwd(), './reagent-frontend/public/js')));
 app.set('view engine', 'pug')
@@ -127,6 +135,15 @@ app.get('/blog/:entry_slug', (req, res) => {
       ),
     })
 })
+
+app.get('/freesound', (req, res) => {
+    const {query} = req.query
+    console.log('query: ', query);
+    axios.get(`https://freesound.org/apiv2/search/text?token=${token}&query=field+recordings+${query.replace(' ', '+')}&fields=username,tags,previews,url`)
+        .then(r => r.data)
+        .then(data => res.json(data))
+})
+
 
 app.get('*', (req, res) => {
     console.log('1') 
