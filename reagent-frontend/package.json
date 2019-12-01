@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "^0.19.0",
     "gulp-notify": "3.2.0",
     "gulp-plumber": "1.2.0",
     "howler": "2.1.1",
