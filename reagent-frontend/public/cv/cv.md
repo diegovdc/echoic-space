@@ -1,5 +1,5 @@
 ## 2020
-### Presentaciónes en vivo
+### Presentaciones en vivo
 _Una Semana de Bondad #6b_, con [Milo Tamez](http://www.milotamez.com.mx) y Ensamble Collage @ Bucarelli 69, Ciudad de México, México
 
 _Voodoo Suite_, con [Alejandro Franco Briones](http://libtim.com) y [David Ogborn](https://csmm.humanities.mcmaster.ca/people/faculty/david-ogborn/) @ Irish World Academy, University of Limerick, Irlanda
@@ -8,7 +8,7 @@ _Voodoo Suite_, con [Alejandro Franco Briones](http://libtim.com) y [David Ogbor
 _Poly-temporality Towards an ecology of time-oriented live coding_, publicado en ..., con Alejandro Franco Briones @ International Conference of Live Coding, Limerick, Irlanda
 
 ## 2019
-### Presentaciónes en vivo
+### Presentaciones en vivo
 _Una Semana de Bondad #6b_, con [Milo Tamez](http://www.milotamez.com.mx) y Ensamble Collage @ Bucarelli 69, Ciudad de México, México
 
 _Resistencias Maquínicas #1_ interacción con sistema de escucha para la improvisación libre, con Aaron Escobar (programación y drección) y Jorge Berumen, Blackbox, CDMX, México
@@ -50,7 +50,7 @@ _Livecoding temporal canons with Nanc-in-a-Can_, con [Alejandro Franco Briones](
 _Charla: La creación en el contexto del arte por computadora_, con Marianne Texido, Esteban Betancurt, José Caos, Hernani Villaseñor y Rodrigo Frenk. Organizado por [PiranhaLab](https://piranhalab.github.io/) @ Centro de Cultura Digital, CDMX, México
 
 ## 2018
-### Presentaciónes en vivo
+### Presentaciones en vivo
 _Una Semana de Bondad #3_, con [Milo Tamez](http://www.milotamez.com.mx) y Ensamble Collage @ Llorar, Ciudad de México, México
 
 _Concierto_ con [Ruido 13](http:///www.ruido13.blogspot.com) @ Los 14, Ciudad de México, México
@@ -86,7 +86,7 @@ _Nanc-in-a-Can Canon Generator: Código de SuperCollider diseñado para generar 
 _No-canon: Una serie de convergencias y divergencias sobre la obra de Conlon Nancarrow_ [link](http://3epoca.sulponticello.com/no-canon-una-serie-de-convergencias-y-divergencias-sobre-la-obra-de-conlon-nancarrow/) en Revista Digital Sul Ponticello
 
 ## 2017
-### Presentaciónes en vivo
+### Presentaciones en vivo
 _Meditaciones Sonoras_ de Pauline Oliveros, con Karina Villaseñor y Ruido 13, en el marco del Homenaje a Pauline Oliveros, Casa del Lago, CDMX, México
 
 _Iterar las ausencias_, de [Alejandro Franco Briones](http://libtim.com) en el marco de _Umbral XXXIV_ @ Actividades Mercurio, Ciudad de México, México
