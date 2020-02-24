@@ -29,7 +29,7 @@ _Livecoding temporal canons with Nanc-in-a-Can_, con [Alejandro Franco Briones](
 
 _Escuchas situadas. Escuchas en conflicto_, activación sonora en el marco de la exposición "Modos de Oír" con Ruido 13 y Colectivo La 15 @ Laboratorio Arte Alameda, CDMX, México
 
-_Escuchar-sentir el corazón desde un proceso comunitario_activación sonora en el marco de la exposición "Modos de Oír" con Ruido 13 y Colectivo La 15 @ Laboratorio Arte Alameda, CDMX, México
+_Escuchar-sentir el corazón desde un proceso comunitario_ activación sonora en el marco de la exposición "Modos de Oír" con Ruido 13 y Colectivo La 15 @ Laboratorio Arte Alameda, CDMX, México
 
 _Space is the Place_, con [Alejandro Franco Briones](http://libtim.com) @ VIU, en Hangar, Barcelona, España
 
