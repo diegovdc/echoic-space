@@ -41,7 +41,7 @@
   (get-data identity :blog "/data/blog.json")
   (get-data identity :music "/data/music.json")
   (get-data identity :cv "/data/cv.json")
-  (get-data identity :posters "/get-posters")
+  (get-data identity :posters "http://www.echoic.space/get-posters")
   (r/render [:div
              [views.header/main]
              [routes/current-page]]
