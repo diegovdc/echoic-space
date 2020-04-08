@@ -5,12 +5,21 @@
             [views.js-loader :refer [js-loader]]
             [reagent.core :as r]))
 
+(set! *warn-on-infer* true)
+
 (def log (.-log js/deps))
 
 (def show-posters (r/atom false))
 
 (def n-images-to-load (r/atom 0))
 (def masonry (r/atom nil))
+
+(defn reload-items [^js/Masonry masonry]
+  (.reloadItems masonry))
+
+(defn layout [^js/Masonry masonry]
+  (.layout masonry))
+
 (defn init-masonry []
   (js/setTimeout
    #(let [container (js/document.querySelector
@@ -26,8 +35,7 @@
           (.on
            "progress"
            (fn []
-             (js/console.log "loadedimags")
-             (.layout masonry*))))
+             (layout masonry*))))
       (reset! masonry masonry*)
       (reset! show-posters true))
    1000))
@@ -61,10 +69,10 @@
     (fn [_ _]
       (cond
         (nil? @masonry) (init-masonry)
-        @masonry (do (.reloadItems @masonry)
+        @masonry (do (reload-items @masonry)
                      (-> (js/imagesLoaded.
                           (js/document.querySelector ".about__m-grid"))
-                         (.on "progress" (fn [] (.layout @masonry)))))))
+                         (.on "progress" (fn [] (layout @masonry)))))))
     :reagent-render
     (fn []
       (let [body (get-in @state/app-state [:about 0 :body])
