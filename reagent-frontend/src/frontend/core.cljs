@@ -14,11 +14,12 @@
 (defn log [x] (.log js/console x) x)
 
 (def axios-get (oget js/deps "axios.get"))
+
 (defn get-data [func state-key url]
   (-> (axios-get url)
-    (.then #(js->clj % :keywordize-keys true))
-    (.then #(:data %))
-    (.then #(swap! frontend.state/app-state assoc state-key (func %)))))
+      (.then #(js->clj % :keywordize-keys true))
+      (.then #(:data %))
+      (.then #(swap! frontend.state/app-state assoc state-key (func %)))))
 
 
 
@@ -39,15 +40,16 @@
   (get-data identity :about "/data/about.json")
   (get-data identity :blog "/data/blog.json")
   (get-data identity :music "/data/music.json")
+  (get-data identity :cv "/data/cv.json")
+  (get-data identity :posters "/get-posters")
   (r/render [:div
-              [views.header/main]
-              [routes/current-page]]
+             [views.header/main]
+             [routes/current-page]]
             (.getElementById js/document "app")))
 
 
 
-(defn init! []          
+(defn init! []
   (routes/app-routes)
   (secretary/dispatch! (.-pathname js/window.location))
   (mount-root))
-
