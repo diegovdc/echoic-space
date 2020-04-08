@@ -1,6 +1,7 @@
 (ns views.about
   (:require [views.helpers :refer [page-container]]
             [frontend.state :as state]
+            [goog.string.Const :as Const]
             [views.js-loader :refer [js-loader]]
             [reagent.core :as r]))
 
@@ -82,8 +83,10 @@
            [:a {:class "about__button" :target "_blank" :href "/downloads/cv-2020-04.pdf"}
             "Curriculum Vitae"]]
           [:div {:class "about__activities-detail"}]
-          [js-loader {:scripts {#(exists? js/imagesLoaded) "https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"
-                                #(exists? js/Masonry) "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"}
+          [js-loader {:scripts {#(exists? js/imagesLoaded)
+                                (Const/from "https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js")
+                                #(exists? js/Masonry)
+                                (Const/from "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js")}
                       :callback #(reset! n-images-to-load 7)
                       :loading [:div]
                       :loaded (images-grid
