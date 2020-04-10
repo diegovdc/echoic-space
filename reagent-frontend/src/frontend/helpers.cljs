@@ -1,6 +1,7 @@
 (ns frontend.helpers
   (:require [jayq.core :refer [$ anim width]]
-            [clojure.string :as str]))
+            [clojure.string :as str]
+            [clojure.set :as set]))
 
 (defn find-first [fn coll]
   (first (filter fn coll)))
@@ -48,8 +49,10 @@
 
 (defn sort-entry-by-year [entry]
   (->> entry
-      (sort #(compare (:date %2) (:date %1)))
-      (group-by year)))
+       (group-by year)
+       (sort-by first >)
+       (map (fn [[year musics]]
+              [year (sort-by :date > musics)]))))
 
 (defn filter-by-selected-categories [selected-categories entry]
     (if (empty? selected-categories)

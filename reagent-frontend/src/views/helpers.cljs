@@ -50,7 +50,8 @@
 (defn page-container-bg-img [page-class img-node child-node]
   [:div
    img-node
-   (page-container (str "single__bg-img "page-class) child-node)])
+   (when child-node
+     (page-container (str "single__bg-img "page-class) child-node))])
 
 (defn print-categories [selected-categories-atom categories]
   (let [selected-cats @selected-categories-atom]
