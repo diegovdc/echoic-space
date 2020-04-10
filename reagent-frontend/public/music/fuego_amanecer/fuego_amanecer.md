@@ -1,20 +1,22 @@
 ---
-title: Fuego/Atardecer
-description: Dos piezas basadas en redes, parte de la obra "despertar en un sitio sagrado sagrado"
-slug: fuego_atardecer
+title: Fuego/Amanecer
+description: Dos piezas basadas en redes, parte de la obra "Hábitat (despertar en un sitio sagrado sagrado)"
+slug: fuego_amanecer
 file_name: https://ia601500.us.archive.org/19/items/Fuegoatardecer/fuego%3Aatardecer.mp3
-track_name: "Fuego/Atardecer"
-backgroundImage: fuego_atardecer_.jpg
+track_name: "Fuego/Amanecer"
+backgroundImage: fuego_amanecer.jpg
 date: 2018-11-13
 category:
   - Composición
   - Canon
   - En Progreso
   - Redes
+  - Taller Abierto
+  - Milo Tamez
+  - Hábitat
 ---
 
-# Fuego/Atardecer
-
+# Fuego/Amanecer
 
 ### Descargar <a href='https://archive.org/details/Fuegoatardecer' target='_blank'>Audio</a>
 
