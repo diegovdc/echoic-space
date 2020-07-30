@@ -17,7 +17,7 @@
                  [ring/ring-defaults "0.2.1"]
                  [compojure "1.5.0"]
                  [cljs-http "0.1.46"]]
-  
+
   :plugins [[lein-cljsbuild "1.1.5"]
             [lein-figwheel "0.5.18"]]
 
@@ -57,7 +57,8 @@
                          :output-dir "public/js/release"
                          :asset-path   "//js/out"
                          :optimizations :advanced
-                         :externs ["externs/jquery.js", "externs/youtube.ext.js"] 
+                         :externs ["externs/jquery.js", "externs/youtube.ext.js"]
+                         :infer-externs true
                          :pretty-print false}}}}
 
   :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]}

@@ -1,7 +1,7 @@
-
 (ns frontend.helpers
   (:require [jayq.core :refer [$ anim width]]
-            [clojure.string :as str]))
+            [clojure.string :as str]
+            [clojure.set :as set]))
 
 (defn find-first [fn coll]
   (first (filter fn coll)))
@@ -22,10 +22,10 @@
 (defn secondsToMinutes [seconds]
   (str (padTime (quot seconds 60)) ":" (padTime (rem seconds 60))))
 
-(defn safe-rand-nth [or xs] 
-  (if (empty? xs) 
-      or 
-      (rand-nth xs)))
+(defn safe-rand-nth [or* xs]
+  (if (empty? xs)
+    or*
+    (rand-nth xs)))
 
 (defn scroll-to [top]
   (anim ($ "html, body") {:scrollTop top}))
@@ -49,16 +49,18 @@
 
 (defn sort-entry-by-year [entry]
   (->> entry
-      (sort #(compare (:date %2) (:date %1)))  
-      (group-by year)))
+       (group-by year)
+       (sort-by first >)
+       (map (fn [[year musics]]
+              [year (sort-by :date > musics)]))))
 
 (defn filter-by-selected-categories [selected-categories entry]
-    (if (empty? selected-categories) 
+    (if (empty? selected-categories)
         entry
-        (filter #(not= #{} 
-                    (clojure.set/intersection 
-                        selected-categories 
-                        (set (:category %)))) 
+        (filter #(not= #{}
+                    (clojure.set/intersection
+                        selected-categories
+                        (set (:category %))))
                 entry)))
 
 (defn toggle-in-set [set val]
@@ -68,9 +70,4 @@
 
 (defn toggle-category [selected-categories-atom cat]
   (fn []
-    (swap! selected-categories-atom #(toggle-in-set % cat))))  
-
-
-(def cats (atom #{1}))
-
-((toggle-category cats 2))
+    (swap! selected-categories-atom #(toggle-in-set % cat))))

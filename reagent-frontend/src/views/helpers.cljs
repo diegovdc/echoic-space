@@ -3,9 +3,9 @@
 
 (defn page-container [page-class node]
   [:div {:class (str "page " page-class)}
-    [:div {:class (str "grid__container " page-class "__main-container")}
-      [:div {:class "grid__col-1-1"}
-        node]]])
+   [:div {:class (str "grid__container " page-class "__main-container")}
+    [:div {:class "grid__col-1-1"}
+     node]]])
 
 (def log (.-log js/deps))
 
@@ -34,45 +34,46 @@
 (defn make-archive-item [base-url post]
   [:div {:class "grid__container archive__container" :key (:slug post)}
    [:a {:style {:display "flex" :flex-direction "column"} :href (str base-url "/" (:slug post))}
-    [:h3 {:class "archive__sbttl archive__sbttl--sm"} 
-      (:title post) [:span {:class "archive__date"} (format-date (:date post))]]
+    [:h3 {:class "archive__sbttl archive__sbttl--sm"}
+     (:title post) [:span {:class "archive__date"} (format-date (:date post))]]
     [:p  {:class "archive__category"} (clojure.string/join ", " (:category post))]
-    [:span  {:class "archive__p"} 
+    [:span  {:class "archive__p"}
      (:description post)]]])
 
 
 (defn make-archive-page [title node]
   (page-container "archive"
-    [:div
-      [:h1 {:class "archive__ttl"} title]
-      node]))
+                  [:div
+                   [:h1 {:class "archive__ttl"} title]
+                   node]))
 
 (defn page-container-bg-img [page-class img-node child-node]
-    [:div
-      img-node
-      (page-container (str "single__bg-img "page-class) child-node)])
+  [:div
+   img-node
+   (when child-node
+     (page-container (str "single__bg-img "page-class) child-node))])
 
 (defn print-categories [selected-categories-atom categories]
   (let [selected-cats @selected-categories-atom]
-    [:div {:class "music__category-container"} 
-     (map (fn [cat] 
-            [:span {:key cat 
-                    :class (str "music__category " 
-                                (if (some #(= % cat) selected-cats) "selected")) 
-                    :on-click (toggle-category selected-categories-atom cat)} 
-             cat]) 
+    [:div {:class "music__category-container"}
+     (map (fn [cat]
+            [:span {:key cat
+                    :class (str "music__category "
+                                (if (some #(= % cat) selected-cats) "selected"))
+                    :on-click (toggle-category selected-categories-atom cat)}
+             cat])
           categories)]))
 
-(defn base-url [app-state] 
-  (let [page (:page @app-state)] 
+(defn base-url [app-state]
+  (let [page (:page @app-state)]
     (cond
-      (= page :music-single) "music" 
+      (= page :music-single) "music"
       (= page :blog-single)  "blog")))
 
 
-(defn get-entries [app-state] 
+(defn get-entries [app-state]
   (let [app-state' @app-state
-        page (:page app-state')] 
+        page (:page app-state')]
     (cond
-      (= page :music-single) (:music app-state') 
+      (= page :music-single) (:music app-state')
       (= page :blog-single) (:blog app-state'))))
