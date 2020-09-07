@@ -1,0 +1,35 @@
+{:source-paths ["src"]
+ :dependencies [[binaryage/devtools "0.9.7"]
+                [hiccups "0.3.0"]
+                [reagent "0.10.0"]
+                [metosin/reitit "0.5.5"]
+                [metosin/reitit-spec "0.5.5"]
+                [metosin/reitit-frontend "0.5.5"]
+                [cljs-http "0.1.46"]
+                [metosin/reagent-dev-tools "0.2.0"]
+                [binaryage/oops "0.6.2"]
+                [jayq "2.5.4"]
+                [com.cemerick/url "0.1.1"]]
+
+ :dev-http {5000 "build/browser"}
+ :nrepl {:port 8777}
+
+ :builds
+                                        ; https://shadow-cljs.github.io/docs/UsersGuide.html#target-node-script
+ {:app {:target :node-script
+        :output-to "build/node-app.js"
+        :main ssr.core/-main
+        :devtools {:after-load server.main/reload!}}
+                                        ; https://shadow-cljs.github.io/docs/UsersGuide.html#target-node-library
+  :library {:target :node-library
+            :output-to "build/lib.js"
+            :exports {:handler library.main/handler}}
+                                        ; https://shadow-cljs.github.io/docs/UsersGuide.html#target-browser
+  :browser {:target :browser
+            :output-dir "build/browser"
+            :asset-path "."
+            :modules {:browser-main {:entries [browser.main]
+                                     :init-fn browser.main/init}}
+            :devtools {:before-load browser.main/stop
+                       :after-load browser.main/start}
+            #_ #_  :build-hooks [(_build_hooks.browser/copy-index)]}}}

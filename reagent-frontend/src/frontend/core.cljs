@@ -3,7 +3,7 @@
     (:import goog.history.Html5History
              goog.Uri)
     (:require
-     [frontend.state]
+     [frontend.state :as state]
      [views.header]
      [views.sonos]
      [frontend.routes :as routes]

@@ -83,7 +83,7 @@
   [(views.music-single/main (@state/app-state :single) (@state/app-state :hash))])
 
 (defmethod current-page :blog []
-  [views.blog/main])
+  [(views.blog/main @state/app-state)])
 
 (defmethod current-page :blog-single []
   [(views.music-single/main (@state/app-state :single) (@state/app-state :hash))])

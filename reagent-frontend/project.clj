@@ -7,6 +7,7 @@
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.10.312"]
                  [reagent "0.8.1"]
+                 [hiccup "1.0.5"]
                  [secretary "1.2.3"]
                  [metosin/reagent-dev-tools "0.2.0"]
                  [binaryage/oops "0.6.2"]
