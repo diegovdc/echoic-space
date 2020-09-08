@@ -3,7 +3,7 @@ build/browser/**/*.html
 build/browser/**/*.js
 build/ssr.js
 build/node-app.js
-build/browser/data/
+build/browser/data/*.json
 node_modules/
 target/
 .shadow-cljs/
