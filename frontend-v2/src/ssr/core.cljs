@@ -54,7 +54,7 @@
        (let [body* (or (-> opts :dangerouslySetInnerHTML :__html) body)]
          (->> body*
               (map-indexed #(render (conj id %1) %2))
-              (into [tag (fix-style-tags opts)])
+              (into [tag (-> opts fix-style-tags (dissoc :on-click))])
               (set-react-id id))))
 
      (fn? (first component))
@@ -69,14 +69,14 @@
        (str/join "/")))
 
 
-(do
-  (def main-dir "frontend-v2")
-  (def main-dir-path
-    (-> (process/cwd)
-        (str/split main-dir)
-        first
-        (str "/" main-dir "/")))
-  )
+(def main-dir "frontend-v2")
+
+(def main-dir-path
+  (-> (process/cwd)
+      (str/split main-dir)
+      first
+      (str "/" main-dir "/")))
+
 
 (defn make-file-path  [file-path] (path/join main-dir-path "build/browser/" file-path))
 
@@ -95,6 +95,7 @@
        (clj->js {:encoding "utf8"}))
       (js/JSON.parse)
       (js->clj :keywordize-keys true)))
+
 (defn routing-fn
   ([route] (routing-fn route nil nil))
   ([route params] (routing-fn route params nil))

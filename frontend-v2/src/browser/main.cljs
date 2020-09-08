@@ -1,22 +1,11 @@
 (ns browser.main
-  (:require ["axios" :as axios]
-            [browser.routes :as routes :refer [routes]]
-            [browser.state :as state :refer [app-state]]
-            [browser.views.header :as header]
-            [clojure.string :as str]
-            [reagent.core :as r]
-            [reagent.dom :as rdom]
-            [reitit.coercion.spec :as rss]
-            [reitit.frontend :as rf]
-            [reitit.frontend.easy :as rfe]))
-
-#_(defn item-page [match]
-  (let [{:keys [path query]} (:parameters match)
-        {:keys [id]} path]
-    [:div
-     [:h2 "Selected item " id]
-     (if (:foo query)
-       [:p "Optional foo query param: " (:foo query)])]))
+  (:require
+   ["axios" :as axios]
+   [browser.routes :as routes :refer [routes]]
+   [browser.state :as state :refer [app-state]]
+   [browser.views.header :as header]
+   [clojure.string :as str]
+   [reagent.dom :as rdom]))
 
 
 (defn get-data [func state-key url]
