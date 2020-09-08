@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: echoic.space
+Token: 782833ad23f422325cdad08e9189413cbec4a6c6c118c826397e6beefab5ce0e
