@@ -102,13 +102,13 @@
      [:meta
       {:content "baseUrl+/images/favicon/mstile-310x310.png",
        :name "msapplication-square310x310logo"}]
-     [:title "Diego Villaseñor + openGraph.title"]
+     [:title (str"Diego Villaseñor | " title)]
      [:meta {:content description, :name "description"}]
      [:meta {:content "summary_large_image", :name "twitter:card"}]
      [:meta {:content "@diegovideco", :name "twitter:site"}]
      [:meta {:content "@diegovideco", :name "twitter:creator"}]
      [:meta
-      {:content "Diego Villaseñor+ openGraph.title",
+      {:content (str"Diego Villaseñor | " title),
        :name "twitter:title"}]
      [:meta
       {:content description, :name "twitter:description"}]
