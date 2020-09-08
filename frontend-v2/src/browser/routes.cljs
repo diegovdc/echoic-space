@@ -7,20 +7,32 @@
             [reagent.core :as r]
             [browser.views.blog :as blog]
             [browser.views.home :as home]
-            [browser.views.music :as music]))
+            [browser.views.music :as music]
+            [browser.views.music-single :as music-single]))
 
 (def match (r/atom nil))
 
 (def routes
   [["/" {:name ::home :view #(home/main)}]
    ["/about/" {:name ::about :view #(about/main)}]
+   ["/music/:slug/" {:name ::music-single
+                    :view #(let [slug (-> %1 :parameters :path :slug)]
+                             (music-single/main app-state slug nil))
+                    :parameters {:path {:slug string?}}}]
    ["/music/" {:name ::music :view #(music/main app-state)}]
+   ["/blog/:slug/" {:name ::blog-single
+                    :view #(let [slug (-> %1 :parameters :path :slug)]
+                             (music-single/main app-state slug nil))
+                    :parameters {:path {:slug string?}}}]
    ["/blog/" {:name ::blog :view #(blog/main app-state)}]])
 
-(defonce init (memoize (fn []
-                     (rfe/start!
-                      (rf/router routes {:data {:coercion rss/coercion}})
-                      (fn [m] (println m) (reset! match m))
-                      ;; set to false to enable HistoryAPI
-                      {:use-fragment false
-                       }))))
+(defn init []
+  (swap! app-state assoc :routing-fn rfe/href)
+  (rfe/start!
+   (rf/router routes {:data {:coercion rss/coercion}})
+   (fn [m]
+     (js/console.log m)
+     (swap! app-state assoc :page (-> m :data :name name keyword))
+     (reset! match m))
+   ;; set to false to enable HistoryAPI
+   {:use-fragment false}))

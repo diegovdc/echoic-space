@@ -1,17 +1,18 @@
 {
-  "name": "frontend-v2",
-  "version": "0.0.1",
-  "description": "ClojureScript project setup with Shadow-CLJS",
+  "name": "echoic-space",
+  "version": "2.0.0",
+  "description": "Website: Diego Villaseñor, músico, compositor, programador",
   "scripts": {
-    "node-repl": "shadow-cljs node-repl",
+    "node-repl": "shadow-cljs cljs-repl app",
+    "browser-repl": "shadow-cljs cljs-repl browser",
     "release": "run-s release:*",
-    "release:app": "shadow-cljs release app",
-    "watch:app": "shadow-cljs watch app",
-    "release:library": "shadow-cljs release library",
-    "watch:library": "shadow-cljs watch library",
+    "release:node": "shadow-cljs release app",
+    "watch:node": "shadow-cljs watch app",
+    "ssr": "shadow-cljs release ssr && node build/ssr.js",
     "release:browser": "shadow-cljs release browser",
     "watch:browser": "shadow-cljs watch browser",
-    "start:browser": "serve -s build/browser"
+    "start:browser": "serve -s build/browser",
+    "build": "npm run ssr && npm run release:browser"
   },
   "keywords": [],
   "devDependencies": {

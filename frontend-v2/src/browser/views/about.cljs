@@ -3,13 +3,15 @@
             [browser.state :as state]
             [goog.string.Const :as Const]
             [browser.views.js-loader :refer [js-loader]]
-            [reagent.core :as r]))
+            [reagent.core :as r]
+            [clojure.string :as str]))
 
 (set! *warn-on-infer* true)
 
 (def show-posters (r/atom false))
 
 (def n-images-to-load (r/atom 0))
+
 (def masonry (r/atom nil))
 
 (defn reload-items [^js/Masonry masonry]
@@ -44,15 +46,24 @@
 
 (def quote "“Lograr una comprensión más plena de la experiencia del pensamiento, que es también la experiencia  cotidiana y la forma en que creamos el mundo o los objetos de este mundo y nos relacionamos con ellos... Se trata  de algo como una ecología del pensamiento (por oposición a una eco-nomía), no de esforzarse por imponer sobre el mundo algo más allá de sus posibilidades, desatentamente (e.g. el supuesto crecimiento ilimitado del  capitalismo), sino de crear con el mundo-pensamiento partiendo de sus posibilidades. No se trata tampoco de una  renuncia que pretenda decir que “las cosas son así, y no pueden ser diferentes”, sino por el contrario del  descubrimiento-reconocimiento de todo lo que pueden ser); y esto es (no)paradójicamente algo más eficiente y  “económico” que la economía misma, pues actúa en diálogo con el logos: con las formas de ha-ser del  pensamiento-mundo.”")
 
+(defn src->alt [src]
+  (-> src
+      (str/replace "-" " ")
+      (str/split ".")
+      drop-last
+      (->> (str/join ""))
+      (str " (Diego Villaseñor, músico)")))
+
 (defn images-grid [total-posters posters*]
   [:div
    [:div {:class "about__m-grid"
           :style {:opacity (if @show-posters 1 0)}}
-    (map (fn [src]
-           [:img {:class "about__m-grid-item"
-                  :key src
-                  :src src}])
-         posters*)]
+    (doall (map (fn [src]
+                  [:img {:class "about__m-grid-item"
+                         :key src
+                         :alt (src->alt src)
+                         :src (str "/images/presentaciones/" src)}])
+                posters*))]
    [:div {:class "about__button-container"}
     (when (not= total-posters @n-images-to-load)
       [:button {:class "about__all-images-button"

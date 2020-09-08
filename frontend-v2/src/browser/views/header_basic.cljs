@@ -9,10 +9,10 @@
    (:text data)])
 
 (defn main
-  ([links] (main links nil))
-  ([links sonos]
+  ([links-fn] (main links-fn nil))
+  ([links-fn sonos]
    [:header
     [:nav {:class "menu-main"}
      [:div {:class "menu-main__container"}
-      (map menu-link (links))
-      sonos]]]))
+      (map menu-link (links-fn))]
+     sonos]]))

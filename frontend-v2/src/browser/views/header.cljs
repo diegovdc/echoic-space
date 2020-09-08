@@ -11,4 +11,4 @@
    {:href (rfe/href ::routes/about) :text "~/acerca"}])
 
 (defn main []
-  (header/main (links) (sonos/main)))
+  (header/main links (sonos/main)))

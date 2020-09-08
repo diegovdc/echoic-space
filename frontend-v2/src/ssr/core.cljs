@@ -13,6 +13,8 @@
             ["path" :as path]
             ["fs" :as fs]))
 
+(set! *warn-on-infer* false)
+
 
 (defn spy [x] (println x) x)
 (defn react-id-str [react-id]
@@ -80,15 +82,34 @@
 
 (defn get-data-file [file]
   (-> (fs/readFileSync
-       (make-file-path (str "../../../reagent-frontend/public/data/" file))
+       (make-file-path (str "../../frontend-v2/build/browser/data/" file))
        (clj->js {:encoding "utf8"}))
       (js/JSON.parse)
       (js->clj :keywordize-keys true)))
 
+(defn routing-fn
+  ([route] (routing-fn route nil nil))
+  ([route params] (routing-fn route params nil))
+  ([route params query]
+   (condp = route
+     :browser.routes/music "/music/"
+     :browser.routes/music-single (str "/music/" (:slug params) "/")
+     :browser.routes/blog-single (str "/blog/" (:slug params) "/")
+     :browser.routes/blog "/blog/"
+     :browser.routes/about "/about/"
+     "/")))
+
 (def data (atom
-           {:about (get-data-file "about.json")
+           {:routing-fn routing-fn
+            :about (get-data-file "about.json")
             :blog (get-data-file "blog.json")
-            :music (get-data-file "music.json")}))
+            :music (get-data-file "music.json")
+            :posters (js->clj (fs/readdirSync (make-file-path (str "../../frontend-v2/build/browser/images/presentaciones"))))}))
+
+(defn update-posters-data [posters]
+  (fs/writeFileSync  (make-file-path (str "../../frontend-v2/build/browser/data/posters.json"))
+                     (js/JSON.stringify (clj->js posters)))
+  (println "Posters updated"))
 
 (defn build []
   (write-page "index.html" nil (home/main)
@@ -103,12 +124,18 @@
                :seo {:img "https://echoic.space/images/seo.png"
                      :width 1231,
                      :height 1023}})
-  (write-page "about/index.html" "about/" (about/main-simple data (fn []))
-              {:description "Acerca de Diego Villaseñor: músico, compositor, programador, artista transdisciplinario. About, imágenes, fechas, cv."
-               :title "Acerca"
-               :seo {:img "https://echoic.space/images/seo.png"
-                     :width 1231,
-                     :height 1023}})
+  (do (swap! about/n-images-to-load (constantly 30))
+      (write-page "about/index.html" "about/"
+                  (about/main-simple
+                   data
+                   (fn [posters] (about/images-grid (count posters)
+                                                   (take @about/n-images-to-load
+                                                         posters))))
+                  {:description "Acerca de Diego Villaseñor: músico, compositor, programador, artista transdisciplinario. About, imágenes, fechas, cv."
+                   :title "Acerca"
+                   :seo {:img "https://echoic.space/images/seo.png"
+                         :width 1231,
+                         :height 1023}}))
   (write-page "music/index.html" "music/" (music/main data)
               {:description "Grabaciones de Diego Villaseñor: músico, compositor, programador, artista transdisciplinario."
                :title "Música"
@@ -119,21 +146,25 @@
     (swap! data assoc :page :music-single)
     (doseq [page (-> @data :music)]
       (let [slug (-> page :attributes :slug)]
-        (write-page (str "music/" slug ".html")
+        (write-page (str "music/" slug "/index.html")
                     "music/"
-                    ((music-single/main data slug nil))
+                    (.reagentRender (.-prototype (music-single/main data slug nil)))
                     (page :attributes)))))
   (do ;; Blog singles
     (swap! data assoc :page :blog-single)
     (doseq [page (-> @data :blog)]
       (let [slug (-> page :attributes :slug)]
-        (write-page (str "blog/" slug ".html")
+        (write-page (str "blog/" slug "/index.html")
                     "blog/"
-                    ((music-single/main data slug nil))
+                    (.reagentRender (.-prototype (music-single/main data slug nil)))
+
                     (page :attributes))))))
 
 (defn -main []
   (build)
+  (update-posters-data (@data :posters))
   (process/exit 0))
 
-(comment (build))
+(comment
+  (update-posters-data (@data :posters)))
+(build)

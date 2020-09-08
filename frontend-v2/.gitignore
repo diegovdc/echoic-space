@@ -1,4 +1,8 @@
-build/
+build/browser/cljs-runtime/
+build/browser/**/*.html
+build/browser/**/*.js
+build/ssr.js
+build/node-app.js
 node_modules/
 target/
 .shadow-cljs/

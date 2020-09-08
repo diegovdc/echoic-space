@@ -21,8 +21,6 @@
 
 (def is-mobile-or-tablet isMobileOrTablet)
 
-
-
 (def b (partial str "menu-main__"))
 
 (def sonos (partial str "sonos-player__"))
@@ -32,13 +30,15 @@
         track-name ($ "#menu-main__playing")
         diff (- (width container) (width track-name))
         should-scroll (< diff 0)]
-    (.stop track-name)
-    (css track-name {:left 0})
-    (if should-scroll
-      (letfn [(to-the-left [] (anim track-name {:left diff} 7000 to-the-right))
-              (to-the-right [] (anim track-name {:left 0} 7000 to-the-left))]
-        (to-the-left)))))
+    #_(.stop track-name)
+    #_(css track-name {:left 0})
+    (set! (.. track-name -style -left) 0)
+    #_(if should-scroll
+        (letfn [(to-the-left [] (anim track-name {:left diff} 7000 to-the-right))
+                (to-the-right [] (anim track-name {:left 0} 7000 to-the-left))]
+          (to-the-left)))))
 
+(comment (scroll-trackname))
 (defn update-callback
   "update player info by reading it from howl (see let)"
   []
@@ -98,7 +98,8 @@
   (let [on-click (if playable-track-if-in-single
                    (toggle-play (:attributes playable-track-if-in-single) true)
                    play-random)]
-    [:a (merge {:class (b "playing") :id (b "playing")}
+    [:a (merge {:class (b "playing") :id (b "playing")
+                :style {:position "relative"}}
                (if is-playing
                  {:href (str "/music/" track-slug)}
                  {:on-click on-click}))
@@ -206,3 +207,5 @@
         (get-in @state/player-state [:track-data :elapsed] "00:00")]
        [:p {:class (str (sonos "time ") (sonos "time-total"))}
         (get-in @state/player-state [:track-data :duration] "00:00")]]]]))
+
+(comment (play-random))

@@ -26,13 +26,11 @@
     or*
     (rand-nth xs)))
 
-;; FIXME
 (defn scroll-to [top]
-  #_(jq/anim (jq/$ "html, body") {:scrollTop top}))
+  (js/window.scroll (clj->js {:top top :behavior "smooth"})))
 
-;; FIXME
 (defn set-scroll [top]
-  #_(.scrollTop (jq/$ js/window) top))
+  (js/window.scroll (clj->js {:top top})))
 
 (defn maybe-make-audio-url [base slug file-name]
   (if (str/includes? file-name "http")

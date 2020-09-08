@@ -1,5 +1,7 @@
 {:source-paths ["src"]
  :dependencies [[binaryage/devtools "0.9.7"]
+                [cider/cider-nrepl "0.25.3"]
+                [refactor-nrepl "2.5.0"]
                 [hiccups "0.3.0"]
                 [reagent "0.10.0"]
                 [metosin/reitit "0.5.5"]
@@ -11,23 +13,21 @@
                 [jayq "2.5.4"]
                 [com.cemerick/url "0.1.1"]]
 
+#_ #_ :nrepl {:port 8777}
  :dev-http {5000 "build/browser"}
- :nrepl {:port 8777}
+ :builds ; https://shadow-cljs.github.io/docs/UsersGuide.html#target-node-script
+ {:node {:target :node-script
+         :output-to "build/node-app.js"
+         ;; :main ssr.core/-main
+         :main server.main/-main
+         :devtools {:after-load server.main/reload!}}
+  :ssr {:target :node-script
+         :output-to "build/ssr.js"
+        :main ssr.core/-main}
 
- :builds
-                                        ; https://shadow-cljs.github.io/docs/UsersGuide.html#target-node-script
- {:app {:target :node-script
-        :output-to "build/node-app.js"
-        :main ssr.core/-main
-        :devtools {:after-load server.main/reload!}}
-                                        ; https://shadow-cljs.github.io/docs/UsersGuide.html#target-node-library
-  :library {:target :node-library
-            :output-to "build/lib.js"
-            :exports {:handler library.main/handler}}
-                                        ; https://shadow-cljs.github.io/docs/UsersGuide.html#target-browser
   :browser {:target :browser
             :output-dir "build/browser"
-            :asset-path "."
+            :asset-path "/"
             :modules {:browser-main {:entries [browser.main]
                                      :init-fn browser.main/init}}
             :devtools {:before-load browser.main/stop

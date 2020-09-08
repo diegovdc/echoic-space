@@ -1,6 +1,8 @@
 (ns browser.views.helpers
   (:require [browser.helpers :refer [year sort-entry-by-year filter-by-selected-categories toggle-category]]
-            [clojure.string :as str]))
+            [clojure.string :as str]
+            [reitit.frontend.easy :as rfe]
+            #_[browser.routes :as routes]))
 
 (defn page-container [page-class node]
   [:div {:class (str "page " page-class)}
@@ -30,9 +32,10 @@
       (->> (clojure.string/join " "))
       (#(str "(" % ")"))))
 
-(defn make-archive-item [base-url post]
+(defn make-archive-item [post->href post]
   [:div {:class "grid__container archive__container" :key (:slug post)}
-   [:a {:style {:display "flex" :flex-direction "column"} :href (str base-url "/" (:slug post))}
+   [:a {:style {:display "flex" :flex-direction "column"}
+        :href (post->href post)}
     [:h3 {:class "archive__sbttl archive__sbttl--sm"}
      (:title post) [:span {:class "archive__date"} (format-date (:date post))]]
     [:p  {:class "archive__category"} (clojure.string/join ", " (:category post))]
@@ -74,5 +77,5 @@
   (let [app-state' @app-state
         page (:page app-state')]
     (cond
-      (= page :music-single) (:music app-state')
-      (= page :blog-single) (:blog app-state'))))
+      (= page :music-single) (:music @app-state )
+      (= page :blog-single) (:blog @app-state ))))
