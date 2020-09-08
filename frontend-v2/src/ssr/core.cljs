@@ -63,13 +63,22 @@
 (defn page->html [path page attributes]
   (hiccups.core/html (ssr.base-html/base path (render page) attributes)))
 
-(defn make-file-path  [file-path] (path/join (process/cwd) ".." "build/browser/" file-path))
-
-
 (defn get-dir-path [path]
   (->> (str/split path #"/")
        (drop-last)
        (str/join "/")))
+
+
+(do
+  (def main-dir "frontend-v2")
+  (def main-dir-path
+    (-> (process/cwd)
+        (str/split main-dir)
+        first
+        (str "/" main-dir "/")))
+  )
+
+(defn make-file-path  [file-path] (path/join main-dir-path "build/browser/" file-path))
 
 (defn write-page [file-path url-path page attributes]
   (let [path (make-file-path file-path)
@@ -82,11 +91,10 @@
 
 (defn get-data-file [file]
   (-> (fs/readFileSync
-       (make-file-path (str "../../frontend-v2/build/browser/data/" file))
+       (make-file-path (str "data/" file))
        (clj->js {:encoding "utf8"}))
       (js/JSON.parse)
       (js->clj :keywordize-keys true)))
-
 (defn routing-fn
   ([route] (routing-fn route nil nil))
   ([route params] (routing-fn route params nil))
@@ -104,10 +112,11 @@
             :about (get-data-file "about.json")
             :blog (get-data-file "blog.json")
             :music (get-data-file "music.json")
-            :posters (js->clj (fs/readdirSync (make-file-path (str "../../frontend-v2/build/browser/images/presentaciones"))))}))
+            :posters (js->clj
+                      (fs/readdirSync (make-file-path "images/presentaciones")))}))
 
 (defn update-posters-data [posters]
-  (fs/writeFileSync  (make-file-path (str "../../frontend-v2/build/browser/data/posters.json"))
+  (fs/writeFileSync  (make-file-path "data/posters.json")
                      (js/JSON.stringify (clj->js posters)))
   (println "Posters updated"))
 
@@ -166,5 +175,5 @@
   (process/exit 0))
 
 (comment
-  (update-posters-data (@data :posters)))
-(build)
+  (update-posters-data (@data :posters))
+  (build))
