@@ -134,6 +134,7 @@
                      :width 1231,
                      :height 1023}})
   (do (swap! about/n-images-to-load (constantly 30))
+      (swap! about/show-posters (constantly true))
       (write-page "about/index.html" "about/"
                   (about/main-simple
                    data
