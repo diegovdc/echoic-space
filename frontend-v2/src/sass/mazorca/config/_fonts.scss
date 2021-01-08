@@ -1,0 +1,21 @@
+//_________________________ Config:Fuentes _________________________ \\
+
+/**
+ * Declare fonts using the Mixin
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+/// Refer to font families through mapped variables.
+/// Font families must be written as lists, that is, between parenthesis.
+///
+///
+$fonts:(
+		sans:	('Noto Sans', sans-serif),
+		mono: 	('Droid Sans Mono', sans-serif)
+	);
+
+@function f($font) {
+	@return map-get($fonts, $font);
+}

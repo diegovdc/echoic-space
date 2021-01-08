@@ -1,0 +1,145 @@
+.seo {// agregar la clase seo a alguno de los div que contienen todo el single y generará un layout relativamente apropiado para las imágenes del seo
+    .single__ttl {
+        display: none;
+    }
+    .single__play {
+        @include center('xy');
+        position: fixed;
+        right: initial;
+        bottom: initial;
+        font-size: 215px !important;
+        filter: invert(100%);
+        border: 10px solid rgba(34,56,77,0.9);
+        border-radius: 100%;
+        width: 260px;
+        height: 260px;
+        text-align: center;
+        opacity: 0.9;
+        -webkit-text-fill-color: rgba(34,56,77,1);
+        &::before {
+            position: relative;
+            left: 25px;
+            top: 13px;
+        }
+    }
+}
+.single {
+	@include basePage;
+    &__main-container {
+        // @include center('x');
+        position: absolute;
+        min-height: 100%;
+        top: 0;
+        padding: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        .grid__col-1-1 {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__ttl {
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 26px);
+        }
+        // @include center('xy');
+        // top: 50%;
+        font-size: 200px;
+        @include under(sm) {font-size: 120px;}
+        font-weight: bold;
+        min-height: 234px;
+        width: 100%;
+        margin-bottom: 0;
+        overflow: visible;
+        color: white;
+        text-align: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: invert(60%) sepia(80%) ;
+        word-break: break-word;
+        padding-bottom: 30px;
+    }
+
+    &__p {
+        padding-top: 50px;
+        padding-left: 0;
+        width: 100%;
+        font-size: 20px;
+        &-container {
+            display: none;
+            &.open {
+                display: block;
+                padding-bottom: 40px;
+            }
+        }
+    }
+
+    &__img {
+        &--main {
+            @include bg-cover;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: calc(100vh - 26px);
+            filter: invert(80%) sepia(80%) ;
+        }
+    }
+
+    &__play {
+        cursor: pointer;
+        position: absolute;
+        font-size: 70px !important;
+        opacity: 0.8;
+        bottom: 20px;
+        right: 10px;
+        -webkit-background-clip: text;
+        filter: grayscale(90%);
+        -webkit-text-fill-color:rgba(165, 211, 255, 0.8);
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 0.6;
+            // -webkit-text-fill-color: rgba(140, 28, 153, 0.66);
+            // filter: grayscale(60%) brightness(1.5);
+        }
+    }
+
+    &__show-info {//los tres puntos
+        padding: 20px 20px 0;
+        cursor: pointer;
+        position: absolute;
+        bottom: 8px;//no puede ser menor de 8
+        font-size: 100px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:rgba(165, 211, 255, 0.8);
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    
+    &__video-player-container {
+        margin: 0  auto;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    &__mobile-audio {
+        &-container {
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            flex-direction: column;
+        }
+        &-ttl {
+            font-family: f(sans);
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+    }
+}

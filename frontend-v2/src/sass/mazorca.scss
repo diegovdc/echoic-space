@@ -1,0 +1,128 @@
+@charset "UTF-8";
+//===Mazorca Core===//
+@import "../../node_modules/mazorca-core/_mazorca-core.scss";
+
+//===Configs===//
+@import "mazorca/config/_config";
+
+//===Vendor===//Css begins compling here
+@import "vendor/github-markdown.scss";
+
+//===Mazorca===//
+@import "mazorca/_elements";
+@import "mazorca/_grid"; //
+@import "mazorca/_components";
+@import "mazorca/_theme-helpers";
+@import "mazorca/_modules";
+
+body {
+  padding-top: 26px;
+}
+
+.page {
+  font-family: f(sans);
+  padding-bottom: 26px;
+}
+
+.about {
+  @keyframes hue0 {
+    0% {
+      filter: saturate(0) hue-rotate(0deg) brightness(1) grayscale(10)
+        opacity(0);
+    }
+    70% {
+      filter: saturate(4) hue-rotate(90deg) brightness(1) grayscale(1)
+        opacity(0.5);
+    }
+    100% {
+      filter: saturate(14) hue-rotate(180deg) brightness(1) grayscale(0)
+        opacity(1);
+    }
+  }
+  @keyframes hue {
+    0%,
+    100% {
+      filter: saturate(14) hue-rotate(180deg) brightness(1);
+    }
+    33% {
+      filter: saturate(15) hue-rotate(240deg) brightness(1.2);
+    }
+    50% {
+      filter: saturate(9) hue-rotate(320deg) brightness(1.5);
+    }
+    66% {
+      filter: saturate(12) hue-rotate(270deg) brightness(1.1);
+    }
+  }
+  &__image {
+    &-container {
+      position: relative;
+      top: 40px;
+      background-color: #eee;
+    }
+    filter: opacity(0);
+    animation-name: hue0, hue;
+    animation-duration: 10s, 30s;
+    animation-delay: 0.5s, 10.5s;
+    animation-timing-function: ease-in, ease-out;
+    animation-iteration-count: 1, infinite;
+  }
+
+  &__quote {
+    display: block;
+    font-family: f(mono);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  &__button,
+  &__all-images-button {
+    &-container {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+    }
+
+    font-size: 16px;
+    background-color: c(base);
+    color: c(white);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: lighten(c(base), 5%);
+    }
+  }
+  &__all-images-button {
+    padding: 10px;
+    background-color: c(base--home);
+  }
+  &__m-grid {
+    margin: 0 auto;
+    padding-top: 30px;
+    &-item {
+      width: calc(33% - 20px);
+      margin: 10px;
+    }
+  }
+}
+
+.markdown-body {
+  padding-top: 40px;
+  font-family: f(sans);
+}
+
+.markdown-body img {
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  .inline-images {
+    img {
+      display: inline-block;
+    }
+  }
+}

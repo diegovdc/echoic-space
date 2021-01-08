@@ -1,0 +1,88 @@
+.sonos-player {
+    &__duration {
+        cursor: pointer;
+        position: fixed;
+        top: 21px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        padding-left: 0;
+        height: 5px;
+        transition: 0.3s all ease 1s;    
+        background-color: c();
+    }
+    &__elapsed {
+        transition: 0.3s all ease 1s;    
+        position: absolute;
+        height: 100%;
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    &__icon {
+        &-play {
+            padding-left: 10px;
+            height: 0;
+            width: 0;
+            font-size: 0px !important;
+            position: absolute;
+            left: 0;
+            transition: 0.3s all ease 1s;    
+            color: c();
+            &:hover {
+                color: c(yellow);
+            }
+            &::before {
+                @include center('y');
+                transform: translateY(-52%);
+            }
+
+        }
+    }
+
+    &__time {
+        padding-left: 5px;
+        &-elapsed { color: c(yellow);}
+        &-container {
+            @include center('y');
+            right: 0;
+            display: flex;
+            color: c(white);
+            font-size: 10px;
+            opacity: 0;
+            transition: 0.3s all ease 1s;    
+            font-family: f(mono);
+        }
+    }
+}
+
+.menu-main {
+    $height: 20px;
+    $pl: 48px;
+    &__playing-container.is-mobile {
+        display: none;
+    }
+    .sonos-player__duration {
+            transition: 0.3s all ease;    
+            // top: 26px;
+            padding-left: $pl;
+            height: $height;
+        }
+    .sonos-player__icon-play {
+        transition: 0.3s all ease;    
+        height: $height;
+        width: $pl;
+        font-size: 12px !important;
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    .sonos-player__time-container {
+        transition: 0.3s all ease;    
+        opacity: 1;
+        right: 15px;
+    }
+
+    .sonos-player__elapsed {
+        transition: 0.3s all ease;    
+        background-color: rgba(255,255,255,0.1);
+    }
+}

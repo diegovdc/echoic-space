@@ -1,0 +1,28 @@
+.home {
+	background-color: c(base--home);
+	height: 100vh;
+	&__img {
+		@include bg-cover;
+		height: 100vh;
+		position: relative;
+		width: 100%;
+		// height: calc(100vh - 26px);
+		opacity: 0.7;
+		filter: brightness(1.8)  grayscale(1) invert(1);
+		overflow: hidden;
+	}
+
+	&__img-2 {
+		@include bg-cover;
+		height: 100vh;
+		background-position: 0 -425px;
+		height: 150%;
+		width: 150%;
+		opacity: 0;
+		filter: brightness(3) invert(1);
+		transition: opacity 1.5s ease;
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
