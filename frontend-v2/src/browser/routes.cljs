@@ -31,8 +31,9 @@
   (rfe/start!
    (rf/router routes {:data {:coercion rss/coercion}})
    (fn [m]
-     (js/console.log m)
-     (swap! app-state assoc :page (-> m :data :name name keyword))
+     (js/console.log "router" m)
+     (swap! app-state assoc :page (-> m :data :name name keyword)
+            :route m)
      (reset! match m))
    ;; set to false to enable HistoryAPI
    {:use-fragment false}))

@@ -60,7 +60,9 @@
 
 (defn toggle-play [track-to-play should-change-track?]
   (fn []
-    (let [previously-playing (get-in @state/player-state [:now-playing :howl] (clj->js {:pause (fn [] nil)}))]
+    (js/console.debug "toggle-play" track-to-play)
+    (let [previously-playing (get-in @state/player-state [:now-playing :howl]
+                                     (clj->js {:pause (fn [] nil)}))]
       (if (or should-change-track? (not (@state/player-state :is-playing)))
         (do
           (swap! state/player-state assoc :is-playing true)
@@ -120,6 +122,7 @@
 (def find-track-to-play
   (memoize
    (fn [is-single single tracks]
+     (js/console.debug "is single" is-single single "-")
      (if is-single
        (find-first #(= single (get-in % [:attributes :slug])) tracks)
        (safe-rand-nth {} tracks)))))
@@ -131,7 +134,7 @@
                                       (select-keys [:music :blog])
                                       vals
                                       flatten))
-        single (:single @state/app-state)
+        single (-> @state/app-state :route :path-params :slug)
         is-single (or
                    (= (:page @state/app-state) :music-single)
                    (= (:page @state/app-state) :blog-single))]
