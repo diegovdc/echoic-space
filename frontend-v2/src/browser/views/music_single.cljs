@@ -5,17 +5,12 @@
             [browser.state :as state]
             [reagent.core :as r]))
 
+(set! *warn-on-infer* false)
 
 ;; TODO merge blog json with music json on render
 
 (defn get-offset-top [id]
-  ;; FIXME
-  (js/console.error "implement `get-offset-top`")
-  0
-  #_(->> ($ (str "#" id))
-         offset
-         (:top)
-         (#(- % 26))))
+  (-> id js/document.getElementById .-offsetTop))
 
 (defn go-to-hash [hash]
   (if hash
@@ -23,7 +18,6 @@
     (set-scroll 0)))
 
 (defn get-bg-img [base-url post-attrs]
-  ;; FIXME
   (str "/" base-url "/" (:slug post-attrs) "/" (:backgroundImage post-attrs)))
 
 (comment (-> state/app-state base-url))
@@ -40,7 +34,7 @@
   (let [base-url* (base-url app-state)]
     (cond
       (= nil (get-bg-img base-url* post)) [:h1 {:class "single__ttl"}
-                                            (:title post)]
+                                           (:title post)]
       :else
       [:div {:class "single__ttl-container"}
        [:h1 {:id "single-ttl"
@@ -57,27 +51,27 @@
         playing-this-track? (= (get-in @state/player-state [:now-playing :track_name]) (:track_name post-attrs))
         should-change-track? (not playing-this-track?)
         icon (if (and playing-this-track? (@state/player-state :is-playing)) "fa-pause" "fa-play")]
-    [:span {:class (str "single__play fa " icon)
+    [:span {:class (str "single__play fa " icon)    #_(.webkitRequestFullScreen (.-target e))
             :style (bg-img (get-bg-img app-state post-attrs))
             :on-click (action post-attrs should-change-track?)}]))
 
 (defn toggle-play-video [post-attrs]
-  ;; FIXME
-  (js/console.error "Fix this")
-  #_(let [onPlayerReady (fn [e]
+  (let [onPlayerReady (fn [e]
+                        (let [player (.-target e)
+                              start-seconds (:startSeconds post-attrs)]
                           (js/console.log "event" e)
                           (js/console.log "target" (.-target e))
-                          (.playVideo (.-target e))
-                          (.webkitRequestFullScreen (.-a (.-target e)))
-                          (scroll-to (get-offset-top "single__video-player-container")))]
-      #_(try
-          (fn []
-            (let [player (js/window.YT.Player. "player"
-                                               (js-obj
-                                                "videoId" (:youtube_id post-attrs)
-                                                "events" (js-obj
-                                                          "onReady" onPlayerReady)))]))
-          (catch ))))
+                          (.playVideo player)
+                          (when start-seconds
+                            (.seekTo player start-seconds))
+                          (scroll-to (get-offset-top "single__video-player-container"))))]
+    (fn []
+      (try
+        (js/window.YT.Player. "player"
+                              (js-obj
+                               "videoId" (:youtube_id post-attrs)
+                               "events" (js-obj "onReady" onPlayerReady)))
+        (catch js/Error e nil )))))
 
 (defn play-button [app-state post-attrs]
   (cond
@@ -106,14 +100,31 @@
 #_(-> (js/document.querySelector ".markdown-body")
       .-offsetTop)
 (defn show-info [img-url local-state]
-  [:span {:class "single__show-info"
-          :style (bg-img img-url)
-          :on-click (show-info-cb local-state)}
-   "..."])
+  ;; TODO implement me again
+  [:span]
+  #_[:span {:class "single__show-info"
+            :style (bg-img img-url)
+            :on-click (show-info-cb local-state)}
+     "..."])
 
 (defn video [post-attrs]
-  [:div
-   {:id "player"}])
+  (let [youtube-id (:youtube_id post-attrs)
+        start-seconds (:startSeconds post-attrs)]
+    [:div
+     {:id "player"}
+     (when youtube-id
+       [:iframe
+        {:allowfullscreen "allowfullscreen",
+         :allow
+         "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+         :frameborder "0",
+         :title "YouTube video player",
+         :src (str "https://www.youtube.com/embed/"
+                   youtube-id
+                   (when start-seconds
+                     (str "?" start-seconds))),
+         :height "315",
+         :width "560"}])]))
 
 (defn print-post [app-state post local-state]
   (cond
@@ -152,7 +163,6 @@
         entries (get-entries app-state) ;; may be either music entries o blog entries
         post (find-post entries single-slug)
         printed-post (fn [] (print-post app-state post local-state))]
-    (println "music-single/main" (@app-state :page))
     (r/create-class
      {:reagent-render printed-post
       :component-did-mount (fn [] (go-to-hash hash))})))

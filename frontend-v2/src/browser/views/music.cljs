@@ -9,7 +9,8 @@
   (let [music (:music app-state)
         blog (:blog app-state)]
     (->> blog
-         (filter #(get-in % [:attributes :file_name]))
+         (filter #(or (get-in % [:attributes :file_name])
+                      (get-in % [:attributes :include_in_music_archive])))
          (map
           #(update-in
             %

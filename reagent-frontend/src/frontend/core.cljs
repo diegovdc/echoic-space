@@ -14,6 +14,7 @@
 (defn log [x] (.log js/console x) x)
 
 (def axios-get (oget js/deps "axios.get"))
+(def axios-get (oget js/deps "axios.get"))
 
 (defn get-data [func state-key url]
   (-> (axios-get url)
