@@ -1,6 +1,6 @@
 ---
-title: "Habitat expandido #3 (minutos 32 a 34)"
-description: Parte del trabajo sobre "Habitat (Taller Abierto)" con Milo Tamez. Es una de las vistas o de las dimensiones momentáneas de este Hábitat.
+title: "Habitat expandido #3"
+description: 'Habitat expandido #3 (minutos 32 a 34). Parte del trabajo sobre "Habitat (Taller Abierto)" con Milo Tamez. Es una de las vistas o de las dimensiones momentáneas de este Hábitat.'
 slug: habitat-expandido-32-a-34
 file_name: https://archive.org/download/Habitat-minuto-32-a-34_experimento/sobre-sample-minuto-32-a-34.mp3
 track_name: "Habitat expandido #3 (minutos 32 a 34)"
@@ -18,6 +18,8 @@ category:
   - Taller Abierto
   - Milo Tamez
 ---
+
+# Habitat expandido #3 (minutos 32 a 34)
 
 <small>Nota: se recomienda ampliamente el uso de audífonos</small>
 
