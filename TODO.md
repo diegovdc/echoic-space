@@ -9,6 +9,9 @@ Mejorar SEO
 Prerenderizar sitio (por SEO) https://yogthos.net/posts/2015-11-24-Serverside-Reagent.html
 
 ---- nuevos posts
+https://archive.org/details/Habitat-minuto-32-a-34_experimento
+
+2020
 la hora del live coder https://www.youtube.com/watch?v=S-Y4cWhUE5I
 blackmidi canons https://www.youtube.com/watch?v=_1yhxgvD-hQ&t=10s
 for palestina https://www.youtube.com/watch?v=HA49X3KUaA8
