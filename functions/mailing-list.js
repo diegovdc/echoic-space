@@ -7,7 +7,7 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
-export async function handler(event, context) {
+module.exports.handler = async (event, context) => {
   let email_address;
   try {
     const body = JSON.parse(event.body);
@@ -44,4 +44,4 @@ export async function handler(event, context) {
     console.log(error);
     return { statusCode: 400, body: JSON.stringify({ message }) };
   }
-}
+};
