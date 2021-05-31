@@ -8,7 +8,8 @@
     "start": "node server.js",
     "dev:functions": "netlify-lambda serve functions --config ./webpack.functions.js",
     "nodemon": "NODE_ENV=development nodemon server --ignore /reagent-frontend",
-    "nodemon:prod": "NODE_ENV=production nodemon server --ignore /reagent-frontend"
+    "nodemon:prod": "NODE_ENV=production nodemon server --ignore /reagent-frontend",
+    "postinstall": "netlify-lambda install"
   },
   "engines": {
     "node": "8.11.1",
