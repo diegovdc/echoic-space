@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "dev:functions": "netlify-lambda serve functions --config ./webpack.functions.js",
     "nodemon": "NODE_ENV=development nodemon server --ignore /reagent-frontend",
     "nodemon:prod": "NODE_ENV=production nodemon server --ignore /reagent-frontend"
   },
@@ -16,9 +17,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "0.19.0",
+    "axios": "^0.19.0",
     "dotenv": "6.0.0",
+    "dotenv-webpack": "^7.0.2",
     "express": "4.16.2",
+    "netlify-lambda": "^2.0.8",
     "nodemon": "2.0.4",
     "pug": "2.0.3",
     "ramda": "0.25.0",

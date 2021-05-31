@@ -1,0 +1,6 @@
+[build]
+  command = "cd frontend-v2 && npm i && npm run build"
+  publish = "frontend-v2/build/browser/"
+  functions = "lambda" #  netlify-lambda reads this
+[functions]
+  directory = "functions/"
