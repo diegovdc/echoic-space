@@ -89,7 +89,7 @@
         posters (->>  (get-in @app-state [:posters])
                       shuffle-posters)]
     (page-container
-     "about"
+     "about pt-40"
      [:div
       [:div {:class "about__image-container"}
        [:img {:class "about__image" :src "/images/about.png"}]]

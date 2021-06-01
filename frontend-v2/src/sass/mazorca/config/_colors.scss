@@ -1,15 +1,17 @@
 $colors: (
-	base:	#2d2d2d,
-	base--home: #9b9b9b,//se ve igual que base, debido a los efectos de la imágenes
-	white:	#FFFFFF,
-	yellow: #eec939,
+  base: #2d2d2d,
+  base--home: #9b9b9b,
+  //se ve igual que base, debido a los efectos de la imágenes
+  white: #ffffff,
+  yellow: #eec939,
+  purple: #562bdc,
 );
 
-@function c($color:base) {
-	@return map-get($colors, $color);
+@function c($color: base) {
+  @return map-get($colors, $color);
 }
 
 $colorForeground: c();
 $colorBackground: c(white);
 $colorFeatured: c(azul);
-$colorError: #8A1010;
+$colorError: #8a1010;

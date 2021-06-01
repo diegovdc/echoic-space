@@ -6,6 +6,7 @@
             [reitit.frontend :as rf]
             [reagent.core :as r]
             [browser.views.blog :as blog]
+            [browser.views.contact :as contact]
             [browser.views.home :as home]
             [browser.views.music :as music]
             [browser.views.music-single :as music-single]))
@@ -24,7 +25,8 @@
                     :view #(let [slug (-> %1 :parameters :path :slug)]
                              (music-single/main app-state slug nil))
                     :parameters {:path {:slug string?}}}]
-   ["/blog/" {:name ::blog :view #(blog/main app-state)}]])
+   ["/blog/" {:name ::blog :view #(blog/main app-state)}]
+   ["/contact" {:name ::contact :view #(contact/main app-state)}]])
 
 (defn init []
   (swap! app-state assoc :routing-fn rfe/href)

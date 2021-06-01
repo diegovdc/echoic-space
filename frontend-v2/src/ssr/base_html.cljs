@@ -62,10 +62,10 @@
       {:type "text/css", :rel "stylesheet", :href "/css/mazorca.css"}]
      [:link
       {:crossorigin "anonymous",
-       :integrity
+       #_ #_:integrity
        "sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+",
        :href
-       "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css",
+       "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
        :rel "stylesheet"}]
      [:meta {:content " ", :name "application-name"}]
      [:meta

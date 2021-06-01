@@ -15,8 +15,28 @@
 @import "mazorca/_theme-helpers";
 @import "mazorca/_modules";
 
+@mixin button-styles {
+  font-size: 16px;
+  background-color: c(base);
+  color: c(white);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: lighten(c(base), 5%);
+  }
+}
+
 body {
   padding-top: 26px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pt-40 {
+  padding-top: 40px;
 }
 
 .page {
@@ -57,7 +77,6 @@ body {
   &__image {
     &-container {
       position: relative;
-      top: 40px;
       background-color: #eee;
     }
     filter: opacity(0);
@@ -86,16 +105,7 @@ body {
       justify-content: center;
       padding-top: 30px;
     }
-
-    font-size: 16px;
-    background-color: c(base);
-    color: c(white);
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    &:hover {
-      background-color: lighten(c(base), 5%);
-    }
+    @include button-styles;
   }
   &__all-images-button {
     padding: 10px;
@@ -123,6 +133,56 @@ body {
   .inline-images {
     img {
       display: inline-block;
+    }
+  }
+}
+
+.contact {
+  @include basePage;
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 40px auto;
+    a {
+      font-size: 14px;
+      transition: color 0.5s ease-out;
+      color: darken(c(purple), 15%);
+      &:hover {
+        color: c(purple);
+      }
+    }
+  }
+
+  &__form {
+    margin: 0 auto 20px;
+    max-width: 600px;
+    font-size: 16px;
+    label:not(.checkbox__label) {
+      display: block;
+      font-family: f(mono);
+      line-height: 1.618;
+      margin-bottom: 20px;
+    }
+
+    input:not([type="checkbox"]),
+    textarea {
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    input:not([type="checkbox"]) {
+      margin-top: 6px;
+    }
+    input[type="checkbox"] {
+      position: relative;
+      top: 4px;
+      margin-right: 8px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      @include button-styles;
     }
   }
 }
