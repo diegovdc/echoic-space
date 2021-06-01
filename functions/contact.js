@@ -38,12 +38,12 @@ module.exports.handler = async (event, context) => {
   }
   try {
     const mail = {
-      from: process.env.MAILER_EMAIL, // listed in rfc822 message header
-      to: process.env.MAILER_EMAIL, // listed in rfc822 message header
+      from: process.env.MAILER_FROM_EMAIL, // listed in rfc822 message header
+      to: process.env.MAILER_TO_EMAIL, // listed in rfc822 message header
       replyTo: email,
       envelope: {
         from: email, // used as MAIL FROM: address for SMTP
-        to: process.env.MAILER_EMAIL, // used as RCPT TO: address for SMTP
+        to: process.env.MAILER_TO_EMAIL, // used as RCPT TO: address for SMTP
       },
       subject: `${subject} [from Echoic.space]`,
       text: message,
