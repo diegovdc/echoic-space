@@ -148,9 +148,8 @@ body {
     a {
       font-size: 14px;
       transition: color 0.5s ease-out;
-      color: darken(c(purple), 15%);
       &:hover {
-        color: c(purple);
+        color: darken(c(purple), 15%);
       }
     }
   }
