@@ -65,7 +65,7 @@
     [:input {:id "subscribe"
              :type "checkbox"
              :class "contact__checkbox"
-             :value (@form-state :subscribe)
+             :checked (@form-state :subscribe)
              :on-change #(swap! form-state assoc :subscribe (-> % .-target .-checked))}]
     [:label {:for "subscribe" :class "contact__label checkbox__label"}
      "Suscribirme a la lista de correos"]]
