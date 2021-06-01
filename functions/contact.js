@@ -15,7 +15,17 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+const headers = {
+  "Access-Control-Allow-Origin": "http://localhost:5000",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+};
+
 module.exports.handler = async (event, context) => {
+  if (event.httpMethod === "OPTIONS") {
+    return { statusCode: 200, headers, body: "{}" };
+  }
+
   const {
     email,
     name,
@@ -50,7 +60,7 @@ module.exports.handler = async (event, context) => {
     };
 
     const response = await transporter.sendMail(mail);
-    console.log("Email sent", response);
+    console.log("Email sent");
     if (subscribe) {
       await axios
         .post("https://echoic.space/.netlify/functions/mailing-list", {
@@ -68,7 +78,11 @@ module.exports.handler = async (event, context) => {
           );
         });
     }
-    return { statusCode: 200, body: JSON.stringify({ message: "Email sent" }) };
+    return {
+      statusCode: 200,
+      headers,
+      body: JSON.stringify({ message: "Email sent" }),
+    };
   } catch (error) {
     console.error("Could not send email", error);
     return {

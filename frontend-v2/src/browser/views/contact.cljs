@@ -4,14 +4,21 @@
             [axios :as axios]))
 
 (def form-state (r/atom {}))
+(-> form-state)
 
 (defn on-change [key event]
   (swap! form-state assoc key (-> event .-target .-value)))
 
+(def api-base (if goog.DEBUG "http://localhost:9000" ""))
+
+#_(.. (axios/post "/.netlify/functions/contact" (-> @form-state clj->js))
+    (then #(reset! form-state {:sent? true}))
+    (catch #(-> % .-response js/console.log)))
 
 (defn send-email [form-state ev]
   (.preventDefault ev)
-  (.. (axios/post "/.netlify/functions/contact" (-> @form-state clj->js))
+  (swap! form-state assoc :sending? true)
+  (.. (axios/post (str api-base "/.netlify/functions/contact") (-> @form-state clj->js))
       (then #(reset! form-state {:sent? true}))
       (catch #(-> % .-response js/console.log))))
 
@@ -52,17 +59,17 @@
     [:textarea {:id "message"
                 :class "contact__textarea"
                 :required true
-             :value (@form-state :message)
+                :value (@form-state :message)
                 :on-change (partial on-change :message)}]]
    [:div
     [:input {:id "subscribe"
              :type "checkbox"
              :class "contact__checkbox"
              :value (@form-state :subscribe)
-             :on-change (partial on-change :subscribe)}]
+             :on-change #(swap! form-state assoc :subscribe (-> % .-target .-checked))}]
     [:label {:for "subscribe" :class "contact__label checkbox__label"}
      "Suscribirme a la lista de correos"]]
-   [:button {:class "button"} "Enviar"]
+   [:button {:class "button" :disabled (@form-state :sending?)} "Enviar"]
    (when (@form-state :sent?) [:div {:style {:text-align "center"}}
                                "Thanks, I'll be in touch soon!"])])
 

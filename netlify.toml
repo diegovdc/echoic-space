@@ -4,3 +4,7 @@
   functions = "lambda" #  netlify-lambda reads this
 [functions]
   directory = "functions/"
+[[headers]]
+    for = "/*"
+    [headers.values]
+        Access-Control-Allow-Origin = "*"
