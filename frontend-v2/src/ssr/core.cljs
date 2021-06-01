@@ -2,6 +2,7 @@
   (:require-macros [hiccups.core :as hiccups :refer [html]])
   (:require [browser.pages :refer [home-page about-page]]
             [browser.views.home :as home]
+            [browser.views.contact :as contact]
             [browser.views.about :as about]
             [browser.views.blog :as blog]
             [browser.views.music :as music]
@@ -106,6 +107,7 @@
      :browser.routes/blog-single (str "/blog/" (:slug params) "/")
      :browser.routes/blog "/blog/"
      :browser.routes/about "/about/"
+     :browser.routes/contact "/contact/"
      "/")))
 
 (def data (atom
@@ -125,6 +127,12 @@
   (write-page "index.html" nil (home/main)
               {:description "Diego Villaseñor: músico, compositor, programador, artista transdisciplinario. Música experimental, partituras, código y análisis"
                :title "Echoic Space"
+               :seo {:img "https://echoic.space/images/seo.png"
+                     :width 1231,
+                     :height 1023}})
+  (write-page "contact/index.html" nil (contact/main data)
+              {:description "Contacta a Diego Villaseñor: músico, compositor, programador, artista transdisciplinario. Música experimental, partituras, código y análisis"
+               :title "Contacto"
                :seo {:img "https://echoic.space/images/seo.png"
                      :width 1231,
                      :height 1023}})
