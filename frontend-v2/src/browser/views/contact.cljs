@@ -34,31 +34,37 @@
              :type "email"
              :class "contact__input"
              :required true
+             :value (@form-state :email)
              :on-change (partial on-change :email)}]]
    [:label {:for "name" :class "contact__label"} "Nombre " [:small "(opcional)"]
     [:input {:id "name"
              :type "text"
              :class "contact__input"
+             :value (@form-state :name)
              :on-change (partial on-change :name)}]]
    [:label {:for "subject" :class "contact__label"} "Asunto " [:small "(opcional)"]
     [:input {:id "subject"
              :type "text"
              :class "contact__input"
+             :value (@form-state :subject)
              :on-change (partial on-change :subject)}]]
    [:label {:for "message" :class "contact__label"} "Mensaje *"
     [:textarea {:id "message"
                 :class "contact__textarea"
                 :required true
+             :value (@form-state :message)
                 :on-change (partial on-change :message)}]]
    [:div
     [:input {:id "subscribe"
              :type "checkbox"
              :class "contact__checkbox"
+             :value (@form-state :subscribe)
              :on-change (partial on-change :subscribe)}]
     [:label {:for "subscribe" :class "contact__label checkbox__label"}
      "Suscribirme a la lista de correos"]]
    [:button {:class "button"} "Enviar"]
-   (when (@form-state :sent?) [:div "Thanks, I'll be in touch soon!"])])
+   (when (@form-state :sent?) [:div {:style {:text-align "center"}}
+                               "Thanks, I'll be in touch soon!"])])
 
 (defn main [app-state]
   (page-container
