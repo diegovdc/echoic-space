@@ -134,7 +134,8 @@
      (header/main (fn [] [{:href "/" :text "~/"}
                          {:href "/music/" :text "~/música"}
                          {:href "/blog/" :text "~/bitácora"}
-                         {:href "/about/" :text "~/acerca"}]))
+                         {:href "/about/" :text "~/acerca"}
+                         {:href "/contact/" :text "~/contacto"}]))
      body]
     [:script {:src "/browser-main.js", :type "text/javascript"}]
     [:script {:type "text/javascript",
