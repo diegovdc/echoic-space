@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const headers = {
-  "Access-Control-Allow-Origin": "http://localhost:5000",
+  "Access-Control-Allow-Origin": "http://localhost:5000", // FIXME
   "Access-Control-Allow-Headers": "Content-Type",
   "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
 };
@@ -47,12 +47,14 @@ module.exports.handler = async (event, context) => {
     };
   }
   try {
+    const sender = { name, address: email };
+
     const mail = {
       from: process.env.MAILER_FROM_EMAIL, // listed in rfc822 message header
       to: process.env.MAILER_TO_EMAIL, // listed in rfc822 message header
-      replyTo: email,
+      replyTo: sender,
       envelope: {
-        from: email, // used as MAIL FROM: address for SMTP
+        from: sender, // used as MAIL FROM: address for SMTP
         to: process.env.MAILER_TO_EMAIL, // used as RCPT TO: address for SMTP
       },
       subject: `${subject} [from Echoic.space]`,
@@ -65,6 +67,7 @@ module.exports.handler = async (event, context) => {
       await axios
         .post("https://echoic.space/.netlify/functions/mailing-list", {
           email_address: email,
+          name,
         })
         .then(() => {
           console.log("Subscribed to mailing list form contact form", email);
