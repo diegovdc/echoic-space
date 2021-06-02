@@ -11,16 +11,14 @@
 
 (def api-base (if goog.DEBUG "http://localhost:9000" ""))
 
-#_(.. (axios/post "/.netlify/functions/contact" (-> @form-state clj->js))
-    (then #(reset! form-state {:sent? true}))
-    (catch #(-> % .-response js/console.log)))
-
 (defn send-email [form-state ev]
   (.preventDefault ev)
   (swap! form-state assoc :sending? true)
   (.. (axios/post (str api-base "/.netlify/functions/contact") (-> @form-state clj->js))
       (then #(reset! form-state {:sent? true}))
-      (catch #(-> % .-response js/console.log))))
+      (catch (fn [error]
+               #_(-> error .-response js/console.log)
+               (swap! form-state assoc :error? true :sending? false)))))
 
 (defn links []
   [:div {:class "contact__links"}
@@ -71,7 +69,10 @@
      "Suscribirme a la lista de correos"]]
    [:button {:class "button" :disabled (@form-state :sending?)} "Enviar"]
    (when (@form-state :sent?) [:div {:style {:text-align "center"}}
-                               "Thanks, I'll be in touch soon!"])])
+                               "Thanks, I'll be in touch soon!"])
+   (when (@form-state :error?)
+     [:div {:style {:text-align "center"} :class "text-red"}
+      "There was an error when sending you message, please try again."])])
 
 (defn main [app-state]
   (page-container
