@@ -23,16 +23,19 @@
                #_(-> error .-response js/console.log)
                (swap! form-state assoc :error? true :sending? false)))))
 
-(defn links []
-  [:div {:class "contact__links"}
-   [:a {:href "https://t.me/diegovideco" :target "_blank"}
-    [:i {:class "fa fa-telegram" :aria-hidden "true"}] " @diegovideco" ]
-   [:a {:href "https://twitter.com/diegovideco" :target "_blank"}
-    [:i {:class "fa fa-twitter" :aria-hidden "true"}] " @diegovideco" ]
-   [:a {:href "https://echoic-space.bandcamp.com/" :target "_blank"}
-    [:i {:class "fa fa-bandcamp" :aria-hidden "true"}] " Bandcamp" ]
-   [:a {:href "https://github.com/diegovdc" :target "_blank"}
-    [:i {:class "fa fa-github" :aria-hidden "true"}] " Github" ]])
+(defn links [app-state]
+  [:div
+   [:div {:class "contact__links"}
+    [:a {:href "https://t.me/diegovideco" :target "_blank"}
+     [:i {:class "fa fa-telegram" :aria-hidden "true"}] " @diegovideco" ]
+    [:a {:href "https://twitter.com/diegovideco" :target "_blank"}
+     [:i {:class "fa fa-twitter" :aria-hidden "true"}] " @diegovideco" ]
+    [:a {:href "https://echoic-space.bandcamp.com/" :target "_blank"}
+     [:i {:class "fa fa-bandcamp" :aria-hidden "true"}] " Bandcamp" ]
+    [:a {:href "https://github.com/diegovdc" :target "_blank"}
+     [:i {:class "fa fa-github" :aria-hidden "true"}] " Github" ]
+    [:a {:href ((:routing-fn @app-state) :browser.routes/mailing-list)}
+     [:i {:class "fa fa-envelope" :aria-hidden "true"}] " Mailing List"]]])
 
 (defn form []
   [:form {:class "contact__form"
@@ -82,5 +85,5 @@
    "contact pt-40"
    [:div
     [:h1 {:class "contact__ttl"} "Contacto"]
-    (links)
+    (links app-state)
     (form)]))
