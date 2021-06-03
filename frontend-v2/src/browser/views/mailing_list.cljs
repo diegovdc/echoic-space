@@ -32,7 +32,7 @@
              :class "contact__input"
              :required true
              :value (@form-state :email_address)
-             :on-change (partial on-change :email)}]]
+             :on-change (partial on-change :email_address)}]]
    [:label {:for "name" :class "contact__label"} "Nombre " [:small "(opcional)"]
     [:input {:id "name"
              :type "text"
