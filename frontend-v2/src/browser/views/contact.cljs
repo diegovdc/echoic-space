@@ -1,7 +1,8 @@
 (ns browser.views.contact
   (:require [browser.views.helpers :refer [page-container]]
             [reagent.core :as r]
-            [axios :as axios]))
+            [axios :as axios]
+            [clojure.string :as str]))
 
 (def form-state (r/atom {}))
 (-> form-state)
@@ -13,7 +14,9 @@
 
 (defn send-email [form-state ev]
   (.preventDefault ev)
-  (swap! form-state assoc :sending? true)
+  (swap! form-state assoc
+         :sending? true
+         :language (-> js/navigator.language (str/split "-") first))
   (.. (axios/post (str api-base "/.netlify/functions/contact") (-> @form-state clj->js))
       (then #(reset! form-state {:sent? true}))
       (catch (fn [error]

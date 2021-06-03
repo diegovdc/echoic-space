@@ -32,6 +32,7 @@ module.exports.handler = async (event, context) => {
     subject = "No Subject",
     message,
     subscribe,
+    language,
   } = JSON.parse(event.body);
 
   if (!email) {
@@ -68,6 +69,7 @@ module.exports.handler = async (event, context) => {
         .post("https://echoic.space/.netlify/functions/mailing-list", {
           email_address: email,
           name,
+          language,
         })
         .then(() => {
           console.log("Subscribed to mailing list form contact form", email);

@@ -1,15 +1,16 @@
 (ns browser.routes
   (:require [browser.state :refer [app-state]]
             [browser.views.about :as about]
-            [reitit.frontend.easy :as rfe]
-            [reitit.coercion.spec :as rss]
-            [reitit.frontend :as rf]
-            [reagent.core :as r]
             [browser.views.blog :as blog]
             [browser.views.contact :as contact]
             [browser.views.home :as home]
+            [browser.views.mailing-list :as mailing-list]
             [browser.views.music :as music]
-            [browser.views.music-single :as music-single]))
+            [browser.views.music-single :as music-single]
+            [reagent.core :as r]
+            [reitit.coercion.spec :as rss]
+            [reitit.frontend :as rf]
+            [reitit.frontend.easy :as rfe]))
 
 (def match (r/atom nil))
 
@@ -26,7 +27,8 @@
                              (music-single/main app-state slug nil))
                     :parameters {:path {:slug string?}}}]
    ["/blog/" {:name ::blog :view #(blog/main app-state)}]
-   ["/contact/" {:name ::contact :view #(contact/main app-state)}]])
+   ["/contact/" {:name ::contact :view #(contact/main app-state)}]
+   ["/mailing-list/" {:name ::mailing-list :view #(mailing-list/main app-state)}]])
 
 (defn init []
   (swap! app-state assoc :routing-fn rfe/href)

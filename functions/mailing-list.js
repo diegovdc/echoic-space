@@ -11,7 +11,6 @@ module.exports.handler = async (event, context) => {
   try {
     const body = JSON.parse(event.body);
     email_address = body.email_address;
-    name = body.name || "";
 
     if (!email_address) {
       return {
@@ -22,7 +21,12 @@ module.exports.handler = async (event, context) => {
 
     await axios.post(
       `https://${process.env.MAILCHIMP_DC}.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members`,
-      { email_address, status: "pending", merge_fields: { FNAME: name } },
+      {
+        email_address,
+        status: "pending",
+        merge_fields: { FNAME: body.name || "" },
+        language: body.language || "",
+      },
       {
         auth: {
           username: process.env.MAILCHIMP_USERNAME,
