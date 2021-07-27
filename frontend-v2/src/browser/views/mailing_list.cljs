@@ -5,7 +5,6 @@
             [clojure.string :as str]))
 
 (def form-state (r/atom {}))
-(-> form-state)
 
 (defn on-change [key event]
   (swap! form-state assoc key (-> event .-target .-value)))
