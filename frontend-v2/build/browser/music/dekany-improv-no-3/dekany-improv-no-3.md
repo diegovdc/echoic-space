@@ -6,9 +6,9 @@ file_name: https://archive.org/download/impro3_dekany_1-5-7-13-23/impro3_dekany_
 track_name: "Dekany comprovisation #3"
 backgroundImage: dekany.jpg
 seo:
-  img: dekany.jpg
-  width: 1018
-  height: 564
+  img: dekany-seo.jpg
+  width: 3158
+  height: 1462
 
 date: 2021-07-26
 category:
