@@ -5,7 +5,7 @@
             [browser.state :as state]
             [reagent.core :as r]))
 
-(set! *warn-on-infer* false)
+
 
 ;; TODO merge blog json with music json on render
 
@@ -55,27 +55,10 @@
             :style (bg-img (get-bg-img app-state post-attrs))
             :on-click (action post-attrs should-change-track?)}]))
 
-(defn toggle-play-video [post-attrs]
-  (let [onPlayerReady (fn [e]
-                        (let [player (.-target e)
-                              start-seconds (:startSeconds post-attrs)]
-                          (js/console.log "event" e)
-                          (js/console.log "target" (.-target e))
-                          (.playVideo player)
-                          (when start-seconds
-                            (.seekTo player start-seconds))
-                          (scroll-to (get-offset-top "single__video-player-container"))))]
-    (fn []
-      (try
-        (js/window.YT.Player. "player"
-                              (js-obj
-                               "videoId" (:youtube_id post-attrs)
-                               "events" (js-obj "onReady" onPlayerReady)))
-        (catch js/Error e nil )))))
 
 (defn play-button [app-state post-attrs]
   (cond
-    (= true (post-attrs :is_video)) (-play-button app-state post-attrs toggle-play-video)
+    (= true (post-attrs :is_video)) (-play-button app-state post-attrs sonos/toggle-play-video)
     :else (-play-button app-state post-attrs sonos/toggle-play)))
 
 

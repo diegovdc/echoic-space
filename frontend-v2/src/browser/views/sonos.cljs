@@ -1,17 +1,18 @@
 (ns browser.views.sonos
-  (:require [browser.state :as state]
-            [reagent.core :as r]
+  (:require ["/js/index" :refer [isMobileOrTablet]]
             ["howler" :refer [Howl]]
-            [browser.views.helpers :refer [base-url get-entries]]
-            ["/js/index" :refer [isMobileOrTablet]]
-            [browser.helpers :refer [find-first
-                                     fromNaN
-                                     padTime
-                                     percentage
-                                     safe-rand-nth
-                                     secondsToMinutes
-                                     make-audio-url
-                                     toInt]]))
+            [browser.helpers
+             :refer
+             [find-first
+              make-audio-url
+              percentage
+              safe-rand-nth
+              scroll-to
+              secondsToMinutes
+              ]]
+            [browser.state :as state]
+            [browser.views.helpers :refer [get-entries]]
+            [reagent.core :as r]))
 
 ;; FIXME
 (defn $ [selector] (js/document.querySelector selector))
@@ -58,7 +59,31 @@
 
 (declare play-random)
 
-(defn toggle-play [track-to-play should-change-track?]
+(defn get-offset-top [id]
+  (-> id js/document.getElementById .-offsetTop))
+
+(set! *warn-on-infer* false)
+
+(defn toggle-play-video [post-attrs]
+  (let [onPlayerReady (fn [e]
+                        (let [player (.-target e)
+                              start-seconds (:startSeconds post-attrs)]
+                          (js/console.log "event" e)
+                          (js/console.log "target" (.-target e))
+                          (.playVideo player)
+                          (when start-seconds
+                            (.seekTo player start-seconds))
+                          (scroll-to (get-offset-top "single__video-player-container"))))]
+    (fn []
+      (try
+        (js/window.YT.Player. "player"
+                              (js-obj
+                               "videoId" (:youtube_id post-attrs)
+                               "events" (js-obj "onReady" onPlayerReady)))
+        (catch js/Error e nil )))))
+
+
+(defn toggle-play* [track-to-play should-change-track?]
   (fn []
     (js/console.debug "toggle-play" track-to-play)
     (let [previously-playing (get-in @state/player-state [:now-playing :howl]
@@ -84,6 +109,10 @@
           (swap! state/player-state assoc :is-playing false)
           (swap! state/player-state assoc :is-paused true))))))
 
+(defn toggle-play [track-to-play should-play-track?]
+  (if (-> track-to-play :is_video)
+    (toggle-play-video track-to-play)
+    (toggle-play* track-to-play should-play-track?)))
 
 (defn play-random []
   (let [track (->>  (@state/app-state :music)
@@ -97,13 +126,18 @@
     ((toggle-play track true))))
 
 (defn track-name' [is-playing is-paused track-name track-slug playable-track-if-in-single]
-  (let [on-click (if playable-track-if-in-single
-                   (toggle-play (:attributes playable-track-if-in-single) true)
+  (let [attrs (:attributes playable-track-if-in-single)
+        on-click (if playable-track-if-in-single
+                   (toggle-play attrs true)
                    play-random)]
     [:a (merge {:class (b "playing") :id (b "playing")
                 :style {:position "relative"}}
                (if is-playing
-                 {:href (str "/music/" track-slug)}
+                 {:href ((:routing-fn @state/app-state)
+                         (if (some #(=  "Bitácora" %) (:category attrs))
+                           :browser.routes/blog-single
+                           :browser.routes/music-single)
+                         {:slug track-slug})}
                  {:on-click on-click}))
      (if (or is-playing is-paused)
        track-name
@@ -114,7 +148,6 @@
                    " fa "
                    (if is-playing (icon "fa-forward")))
        :on-click play-random}])
-
 
 (defn tracks-with-audio [tracks]
   (filter #(not= nil (get-in % [:attributes :file_name]))) tracks)
@@ -174,18 +207,25 @@
       nil
       (.seek howl new-position))))
 
+#_(-> @state/app-state :route :data :name #{:browser.routes/music-single
+                                          :browser.routes/blog-single})
+
+
+(defn get-playable-track [app-state]
+  (let [slug (-> @app-state :route :path-params :slug)]
+    (some #(and (= slug (-> % :attributes :slug))
+                (or (-> % :attributes :file_name)
+                    (-> % :attributes :is_video))
+                %)
+          (get-entries app-state))))
+
 (defn main []
   (let [is-playing (@state/player-state :is-playing)
         is-paused (@state/player-state :is-paused)
         track-name (get-in @state/player-state [:now-playing :track_name])
         track-slug (get-in @state/player-state [:now-playing :slug])
         icon #(if is-playing % "fa-play")
-        playable-track-if-in-single (some #(and
-                                            (= (:single @state/app-state)
-                                               (get-in % [:attributes :slug]))
-                                            (get-in % [:attributes :file_name])
-                                            %)
-                                          (get-entries state/app-state))]
+        playable-track-if-in-single (get-playable-track state/app-state)]
     [:div {:class (b "playing-container") :id (b "playing-container")}
                                         ; (if is-mobile-or-tablet " is-mobile"
      [:div {:class (str (b "playing-overflower"))}
