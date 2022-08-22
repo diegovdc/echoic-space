@@ -7,7 +7,6 @@
    [clojure.string :as str]
    [reagent.dom :as rdom]))
 
-
 (defn get-data [func state-key url]
   (-> (axios/get url)
       (.then #(js->clj % :keywordize-keys true))
@@ -22,7 +21,6 @@
                        (clojure.string/split v "$")
                        (map clojure.string/trim v))))
        music))
-
 
 (defn current-page []
   [:div
