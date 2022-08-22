@@ -16,7 +16,6 @@ category:
 # Microtonalidad Al Vuelo
 
 - [Microtonalidad Al Vuelo](#microtonalidad-al-vuelo)
-  - [Preguntas iniciales](#preguntas-iniciales)
   - [¿Qué es la microtonalidad? (opinión)](#qué-es-la-microtonalidad-opinión)
   - [Algunas preconcepciones en torno a la música microtonal](#algunas-preconcepciones-en-torno-a-la-música-microtonal)
     - [Al contrario](#al-contrario)
@@ -42,12 +41,14 @@ category:
       - [Notación](#notación)
   - [Ejemplos](#ejemplos)
 
+<!--
 ## Preguntas iniciales
 
 - ¿Quién está familiarizado con la microtonalidad o con usar recursos armónicos diferentes de la escala de 12 tonos iguales?
 - ¿Quien sabe como construir una escala a partir de intervalos?
   - ¿Reconocen esto `2 2 1 2 2 2 1`?
 - ¿Qué saben de la serie de armónicos?
+  -->
 
 ## ¿Qué es la microtonalidad? (opinión)
 
