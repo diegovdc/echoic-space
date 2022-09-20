@@ -16,6 +16,7 @@ category:
 # Microtonalidad Al Vuelo
 
 - [Microtonalidad Al Vuelo](#microtonalidad-al-vuelo)
+  - [Preguntas iniciales](#preguntas-iniciales)
   - [¿Qué es la microtonalidad? (opinión)](#qué-es-la-microtonalidad-opinión)
   - [Algunas preconcepciones en torno a la música microtonal](#algunas-preconcepciones-en-torno-a-la-música-microtonal)
     - [Al contrario](#al-contrario)
@@ -40,15 +41,14 @@ category:
       - [Anidamiento y el triángulo de pascal](#anidamiento-y-el-triángulo-de-pascal)
       - [Notación](#notación)
   - [Ejemplos](#ejemplos)
+  - [Fuentes](#fuentes)
 
-<!--
 ## Preguntas iniciales
 
 - ¿Quién está familiarizado con la microtonalidad o con usar recursos armónicos diferentes de la escala de 12 tonos iguales?
 - ¿Quien sabe como construir una escala a partir de intervalos?
   - ¿Reconocen esto `2 2 1 2 2 2 1`?
 - ¿Qué saben de la serie de armónicos?
-  -->
 
 ## ¿Qué es la microtonalidad? (opinión)
 
@@ -473,3 +473,22 @@ https://zheaerosemusic.bandcamp.com/track/wxtchcrxft
 
 Kraig Grady (CPS, JI, estudio directamente con Wilson)
 https://anaphoria.bandcamp.com/album/the-creation-of-the-worlds
+
+Pirarán (CPS, live coding)
+https://piraran.bandcamp.com/track/parte-i
+
+## Fuentes
+
+Artículos de Wilson
+https://www.anaphoria.com/wilson.html
+
+XenWiki (Wikipedia de Xenharmonía)
+https://en.xen.wiki/w/Main_Page
+
+Hear Between the Lines (Youtube, teoría microtonal enfocada en 31EDO)
+https://www.youtube.com/c/HearBetweenTheLines
+
+Zheana Erose (videos de teória de 31EDO)
+https://www.youtube.com/watch?v=7cv-nuSjbY4
+https://www.youtube.com/watch?v=unuVHCZ2snE
+https://www.youtube.com/watch?v=uH3ahBzDSrs
