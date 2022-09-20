@@ -19,6 +19,8 @@ category:
   - Mt. Meru
 ---
 
-Basada en la escala metaslendro diseñada por [Kraig Grady](https://anaphoria.com) de la familia de escalas del Mt. Meru.
+Basada en la escala metaslendro de la familia de escalas del Mt. Meru.
 
 https://www.anaphoria.com/wilsonintroMERU.html
+
+Esta versión de la escala fue diseñada por [Kraig Grady](https://anaphoria.com).
