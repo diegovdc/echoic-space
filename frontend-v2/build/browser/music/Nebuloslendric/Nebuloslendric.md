@@ -6,9 +6,9 @@ file_name: https://archive.org/download/2022-09-12-metaslendro-improv/2022-09-12
 track_name: "Nubes en Meru"
 backgroundImage: nebuloslendric.webp
 seo:
-  img: nebuloslendric.webp
-  width: 1024
-  height: 1024
+  img: nebuloslendric.jpg
+  width: 2834
+  height: 1602
 
 date: 2022-09-12
 category:
