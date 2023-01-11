@@ -1,8 +1,8 @@
 ---
 title: Hábitat
 description: Performance en vivo en la sala Blas Galindo del Centro Nacional de las Artes
-slug: 2020-05-05_la-hora-del-live-coder
-backgroundImage: la-hora-del-live-coder.jpg
+slug: 2020-07-22_habitat-cna
+backgroundImage: habitat.jpg
 seo:
   img: habitat.jpg
   width: 1676
