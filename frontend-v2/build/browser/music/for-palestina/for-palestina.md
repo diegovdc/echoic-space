@@ -2,7 +2,7 @@
 title: For Palestina
 description: Part of the livecoded documentary by UHM for Radio Alhara (Palestina)
 slug: for-palestina
-backgroundImage: for-paliestina.jpg
+backgroundImage: for-palestina.jpg
 is_video: true
 youtube_id: HA49X3KUaA8
 date: 2020-07-08
