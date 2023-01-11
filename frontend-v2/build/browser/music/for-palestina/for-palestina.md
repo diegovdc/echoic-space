@@ -12,4 +12,4 @@ category:
   - Camposónico
 ---
 
-A counterpoint over the theme and oppression and freedom through poems and field recordings from the public archives of Freesound.org and Archive.org. Made with [camposónico](https://github.com/diegovdc/camposonico).
+A counterpoint over the theme of oppression and freedom through poems and field recordings from the public archives of Freesound.org and Archive.org. Made with [camposónico](https://github.com/diegovdc/camposonico).
