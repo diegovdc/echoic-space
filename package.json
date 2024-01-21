@@ -6,7 +6,7 @@
     "ssr": "shadow-cljs release ssr && node build/ssr.js",
     "release:browser": "shadow-cljs release browser",
     "build:content": "node node_modules/frontmatter-markdown-to-json --in=build/browser/ --out=build/browser/data",
-    "build": "./ensure_java_version.sh && npm run build:content && npm run build:sass && npm run ssr && npm run release:browser",
+    "build": "npm run build:content && npm run build:sass && npm run ssr && npm run release:browser",
     "prefix-css": "postcss --use autoprefixer cssnano -b 'last 5 versions' build/browser/css/mazorca.css -o build/browser/css/mazorca.css",
     "watch:sass": "sass src/sass/mazorca.scss build/browser/css/mazorca.css --watch",
     "build:sass": "sass src/sass/mazorca.scss build/browser/css/mazorca.css && npm run prefix-css"
@@ -19,7 +19,7 @@
     "postcss": "^8.2.3",
     "postcss-cli": "^8.3.1",
     "sass": "^1.32.2",
-    "shadow-cljs": "2.26.5"
+    "shadow-cljs": "2.19.6"
   },
   "license": "MIT",
   "dependencies": {
