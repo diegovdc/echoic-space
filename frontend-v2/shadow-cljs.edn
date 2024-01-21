@@ -16,7 +16,7 @@
          :output-to "build/node-app.js"
          ;; :main ssr.core/-main
          :main server.main/-main
-         :devtools {:after-lxoad server.main/reload!}}
+         :devtools {:after-load server.main/reload!}}
   :ssr {:target :node-script
          :output-to "build/ssr.js"
         :main ssr.core/-main}
