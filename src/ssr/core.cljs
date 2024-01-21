@@ -70,14 +70,7 @@
        (drop-last)
        (str/join "/")))
 
-
-(def main-dir "frontend-v2")
-
-(def main-dir-path
-  (-> (process/cwd)
-      (str/split main-dir)
-      first
-      (str "/" main-dir "/")))
+(def main-dir-path "./")
 
 
 (defn make-file-path  [file-path] (path/join main-dir-path "build/browser/" file-path))
