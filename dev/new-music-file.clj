@@ -20,9 +20,11 @@ category:
 ")
 
 (defn slugify [title]
-  (str/replace (str/lower-case title)
-               #" "
-               "-"))
+  (-> title
+      str/lower-case
+      (str/replace #" " "-")
+      (str/replace #"\(" "")
+      (str/replace #"\)" "")))
 
 (comment
   (slugify "Ho la"))
@@ -49,8 +51,7 @@ category:
          slug (slugify title)
          file-url ""
          date ""
-         tags []
-         content ""}}]
+         tags []}}]
   (-> template
       (str/replace #"\{\{title\}\}" title)
       (str/replace #"\{\{slug\}\}" slug)
@@ -58,25 +59,22 @@ category:
       (str/replace #"\{\{file-url\}\}" file-url)
       (str/replace #"\{\{date\}\}" date)
       (str/replace #"\{\{tags\}\}" (make-tags tags))
-      (str/replace #"\{\{content\}\}" content)))
+      (str/replace #"\{\{content\}\}" (or content short-description))))
 
 (comment
   ;; Create a new music-single file from template
-  (let [title "nlgmlnois"
+  (let [title "For Our Palestinian Siblings (A Wish for Peace)"
         slug (slugify title)
         data {:title title
-              :short-description "Jam Estuary+Lumatone"
+              :short-description "Improvisation against the genocide"
               :slug slug
-              :file-url "https://archive.org/download/en-el-gamelanois/afable-echo-nlgmlnois.mp3"
-              :date "2022-10"
-              :content "Jam Estuary+Lumatone
-Alejandro Franco Briones & Diego Villaseñor"
-              :tags ["Afable Eco"
-                     "Alex Franco Briones"
-                     "Estuary"
-                     "Live Coding"
-                     "Microtonalidad"
-                     "Lumatone"]}
+              :file-url "https://archive.org/download/ohmachaCiani/ohmachaCiani.mp3"
+              :date "2022-08-11"
+              :content nil ;; use `short-description`
+              :tags ["Live Coding"
+                     "Suzanne Ciani"
+                     "Combination Product Sets"
+                     "Microtonalidad"]}
         file-path (format "build/browser/music/%s/%s.md" slug slug)]
     (if (.exists (io/file file-path))
       (println "File already exists, doing nothing.")
