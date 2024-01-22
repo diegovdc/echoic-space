@@ -26,7 +26,7 @@
 
 (defn current-page []
   [:div
-   (if @routes/match
+   (when @routes/match
      (let [view (:view (:data @routes/match))]
        [:div (header/main)
         [view @routes/match]]))])

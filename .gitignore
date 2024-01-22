@@ -20,3 +20,4 @@ target/
 .nrepl-port
 .shadow-cljs/
 .cider-repl-history
+.cpcache/
