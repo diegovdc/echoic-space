@@ -7,8 +7,10 @@
    [clojure.string :as str]
    [reagent.dom :as rdom]))
 
+(println "V2")
+
 (defn get-data [func state-key url]
-  (-> (axios/get url)
+  (-> (axios/get url) ;; TODO use fetch...
       (.then #(js->clj % :keywordize-keys true))
       (.then #(:data %))
       (.then #(swap! app-state assoc state-key (func %)))))
