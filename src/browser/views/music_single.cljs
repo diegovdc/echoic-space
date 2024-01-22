@@ -22,8 +22,8 @@
 
 (comment (-> state/app-state base-url))
 (defn bg-img [url]
-  {:background-image
-   (str "url(" url ")")})
+  {:background-image (str "url(" url ")")
+   :background-color "#000"})
 
 (defn image [url child-node]
   [:div {:class "single__img--main"
