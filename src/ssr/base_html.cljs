@@ -62,8 +62,8 @@
       {:type "text/css", :rel "stylesheet", :href "/css/mazorca.css"}]
      [:link
       {:crossorigin "anonymous",
-       #_ #_:integrity
-       "sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+",
+       #_#_:integrity
+         "sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+",
        :href
        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
        :rel "stylesheet"}]
@@ -102,13 +102,13 @@
      [:meta
       {:content "baseUrl+/images/favicon/mstile-310x310.png",
        :name "msapplication-square310x310logo"}]
-     [:title (str"Diego Villaseñor | " title)]
+     [:title (str "Diego Villaseñor | " title)]
      [:meta {:content description, :name "description"}]
      [:meta {:content "summary_large_image", :name "twitter:card"}]
      [:meta {:content "@diegovideco", :name "twitter:site"}]
      [:meta {:content "@diegovideco", :name "twitter:creator"}]
      [:meta
-      {:content (str"Diego Villaseñor | " title),
+      {:content (str "Diego Villaseñor | " title),
        :name "twitter:title"}]
      [:meta
       {:content description, :name "twitter:description"}]
@@ -116,12 +116,11 @@
      [:meta {:content url, :property "og:url"}]
      [:meta {:content "article", :property "og:type"}]
      [:meta
-      {:content (str "Diego Villaseñor | " title ),
+      {:content (str "Diego Villaseñor | " title),
        :property "og:title"}]
      [:meta
       {:content description, :property "og:description"}]
      [:meta {:content img, :property "og:image"}]
-
      (when width [:meta {:content width, :property "og:image:width"}])
      (when height [:meta {:content height, :property "og:image:height"}])]))
 
@@ -130,12 +129,16 @@
 
    (build-meta path attributes)
    [:body
+    [:a {:style {:display "none"}
+         :rel "me"
+         :href "https://social.toplap.org/@videco"}
+     "Mastodon"]
     [:div#app
      (header/main (fn [] [{:href "/" :text "~/"}
-                         {:href "/music/" :text "~/música"}
-                         {:href "/blog/" :text "~/bitácora"}
-                         {:href "/about/" :text "~/acerca"}
-                         {:href "/contact/" :text "~/contacto"}]))
+                          {:href "/music/" :text "~/música"}
+                          {:href "/blog/" :text "~/bitácora"}
+                          {:href "/about/" :text "~/acerca"}
+                          {:href "/contact/" :text "~/contacto"}]))
      body]
     [:script {:src "/browser-main.js", :type "text/javascript"}]
     [:script {:type "text/javascript",
