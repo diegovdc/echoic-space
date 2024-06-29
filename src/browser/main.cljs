@@ -34,8 +34,8 @@
 (defn start []
   ;; NOTE Promise.all seems necessary because r/atoms don't seem to work outside of the `current-page` function
   (-> (js/Promise.all [(get-data identity :about "/data/about.json")
-                       (get-data identity :blog "/data/blog.json")
-                       (get-data identity :music "/data/music.json")
+                       (get-data (fn [data] (map #(assoc-in % [:attributes :data/archive] :blog) data)) :blog "/data/blog.json")
+                       (get-data (fn [data] (map #(assoc-in % [:attributes :data/archive] :music) data)) :music "/data/music.json")
                        (get-data identity :posters "/data/posters.json")
                        (get-data identity :cv "/data/cv.json")])
       (.then  (fn [_]

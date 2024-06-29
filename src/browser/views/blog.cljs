@@ -22,6 +22,6 @@
                 [:h2 {:class "music__year"} (first m)] ; prints year
                 [:div {:class "music-work"}            ; prints work
                  (map
-                  (partial make-archive-item post->href)
+                  (partial make-archive-item app-state post->href)
                   (second m))]])
              (sort-entry-by-year (filter-by-selected-categories @selected-categories music)))]])))

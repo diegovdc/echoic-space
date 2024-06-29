@@ -1,10 +1,12 @@
 (ns browser.views.music-single
-  (:require [browser.views.helpers :refer [page-container-bg-img base-url get-entries]]
-            [browser.helpers :refer [scroll-to set-scroll make-audio-url]]
-            [browser.views.sonos :as sonos]
-            [browser.state :as state]
-            [reagent.core :as r]))
-
+  (:require
+   [browser.helpers :refer [scroll-to set-scroll]]
+   [browser.state :as state]
+   [browser.views.helpers :refer [base-url bg-img get-bg-img get-entries
+                                  page-container-bg-img]]
+   [browser.views.sonos :as sonos]
+   [reagent.core :as r]
+   [textFit]))
 
 
 ;; TODO merge blog json with music json on render
@@ -17,13 +19,7 @@
     (scroll-to (get-offset-top hash))
     (set-scroll 0)))
 
-(defn get-bg-img [base-url post-attrs]
-  (str "/" base-url "/" (:slug post-attrs) "/" (:backgroundImage post-attrs)))
 
-(comment (-> state/app-state base-url))
-(defn bg-img [url]
-  {:background-image (str "url(" url ")")
-   :background-color "#000"})
 
 (defn image [url child-node]
   [:div {:class "single__img--main"
@@ -39,7 +35,10 @@
       [:div {:class "single__ttl-container"}
        [:h1 {:id "single-ttl"
              :class "single__ttl single__ttl--with-img"
-             :style (merge {:fontSizes "200px"} (bg-img (get-bg-img base-url*  post)))}
+             :style (merge {:fontSizes "200px"
+                            :height "calc(100vh - 26px)"
+                            :width "100vw"}
+                           (bg-img (get-bg-img base-url*  post)))}
         (:title post)]])))
 
 
@@ -51,15 +50,25 @@
         playing-this-track? (= (get-in @state/player-state [:now-playing :track_name]) (:track_name post-attrs))
         should-change-track? (not playing-this-track?)
         icon (if (and playing-this-track? (@state/player-state :is-playing)) "fa-pause" "fa-play")]
-    [:span {:class (str "single__play fa " icon)    #_(.webkitRequestFullScreen (.-target e))
-            :style (bg-img (get-bg-img app-state post-attrs))
+    [:span {:class (str "single__play fa " icon)
+            :style (bg-img (get-bg-img (base-url app-state)  post-attrs))
             :on-click (action post-attrs should-change-track?)}]))
 
+
+(defn get-play-action
+  [{:keys [play-action] :as _post-attrs}]
+  (case (:action play-action)
+    "open-link" (fn []
+                  (fn [_ _]
+                    (js/console.log "opening link" (-> play-action :args first))
+                    (js/window.open (-> play-action :args first)
+                                    "_blank")))
+    nil sonos/toggle-play))
 
 (defn play-button [app-state post-attrs]
   (cond
     (= true (post-attrs :is_video)) (-play-button app-state post-attrs sonos/toggle-play-video)
-    :else (-play-button app-state post-attrs sonos/toggle-play)))
+    :else (-play-button app-state post-attrs (get-play-action post-attrs))))
 
 
 (defn show-info-cb [local-state]
@@ -141,11 +150,17 @@
     #(= (:slug (:attributes %)) slug)
     tracks)))
 
+
 (defn main [app-state single-slug hash]
   (let [local-state (r/atom {:show-info true})
         entries (get-entries app-state) ;; may be either music entries o blog entries
         post (find-post entries single-slug)
         printed-post (fn [] (print-post app-state post local-state))]
     (r/create-class
-     {:reagent-render printed-post
-      :component-did-mount (fn [] (go-to-hash hash))})))
+      {:reagent-render printed-post
+       :component-did-mount (fn [] #_(go-to-hash hash)
+                              (textFit (js/document.getElementById "single-ttl")
+                                       (clj->js {;; :multiLine true
+                                                 ;; :alignHoriz true
+                                                 ;; :alignVert true
+                                                 })))})))

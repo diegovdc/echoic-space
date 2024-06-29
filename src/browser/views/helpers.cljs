@@ -1,8 +1,9 @@
 (ns browser.views.helpers
-  (:require [browser.helpers :refer [year sort-entry-by-year filter-by-selected-categories toggle-category]]
-            [clojure.string :as str]
-            [reitit.frontend.easy :as rfe]
-            #_[browser.routes :as routes]))
+  (:require
+   [browser.helpers :refer [toggle-category]]
+   [browser.state :refer [app-state]]
+   [clojure.string :as str]))
+
 
 (defn page-container [page-class node]
   [:div {:class (str "page " page-class)}
@@ -32,16 +33,39 @@
       (->> (clojure.string/join " "))
       (#(str "(" % ")"))))
 
-(defn make-archive-item [post->href post]
-  [:div {:class "grid__container archive__container" :key (:slug post)}
-   [:a {:style {:display "flex" :flex-direction "column"}
-        :href (post->href post)}
-    [:h3 {:class "archive__sbttl archive__sbttl--sm"}
-     (:title post) [:span {:class "archive__date"} (format-date (:date post))]]
-    [:p  {:class "archive__category"} (clojure.string/join ", " (:category post))]
-    [:span  {:class "archive__p"}
-     (:description post)]]])
+(defn ^:deprecated get-bg-img
+  [base-url post-attrs]
+  (str "/" base-url "/" (:slug post-attrs) "/" (:backgroundImage post-attrs)))
 
+(defn get-bg-img2 [post-attrs]
+  (let [archive (some-> post-attrs :data/archive name)
+        img (:backgroundImage post-attrs)]
+    (when (and archive img)
+      (str "/" archive "/" (:slug post-attrs) "/" img))))
+
+(defn bg-img [url]
+  {:background-image (str "url(" url ")")
+   :background-color "#000"})
+
+(defn base-url [app-state]
+  (let [page (:page @app-state)]
+    (cond
+      (= page :music-single) "music"
+      (= page :blog-single)  "blog")))
+(defn make-archive-item [app-state post->href post]
+  (let [img-url (bg-img (get-bg-img2 post))]
+    [:div {:class "grid__container archive__container" :key (:slug post)}
+     [:a {:style {:display "flex"}
+          :href (post->href post)}
+      [:div {:class "archive__image"
+             :style img-url
+             }]
+      [:div
+       [:h3 {:class "archive__sbttl archive__sbttl--sm"}
+        (:title post) [:span {:class "archive__date"} (format-date (:date post))]]
+       [:p  {:class "archive__category"} (clojure.string/join ", " (:category post))]
+       [:p  {:class "archive__p"}
+        (:description post)]]]]))
 
 (defn make-archive-page [title node]
   (page-container "archive"
@@ -65,12 +89,6 @@
                     :on-click (toggle-category selected-categories-atom cat)}
              cat])
           categories)]))
-
-(defn base-url [app-state]
-  (let [page (:page @app-state)]
-    (cond
-      (= page :music-single) "music"
-      (= page :blog-single)  "blog")))
 
 
 (defn get-entries [app-state]

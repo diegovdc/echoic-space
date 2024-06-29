@@ -47,8 +47,6 @@
             align-items: center;
             min-height: calc(100vh - 26px);
         }
-        // @include center('xy');
-        // top: 50%;
         font-size: 200px;
         @include under(sm) {font-size: 120px;}
         font-weight: bold;
@@ -56,11 +54,14 @@
         width: 100%;
         margin-bottom: 0;
         overflow: visible;
-        color: white;
+        color: c(base);
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        filter: invert(60%) sepia(80%) ;
+        filter: invert(100%) ;
         word-break: break-word;
         padding-bottom: 30px;
     }
@@ -87,7 +88,7 @@
             left: 0;
             width: 100%;
             min-height: calc(100vh - 26px);
-            filter: invert(80%) sepia(80%) ;
+            // filter: invert(80%) sepia(80%) ;
         }
     }
 
@@ -95,17 +96,16 @@
         cursor: pointer;
         position: absolute;
         font-size: 70px !important;
-        opacity: 0.8;
         bottom: 20px;
         right: 10px;
         -webkit-background-clip: text;
-        filter: grayscale(90%);
-        -webkit-text-fill-color:rgba(165, 211, 255, 0.8);
+        filter: invert(100%);
+        -webkit-text-fill-color: transparent;
         transition: all 0.3s ease;
+        // background-color: rgba(255,255,255, 1);
+        padding: 1px;
         &:hover {
-            opacity: 0.6;
-            // -webkit-text-fill-color: rgba(140, 28, 153, 0.66);
-            // filter: grayscale(60%) brightness(1.5);
+            color: rgba(140, 28, 153, 0.66);
         }
     }
 

@@ -14,6 +14,9 @@
             [browser.views.helpers :refer [get-entries]]
             [reagent.core :as r]))
 
+;; FIXME there is a bug where forwarding a track may trigger two tracks to play
+;; FIXME the pause button doesn't resume playback but goes to the next track
+
 ;; FIXME
 (defn $ [selector] (js/document.querySelector selector))
 (defn width [_] (js/console.error "please implement `width`"))

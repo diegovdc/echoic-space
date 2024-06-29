@@ -28,6 +28,7 @@
     "mazorca-core": "^1.6.2",
     "nodemailer": "^6.9.8",
     "react": "16.13.0",
-    "react-dom": "16.13.0"
+    "react-dom": "16.13.0",
+    "textfit": "^2.4.0"
   }
 }
