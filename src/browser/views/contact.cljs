@@ -34,7 +34,7 @@
      [:i {:class "fa fa-bandcamp" :aria-hidden "true"}] " Bandcamp" ]
     [:a {:href "https://github.com/diegovdc" :target "_blank"}
      [:i {:class "fa fa-github" :aria-hidden "true"}] " Github" ]
-    [:a {:href ((:routing-fn @app-state) :browser.routes/mailing-list)}
+    #_[:a {:href ((:routing-fn @app-state) :browser.routes/mailing-list)}
      [:i {:class "fa fa-envelope" :aria-hidden "true"}] " Mailing List"]]])
 
 (defn form []

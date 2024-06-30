@@ -13,6 +13,7 @@ build/browser/**/*.html
 build/browser/**/*.js
 build/browser/**/*.css
 build/browser/css/mazorca.css.map
+build/browser/manifest.edn
 build/ssr.js
 build/node-app.js
 build/browser/data/*.json

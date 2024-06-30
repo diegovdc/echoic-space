@@ -6,7 +6,7 @@
                                   page-container-bg-img]]
    [browser.views.sonos :as sonos]
    [reagent.core :as r]
-   ["textfit" :default textfit]))
+   ["textfit" :as textfit]))
 
 
 ;; TODO merge blog json with music json on render
@@ -158,9 +158,6 @@
         printed-post (fn [] (print-post app-state post local-state))]
     (r/create-class
       {:reagent-render printed-post
-       :component-did-mount (fn [] #_(go-to-hash hash)
-                              (textfit (js/document.getElementById "single-ttl")
-                                       (clj->js {;; :multiLine true
-                                                 ;; :alignHoriz true
-                                                 ;; :alignVert true
-                                                 })))})))
+       :component-did-mount (fn []
+                              (go-to-hash hash)
+                              (textfit (js/document.getElementById "single-ttl")))})))
