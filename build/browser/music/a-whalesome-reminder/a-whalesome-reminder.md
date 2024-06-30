@@ -4,7 +4,7 @@ description: A humback whale, videco and MBARI
 slug: a-whalesome-reminder
 file_name: https://archive.org/download/a-whalesome-reminder/a%20reminder.mp3
 track_name: "A Whalesome Reminder"
-backgroundImage:
+backgroundImage: 9.jpg
 date: 2022-12-12 
 category:
   - Ballenas

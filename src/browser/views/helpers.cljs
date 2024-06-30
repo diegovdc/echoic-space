@@ -33,7 +33,9 @@
       (->> (clojure.string/join " "))
       (#(str "(" % ")"))))
 
-(defn ^:deprecated get-bg-img
+(defn
+  ;; ^:deprecated
+  get-bg-img
   [base-url post-attrs]
   (str "/" base-url "/" (:slug post-attrs) "/" (:backgroundImage post-attrs)))
 

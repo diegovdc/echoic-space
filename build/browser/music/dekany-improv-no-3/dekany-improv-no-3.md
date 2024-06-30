@@ -4,12 +4,7 @@ description: "Composition/Improvisation on a {1, 5, 7, 13, 23} Dekany"
 slug: dekany-improv-no-3
 file_name: https://archive.org/download/impro3_dekany_1-5-7-13-23/impro3_dekany_1-5-7-13-23.mp3
 track_name: "Dekany comprovisation #3"
-backgroundImage: dekany.jpg
-seo:
-  img: dekany-seo.jpg
-  width: 3158
-  height: 1462
-
+backgroundImage: 7.jpg
 date: 2021-07-26
 category:
   - Composición

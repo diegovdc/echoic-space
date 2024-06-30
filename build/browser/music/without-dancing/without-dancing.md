@@ -19,6 +19,7 @@ category:
   - Improvisación
   - Microtonalidad
   - Live Coding
+  - Combination Product Sets
 ---
  
 A new EP by Piraran https://piraran.bandcamp.com/track/with-out-dancing

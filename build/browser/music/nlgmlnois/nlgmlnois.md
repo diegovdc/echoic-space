@@ -4,7 +4,7 @@ description: Jam Estuary+Lumatone
 slug: nlgmlnois
 file_name: https://archive.org/download/en-el-gamelanois/afable-echo-nlgmlnois.mp3
 track_name: "nlgmlnois"
-backgroundImage:
+backgroundImage: 3.jpg
 date: 2022-10-26
 category:
   - Afable Eco
