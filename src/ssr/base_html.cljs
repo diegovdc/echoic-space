@@ -129,7 +129,7 @@
 
    (build-meta path attributes)
    [:body
-    [:a {:style {:display "none"}
+    [:a {:style "display: none;"
          :rel "me"
          :href "https://social.toplap.org/@videco"}
      "Mastodon"]

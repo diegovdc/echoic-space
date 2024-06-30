@@ -57,7 +57,7 @@
 (defn make-archive-item [app-state post->href post]
   (let [img-url (bg-img (get-bg-img2 post))]
     [:div {:class "grid__container archive__container" :key (:slug post)}
-     [:a {:style {:display "flex"}
+     [:a {:class "archive__item"
           :href (post->href post)}
       [:div {:class "archive__image"
              :style img-url
