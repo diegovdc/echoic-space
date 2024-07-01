@@ -8,7 +8,7 @@ backgroundImage: free-palestine-by-jesxmdev.png
 date: 2023-11-05
 category:
   - Free Palestine
-  - Improvisción
+  - Improvisación
   - Lumatone
   - Microtonalidad
 ---

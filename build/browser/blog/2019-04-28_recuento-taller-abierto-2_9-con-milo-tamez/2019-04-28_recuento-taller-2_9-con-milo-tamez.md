@@ -18,7 +18,7 @@ category:
   - Percusión
   - Milo Tamez
   - Composición
-  - Taller Abierto 2.9
+  - Taller Abierto
 ---
 
 # Recuento del trabajo realizado hasta el momento en el _Taller Abierto 2.9_ (con Milo Tamez)  <!-- omit in toc -->
