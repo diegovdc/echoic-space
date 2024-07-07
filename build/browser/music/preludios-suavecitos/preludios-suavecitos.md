@@ -22,6 +22,8 @@ category:
 
 Con amor para Dinh, por todas las experiencias compartidas y por compartir.
 
+https://videco.bandcamp.com/album/preludios-suavecitos-pa-dinh
+
 [English below]
 
 Estos preludios improvisados nacieron de una observación de Dinh sobre el hecho de que muy poca de la música que le había mostrado era suave y silenciosa, con excepción de una pieza reciente que le había sorprendido y agradado. Con ello, me impulsó a hacer una serie de pequeñas piezas minimalistas que me hicieron interactuar con un lenguaje que rara vez articulo. En el imaginario sonoro de estas piezas habitan Gnossenias y otras Músicas Calladas en una Catedral Sumergida —varias veces ascendida bajo las manos de mi querida amiga—; hay también un cielo de Intermisiones Tintineantes y la mística terrenalidad de aquella Doïna que alguna vez se coló para formar el centro fugaz y brillante de una sonata.

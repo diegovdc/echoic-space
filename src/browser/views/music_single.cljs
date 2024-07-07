@@ -63,6 +63,12 @@
                     (js/console.log "opening link" (-> play-action :args first))
                     (js/window.open (-> play-action :args first)
                                     "_blank")))
+    "scroll-to-id" (fn []
+                     (fn [_ _]
+                       (js/console.log (-> play-action :args first))
+                       (let [el (js/document.getElementById (-> play-action :args first))
+                             top (.-top (.getBoundingClientRect el)) ]
+                         (scroll-to (- top 120)))))
     nil sonos/toggle-play))
 
 (defn play-button [app-state post-attrs]
