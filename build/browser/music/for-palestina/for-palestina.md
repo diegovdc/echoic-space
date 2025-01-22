@@ -10,6 +10,9 @@ category:
   - Live Coding
   - UHM
   - Camposónico
+  - Alejandro Franco Briones
 ---
 
 A counterpoint over the theme of oppression and freedom through poems and field recordings from the public archives of Freesound.org and Archive.org. Made with [camposónico](https://github.com/diegovdc/camposonico).
+
+Alejandro Franco Briones also made another section of this documentary, available here: [Video](https://www.youtube.com/watch?v=ppp4gqC5t7o).
