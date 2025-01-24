@@ -29,6 +29,7 @@
 		margin-bottom: 16px;
 		 @include under(sm) {
 			 width: 100%;
+			 max-width: 300px;
 			 margin-right: 0;
 			 flex-shrink: initial;
 	    }
