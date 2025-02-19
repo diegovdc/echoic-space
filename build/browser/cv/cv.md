@@ -1,6 +1,104 @@
 # Actividades
 
+## 2024
+
+### Producciones
+
+_La Fábrica Colapsada (cyberópera)_, con [Pirarán](https://piraran.com), sitio web con audio https://lfc.piraran.com.
+
+_With/out Dancing_, con [Pirarán](https://piraran.com),[Bandcamp](https://piraran.bandcamp.com/track/with-out-dancing).
+
+_Navegación transtemporal a través de La Fábrica Colapsada_, para Lumatone. [Bandcamp](https://videco.bandcamp.com/track/navegaci-n-transtemporal-a-trav-s-de-la-f-brica-colapsada).
+
+_Sobre el puente_, live coding. [Bandcamp](https://videco.bandcamp.com/album/sobre-el-puente).
+
+_Preludios Suavecitos (pa' Dinh)_, para Lumatone. [Bandcamp](https://videco.bandcamp.com/album/preludios-suavecitos-pa-dinh).
+
+_Atractores_, para guitarra eléctrica. [Bandcamp](https://videco.bandcamp.com/album/attractors).
+
+_Align_, live coding. [Bandcamp](https://videco.bandcamp.com/track/align).
+
+### Presentaciones en vivo
+
+_Hacia un nuevo universo (Gusano Cuántico)_, con [Milo Tamez](http://www.milotamez.com.mx) @ Bacal, Ciudad de México, México.
+
+_With/out Dancing_, con [Pirarán](https://piraran.com) @ Transferencias Aurales, Ciudad de México, México & Network Imagination Laboratory, Hamilton, Canadá.
+
+_En tiempo geológico_, pieza para guitarra eléctrica y electrónica en tiempo real. @ festival Expansivas, Sala Blas Galindo, Centro Nacional de las Artes, Ciudad de México, México.
+
+_La Fábrica Colapsada (cyberópera)_, con [Pirarán](https://piraran.com) @ Network Imagination Laboratory, Hamilton, Canadá & Estudio de Iván Lopez, Morelia, México & Estudio Piracantos, Ciudad de México, México.
+ 
+_Hacia un nuevo universo_, con [Milo Tamez](http://www.milotamez.com.mx) @ ISO (serie curada por [Gudinni Cortina](https://www.instagram.com/gudinnicortina/)), Ciudad de México, México.
+
+### Residencias
+_Radio Nabu Congul 98.8FM, Anaphoria_ Compositor en residencia para el año 2024. Producción de más de 30 piezas en distintas afinaciones. [Link](https://www.anaphoria.com/cortina.html)
+
+### Conferencias 
+_Hábitat/Hacia un nuevo universo (concierto-conferencia)_, con [Milo Tamez](http://www.milotamez.com.mx) @ seminario __Nuevas Formas de Articulación del Discurso Temporal en el Arte_ coordinado por [Pedro Castillo Larar](https://www.instagram.com/pedro_castillolara) y [MUSLAB](https://muslab.org/) en el Centro de Ciencias de las Complejidad (C3), UNAM, Ciudad de México, México. [Link](https://www.youtube.com/watch?v=Rf5hdwdnYdQ)
+
+
+### Talleres
+_Redes para la construcción de imaginarios y experiencias articuladas por la improvisación_, con [Milo Tamez](http://www.milotamez.com.mx) @ festival Expansivas, Centro Nacional de las Artes, Ciudad de México, México. Presentación de fundamentales de la metodología desarrollada dentro del proceso creativo de [Hábitat/Taller Abierto](/blog/2019-04-28_recuento-taller-abierto-2_9-con-milo-tamez/).
+
+### Entrevistas
+_Testimonio de Oídas_, con [Milo Tamez](http://www.milotamez.com.mx), por Dulce Huet @ Radio UNAM, Ciudad de México, México. [Parte 1](https://www.radiopodcast.unam.mx/podcast/audio/39154) | [Parte 2](https://www.radiopodcast.unam.mx/podcast/audio/39155)
+
+_Sin Superficie_, por [Lena Ortega Artistain](https://www.instagram.com/lenaortegaatristain/) @ Radio Nopal, Ciudad de México, México. [Link](https://www.mixcloud.com/radionopal/sin-superficie-047-13-de-marzo-2024-diego-villase%C3%B1or/)
+
+## 2023
+Tour pirarán, concierto CdL, concierto Blas
+LadoB
+
+### Producciones
+
+_Algorithmic Acid Music Vol. 2_, con [Pirarán](https://piraran.com),[Bandcamp](https://piraran.bandcamp.com/album/algorithmic-acid-music-vol-2).
+
+### Presentaciones en vivo
+_Piratour_ @ Ontario, Canadá. Factory Media Center (7/20, Hamilton), Tibet Street Records (7/22, Toronto), Tail of the Junction (7/25, Toronto), The Casbah (7/26, Hamilton). 
+
+_1 impulso insospechable_, con [Pirarán](https://piraran.com) @ ICLC 2023, Utrecht, Holanda.
+
+_Hábitat_, con [Milo Tamez](http://www.milotamez.com.mx) @ Casa del Lago, Ciudad de México, México.
+
+_Temazcal 2_, con [UHM](https://afrancob.github.io/sfelfdt/futures.html#uhmsec), live coded documentary.
+
+## 2022
+Concierto Ex-Teresa
+Lado A
+
+### Producciones
+
+_Algorithmic Acid Music Vol. 1_, con [Pirarán](https://piraran.com),[Bandcamp](https://piraran.bandcamp.com/album/algorithmic-acid-music-vol-1).
+
+_A la vørtex_, con [Pirarán](https://piraran.com) para el compilatorio Nijbla de la disquera Cjantal,[Bandcamp](https://cjantal.bandcamp.com/album/nijbla).
+
+### Presentaciones en vivo
+
+_Hábitat_, con [Milo Tamez](http://www.milotamez.com.mx) @ Sala Blas Galindo, Centro Nacional de las Artes, Ciudad de México, México.
+
+_Música Ácida Algorítmica_, con [Pirarán](https://piraran.com) @ Comité de Asuntos Intangibles, Morelia, México.
+
+_Algoreven_, con [Pirarán](https://piraran.com) @ Edificio Indianilla, Ciudad de México, México.
+
+_Exploraciones de resonancia y armonía_, con Noah Jordan y Alex Bruck @ Siranda Libros, Ciudad de México, México.
+
+### Textos
+_Liner Notes_, para el disco _Time's Arrow_ de [Christopher Luna Mega](http://www.christopherlunamega.com), [Bandcamp](https://othermindsrecords.bandcamp.com/album/times-arrow).
+
+## 2021
+
+### Presentaciones en vivo
+
+_Hábitat_, con [Milo Tamez](http://www.milotamez.com.mx) @ Sala Blas Galindo, Centro Nacional de las Artes, Ciudad de México, México.
+
+_Concierto de clausura del XVI Coloquio de alumnas de Maestría y Doctorado en Música_ de la Facultad de Música de la UNAM @ [Coloquio Posgrado UNAM](https://www.facebook.com/coloquioposgradofam/live)
+
 ## 2020
+
+### Producciones
+
+_Dos Sures_, con [UHM](https://afrancob.github.io/sfelfdt/futures.html#uhmsec), live coded documentary for Radio Alhara.
+
 
 ### Presentaciones en vivo
 

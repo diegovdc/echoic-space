@@ -97,7 +97,7 @@
       [:div {:class "markdown-body"
              :dangerouslySetInnerHTML {:__html body}}]
       [:div {:class "about__button-container"}
-       [:a {:class "about__button" :target "_blank" :href "/downloads/cv-2020-04.pdf"}
+       [:a {:class "about__button" :target "_blank" :href "/downloads/cv-2025.pdf"}
         "Curriculum Vitae"]]
       [:div {:class "about__activities-detail"}]
       (scripts-loader-fn posters)
