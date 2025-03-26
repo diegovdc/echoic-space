@@ -17,6 +17,7 @@ build/browser/manifest.edn
 build/ssr.js
 build/node-app.js
 build/browser/data/*.json
+build/browser/rss.xml
 node_modules/
 target/
 .nrepl-port
