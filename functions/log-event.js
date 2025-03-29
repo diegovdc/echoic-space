@@ -20,7 +20,9 @@ const handler = async (event) => {
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: error.message }),
+      body: JSON.stringify({
+        error: error.message,
+      }),
     };
   } finally {
     await client.close();
