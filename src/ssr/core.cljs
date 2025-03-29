@@ -124,7 +124,7 @@
                                    " " description)
                  :url (str archive-base-url slug)
                  :date date
-                 :enclosure {:url image}})))))
+                 :enclosure (when image* {:url image})})))))
 
 (comment
   (hiccups.core/html [:img {:src "x/y.jpg" :alt "image"}])
