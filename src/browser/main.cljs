@@ -1,13 +1,12 @@
 (ns browser.main
   (:require
    ["axios" :as axios]
-   [browser.routes :as routes :refer [routes]]
+   [browser.analytics :as analytics]
+   [browser.routes :as routes]
    [browser.state :as state :refer [app-state]]
    [browser.views.header :as header]
    [clojure.string :as str]
    [reagent.dom :as rdom]))
-
-(println "V2")
 
 (defn get-data [func state-key url]
   (-> (axios/get url) ;; TODO use fetch...
@@ -42,7 +41,9 @@
                 ;; FIXME
                 (routes/init)
                 (rdom/render [current-page]
-                             (.getElementById js/document "app"))))))
+                             (.getElementById js/document "app"))))
+      (.then (fn []
+               (analytics/init-basic-ping!)))))
 
 (defn ^:export init []
   (start))

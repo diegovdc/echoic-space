@@ -19,7 +19,7 @@
 
 (defn log-route-event [match]
   (analytics/log-event
-   {:type "route-chance"
+   {:type "route-change"
     :path (:path match)}))
 
 (def routes
