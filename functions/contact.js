@@ -98,3 +98,5 @@ module.exports.handler = async (event, context) => {
     };
   }
 };
+
+//module.exports.handler({body: JSON.stringify({email: 123, message: "hola"})}).then(console.log)
