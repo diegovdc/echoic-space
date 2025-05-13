@@ -114,14 +114,17 @@
 (defn- make-rss-item
   [archive-data archive-base-url]
   (->> archive-data
-       (map :attributes)
-       (map (fn [{:keys [title description slug date seo backgroundImage]}]
+       (map (juxt :attributes :body))
+       (map (fn [[{:keys [title description slug date seo backgroundImage]} body]]
               (let [image* (or (-> seo :img) backgroundImage)
                     image (str archive-base-url image*)]
                 {:title title
-                 :description (str (when image*
-                                     (hiccups.core/html [:img {:src image :alt (str title " image.")}]))
-                                   " " description)
+                 :description (str
+                               (hiccups.core/html [:h1 title])
+                               (when image*
+                                 (hiccups.core/html [:img {:src image :alt (str title " image.")}]))
+                               " "
+                               body)
                  :url (str archive-base-url slug)
                  :date date
                  :enclosure (when image* {:url image})})))))
@@ -130,6 +133,7 @@
   (hiccups.core/html [:img {:src "x/y.jpg" :alt "image"}])
   (:blog @data)
   (clj->js (make-rss-item (:blog @data) "blog/"))
+  (make-rss-item (:blog @data) "blog/")
   (-> data make-rss-feed))
 
 (defn- make-rss-feed [data]
