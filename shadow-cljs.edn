@@ -9,11 +9,11 @@
                 [metosin/reitit-frontend "0.5.5"]
                 [com.cemerick/url "0.1.1"]]
 
-#_ #_ :nrepl {:port 8777}
+ #_#_:nrepl {:port 8777}
  :dev-http {5000 "build/browser"}
  :builds ; https://shadow-cljs.github.io/docs/UsersGuide.html#target-node-script
- {:ssr {:target :node-script
-         :output-to "build/ssr.js"
+ {:ssr {:target :node-script ;; use `node-repl` to develop
+        :output-to "build/ssr.js"
         :main ssr.core/-main}
 
   :browser {:target :browser
@@ -23,4 +23,4 @@
                                      :init-fn browser.main/init}}
             :devtools {:before-load browser.main/stop
                        :after-load browser.main/start}
-            #_ #_  :build-hooks [(_build_hooks.browser/copy-index)]}}}
+            #_#_:build-hooks [(_build_hooks.browser/copy-index)]}}}
