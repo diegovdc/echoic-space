@@ -25,7 +25,7 @@
   []
   (js/setInterval
    (fn []
-     (log-event (merge {:type :ping
+     (log-event (merge {:type "ping"
                         :location js/window.location.href}
                        (when (:is-playing @player-state)
                          {:playing? true
