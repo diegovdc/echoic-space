@@ -65,14 +65,15 @@
                 :required true
                 :value (@form-state :message)
                 :on-change (partial on-change :message)}]]
-   [:div
-    [:input {:id "subscribe"
-             :type "checkbox"
-             :class "contact__checkbox"
-             :checked (@form-state :subscribe)
-             :on-change #(swap! form-state assoc :subscribe (-> % .-target .-checked))}]
-    [:label {:for "subscribe" :class "contact__label checkbox__label"}
-     "Suscribirme a la lista de correos"]]
+   ;; FIXME add something like this back
+   #_[:div
+      [:input {:id "subscribe"
+               :type "checkbox"
+               :class "contact__checkbox"
+               :checked (@form-state :subscribe)
+               :on-change #(swap! form-state assoc :subscribe (-> % .-target .-checked))}]
+      [:label {:for "subscribe" :class "contact__label checkbox__label"}
+       "Suscribirme a la lista de correos"]]
    [:button {:class "button" :disabled (@form-state :sending?)} "Enviar"]
    (when (@form-state :sent?) [:div {:style {:text-align "center"}}
                                "Thanks, I'll be in touch soon!"])
