@@ -30,7 +30,7 @@
      [:i {:class "fa fa-telegram" :aria-hidden "true"}] " @diegovideco"]
     [:a {:href "https://social.toplap.org/@videco" :target "_blank"}
      [:i {:class "fa fa-mastodon" :aria-hidden "true" :rel "me"}] " @videco"]
-    [:a {:href "https://echoic-space.bandcamp.com/" :target "_blank"}
+    [:a {:href "https://videco.bandcamp.com/" :target "_blank"}
      [:i {:class "fa fa-bandcamp" :aria-hidden "true"}] " Bandcamp"]
     [:a {:href "https://github.com/diegovdc" :target "_blank"}
      [:i {:class "fa fa-github" :aria-hidden "true"}] " Github"]
