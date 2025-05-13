@@ -125,7 +125,7 @@
                                  (hiccups.core/html [:img {:src image :alt (str title " image.")}]))
                                " "
                                body)
-                 :url (str archive-base-url slug)
+                 :url (str archive-base-url slug "?rss")
                  :date date
                  :enclosure (when image* {:url image})})))))
 
