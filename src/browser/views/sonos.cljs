@@ -156,7 +156,7 @@
 (def find-track-to-play
   (memoize
    (fn [is-single single tracks]
-     (js/console.debug "is single" is-single single "-")
+     #_(js/console.debug "is single" is-single single "-")
      (if is-single
        (find-first #(= single (get-in % [:attributes :slug])) tracks)
        (safe-rand-nth {} tracks)))))
