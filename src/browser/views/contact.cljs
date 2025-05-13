@@ -27,15 +27,15 @@
   [:div
    [:div {:class "contact__links"}
     [:a {:href "https://t.me/diegovideco" :target "_blank"}
-     [:i {:class "fa fa-telegram" :aria-hidden "true"}] " @diegovideco" ]
+     [:i {:class "fa fa-telegram" :aria-hidden "true"}] " @diegovideco"]
     [:a {:href "https://social.toplap.org/@videco" :target "_blank"}
-     [:i {:class "fa fa-mastodon" :aria-hidden "true" :rel "me"}] " @videco" ]
+     [:i {:class "fa fa-mastodon" :aria-hidden "true" :rel "me"}] " @videco"]
     [:a {:href "https://echoic-space.bandcamp.com/" :target "_blank"}
-     [:i {:class "fa fa-bandcamp" :aria-hidden "true"}] " Bandcamp" ]
+     [:i {:class "fa fa-bandcamp" :aria-hidden "true"}] " Bandcamp"]
     [:a {:href "https://github.com/diegovdc" :target "_blank"}
-     [:i {:class "fa fa-github" :aria-hidden "true"}] " Github" ]
+     [:i {:class "fa fa-github" :aria-hidden "true"}] " Github"]
     #_[:a {:href ((:routing-fn @app-state) :browser.routes/mailing-list)}
-     [:i {:class "fa fa-envelope" :aria-hidden "true"}] " Mailing List"]]])
+       [:i {:class "fa fa-envelope" :aria-hidden "true"}] " Mailing List"]]])
 
 (defn form []
   [:form {:class "contact__form"

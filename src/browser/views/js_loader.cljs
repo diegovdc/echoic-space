@@ -31,6 +31,6 @@
                              (let [not-loaded (filter-loaded scripts)]
                                (.then (load* not-loaded)
                                       #(do (callback)
-                                         (reset! loaded? true)))))
+                                           (reset! loaded? true)))))
       :reagent-render (fn [{:keys [scripts loading loaded]}]
                         (if @loaded? loaded loading))})))

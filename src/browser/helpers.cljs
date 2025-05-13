@@ -42,7 +42,6 @@
         slug (:slug music-post-attrs)]
     (maybe-make-audio-url "music" slug file-name)))
 
-
 (defn year [music]
   (first (clojure.string/split (:date music) "-")))
 
@@ -54,18 +53,18 @@
               [year (sort-by :date > musics)]))))
 
 (defn filter-by-selected-categories [selected-categories entry]
-    (if (empty? selected-categories)
-        entry
-        (filter #(not= #{}
-                    (clojure.set/intersection
-                        selected-categories
-                        (set (:category %))))
-                entry)))
+  (if (empty? selected-categories)
+    entry
+    (filter #(not= #{}
+                   (clojure.set/intersection
+                    selected-categories
+                    (set (:category %))))
+            entry)))
 
 (defn toggle-in-set [set val]
   (if (contains? set val)
-      (clojure.set/difference set #{val})
-      (clojure.set/union set #{val})))
+    (clojure.set/difference set #{val})
+    (clojure.set/union set #{val})))
 
 (defn toggle-category [selected-categories-atom cat]
   (fn []
