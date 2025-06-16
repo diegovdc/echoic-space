@@ -6,8 +6,7 @@
                                   page-container-bg-img]]
    [browser.views.sonos :as sonos]
    [reagent.core :as r]
-   ["textfit" :default textfit]))
-
+   ["textfit" :as textfit]))
 
 ;; TODO merge blog json with music json on render
 
@@ -18,8 +17,6 @@
   (if hash
     (scroll-to (get-offset-top hash))
     (set-scroll 0)))
-
-
 
 (defn image [url child-node]
   [:div {:class "single__img--main"
@@ -41,19 +38,16 @@
                            (bg-img (get-bg-img base-url*  post)))}
         (:title post)]])))
 
-
 (defn -play-button [app-state post-attrs action]
   "Renders a play button that supports a particular action (i.e. play video o play audio)
   `post-attrs` {}
   `action` :: post-attrs -> () -> PlayAction"
-  (let [
-        playing-this-track? (= (get-in @state/player-state [:now-playing :track_name]) (:track_name post-attrs))
+  (let [playing-this-track? (= (get-in @state/player-state [:now-playing :track_name]) (:track_name post-attrs))
         should-change-track? (not playing-this-track?)
         icon (if (and playing-this-track? (@state/player-state :is-playing)) "fa-pause" "fa-play")]
     [:span {:class (str "single__play fa " icon)
             :style (bg-img (get-bg-img (base-url app-state)  post-attrs))
             :on-click (action post-attrs should-change-track?)}]))
-
 
 (defn get-play-action
   [{:keys [play-action] :as _post-attrs}]
@@ -63,13 +57,18 @@
                     (js/console.log "opening link" (-> play-action :args first))
                     (js/window.open (-> play-action :args first)
                                     "_blank")))
+    "scroll-to-id" (fn []
+                     (fn [_ _]
+                       (js/console.log (-> play-action :args first))
+                       (let [el (js/document.getElementById (-> play-action :args first))
+                             top (.-top (.getBoundingClientRect el))]
+                         (scroll-to (- top 120)))))
     nil sonos/toggle-play))
 
 (defn play-button [app-state post-attrs]
   (cond
     (= true (post-attrs :is_video)) (-play-button app-state post-attrs sonos/toggle-play-video)
     :else (-play-button app-state post-attrs (get-play-action post-attrs))))
-
 
 (defn show-info-cb [local-state]
   (fn []
@@ -150,17 +149,13 @@
     #(= (:slug (:attributes %)) slug)
     tracks)))
 
-
 (defn main [app-state single-slug hash]
   (let [local-state (r/atom {:show-info true})
         entries (get-entries app-state) ;; may be either music entries o blog entries
         post (find-post entries single-slug)
         printed-post (fn [] (print-post app-state post local-state))]
     (r/create-class
-      {:reagent-render printed-post
-       :component-did-mount (fn [] #_(go-to-hash hash)
-                              (textfit (js/document.getElementById "single-ttl")
-                                       (clj->js {;; :multiLine true
-                                                 ;; :alignHoriz true
-                                                 ;; :alignVert true
-                                                 })))})))
+     {:reagent-render printed-post
+      :component-did-mount (fn []
+                             (go-to-hash hash)
+                             (textfit (js/document.getElementById "single-ttl")))})))

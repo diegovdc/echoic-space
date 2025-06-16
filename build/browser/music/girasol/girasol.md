@@ -4,7 +4,7 @@ description: Música para un verso del "Sunflower Sutra" de Allen Ginsberg
 slug: girasol
 file_name: girasol.mp3
 track_name: Girasol
-backgroundImage: girasol.png
+backgroundImage: 17.jpg
 date: 2011-01-07
 category:
   - Composición

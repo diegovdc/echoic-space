@@ -50,7 +50,7 @@
    "contact pt-40"
    [:div
     [:h1 {:class "contact__ttl"} "Mailing list"]
-    [:div {:class "contact__p mb-20 text-center" }
+    [:div {:class "contact__p mb-20 text-center"}
      [:p {:class "mb-20"} "Suscríbete para recibir nueva música, noticias, textos y otras cosas."]
      [:small "Me compromento a mandar sólo contenido de calidad, aproximadamente cada dos meses."]]
     (form)]))

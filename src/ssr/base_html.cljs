@@ -9,6 +9,7 @@
      [:meta {:charset "utf-8"}]
      [:link {:href "/images/favicon/apple-touch-icon-57x57.png", :sizes "57x57", :rel "apple-touch-icon-precomposed"}]
      [:link {:href "/images/favicon/apple-touch-icon-114x114.png", :sizes "114x114", :rel "apple-touch-icon-precomposed"}]
+     [:link {:rel "alternate" :type "application/rss+xml" :title "Echoic.space RSS Feed" :href "https://echoic.space/rss.xml"}]
      [:link
       {:href "/images/favicon/apple-touch-icon-72x72.png",
        :sizes "72x72",
@@ -129,7 +130,7 @@
 
    (build-meta path attributes)
    [:body
-    [:a {:style {:display "none"}
+    [:a {:style "display: none;"
          :rel "me"
          :href "https://social.toplap.org/@videco"}
      "Mastodon"]

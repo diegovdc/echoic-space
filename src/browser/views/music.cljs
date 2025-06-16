@@ -22,10 +22,10 @@
   (let [music (map #(:attributes %) (merge-blog-music @app-state))
         categories (set (sort (flatten (map #(:category %) music))))
         post->href (fn [post] ((:routing-fn @app-state)
-                              (if (some #(=  "Bitácora" %) (:category post))
-                                :browser.routes/blog-single
-                                :browser.routes/music-single)
-                              {:slug (:slug post)}))]
+                               (if (some #(=  "Bitácora" %) (:category post))
+                                 :browser.routes/blog-single
+                                 :browser.routes/music-single)
+                               {:slug (:slug post)}))]
     (make-archive-page
      "Música"
      [:div
@@ -34,7 +34,7 @@
        (doall (map (fn [m]
                      [:div {:class "music__year-container" :key (first m)}
                       [:h2 {:class "music__year"} (first m)] ; prints year
-                      [:div {:class "music-work"}; prints work
+                      [:div {:class "music-work"}            ; prints work
                        (doall
                         (map
                          (partial make-archive-item app-state post->href)

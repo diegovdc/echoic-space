@@ -27,15 +27,15 @@
   [:div
    [:div {:class "contact__links"}
     [:a {:href "https://t.me/diegovideco" :target "_blank"}
-     [:i {:class "fa fa-telegram" :aria-hidden "true"}] " @diegovideco" ]
+     [:i {:class "fa fa-telegram" :aria-hidden "true"}] " @diegovideco"]
     [:a {:href "https://social.toplap.org/@videco" :target "_blank"}
-     [:i {:class "fa fa-mastodon" :aria-hidden "true" :rel "me"}] " @videco" ]
-    [:a {:href "https://echoic-space.bandcamp.com/" :target "_blank"}
-     [:i {:class "fa fa-bandcamp" :aria-hidden "true"}] " Bandcamp" ]
+     [:i {:class "fa fa-mastodon" :aria-hidden "true" :rel "me"}] " @videco"]
+    [:a {:href "https://videco.bandcamp.com/" :target "_blank"}
+     [:i {:class "fa fa-bandcamp" :aria-hidden "true"}] " Bandcamp"]
     [:a {:href "https://github.com/diegovdc" :target "_blank"}
-     [:i {:class "fa fa-github" :aria-hidden "true"}] " Github" ]
-    [:a {:href ((:routing-fn @app-state) :browser.routes/mailing-list)}
-     [:i {:class "fa fa-envelope" :aria-hidden "true"}] " Mailing List"]]])
+     [:i {:class "fa fa-github" :aria-hidden "true"}] " Github"]
+    #_[:a {:href ((:routing-fn @app-state) :browser.routes/mailing-list)}
+       [:i {:class "fa fa-envelope" :aria-hidden "true"}] " Mailing List"]]])
 
 (defn form []
   [:form {:class "contact__form"
@@ -65,14 +65,15 @@
                 :required true
                 :value (@form-state :message)
                 :on-change (partial on-change :message)}]]
-   [:div
-    [:input {:id "subscribe"
-             :type "checkbox"
-             :class "contact__checkbox"
-             :checked (@form-state :subscribe)
-             :on-change #(swap! form-state assoc :subscribe (-> % .-target .-checked))}]
-    [:label {:for "subscribe" :class "contact__label checkbox__label"}
-     "Suscribirme a la lista de correos"]]
+   ;; FIXME add something like this back
+   #_[:div
+      [:input {:id "subscribe"
+               :type "checkbox"
+               :class "contact__checkbox"
+               :checked (@form-state :subscribe)
+               :on-change #(swap! form-state assoc :subscribe (-> % .-target .-checked))}]
+      [:label {:for "subscribe" :class "contact__label checkbox__label"}
+       "Suscribirme a la lista de correos"]]
    [:button {:class "button" :disabled (@form-state :sending?)} "Enviar"]
    (when (@form-state :sent?) [:div {:style {:text-align "center"}}
                                "Thanks, I'll be in touch soon!"])

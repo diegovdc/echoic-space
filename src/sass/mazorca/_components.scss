@@ -11,6 +11,29 @@
 		}
 	}
 
+	&__item {
+        display: flex;
+        @include under(sm) {
+		    flex-direction: column;
+			margin-bottom: 16px;
+	    }
+    }
+
+    &__image {
+        width: 300px;
+		aspect-ratio: 1/1;
+        background-color: c(white);
+        margin-right: 16px;
+        flex-shrink: 0;
+        background-size: cover;
+		margin-bottom: 16px;
+		 @include under(sm) {
+			 width: 100%;
+			 max-width: 300px;
+			 margin-right: 0;
+			 flex-shrink: initial;
+	    }
+    }
 	&__ttl {
 		font-family: f(mono);
 		font-size: 35px;
@@ -22,13 +45,16 @@
 		font-family: f(mono);
 		font-weight: bold;
 		width: auto;
-		font-size: 18px;
+		font-size: 32px;
 	}
 
 	&__p {
 		font-family: f(sans);
 		font-size: 16px;
 		padding-left: 30px;
+		@include under(sm) {
+			padding-left: 15px;
+		}
 		width: 100%;
 		padding-top: 1px;
 	}
@@ -36,8 +62,12 @@
 	&__category,
 	&__date {
     padding: 10px 0 10px 30px;
-		font-family: f(mono);
-    font-size: 12px;
+	@include under(sm) {
+		padding-left: 15px;
+		display: block;
+	}
+	font-family: f(mono);
+    font-size: 16px;
 	}
 	
 	&__date {

@@ -4,7 +4,7 @@ description: Group improvisation on a helixsong scale by Erv Wilson, using synth
 slug: helixsong-improv
 file_name: https://archive.org/download/helixsong-improv/impro-helixsong-rossana%2Bjose%2Bdiego.mp3
 track_name: "Helixsong Improv"
-backgroundImage:
+backgroundImage: 4.jpg
 date: 2023-10-27
 category:
   - Microtonalidad

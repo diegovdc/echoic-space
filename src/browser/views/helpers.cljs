@@ -4,7 +4,6 @@
    [browser.state :refer [app-state]]
    [clojure.string :as str]))
 
-
 (defn page-container [page-class node]
   [:div {:class (str "page " page-class)}
    [:div {:class (str "grid__container " page-class "__main-container")}
@@ -33,7 +32,9 @@
       (->> (clojure.string/join " "))
       (#(str "(" % ")"))))
 
-(defn ^:deprecated get-bg-img
+(defn
+  ;; ^:deprecated
+  get-bg-img
   [base-url post-attrs]
   (str "/" base-url "/" (:slug post-attrs) "/" (:backgroundImage post-attrs)))
 
@@ -55,11 +56,10 @@
 (defn make-archive-item [app-state post->href post]
   (let [img-url (bg-img (get-bg-img2 post))]
     [:div {:class "grid__container archive__container" :key (:slug post)}
-     [:a {:style {:display "flex"}
+     [:a {:class "archive__item"
           :href (post->href post)}
       [:div {:class "archive__image"
-             :style img-url
-             }]
+             :style img-url}]
       [:div
        [:h3 {:class "archive__sbttl archive__sbttl--sm"}
         (:title post) [:span {:class "archive__date"} (format-date (:date post))]]
@@ -77,7 +77,7 @@
   [:div
    img-node
    (when child-node
-     (page-container (str "single__bg-img "page-class) child-node))])
+     (page-container (str "single__bg-img " page-class) child-node))])
 
 (defn print-categories [selected-categories-atom categories]
   (let [selected-cats @selected-categories-atom]
@@ -90,10 +90,9 @@
              cat])
           categories)]))
 
-
 (defn get-entries [app-state]
   (let [app-state' @app-state
         page (:page app-state')]
     (cond
-      (= page :music-single) (:music @app-state )
-      (= page :blog-single) (:blog @app-state ))))
+      (= page :music-single) (:music @app-state)
+      (= page :blog-single) (:blog @app-state))))

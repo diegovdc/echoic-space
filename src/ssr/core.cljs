@@ -12,11 +12,11 @@
             [hiccups.runtime :as hiccupsrt]
             ["process" :as process]
             ["path" :as path]
+            ["rss" :as rss]
             ["fs" :as fs])
   (:require-macros [hiccups.core :as hiccups :refer [html]]))
 
 (set! *warn-on-infer* false)
-
 
 (defn spy [x] (println x) x)
 (defn react-id-str [react-id]
@@ -34,8 +34,8 @@
 (defn fix-style-tags [opts]
   (->> opts
        (map (fn [[k v]] (if (= k :style)
-                         [k (str/join  (map (fn [[k v]] (str (name k) ":" v ";")) v))]
-                         [k v])))
+                          [k (str/join  (map (fn [[k v]] (str (name k) ":" v ";")) v))]
+                          [k v])))
        (into {})))
 
 (defn render
@@ -71,7 +71,6 @@
        (str/join "/")))
 
 (def main-dir-path "./")
-
 
 (defn make-file-path  [file-path] (path/join main-dir-path "build/browser/" file-path))
 
@@ -112,6 +111,51 @@
             :posters (js->clj
                       (fs/readdirSync (make-file-path "images/presentaciones")))}))
 
+(defn- make-rss-item
+  [archive-data archive-base-url]
+  (->> archive-data
+       (map (juxt :attributes :body))
+       (map (fn [[{:keys [title description slug date seo backgroundImage]} body]]
+              (let [image* (or (-> seo :img) backgroundImage)
+                    image (str archive-base-url image*)]
+                {:title title
+                 :description (str
+                               (hiccups.core/html [:h1 title])
+                               (when image*
+                                 (hiccups.core/html [:img {:src image :alt (str title " image.")}]))
+                               " "
+                               body)
+                 :url (str archive-base-url slug "?rss")
+                 :date date
+                 :enclosure (when image* {:url image})})))))
+
+(comment
+  (hiccups.core/html [:img {:src "x/y.jpg" :alt "image"}])
+  (:blog @data)
+  (clj->js (make-rss-item (:blog @data) "blog/"))
+  (make-rss-item (:blog @data) "blog/")
+  (-> data make-rss-feed))
+
+(defn- make-rss-feed [data]
+  (let [feed (rss. #js {:title "echoic.space (vid.eco)"
+                        :description "Diego Villaseñor: músico, compositor, programador, artista transdisciplinario. Música experimental, partituras, código y análisis"
+                        :feed_url "https://echoic.space/rss.xml"
+                        :site_url "https://echoic.space"
+                        :image_url "https://echoic.space/images/favicon/favicon-128.png"
+                        :categories #js ["music", "live coding"]
+                        :pubDate (.toString (js/Date.))
+                        :ttl 60})
+        items (concat (make-rss-item (:blog @data) "https://echoic.space/blog/")
+                      (make-rss-item (:music @data) "https://echoic.space/music/"))]
+
+    (doseq [item items] (.item feed (clj->js item)))
+
+    (.xml feed {:indent true})))
+
+(defn- write-rss-feed
+  [rss-xml]
+  (fs/writeFileSync (make-file-path "./rss.xml") rss-xml))
+
 (defn update-posters-data [posters]
   (fs/writeFileSync  (make-file-path "data/posters.json")
                      (js/JSON.stringify (clj->js posters)))
@@ -148,8 +192,8 @@
                   (about/main-simple
                    data
                    (fn [posters] (about/images-grid (count posters)
-                                                   (take @about/n-images-to-load
-                                                         posters))))
+                                                    (take @about/n-images-to-load
+                                                          posters))))
                   {:description "Acerca de Diego Villaseñor: músico, compositor, programador, artista transdisciplinario. About, imágenes, fechas, cv."
                    :title "Acerca"
                    :seo {:img "https://echoic.space/images/seo.png"
@@ -177,7 +221,10 @@
                     "blog/"
                     (.reagentRender (.-prototype (music-single/main data slug nil)))
 
-                    (page :attributes))))))
+                    (page :attributes)))))
+
+  ;; rss feed
+  (-> data make-rss-feed write-rss-feed))
 
 (defn -main []
   (build)

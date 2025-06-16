@@ -1,18 +1,15 @@
 (ns browser.views.sonos
-  (:require ["/js/index" :refer [isMobileOrTablet]]
-            ["howler" :refer [Howl]]
-            [browser.helpers
-             :refer
-             [find-first
-              make-audio-url
-              percentage
-              safe-rand-nth
-              scroll-to
-              secondsToMinutes
-              ]]
-            [browser.state :as state]
-            [browser.views.helpers :refer [get-entries]]
-            [reagent.core :as r]))
+  (:require
+   ["/js/index" :refer [isMobileOrTablet]]
+   ["howler" :refer [Howl]]
+   [browser.analytics :as analytics]
+   [browser.helpers
+    :refer
+    [find-first make-audio-url percentage safe-rand-nth scroll-to
+     secondsToMinutes]]
+   [browser.state :as state]
+   [browser.views.helpers :refer [get-entries]]
+   [reagent.core :as r]))
 
 ;; FIXME there is a bug where forwarding a track may trigger two tracks to play
 ;; FIXME the pause button doesn't resume playback but goes to the next track
@@ -48,7 +45,7 @@
   []
   (let [howl (get-in @state/player-state [:now-playing :howl])
         is-playing (:is-playing @state/player-state)]
-    (if (and  howl is-playing)
+    (when (and  howl is-playing)
       (let [duration (.duration howl)
             seek (.seek howl)]
         (swap!
@@ -83,8 +80,7 @@
                               (js-obj
                                "videoId" (:youtube_id post-attrs)
                                "events" (js-obj "onReady" onPlayerReady)))
-        (catch js/Error e nil )))))
-
+        (catch js/Error e nil)))))
 
 (defn toggle-play* [track-to-play should-change-track?]
   (fn []
@@ -106,7 +102,9 @@
            #(do
               (.pause previously-playing)
               (.play (get-in @state/player-state [:now-playing :howl]))
-              (scroll-trackname))))
+              (scroll-trackname)
+              (analytics/log-event {:type "playing-track"
+                                    :track (:track_name track-to-play)}))))
         (do
           (.pause (get-in @state/player-state [:now-playing :howl]))
           (swap! state/player-state assoc :is-playing false)
@@ -158,7 +156,7 @@
 (def find-track-to-play
   (memoize
    (fn [is-single single tracks]
-     (js/console.debug "is single" is-single single "-")
+     #_(js/console.debug "is single" is-single single "-")
      (if is-single
        (find-first #(= single (get-in % [:attributes :slug])) tracks)
        (safe-rand-nth {} tracks)))))
@@ -211,8 +209,7 @@
       (.seek howl new-position))))
 
 #_(-> @state/app-state :route :data :name #{:browser.routes/music-single
-                                          :browser.routes/blog-single})
-
+                                            :browser.routes/blog-single})
 
 (defn get-playable-track [app-state]
   (let [slug (-> @app-state :route :path-params :slug)]
