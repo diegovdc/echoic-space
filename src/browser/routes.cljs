@@ -1,6 +1,7 @@
 (ns browser.routes
   (:require
    [browser.analytics :as analytics]
+   [browser.helpers :refer [set-scroll]]
    [browser.state :refer [app-state]]
    [browser.views.about :as about]
    [browser.views.blog :as blog]
@@ -9,6 +10,7 @@
    [browser.views.mailing-list :as mailing-list]
    [browser.views.music :as music]
    [browser.views.music-single :as music-single]
+   [browser.views.press :as press]
    [reagent.core :as r]
    [reitit.coercion.spec :as rss]
    [reitit.frontend :as rf]
@@ -36,6 +38,9 @@
                              (music-single/main app-state slug nil))
                     :parameters {:path {:slug string?}}}]
    ["/blog/" {:name ::blog :view #(blog/main app-state)}]
+   ["/press/" {:name ::press
+               :view #(press/main)
+               :controllers [{:start (fn [_] (set-scroll 0))}]}]
    ["/contact/" {:name ::contact :view #(contact/main app-state)}]
    ["/mailing-list/" {:name ::mailing-list :view #(mailing-list/main app-state)}]])
 

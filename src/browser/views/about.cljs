@@ -1,10 +1,12 @@
 (ns browser.views.about
-  (:require [browser.views.helpers :refer [page-container]]
-            [browser.state :as state]
-            [goog.string.Const :as Const]
-            [browser.views.js-loader :refer [js-loader]]
-            [reagent.core :as r]
-            [clojure.string :as str]))
+  (:require
+   [browser.state :as state]
+   [browser.views.helpers :refer [page-container]]
+   [browser.views.js-loader :refer [js-loader]]
+   [clojure.string :as str]
+   [goog.string.Const :as Const]
+   [reagent.core :as r]
+   [reitit.frontend.easy :as rfe]))
 
 (set! *warn-on-infer* true)
 
@@ -101,6 +103,9 @@
         "Curriculum Vitae"]]
       [:div {:class "about__activities-detail"}]
       (scripts-loader-fn posters)
+      [:div.markdown-body
+       [:h2 [:a {:href ((:routing-fn @app-state) :browser.routes/press)}
+             "Notas de Prensa"]]]
       [:div {:class "markdown-body"
              :dangerouslySetInnerHTML {:__html cv}}]])))
 
