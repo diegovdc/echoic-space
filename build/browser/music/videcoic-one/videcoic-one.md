@@ -94,7 +94,7 @@ La metodología se puede describir en los siguientes pasos:
 
     * Títulos o conceptos generativos con imágenes muy claras.
 
-    * Redes armónico-melódicas limitadas como [el algoritmo de 21 nubes](/obras/21-nubes.html#serie-melodica-infinita).
+    * Redes armónico-melódicas limitadas como [el algoritmo de 21 nubes](/obras/21-nubes#serie-melodica-infinita).
 
     * Formas muy determinadas y fragmentables, como en todas las _obras numéricas_ (e.g. _25 Campanas_).
 
@@ -107,7 +107,7 @@ La metodología se puede describir en los siguientes pasos:
 
     Se las ingresó en un mismo contexto, se las observo y se elaboró un plan, en forma de narrativa que pudiera articular la forma a gran escala.
 
-    2.1 Se eligieron las siguientes obras [Espíritu Penetrando en Árbol](/obras/espíritu-penetrando-en-arbol.html), [21 Nubes](/obras/21-nubes.html), [25 Campanas](/obras/25-campanas.html), [28 Palabras](/obras/28-palabras.html) y [Memories of a Wedding](/obras/memories-of-a-wedding.html)
+    2.1 Se eligieron las siguientes obras [Espíritu Penetrando en Árbol](/music/espíritu-penetrando-en-arbol), [21 Nubes](/music/21-nubes), [25 Campanas](/music/25-campanas), [28 Palabras](/music/28-palabras) y [Memories of a Wedding](/music/memories-of-a-wedding)
 
     2.2 Uno de los primeros rasgos que llamaron la atención fueron las imágenes de cada una de las obras: Espíritu, Árbol, Boda, Nubes, Campanas, y varias Palabras.
 
@@ -212,7 +212,7 @@ A los músicos se les pide que atiendan a algún otro y que apliquen alguno de l
 ![Along Calling Calls In-out side 3](/music/videcoic-one/moaw-II-3.png)
 
 
-Esto permite que piezas como _21 Nubes_, originaria para piano, puedan ser aproximadas por un instrumento como la guitarra o una percusión no afinada. No a través de la transcripción de la partitura y la conversión del intervalos y alturas a sonidos sin altura, sino a través del la imitación intuitiva (por parte del músico) de los [morfismos](/obras/21-nubes.html#consideraciones-sobre-la-morfologia-de-los-materiales) característicos del sonido que percibe. Esta es una de las prácticas y capacidades habituales de los improvisadores, y de ello nos servimos para realizar transformaciones eficientes de los materiales. Si por el contrario nos hubiéramos puesto a generar estos materiales en la escritura tradicional, nos habríamos topado con varios problemas que harían muy difícil su realización eficaz.
+Esto permite que piezas como _21 Nubes_, originaria para piano, puedan ser aproximadas por un instrumento como la guitarra o una percusión no afinada. No a través de la transcripción de la partitura y la conversión del intervalos y alturas a sonidos sin altura, sino a través del la imitación intuitiva (por parte del músico) de los [morfismos](/music/21-nubes#consideraciones-sobre-la-morfologia-de-los-materiales) característicos del sonido que percibe. Esta es una de las prácticas y capacidades habituales de los improvisadores, y de ello nos servimos para realizar transformaciones eficientes de los materiales. Si por el contrario nos hubiéramos puesto a generar estos materiales en la escritura tradicional, nos habríamos topado con varios problemas que harían muy difícil su realización eficaz.
 
 Primero porque un morfismo resulta difícil de capturar _analítica y conceptualmente_ con la escucha (aunque no sea difícil de escuchar o de imitar), segundo, porque es aun más difícil de especular en la imaginación compositivamente para elaborar una variación (sobre todo cuando no se tiene el instrumento a la mano) y tercero, porque es todavía más difícil de convertir a la partitura y de interpretar (el proceso queda puesto de cabeza y lo que sería fácil para improvisador de realizar se puede terminar convirtiendo en un proceso incómodo de desciframiento e interpretación de un código abstracto y ajeno).
 
@@ -241,7 +241,7 @@ Continuando con el [ejemplo citado anteriormente](#funciones-de-28-palabras), cu
 
     - Se presenta además simultáneamente en 4 líneas sonoras que la manejan independientemente: voces y electrónicas. Estas últimas están construidas con varias grabaciones de "Abrazas" superpuestas.
 
-2. De _21 Nubes_ no podemos saber qué se está tocando, podemos asumir una voz, pero dado que esta escrita en [polifonia fluctuante](/obras/21-nubes.html#polifonia-fluctuante) podrían ser más (aunque Jamieson tiende a ejecutar la pieza en un estilo monofónico)
+2. De _21 Nubes_ no podemos saber qué se está tocando, podemos asumir una voz, pero dado que esta escrita en [polifonia fluctuante](/music/21-nubes#polifonia-fluctuante) podrían ser más (aunque Jamieson tiende a ejecutar la pieza en un estilo monofónico)
 
 3. _25 Campanas_ desaparece bastante en la grabación, pero de pronto genera acentuaciones en el registro grave que dialogan con las pulsaciones hibridadas que vienen de los _toms_ en la percusión.
 
@@ -261,7 +261,7 @@ Por otro lado tenemos un recurso interesante que se desprende, casi gratuitament
 Contrapuntísticamente se observa lo siguiente:
 1. Las voces electrónicas se mueven al unísono.
 2. El resto de las voces comparte algunos elementos, mientras que otros son distintos. Algunos instrumentos hibridan con las voces, otros con  el primer movimiento de _Espíritu Penetrando en Árbol_, es decir el _Bosque_.
-3. _Along calling calls in/out-side_. Es una pieza que podríamos calificar como un canon no estricto (como _In C_ o _25 Campanas_ cf. [análisis del contrapunto de  25 Campanas](/obras/25-campanas.html#contrapunto)).
+3. _Along calling calls in/out-side_. Es una pieza que podríamos calificar como un canon no estricto (como _In C_ o _25 Campanas_ cf. [análisis del contrapunto de  25 Campanas](/music/25-campanas#contrapunto)).
 
 Obviando la multiplicidad de voces al interior de _Along calling calls in/out-side_, lo que llama la atención es que cada una de las voces exhibe 2 o 3 dimensiones distintas. Cada una un plano independiente.
 A nivel de la forma de _Videcoic_ hay un movimiento que podríamos llamar "directo", que es el movimiento que mueve a las voces de una sección a otra, pero dentro de este movimiento hay movimientos independientes, y sobre estos o debajo, están los movimientos contrapuntísticos de _21 Nubes_,  _Along calling calls in/out-side_, _28 Palabras_ ("una estrella enloquecida") y el Bosque de _Espíritu Penetrando en Árbol_.
@@ -276,7 +276,7 @@ Contamos entonces 3 niveles cada uno de los cuales puede tener contrapuntos dent
 Ahora bien, el primer nivel en este ejemplo puede causar sospecha, pues no parece que puedan haber múltiples voces en el, sin embargo, hay muchas secciones que poseen indicaciones de superposición:
 
 ![Escena 2, secciones D a G](/music/videcoic-one/s2-d-g.png)
-El proceso es análogo al realizado en el tercer movimiento de _Espíritu Penetrando en Árbol_ donde las [casillas de repetición se van acumulando](/obras/espíritu-penetrando-en-arbol.html#redes), y también al simple efecto "polifónificante" del pedal del piano, que en _21 Nubes_ sirve para realizar la ya citada polifonía fluctuante. Sólo que en lo casos anteriores se trata de algo muy distinto, en _Espíritu Penetrando en Árbol_, incluso sería dudoso llamarlo polifonía cuando lo que se genera es más bien una red de tímbres (sin embargo el proceso acumulativo viene de ahí), en _21 Nubes_ el contrapunto es a nivel de notas. En el caso presente se generan contrapuntos de secciones, que dan como resultado contrapuntos de procesos y de músicas, todo ello dentro de una misma "voz".
+El proceso es análogo al realizado en el tercer movimiento de _Espíritu Penetrando en Árbol_ donde las [casillas de repetición se van acumulando](/music/espíritu-penetrando-en-arbol#redes), y también al simple efecto "polifónificante" del pedal del piano, que en _21 Nubes_ sirve para realizar la ya citada polifonía fluctuante. Sólo que en lo casos anteriores se trata de algo muy distinto, en _Espíritu Penetrando en Árbol_, incluso sería dudoso llamarlo polifonía cuando lo que se genera es más bien una red de tímbres (sin embargo el proceso acumulativo viene de ahí), en _21 Nubes_ el contrapunto es a nivel de notas. En el caso presente se generan contrapuntos de secciones, que dan como resultado contrapuntos de procesos y de músicas, todo ello dentro de una misma "voz".
 
 Esto no implica que una voz se tenga que sobresaturar, y que deba expresarlo todo a la vez.  Con el proceso de abstracción contrapuntístico del que hablamos, se posibilita manejar distintas dimensiones alternadamente, o quizá en un eventual virtuosismo, también dimensiones simultáneas. Lo cambia con la abstracción es la idea misma del contrapunto, pero no eliminando el contenido de la idea anterior sino enriqueciéndola con nuevas posibilidades.
 
@@ -316,7 +316,7 @@ Ecoicidad de la motívica:
 ![Morfología triangular 8](/music/memories-of-a-wedding/morfologia-triangular-8.png)
 </div>
 
-Cf. el análisis de este verso en [Memories of a Wedding](/obras/memories-of-a-wedding.html#together-songs-erupting-interplay)
+Cf. el análisis de este verso en [Memories of a Wedding](/music/memories-of-a-wedding#together-songs-erupting-interplay)
 
 Como prueba de las potencia técnica de transformar el sentido en la recontextualización, el texto citado, adquiere aquí un significado totalmente distinto, las "Together-songs" son aquí las _obras modulares_ (no los cantos de la pareja), aunque en ambos casos son _cantos que unen lo diverso_. Tenemos pues una serie de vínculos, de reflejos entre estructuras _macro_, las de _Videcoic_ y estructuras _mico_, las de una pieza, un motivo, una palabra. Ambas apuntan hacia una fractalidad en la construcción.
 
