@@ -100,6 +100,7 @@
      :browser.routes/blog-single (str "/blog/" (:slug params) "/")
      :browser.routes/blog "/blog/"
      :browser.routes/about "/about/"
+     :browser.routes/press "/press/"
      :browser.routes/contact "/contact/"
      "/")))
 
@@ -108,8 +109,9 @@
             :about (get-data-file "about.json")
             :blog (get-data-file "blog.json")
             :music (get-data-file "music.json")
-            :posters (js->clj
-                      (fs/readdirSync (make-file-path "images/presentaciones")))}))
+            :posters (->> (js->clj
+                           (fs/readdirSync (make-file-path "images/presentaciones")))
+                          (remove #(= % ".DS_Store")))}))
 
 (defn- make-rss-item
   [archive-data archive-base-url]

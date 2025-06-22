@@ -135,11 +135,11 @@
          :href "https://social.toplap.org/@videco"}
      "Mastodon"]
     [:div#app
-     (header/main (fn [] [{:href "/" :text "~/"}
-                          {:href "/music/" :text "~/música"}
-                          {:href "/blog/" :text "~/bitácora"}
-                          {:href "/about/" :text "~/acerca"}
-                          {:href "/contact/" :text "~/contacto"}]))
+     (header/main (fn [] [#_{:href "/" :text ""}
+                          {:href "/music/" :text "Música"}
+                          {:href "/blog/" :text "Bitácora"}
+                          {:href "/about/" :text "Acerca"}
+                          {:href "/contact/" :text "Contacto"}]))
      body]
     [:script {:src "/browser-main.js", :type "text/javascript"}]
     [:script {:type "text/javascript",

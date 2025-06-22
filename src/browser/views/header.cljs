@@ -5,11 +5,11 @@
             [browser.routes :as routes]))
 
 (defn links []
-  [{:href (rfe/href ::routes/home) :text "~/"}
-   {:href (rfe/href ::routes/music) :text "~/música"}
-   {:href (rfe/href ::routes/blog) :text "~/bitácora"}
-   {:href (rfe/href ::routes/about) :text "~/acerca"}
-   {:href (rfe/href ::routes/contact) :text "~/contacto"}])
+  [#_{:href (rfe/href ::routes/home) :text ""}
+   {:href (rfe/href ::routes/music) :text "Música"}
+   {:href (rfe/href ::routes/blog) :text "Bitácora"}
+   {:href (rfe/href ::routes/about) :text "Acerca"}
+   {:href (rfe/href ::routes/contact) :text "Contacto"}])
 
 (defn main []
   (header/main links (sonos/main)))
