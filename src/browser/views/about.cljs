@@ -121,9 +121,10 @@
                          (.on "progress" (fn [] (layout @masonry)))))))
     :component-will-unmount
     (fn []
-      (when @masonry
+      (try
         (.destroy @masonry)
-        (reset! masonry nil)))
+        (catch js/Error _ nil)
+        (finally (reset! masonry nil))))
     :reagent-render
     (fn []
       (main-simple state/app-state scripts-loader))}))
