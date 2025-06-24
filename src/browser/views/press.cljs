@@ -46,6 +46,12 @@ Cantan las esferas. Ciclo curado por Alejandro Colinas (MX)"
     :date "2022/07/01"
     :image ""
     :description ""
+    :link-description ""}
+   {:url "https://inba.gob.mx/prensa/11758/en-el-laboratorio-arte-alameda-se-resalto-la-importancia-de-difundir-las-lenguas-originarias"
+    :title "En el Laboratorio Arte Alameda se resaltó la importancia de difundir las lenguas originarias"
+    :date "2019/02/25"
+    :image ""
+    :description ""
     :link-description ""}])
 
 (defn main
