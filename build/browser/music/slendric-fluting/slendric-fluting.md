@@ -1,6 +1,6 @@
 ---
 title: Slendric Fluting 
-description: Improvisación en meta-slendro
+description: En el micelio experiencial conectaron en mi Aka, Ba-Benzéle y Java.
 slug: slendric-fluting
 backgroundImage: slendric-fluting.jpg
 seo:
