@@ -114,7 +114,7 @@
    {:component-did-update
     (fn [_ _]
       (cond
-        (nil? @masonry) (init-masonry)
+        (nil? @masonry) ^js (init-masonry)
         @masonry (do (reload-items @masonry)
                      (-> (js/imagesLoaded.
                           (js/document.querySelector ".about__m-grid"))
@@ -122,7 +122,7 @@
     :component-will-unmount
     (fn []
       (try
-        (.destroy @masonry)
+        (.destroy ^js @masonry)
         (catch js/Error _ nil)
         (finally (reset! masonry nil))))
     :reagent-render
