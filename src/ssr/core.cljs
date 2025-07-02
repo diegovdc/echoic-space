@@ -117,7 +117,7 @@
   [archive-data archive-base-url]
   (->> archive-data
        (map (juxt :attributes :body))
-       (map (fn [[{:keys [title description slug date seo backgroundImage]} body]]
+       (map (fn [[{:keys [title description slug date publish-date seo backgroundImage]} body]]
               (let [image* (or (-> seo :img) backgroundImage)
                     image (str archive-base-url image*)]
                 {:title title
@@ -128,12 +128,14 @@
                                " "
                                body)
                  :url (str archive-base-url slug "?rss")
-                 :date date
+                 :date (or publish-date date)
                  :enclosure (when image* {:url image})})))))
 
 (comment
   (hiccups.core/html [:img {:src "x/y.jpg" :alt "image"}])
-  (:blog @data)
+  (->> (:music @data)
+       (map :attributes)
+       (filter :publish-date))
   (clj->js (make-rss-item (:blog @data) "blog/"))
   (make-rss-item (:blog @data) "blog/")
   (-> data make-rss-feed))
