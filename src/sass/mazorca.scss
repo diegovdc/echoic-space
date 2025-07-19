@@ -133,9 +133,6 @@ small {
     &-item {
       width: calc(33% - 20px);
       margin: 10px;
-      &.opacity-0 {
-         opacity: 0;
-      }
     }
   }
 }
