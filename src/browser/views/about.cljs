@@ -1,18 +1,19 @@
 (ns browser.views.about
   (:require
+   ["imagesloaded" :as imagesLoaded]
+   ["masonry-layout" :as Masonry]
    [browser.state :as state]
    [browser.views.helpers :refer [page-container]]
    [browser.views.js-loader :refer [js-loader]]
    [clojure.string :as str]
    [goog.string.Const :as Const]
-   [reagent.core :as r]
-   [reitit.frontend.easy :as rfe]))
+   [reagent.core :as r]))
 
 (set! *warn-on-infer* true)
 
 (def show-posters (r/atom false))
 
-(def n-images-to-load (r/atom 0))
+(def n-images-to-load (r/atom 7))
 
 (def masonry (r/atom nil))
 
@@ -20,24 +21,22 @@
   (.reloadItems masonry))
 
 (defn layout [^js/Masonry masonry]
-  (.layout masonry))
+  (.layout masonry)
+  (doseq [item (into [] (js/document.querySelectorAll ".opacity-0"))]
+    (-> item .-classList (.remove "opacity-0"))))
 
 (defn init-masonry []
   (js/setTimeout
    #(let [container (js/document.querySelector
                      ".about__m-grid")
-          masonry* (js/Masonry.
+          masonry* (Masonry.
                     container
                     {:itemSelector ".about__m-grid-item"
                      :columnWidth ".about__m-grid-item"
                      :isFitWidth true
                      :percentPosition true})
-          runner (js/imagesLoaded. container)]
-      (-> runner
-          (.on
-           "progress"
-           (fn []
-             (layout masonry*))))
+          runner (imagesLoaded. container)]
+      (.on runner "progress" (fn [] (layout masonry*)))
       (reset! masonry masonry*)
       (reset! show-posters true))
    1000))
@@ -58,34 +57,40 @@
 
 (defn images-grid [total-posters posters*]
   [:div
-   [:div {:class "about__m-grid"
-          :style {:opacity (if @show-posters 1 0)}}
+   [:div {:class "about__m-grid"}
     (doall (map (fn [src]
-                  [:img {:class "about__m-grid-item"
-                         :key src
-                         :alt (src->alt src)
-                         :src (str "/images/presentaciones/" src)}])
+                  [:img.about__m-grid-item.opacity-0
+                   {:key src
+                    :alt (src->alt src)
+                    :src (str "/images/presentaciones/" src)}])
                 posters*))]
    [:div {:class "about__button-container"}
     (when (not= total-posters @n-images-to-load)
       [:button {:class "about__all-images-button"
                 :on-click (fn [_]
-                            (reset! n-images-to-load
-                                    total-posters))}
+                            (reset! n-images-to-load total-posters)
+                            (when @masonry
+                              (reload-items @masonry)
+                              (-> (imagesLoaded. (js/document.querySelector ".about__m-grid"))
+                                  (.on "done" (fn []
+                                                ^js (.reloadItems  @masonry)
+                                                (js/setTimeout #(layout @masonry) 1000))))))}
        (str "Ver todas (" total-posters ")")])]])
 
-(defn scripts-loader [posters]
-  [js-loader {:scripts {#(exists? js/imagesLoaded)
-                        (Const/from "https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js")
-                        #(exists? js/Masonry)
-                        (Const/from "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js")}
-              :callback #(reset! n-images-to-load 7)
-              :loading [:div]
-              :loaded (images-grid
-                       (count posters)
-                       (take @n-images-to-load posters))}])
+(comment
+  (-> (imagesLoaded. (js/document.querySelector ".about__m-grid"))
+      (.on "done" (fn []
+                    (js/console.log "PROGRESS" @masonry)
+                    (layout @masonry))))
+  (.reloadItems @masonry)
+  (.layout @masonry))
 
-(defn main-simple [app-state scripts-loader-fn]
+(defn posters-loader [posters]
+  (images-grid
+   (count posters)
+   (take @n-images-to-load posters)))
+
+(defn main-simple [app-state posters-loader-fn]
   (let [body (get-in @app-state [:about 0 :body])
         cv (get-in @app-state [:cv 0 :body])
         posters (->>  (get-in @app-state [:posters])
@@ -102,7 +107,7 @@
        [:a {:class "about__button" :target "_blank" :href "/downloads/cv-2025.pdf"}
         "Curriculum Vitae"]]
       [:div {:class "about__activities-detail"}]
-      (scripts-loader-fn posters)
+      (posters-loader-fn posters)
       [:div.markdown-body
        [:h2 [:a {:href ((:routing-fn @app-state) :browser.routes/press)}
              "Notas de Prensa"]]]
@@ -111,14 +116,9 @@
 
 (defn main []
   (r/create-class
-   {:component-did-update
+   {:component-did-mount
     (fn [_ _]
-      (cond
-        (nil? @masonry) ^js (init-masonry)
-        @masonry (do (reload-items @masonry)
-                     (-> (js/imagesLoaded.
-                          (js/document.querySelector ".about__m-grid"))
-                         (.on "progress" (fn [] (layout @masonry)))))))
+      (when (nil? @masonry) ^js (init-masonry)))
     :component-will-unmount
     (fn []
       (try
@@ -127,4 +127,4 @@
         (finally (reset! masonry nil))))
     :reagent-render
     (fn []
-      (main-simple state/app-state scripts-loader))}))
+      (main-simple state/app-state posters-loader))}))
